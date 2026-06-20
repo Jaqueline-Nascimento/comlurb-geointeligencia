@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Globe, Zap, Users, TrendingUp, MapPin, Brain } from "lucide-react";
+import { useLocation } from "wouter";
 
 export default function Home() {
+  const [, navigate] = useLocation();
+
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
@@ -37,8 +40,12 @@ export default function Home() {
               A COMLURB está pronta para transformar a gestão urbana através de inteligência artificial, dados geoespaciais e inovação operacional. Somos a maior empresa de limpeza pública da América Latina. Agora, nos tornaremos a primeira a operar com geointeligência plena.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
-                Conheça Nossa Visão <ArrowRight className="ml-2 w-4 h-4" />
+              <Button
+                size="lg"
+                className="bg-green-600 hover:bg-green-700 text-white"
+                onClick={() => navigate("/mundogeo")}
+              >
+                O que é MundoGEO <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 Saiba Mais
