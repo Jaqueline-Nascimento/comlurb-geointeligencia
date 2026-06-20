@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Globe, Zap, Users, TrendingUp, MapPin, Brain } from "lucide-react";
+import { ArrowRight, Globe, Zap, Users, TrendingUp, MapPin, Brain, ChevronDown } from "lucide-react";
 import { useLocation } from "wouter";
+import React from "react";
 
 export default function Home() {
   const [, navigate] = useLocation();
@@ -76,6 +77,31 @@ export default function Home() {
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold">
                 Geointeligência em outras prefeituras
               </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Networking Section */}
+      <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="container">
+          <h2 className="text-4xl font-bold mb-12 text-foreground text-center">Networking</h2>
+          
+          <div className="relative">
+            <div className="flex items-center justify-between gap-4 overflow-x-auto pb-4">
+              <button className="flex-shrink-0 w-10 h-10 rounded-full bg-white border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100 transition">
+                ‹
+              </button>
+              
+              <div className="flex gap-4 overflow-x-auto flex-1 snap-x snap-mandatory">
+                {networkingContacts.map((contact, index) => (
+                  <NetworkingCard key={index} contact={contact} />
+                ))}
+              </div>
+              
+              <button className="flex-shrink-0 w-10 h-10 rounded-full bg-white border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100 transition">
+                ›
+              </button>
             </div>
           </div>
         </div>
@@ -508,3 +534,145 @@ export default function Home() {
     </div>
   );
 }
+
+
+interface NetworkingContact {
+  numero: string;
+  titulo: string;
+  resumo: string;
+  conteudo: string;
+}
+
+function NetworkingCard({ contact }: { contact: NetworkingContact }) {
+  const [isExpanded, setIsExpanded] = React.useState(false);
+  const cores = ['bg-teal-600', 'bg-blue-600', 'bg-indigo-600', 'bg-purple-600', 'bg-pink-600', 'bg-rose-600', 'bg-orange-600', 'bg-amber-600'];
+  const corAtual = cores[parseInt(contact.numero) % cores.length];
+
+  return (
+    <div className="flex-shrink-0 w-72 snap-center">
+      <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition h-full flex flex-col">
+        <div 
+          className={`${corAtual} text-white p-6 flex flex-col items-center justify-center cursor-pointer hover:opacity-90 transition min-h-48`}
+          onClick={() => setIsExpanded(!isExpanded)}
+        >
+          <div className="text-5xl font-bold mb-2">{contact.numero}</div>
+          <div className="text-xs text-center font-semibold flex items-center gap-1 justify-center">
+            <ChevronDown className={`w-3 h-3 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
+            Expandir
+          </div>
+        </div>
+        <div className="p-6 flex-1 flex flex-col">
+          <h3 className="text-lg font-bold mb-2 text-foreground line-clamp-2">{contact.titulo}</h3>
+          <p className="text-sm text-muted-foreground line-clamp-3">{contact.resumo}</p>
+        </div>
+        {isExpanded && (
+          <div className="border-t border-border bg-slate-50 p-6 max-h-96 overflow-y-auto">
+            <div className="text-sm text-muted-foreground leading-relaxed whitespace-pre-wrap">
+              {contact.conteudo}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+const networkingContacts: NetworkingContact[] = [
+  {
+    numero: "1",
+    titulo: "Contato com especialistas em cidades inteligentes, maturidade digital e estruturação de dados urbanos",
+    resumo: "Discussões com especialistas sobre maturidade tecnológica das cidades, WebGIS, dados abertos, IDE, CTM, BIM, CIM e inteligência geográfica.",
+    conteudo: `Um dos contatos mais relevantes foi estabelecido a partir das discussões conduzidas por especialistas que trataram da maturidade tecnológica das cidades, do uso de WebGIS, dados abertos, IDE, CTM, BIM, CIM, gêmeos digitais e inteligência geográfica.
+
+A mensagem central desse bloco foi simples, mas profunda: a cidade inteligente não começa pela tecnologia mais sofisticada. Ela começa pela organização da informação.
+
+Foi apresentado o chamado "paradoxo brasileiro", no qual muitas cidades brasileiras avançaram em plataformas de visualização, como WebGIS, antes de consolidarem plenamente suas infraestruturas de dados, seus cadastros, suas bases territoriais e seus modelos de governança.
+
+Esse contato é importante para a COMLURB porque a Companhia vive exatamente esse momento de transição. O desafio não é apenas produzir mais dados, mas organizar os dados existentes em uma estrutura confiável, integrada e útil para a tomada de decisão.`
+  },
+  {
+    numero: "2",
+    titulo: "Contato com Júlio Ribeiro — FF Solutions / Symetri LATAM",
+    resumo: "Profissional ligado à transformação digital, planejamento urbano e soluções voltadas à modelagem de dados urbanos e integração tecnológica.",
+    conteudo: `Entre os contatos registrados, destaca-se o de Júlio Ribeiro, profissional ligado à área de transformação digital, planejamento urbano, tecnologias aplicadas à cidade e soluções voltadas à modelagem, dados urbanos e integração tecnológica.
+
+Sua apresentação trouxe uma frase que sintetiza o espírito de todo o Congresso:
+"A cidade do presente não se improvisa, ela se mede, se planeja e se constrói sobre dados."
+
+Essa frase deve ser lida como uma orientação estratégica. Para a COMLURB, ela significa que a limpeza urbana moderna não pode depender apenas da experiência empírica, da memória das equipes ou da reação a demandas pontuais.
+
+O contato com esse perfil técnico é relevante porque permite aproximar a COMLURB de soluções e metodologias que conectam planejamento urbano, infraestrutura de dados, modelagem digital e transformação institucional.`
+  },
+  {
+    numero: "3",
+    titulo: "Contato com representantes da PRODABEL e da Prefeitura de Belo Horizonte — Cadastro Territorial Multifinalitário",
+    resumo: "Experiência de Belo Horizonte na construção e utilização do Cadastro Territorial Multifinalitário com trajetória de três décadas de geotecnologias.",
+    conteudo: `Outro contato de grande relevância foi com a experiência de Belo Horizonte, apresentada por Karla Albuquerque de Vasconcelos Borges, da PRODABEL/PBH, sobre o Cadastro Territorial Multifinalitário de Belo Horizonte.
+
+A apresentação mostrou uma trajetória longa e madura de estruturação da informação territorial. Belo Horizonte demonstrou que uma base geográfica única não nasce pronta. Ela é construída ao longo do tempo, com diagnóstico, governança, definição de padrões, integração entre órgãos, regras de atualização, banco de dados geográficos, geosserviços, portal de informações e sistemas consumidores.
+
+O ponto mais forte da experiência de Belo Horizonte foi a defesa de uma visão única do território municipal. A cidade foi apresentada a partir de diferentes camadas: cidade aprovada, cidade real, cidade cartorial e cidade tributária.
+
+Para a COMLURB, essa discussão tem aplicação direta. A Companhia executa serviços na cidade real, em áreas formais, informais, consolidadas, em transformação ou em conflito cadastral.`
+  },
+  {
+    numero: "4",
+    titulo: "Contato com Fernanda Farias — Inteligência Geográfica e Gestão Municipal",
+    resumo: "Palestra didática sobre inteligência geográfica que conecta cadastro, cartografia, planejamento urbano e infraestrutura para compreender padrões urbanos.",
+    conteudo: `Outro bloco de contatos foi associado à palestra sobre inteligência geográfica e gestão municipal, conduzida por Fernanda Farias. A abordagem foi especialmente didática e dialogou diretamente com a realidade dos municípios brasileiros.
+
+A palestra partiu de uma ideia muito simples: toda decisão pública acontece em algum lugar. Uma escola está em algum lugar. Uma unidade de saúde está em algum lugar. Uma praça, uma rua, uma feira, um ponto de descarte irregular, uma área de risco também estão em algum lugar.
+
+Quando os dados começam a conversar, surge a inteligência geográfica. Isso significa conectar cadastro, cartografia, planejamento urbano, infraestrutura, informações ambientais, mercado imobiliário, informações tributárias e dados operacionais.
+
+Para a COMLURB, esse contato é extremamente aderente. A limpeza urbana é uma política pública espacial por natureza. Ela depende de localização, frequência, rota, acesso, tipo de resíduo, densidade urbana, comportamento da população, uso do solo, sazonalidade, eventos, clima e turismo.`
+  },
+  {
+    numero: "5",
+    titulo: "Contato com Givanildo José Silva — Topocart",
+    resumo: "Engenheiro agrimensor com experiência em mapeamentos cartográficos, cadastro tributário, SIG e iniciativas com inteligência geográfica, drones e gêmeos digitais.",
+    conteudo: `Também foi estabelecido contato com Givanildo José Silva, engenheiro agrimensor e diretor técnico da Topocart, empresa com experiência em mapeamentos cartográficos multifinalitários, cadastro tributário, PGV, SIG, projetos em municípios brasileiros e iniciativas envolvendo inteligência geográfica, drones e gêmeos digitais.
+
+A apresentação abordou ganhos e desafios na implementação de projetos de inteligência geográfica e gêmeos digitais nos municípios. O conteúdo deixou claro que não existe inteligência geográfica sem base cartográfica confiável, cadastro estruturado, escolha adequada de plataformas tecnológicas e capacitação de pessoal.
+
+Entre os ganhos apresentados, destacaram-se respostas rápidas às necessidades da gestão, transparência nos processos, processos mapeados, adequação de equipes, rapidez no atendimento ao cidadão e maior conhecimento da cidade.
+
+Para a COMLURB, o contato com a Topocart é relevante porque a Companhia pode se beneficiar de tecnologias de mapeamento de alta precisão, aerolevantamento, drones, sensores, nuvem de pontos, modelos 3D e inventários territoriais.`
+  },
+  {
+    numero: "6",
+    titulo: "Contato com especialistas em Inteligência Artificial aplicada à Geotecnologia",
+    resumo: "Palestras sobre machine learning, deep learning, redes neurais e uso de IA para mapeamento de áreas de risco e análise de imagens territoriais.",
+    conteudo: `Outro grupo de contatos foi formado a partir das palestras sobre inteligência artificial aplicada à geotecnologia. Os conteúdos apresentados abordaram machine learning, deep learning, redes neurais, modelos de classificação, análise de imagens, sensoriamento remoto, identificação de padrões territoriais e uso de IA para apoio à tomada de decisão.
+
+Um dos exemplos apresentados tratou do uso de inteligência artificial para mapear áreas de risco de deslizamento em São Sebastião. Esse exemplo demonstrou que a IA pode combinar variáveis ambientais, geográficas e territoriais para identificar áreas suscetíveis a eventos críticos.
+
+A principal lição desse bloco é que a inteligência artificial não substitui o conhecimento técnico. Ela amplia a capacidade de análise quando há dados organizados, objetivos claros e validação humana.
+
+Para a COMLURB, esse contato é importante porque abre caminho para aplicações futuras em identificação automática de áreas com acúmulo de resíduos, análise de imagens para detectar descarte irregular e previsão de aumento de resíduos em períodos específicos.`
+  },
+  {
+    numero: "7",
+    titulo: "Contato com Helton Uchoa — Prefeitura Eficiente",
+    resumo: "Estudo de caso sobre inteligência geográfica nos municípios e uso de IA em fiscalização de obras urbanas com metodologia clara e participação humana.",
+    conteudo: `A palestra de Helton Uchoa, associada à iniciativa Prefeitura Eficiente, trouxe um estudo de caso sobre inteligência geográfica nos municípios e uso de inteligência artificial em fiscalização de obras urbanas de pavimentação.
+
+O caso apresentado envolveu um desafio do Tribunal de Contas da União relacionado à fiscalização de obras de pequeno porte. A solução combinou robôs, inteligência artificial, documentos públicos, extração de dados, revisão humana, coleta externa e análise especializada.
+
+O ponto mais importante foi a clareza metodológica: a expectativa era que a IA pudesse permear todas as etapas, mas a realidade mostrou que ela atua melhor quando aplicada a tarefas específicas, bem definidas e integradas a um processo com participação humana.
+
+Essa lição é extremamente importante para a COMLURB. A IA funciona melhor quando o processo está claro, os dados estão organizados e há especialistas validando os resultados. Pode inspirar projetos-piloto em análise automatizada de ordens de serviço, leitura de documentos e apoio à fiscalização.`
+  },
+  {
+    numero: "8",
+    titulo: "Contato com desenvolvedores e soluções voltadas à comunicação com o cidadão — Lixo Hora Certa e Sico",
+    resumo: "Aproximação com soluções voltadas à comunicação direta com o cidadão sobre horários de coleta, redução de descartes irregulares e melhoria da relação operação-cidadão.",
+    conteudo: `Entre os contatos realizados, também se destaca a aproximação com soluções voltadas à comunicação direta com o cidadão, especialmente relacionadas ao aplicativo Lixo Hora Certa e ao Sico.
+
+Esse contato é relevante porque a limpeza urbana depende, em grande parte, da previsibilidade e da participação da população. Quando o cidadão sabe o dia, o horário e a forma correta de dispor seus resíduos, a cidade ganha em organização, eficiência e limpeza.
+
+A ideia de um aplicativo ou solução digital voltada ao horário correto da coleta dialoga diretamente com a missão da COMLURB. A Companhia já possui conhecimento técnico sobre roteiros, frequência, áreas atendidas, tipos de coleta e especificidades territoriais.
+
+Para a COMLURB, esse contato pode contribuir para comunicação mais clara sobre dias e horários de coleta, redução de resíduos colocados fora do horário, melhoria da relação entre operação e cidadão, e envio de alertas sobre mudanças de rota, feriados e eventos. A importância está em lembrar que tecnologia pública não deve servir apenas à gestão interna. Ela também deve facilitar a vida do cidadão.`
+  }
+];
