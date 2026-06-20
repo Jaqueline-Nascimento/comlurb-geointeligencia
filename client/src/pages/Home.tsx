@@ -590,6 +590,43 @@ function GeoIACard() {
               <p className="text-sm text-muted-foreground">Identificação de padrões geográficos de descarte irregular de lixo, permitindo que a empresa direcione ações de limpeza e fiscalização para os locais com maior probabilidade de reincidência.</p>
             </div>
           </div>
+          
+          <div className="mt-6 pt-6 border-t border-border">
+            <h4 className="text-lg font-bold mb-4 text-foreground">Comparação: GIS Tradicional vs GeoIA</h4>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-border">
+                    <th className="text-left py-2 px-3 font-semibold text-foreground">Conceito</th>
+                    <th className="text-left py-2 px-3 font-semibold text-foreground">Abordagem Tradicional (GIS)</th>
+                    <th className="text-left py-2 px-3 font-semibold text-foreground">Abordagem com GeoIA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-border hover:bg-slate-50">
+                    <td className="py-2 px-3 font-semibold text-foreground">Coleta de Dados</td>
+                    <td className="py-2 px-3 text-muted-foreground">Cadastro manual ponto a ponto.</td>
+                    <td className="py-2 px-3 text-muted-foreground">Detecção automática via imagens e sensores.</td>
+                  </tr>
+                  <tr className="border-b border-border hover:bg-slate-50">
+                    <td className="py-2 px-3 font-semibold text-foreground">Análise</td>
+                    <td className="py-2 px-3 text-muted-foreground">Visualização do que aconteceu (passado).</td>
+                    <td className="py-2 px-3 text-muted-foreground">Predição do que vai acontecer (futuro).</td>
+                  </tr>
+                  <tr className="border-b border-border hover:bg-slate-50">
+                    <td className="py-2 px-3 font-semibold text-foreground">Operação</td>
+                    <td className="py-2 px-3 text-muted-foreground">Equipes seguem cronogramas fixos.</td>
+                    <td className="py-2 px-3 text-muted-foreground">Equipes são enviadas por demanda preditiva.</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="py-2 px-3 font-semibold text-foreground">Decisão</td>
+                    <td className="py-2 px-3 text-muted-foreground">Baseada em experiência e mapas estáticos.</td>
+                    <td className="py-2 px-3 text-muted-foreground">Baseada em algoritmos e dados em tempo real.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       )}
     </Card>
