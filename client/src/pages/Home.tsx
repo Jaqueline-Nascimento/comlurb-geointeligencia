@@ -105,7 +105,7 @@ export default function Home() {
             <Card className="p-8 border-l-4 border-l-blue-600 hover:shadow-lg transition cursor-pointer">
               <Globe className="w-12 h-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-bold mb-3 text-foreground">Gêmeos Digitais</h3>
-              <p className="text-muted-foreground">Se a GeoIA diz à sua empresa quando e onde agir, o Gêmeo Digital mostra como a ação vai impactar o mundo real, servindo como a interface definitiva entre os dados do sistema ArboRio e a execução nas ruas.</p>
+              <p className="text-muted-foreground">Se a GeoIA diz à sua empresa quando e onde agir, o Gêmeo Digital mostra como a ação vai impactar o mundo real.</p>
             </Card>
             <Card className="p-8 border-l-4 border-l-purple-600 hover:shadow-lg transition">
               <Zap className="w-12 h-12 text-purple-600 mb-4" />
