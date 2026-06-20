@@ -46,7 +46,7 @@ export default function Home() {
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
               A Geointeligência Urbana serve para transformar dados complexos em mapas e rotas operacionais, auxiliando governos e empresas na gestão do território, melhoria da infraestrutura e tomada de decisões rápidas e assertivas.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button
                 size="lg"
                 className="bg-green-600 hover:bg-green-700 text-white"
@@ -56,6 +56,17 @@ export default function Home() {
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 Saiba Mais
+              </Button>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold">
+                Cursos que participamos
+              </Button>
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold">
+                Palestras que assistimos
+              </Button>
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold">
+                Geointeligência em outras prefeituras
               </Button>
             </div>
           </div>
@@ -207,17 +218,6 @@ export default function Home() {
                   <h3 className="text-xl font-bold mb-4">ROI Garantido</h3>
                   <p className="text-sm leading-relaxed mb-4">Retorno do investimento em 18 meses. Economia anual de R$ 50 milhões. Financiamento com payback rápido.</p>
                 </div>
-                <div className="flex gap-2 flex-col">
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Cursos que participamos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Palestras que assistimos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Geointeligência em outras prefeituras
-                  </button>
-                </div>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-orange-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
@@ -233,18 +233,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-red-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                 <div>
                   <h3 className="text-xl font-bold mb-4">Liderança de Mercado</h3>
-                  <p className="text-sm leading-relaxed mb-4">COMLURB como referência global. Atração de investimentos. Parcerias com startups e universidades.</p>
-                </div>
-                <div className="flex gap-2 flex-col">
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Cursos que participamos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Palestras que assistimos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Geointeligência em outras prefeituras
-                  </button>
+                  <p className="text-sm leading-relaxed mb-4">Referência global em geointeligência urbana. Modelo para outras cidades. Atração de talentos e parcerias.</p>
                 </div>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-red-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
@@ -263,17 +252,6 @@ export default function Home() {
                   <h3 className="text-xl font-bold mb-4">Inovação Tecnológica</h3>
                   <p className="text-sm leading-relaxed mb-4">Adoção de IA, IoT e Gêmeos Digitais. Infraestrutura moderna. Preparação para o futuro.</p>
                 </div>
-                <div className="flex gap-2 flex-col">
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Cursos que participamos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Palestras que assistimos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Geointeligência em outras prefeituras
-                  </button>
-                </div>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-cyan-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mb-4">
@@ -290,17 +268,6 @@ export default function Home() {
                 <div>
                   <h3 className="text-xl font-bold mb-4">Transformação Digital</h3>
                   <p className="text-sm leading-relaxed mb-4">Mudança cultural e operacional. Equipes capacitadas. Processos otimizados. Futuro garantido.</p>
-                </div>
-                <div className="flex gap-2 flex-col">
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Cursos que participamos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Palestras que assistimos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Geointeligência em outras prefeituras
-                  </button>
                 </div>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-indigo-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
@@ -378,19 +345,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Seção de Botões - Cursos, Palestras e Prefeituras */}
-        <div className="mt-16 flex flex-col md:flex-row gap-6 justify-center">
-          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition duration-300 text-lg">
-            Cursos que participamos
-          </button>
-          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition duration-300 text-lg">
-            Palestras que assistimos
-          </button>
-          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition duration-300 text-lg">
-            Geointeligência em outras prefeituras
-          </button>
         </div>
       </section>
 
