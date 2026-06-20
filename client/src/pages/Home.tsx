@@ -23,6 +23,7 @@ export default function Home() {
             <a href="#oportunidades" className="text-sm text-muted-foreground hover:text-foreground transition">Oportunidades</a>
             <a href="#comparativo" className="text-sm text-muted-foreground hover:text-foreground transition">Comparativo</a>
             <a href="#capacitacao" className="text-sm text-muted-foreground hover:text-foreground transition">Capacitação</a>
+            <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition">Participantes</a>
           </div>
         </div>
       </nav>
@@ -287,6 +288,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Participantes */}
+      <section id="participantes" className="py-20 bg-white">
+        <div className="container">
+          <h2 className="text-4xl font-bold mb-6 text-foreground">Participantes da Viagem</h2>
+          <p className="text-lg text-muted-foreground mb-12 max-w-3xl leading-relaxed">
+            Conheça os profissionais da COMLURB que participaram do MundoGEO Connect 2026 e trouxeram conhecimento estratégico para a transformação digital da empresa.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Placeholder para participantes */}
+            <Card className="p-8 bg-slate-50 border-2 border-dashed border-border hover:border-green-600 transition">
+              <div className="w-20 h-20 bg-gradient-to-br from-green-100 to-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-10 h-10 text-green-600" />
+              </div>
+              <h3 className="text-xl font-bold text-center text-foreground mb-2">Participante 1</h3>
+              <p className="text-sm text-muted-foreground text-center mb-4">Cargo/Função</p>
+              <p className="text-sm text-muted-foreground text-center italic">Currículo e experiência a ser preenchido</p>
+            </Card>
+            <Card className="p-8 bg-slate-50 border-2 border-dashed border-border hover:border-green-600 transition">
+              <div className="w-20 h-20 bg-gradient-to-br from-green-100 to-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-10 h-10 text-green-600" />
+              </div>
+              <h3 className="text-xl font-bold text-center text-foreground mb-2">Participante 2</h3>
+              <p className="text-sm text-muted-foreground text-center mb-4">Cargo/Função</p>
+              <p className="text-sm text-muted-foreground text-center italic">Currículo e experiência a ser preenchido</p>
+            </Card>
+            <Card className="p-8 bg-slate-50 border-2 border-dashed border-border hover:border-green-600 transition">
+              <div className="w-20 h-20 bg-gradient-to-br from-green-100 to-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-10 h-10 text-green-600" />
+              </div>
+              <h3 className="text-xl font-bold text-center text-foreground mb-2">Participante 3</h3>
+              <p className="text-sm text-muted-foreground text-center mb-4">Cargo/Função</p>
+              <p className="text-sm text-muted-foreground text-center italic">Currículo e experiência a ser preenchido</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-r from-green-600 to-blue-600 text-white">
         <div className="container text-center">
@@ -314,6 +353,7 @@ export default function Home() {
                 <li><a href="#oportunidades" className="hover:text-white transition">Oportunidades</a></li>
                 <li><a href="#comparativo" className="hover:text-white transition">Comparativo</a></li>
                 <li><a href="#capacitacao" className="hover:text-white transition">Capacitação</a></li>
+                <li><a href="#participantes" className="hover:text-white transition">Participantes</a></li>
               </ul>
             </div>
             <div>
