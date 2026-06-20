@@ -66,7 +66,11 @@ export default function Home() {
               >
                 Cursos que participamos
               </Button>
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold">
+              <Button
+                size="lg"
+                className="bg-green-600 hover:bg-green-700 text-white font-bold"
+                onClick={() => navigate("/palestras")}
+              >
                 Palestras que assistimos
               </Button>
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold">
