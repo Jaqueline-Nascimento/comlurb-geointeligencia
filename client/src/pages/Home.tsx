@@ -29,7 +29,7 @@ export default function Home() {
       <section 
         className="relative overflow-hidden text-white py-24 bg-cover bg-center"
         style={{
-          backgroundImage: 'url(/home/ubuntu/webdev-static-assets/hero-geointeligencia.webp)',
+          backgroundImage: 'url(/manus-storage/hero-geointeligencia_8fe6595f.webp)',
           backgroundAttachment: 'fixed'
         }}
       >
