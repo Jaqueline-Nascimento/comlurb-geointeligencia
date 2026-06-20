@@ -446,6 +446,37 @@ export default function Cursos() {
           </div>
         </div>
       </section>
+
+      {/* Conclusion Section */}
+      <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
+        <div className="container">
+          <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-12">
+            <h2 className="text-3xl font-bold mb-8 text-foreground">Convergência e Oportunidades</h2>
+            
+            <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <p>
+                Os quatro cursos convergem para uma mesma conclusão: a COMLURB tem a oportunidade de transformar sua grande capacidade operacional em uma gestão cada vez mais orientada por dados e preditiva, com capacidade de se antecipar aos fatos.
+              </p>
+
+              <p>
+                A Companhia já possui conhecimento de território, presença diária nas ruas, equipes distribuídas pela cidade e grande volume de informações produzidas em campo. O desafio é organizar esse conhecimento em bases geográficas integradas, confiáveis e atualizadas.
+              </p>
+
+              <p>
+                A automação no ArcGIS pode reduzir tarefas repetitivas. A inteligência artificial pode identificar padrões e apoiar previsões. A inteligência geográfica pode conectar diferentes áreas da Companhia em torno de uma mesma visão territorial. E a informação geográfica estruturada pode transformar dados dispersos em decisões mais rápidas, transparentes e eficientes.
+              </p>
+
+              <p>
+                A principal lição extraída do Congresso MundoGEO é que tecnologia não é o fim. Tecnologia é o meio. A finalidade é melhorar a gestão pública, apoiar os trabalhadores, qualificar o planejamento e entregar melhores serviços à cidade.
+              </p>
+
+              <p className="border-l-4 border-green-600 pl-6 py-4 bg-green-50 rounded">
+                <span className="font-semibold text-foreground">Para a COMLURB, isso significa avançar para uma operação mais inteligente, integrada e preventiva, capaz de compreender melhor o território e responder com mais eficiência às necessidades da população carioca.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
