@@ -26,15 +26,19 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-24">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-green-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
-        </div>
+      <section 
+        className="relative overflow-hidden text-white py-24 bg-cover bg-center"
+        style={{
+          backgroundImage: 'url(/home/ubuntu/webdev-static-assets/hero-geointeligencia.webp)',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        {/* Overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/75 to-slate-900/65"></div>
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Liderança Global em <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">Geointeligência Urbana</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">Geointeligência na Limpeza Urbana</span>
             </h1>
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
               A COMLURB está pronta para transformar a gestão urbana através de inteligência artificial, dados geoespaciais e inovação operacional. Somos a maior empresa de limpeza pública da América Latina. Agora, nos tornaremos a primeira a operar com geointeligência plena.
