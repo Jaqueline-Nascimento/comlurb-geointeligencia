@@ -144,9 +144,17 @@ export default function Home() {
                   <h3 className="text-xl font-bold mb-4">Redução de Custos</h3>
                   <p className="text-sm leading-relaxed mb-4">Otimização de rotas reduz combustível em até 30%. Manutenção preditiva evita falhas custosas. ROI em 18 meses.</p>
                 </div>
-                <button className="bg-white text-green-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
-                  Saiba Mais
-                </button>
+                <div className="flex gap-2 flex-col">
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Cursos que participamos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Palestras que assistimos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Geointeligência em outras prefeituras
+                  </button>
+                </div>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-green-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
