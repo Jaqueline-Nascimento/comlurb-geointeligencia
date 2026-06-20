@@ -88,19 +88,19 @@ export default function Palestras() {
             
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                As palestras e painéis apresentados no Congresso MundoGEO Connect 2026 reforçaram uma mensagem central: a transformação digital das cidades não é apenas sobre tecnologia, mas sobre integração de dados, pessoas e processos.
+                Os temas apresentados convergiram para uma mesma conclusão: a cidade precisa ser compreendida por meio de dados territoriais confiáveis, integrados e atualizados. A inovação não está apenas no uso de drones, inteligência artificial, WebGIS, gêmeos digitais ou painéis de controle. A inovação está em transformar essas ferramentas em capacidade real de gestão.
               </p>
 
               <p>
-                Para a COMLURB, as principais lições extraídas foram: (1) a necessidade de consolidar bases de dados confiáveis antes de avançar para tecnologias mais sofisticadas; (2) a importância de integração institucional e interoperabilidade entre sistemas; (3) a capacitação permanente de equipes como fator crítico de sucesso; e (4) o uso de geotecnologias como instrumento de apoio à gestão operacional, planejamento e tomada de decisão.
+                No caso específico da COMLURB, a palestra sobre resíduos sólidos merece destaque especial, pois dialoga diretamente com a missão institucional da Companhia. Ela demonstra que a limpeza urbana do futuro deve ser planejada com base em dados, integração territorial, indicadores operacionais, economia circular, rastreabilidade e inteligência geográfica.
               </p>
 
               <p>
-                O exemplo de Belo Horizonte com seu Cadastro Territorial Multifinalitário, a experiência de Fortaleza com inteligência geográfica, e as aplicações práticas apresentadas demonstraram que a gestão inteligente de cidades é possível quando há visão estratégica, investimento em infraestrutura de dados e comprometimento institucional.
+                A COMLURB possui uma vantagem estratégica: seus serviços acontecem diariamente em todo o território da cidade. Isso significa que a Companhia não apenas executa políticas públicas; ela também observa, registra e conhece a cidade em movimento. Quando essas informações são organizadas, integradas e analisadas, deixam de ser apenas dados operacionais e passam a formar uma base de inteligência urbana.
               </p>
 
               <p className="border-l-4 border-green-600 pl-6 py-4 bg-green-50 rounded">
-                <span className="font-semibold text-foreground">A COMLURB possui oportunidade única de aplicar esses conhecimentos em sua operação de limpeza urbana, transformando dados dispersos em inteligência para rotas mais eficientes, alocação melhor de recursos, previsibilidade de demandas e resposta mais rápida às necessidades da população carioca.</span>
+                <span className="font-semibold text-foreground">Assim, o aprendizado central deste módulo é que a tecnologia deve servir à gestão, e a gestão deve servir melhor ao cidadão.</span>
               </p>
             </div>
           </div>
@@ -295,5 +295,31 @@ O conteúdo discutiu a inovação na gestão de resíduos sob três dimensões p
 Também foi enfatizada a importância de tecnologias para otimizar rotas, acompanhar a execução dos serviços, integrar informações de campo, melhorar a destinação final e apoiar decisões sobre reciclagem, logística reversa e economia circular.
 
 Essa palestra foi particularmente relevante para a COMLURB, pois demonstrou que a modernização da limpeza urbana passa necessariamente pela integração de dados territoriais, planejamento inteligente de rotas, acompanhamento em tempo real e alinhamento com políticas públicas de sustentabilidade.`
+  },
+  {
+    numero: "10",
+    titulo: "Transformação da Máquina Pública — Como redesenhar processos, estruturas e cultura para viabilizar cidades inteligentes",
+    resumo: "Palestra sobre transformação institucional necessária para que a tecnologia produza resultados concretos na gestão pública, abordando mudanças em processos, estrutura organizacional e cultura.",
+    conteudo: `Essa palestra tratou da transformação institucional necessária para que a tecnologia produza resultados concretos na gestão pública. O eixo central foi a ideia de que cidades inteligentes não nascem apenas da implantação de sistemas, painéis, aplicativos ou sensores. Elas dependem de mudanças nos processos administrativos, na estrutura organizacional e na cultura de trabalho dos órgãos públicos.
+
+O conteúdo reforçou que a tecnologia, isoladamente, não resolve problemas estruturais. Para que uma cidade avance, é necessário redesenhar fluxos internos, eliminar duplicidades, integrar áreas, definir responsabilidades, estabelecer governança de dados e criar rotinas de acompanhamento. A inovação precisa estar conectada à gestão real, aos servidores, aos processos de trabalho e às necessidades da população.
+
+Para a COMLURB, essa reflexão é essencial. A Companhia possui grande volume de informações operacionais, equipes em campo, serviços distribuídos por todo o território e diversas interfaces com outros órgãos municipais. A transformação digital só terá impacto se estiver acompanhada de revisão de processos, integração entre áreas, qualificação das bases de dados, capacitação de equipes e construção de uma cultura de decisão baseada em evidências.
+
+Essa palestra reforça que a modernização da COMLURB não deve ser entendida apenas como adoção de novas ferramentas, mas como uma mudança progressiva na forma de planejar, executar, medir e melhorar os serviços urbanos.`
+  },
+  {
+    numero: "11",
+    titulo: "Iniciativas para otimizar a produção de Geoinformação com uso de IA no Serviço Geográfico",
+    resumo: "Palestra sobre uso de inteligência artificial para ampliar a produção, análise e qualificação da geoinformação e dados espaciais.",
+    conteudo: `A palestra apresentou iniciativas voltadas ao uso de inteligência artificial para ampliar a produção, análise e qualificação da geoinformação. O tema dialoga diretamente com os desafios atuais dos órgãos públicos, que precisam lidar com grande volume de dados espaciais, imagens, mapas, bases cadastrais e informações territoriais em constante atualização.
+
+O conteúdo demonstrou que a inteligência artificial pode apoiar a identificação de padrões, a classificação de imagens, a interpretação de dados espaciais, a detecção de mudanças no território e a produção mais rápida de informações geográficas qualificadas.
+
+A palestra também reforçou que a IA depende de bases organizadas, dados confiáveis e objetivos bem definidos. Sem uma boa estrutura de dados, os modelos de inteligência artificial perdem precisão e podem gerar resultados pouco úteis para a gestão pública.
+
+Para a COMLURB, esse conhecimento pode ser aplicado em temas como identificação de pontos de descarte irregular, monitoramento de áreas críticas, análise de imagens de drones, apoio à fiscalização, leitura territorial de grandes eventos, acompanhamento de áreas verdes, suporte à poda urbana e melhoria da inteligência operacional da limpeza urbana.
+
+A principal contribuição da palestra foi mostrar que a inteligência artificial pode acelerar a produção de geoinformação, mas seu valor depende da qualidade da base territorial e da capacidade institucional de transformar análise em decisão.`
   }
 ];
