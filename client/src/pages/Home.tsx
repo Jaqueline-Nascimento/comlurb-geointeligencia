@@ -130,6 +130,179 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Cards Interativos - Benefícios Estratégicos */}
+      <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
+        <div className="container">
+          <h2 className="text-4xl font-bold mb-12 text-center text-foreground">Benefícios Estratégicos da Geointeligência</h2>
+          
+          {/* Primeira Fileira - 4 Cards */}
+          <div className="grid md:grid-cols-4 gap-6 mb-8">
+            {/* Card 1 - Redução de Custos */}
+            <div className="group relative h-80 cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div>
+                  <h3 className="text-xl font-bold mb-4">Redução de Custos</h3>
+                  <p className="text-sm leading-relaxed mb-4">Otimização de rotas reduz combustível em até 30%. Manutenção preditiva evita falhas custosas. ROI em 18 meses.</p>
+                </div>
+                <button className="bg-white text-green-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
+                  Saiba Mais
+                </button>
+              </div>
+              <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-green-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-3xl">💰</span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Redução de Custos</h3>
+                <p className="text-sm text-muted-foreground mt-2">Até 30% em combustível</p>
+              </div>
+            </div>
+
+            {/* Card 2 - Eficiência Operacional */}
+            <div className="group relative h-80 cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div>
+                  <h3 className="text-xl font-bold mb-4">Eficiência Operacional</h3>
+                  <p className="text-sm leading-relaxed mb-4">Automação de roteiros aumenta produtividade em 40%. Equipes trabalham com dados em tempo real. Menos desperdício.</p>
+                </div>
+                <button className="bg-white text-blue-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
+                  Saiba Mais
+                </button>
+              </div>
+              <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-blue-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-3xl">⚡</span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Eficiência Operacional</h3>
+                <p className="text-sm text-muted-foreground mt-2">+40% de produtividade</p>
+              </div>
+            </div>
+
+            {/* Card 3 - Fiscalização Inteligente */}
+            <div className="group relative h-80 cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div>
+                  <h3 className="text-xl font-bold mb-4">Fiscalização Inteligente</h3>
+                  <p className="text-sm leading-relaxed mb-4">IA detecta descarte irregular 24/7. Sensores monitoram ativos sem vistoria humana. Resposta em tempo real.</p>
+                </div>
+                <button className="bg-white text-purple-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
+                  Saiba Mais
+                </button>
+              </div>
+              <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-purple-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-3xl">🔍</span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Fiscalização Inteligente</h3>
+                <p className="text-sm text-muted-foreground mt-2">Monitoramento 24/7</p>
+              </div>
+            </div>
+
+            {/* Card 4 - Sustentabilidade */}
+            <div className="group relative h-80 cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div>
+                  <h3 className="text-xl font-bold mb-4">Sustentabilidade</h3>
+                  <p className="text-sm leading-relaxed mb-4">Redução de emissões de carbono. Otimização de recursos. Cidades mais limpas e verdes. Impacto ambiental mensurável.</p>
+                </div>
+                <button className="bg-white text-emerald-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
+                  Saiba Mais
+                </button>
+              </div>
+              <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-emerald-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
+                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-3xl">🌱</span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Sustentabilidade</h3>
+                <p className="text-sm text-muted-foreground mt-2">Redução de carbono</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Segunda Fileira - 4 Cards */}
+          <div className="grid md:grid-cols-4 gap-6">
+            {/* Card 5 - ROI Garantido */}
+            <div className="group relative h-80 cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div>
+                  <h3 className="text-xl font-bold mb-4">ROI Garantido</h3>
+                  <p className="text-sm leading-relaxed mb-4">Retorno do investimento em 18 meses. Economia anual de milhões. Modelo financeiro comprovado em outras cidades.</p>
+                </div>
+                <button className="bg-white text-orange-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
+                  Saiba Mais
+                </button>
+              </div>
+              <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-orange-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-3xl">📈</span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">ROI Garantido</h3>
+                <p className="text-sm text-muted-foreground mt-2">18 meses de retorno</p>
+              </div>
+            </div>
+
+            {/* Card 6 - Liderança de Mercado */}
+            <div className="group relative h-80 cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-red-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div>
+                  <h3 className="text-xl font-bold mb-4">Liderança de Mercado</h3>
+                  <p className="text-sm leading-relaxed mb-4">COMLURB se torna referência global. Modelo exportável para outras cidades. Oportunidades de consultoria e parcerias.</p>
+                </div>
+                <button className="bg-white text-red-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
+                  Saiba Mais
+                </button>
+              </div>
+              <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-red-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
+                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-3xl">👑</span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Liderança de Mercado</h3>
+                <p className="text-sm text-muted-foreground mt-2">Referência global</p>
+              </div>
+            </div>
+
+            {/* Card 7 - Inovação Tecnológica */}
+            <div className="group relative h-80 cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-cyan-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div>
+                  <h3 className="text-xl font-bold mb-4">Inovação Tecnológica</h3>
+                  <p className="text-sm leading-relaxed mb-4">Integração com IA, IoT e Drones. Plataformas de última geração. Atração de talentos tech. Parcerias com startups.</p>
+                </div>
+                <button className="bg-white text-cyan-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
+                  Saiba Mais
+                </button>
+              </div>
+              <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-cyan-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
+                <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-3xl">🚀</span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Inovação Tecnológica</h3>
+                <p className="text-sm text-muted-foreground mt-2">IA, IoT e Drones</p>
+              </div>
+            </div>
+
+            {/* Card 8 - Transformação Digital */}
+            <div className="group relative h-80 cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div>
+                  <h3 className="text-xl font-bold mb-4">Transformação Digital</h3>
+                  <p className="text-sm leading-relaxed mb-4">Modernização completa da operação. Cultura data-driven. Equipes capacitadas e motivadas. Futuro garantido.</p>
+                </div>
+                <button className="bg-white text-indigo-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
+                  Saiba Mais
+                </button>
+              </div>
+              <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-indigo-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
+                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-3xl">🌐</span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Transformação Digital</h3>
+                <p className="text-sm text-muted-foreground mt-2">Modernização completa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Integração e Dados Abertos */}
       <section className="py-20 bg-white">
         <div className="container">
