@@ -34,7 +34,7 @@ export default function Home() {
         }}
       >
         {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 via-slate-900/35 to-slate-900/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/20 via-slate-900/15 to-slate-900/10"></div>
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
