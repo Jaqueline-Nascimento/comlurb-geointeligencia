@@ -39,7 +39,7 @@ export default function Cursos() {
               <img
                 src="/manus-storage/geointeligencia_limpeza_urbana_83763dcd.png"
                 alt="Geointeligência na Limpeza Urbana"
-                className="w-full max-w-md h-auto object-contain"
+                className="w-full max-w-2xl h-auto object-contain"
               />
             </div>
 
