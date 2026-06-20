@@ -95,7 +95,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container">
           <div className="max-w-3xl mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-foreground">O que vimos no MundoGEO Connect 2026</h2>
+            <h2 className="text-4xl font-bold mb-4 text-foreground">Inovações que é importante saber</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               O futuro da gestão urbana é geoespacial e automatizado. Vimos soluções maduras de IA, Gêmeos Digitais e IoT prontas para escala. A tecnologia não é mais uma promessa, mas uma ferramenta de prateleira pronta para transformar cidades.
             </p>
