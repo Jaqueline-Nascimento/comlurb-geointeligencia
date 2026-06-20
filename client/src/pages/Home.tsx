@@ -101,12 +101,8 @@ export default function Home() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8 border-l-4 border-l-green-600 hover:shadow-lg transition">
-              <Brain className="w-12 h-12 text-green-600 mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-foreground">GeoIA (Inteligência Artificial Geoespacial)</h3>
-              <p className="text-muted-foreground">É o "cérebro" que interpreta o mapa e devolve insights permitindo que a gestão da limpeza, das áreas verdes e qualquer outro serviço seja feita com precisão cirúrgica, otimização, tempo de equipe e recursos públicos.</p>
-            </Card>
-            <Card className="p-8 border-l-4 border-l-blue-600 hover:shadow-lg transition">
+            <GeoIACard />
+            <Card className="p-8 border-l-4 border-l-blue-600 hover:shadow-lg transition cursor-pointer">
               <Globe className="w-12 h-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-bold mb-3 text-foreground">Gêmeos Digitais</h3>
               <p className="text-muted-foreground">Simulação operacional em tempo real para otimizar rotas, recursos e resposta a emergências urbanas.</p>
@@ -558,6 +554,45 @@ function NetworkingCard({ contact }: { contact: NetworkingContact }) {
         )}
       </div>
     </div>
+  );
+}
+
+function GeoIACard() {
+  const [isExpanded, setIsExpanded] = React.useState(false);
+
+  return (
+    <Card 
+      className="p-8 border-l-4 border-l-green-600 hover:shadow-lg transition cursor-pointer"
+      onClick={() => setIsExpanded(!isExpanded)}
+    >
+      <Brain className="w-12 h-12 text-green-600 mb-4" />
+      <h3 className="text-xl font-bold mb-3 text-foreground">GeoIA (Inteligência Artificial Geoespacial)</h3>
+      <p className="text-muted-foreground">É o "cérebro" que interpreta o mapa e devolve insights permitindo que a gestão da limpeza, das áreas verdes e qualquer outro serviço seja feita com precisão cirúrgica, otimização, tempo de equipe e recursos públicos.</p>
+      
+      {isExpanded && (
+        <div className="mt-6 pt-6 border-t border-border">
+          <h4 className="text-lg font-bold mb-4 text-foreground">GeoIA na Limpeza</h4>
+          <p className="text-sm text-muted-foreground mb-4">Para a operação de limpeza GeoIA foca em logística e eficiência:</p>
+          
+          <div className="space-y-4">
+            <div>
+              <h5 className="font-semibold text-foreground mb-2">Otimização de Rotas Dinâmicas</h5>
+              <p className="text-sm text-muted-foreground">Diferente de rotas fixas, a GeoIA pode recalcular o trajeto das equipes de limpeza em tempo real, baseando-se na densidade de resíduos detectada por sensores ou frequência de chamados (como o 1746).</p>
+            </div>
+            
+            <div>
+              <h5 className="font-semibold text-foreground mb-2">Manutenção Preditiva da Arborização</h5>
+              <p className="text-sm text-muted-foreground">No caso do ArboRio, a GeoIA pode analisar o histórico de crescimento de certas espécies e condições climáticas para prever qual árvore tem maior risco de queda ou necessidade de poda iminente, transformando a limpeza urbana de "reativa" em "preventiva".</p>
+            </div>
+            
+            <div>
+              <h5 className="font-semibold text-foreground mb-2">Monitoramento de Pontos Críticos</h5>
+              <p className="text-sm text-muted-foreground">Identificação de padrões geográficos de descarte irregular de lixo, permitindo que a empresa direcione ações de limpeza e fiscalização para os locais com maior probabilidade de reincidência.</p>
+            </div>
+          </div>
+        </div>
+      )}
+    </Card>
   );
 }
 
