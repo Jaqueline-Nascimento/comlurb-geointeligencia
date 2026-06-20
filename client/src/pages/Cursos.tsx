@@ -98,7 +98,7 @@ export default function Cursos() {
                     </p>
                   </div>
                   <div className="border-t pt-4">
-                    <h4 className="text-lg font-bold text-blue-600 mb-3">Aplicação na COMLURB</h4>
+                    <h4 className="text-lg font-bold text-blue-600 mb-3">Aplicabilidade na COMLURB</h4>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex gap-3">
                         <span className="text-green-600 font-bold">✓</span>
@@ -139,7 +139,7 @@ export default function Cursos() {
                     </p>
                   </div>
                   <div className="border-t pt-4">
-                    <h4 className="text-lg font-bold text-green-600 mb-3">Aplicação na COMLURB</h4>
+                    <h4 className="text-lg font-bold text-green-600 mb-3">Aplicabilidade na COMLURB</h4>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex gap-3">
                         <span className="text-blue-600 font-bold">✓</span>
@@ -180,7 +180,7 @@ export default function Cursos() {
                     </p>
                   </div>
                   <div className="border-t pt-4">
-                    <h4 className="text-lg font-bold text-green-600 mb-3">Aplicação na COMLURB</h4>
+                    <h4 className="text-lg font-bold text-green-600 mb-3">Aplicabilidade na COMLURB</h4>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex gap-3">
                         <span className="text-purple-600 font-bold">✓</span>
@@ -221,7 +221,7 @@ export default function Cursos() {
                     </p>
                   </div>
                   <div className="border-t pt-4">
-                    <h4 className="text-lg font-bold text-green-600 mb-3">Aplicação na COMLURB</h4>
+                    <h4 className="text-lg font-bold text-green-600 mb-3">Aplicabilidade na COMLURB</h4>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex gap-3">
                         <span className="text-orange-600 font-bold">✓</span>
