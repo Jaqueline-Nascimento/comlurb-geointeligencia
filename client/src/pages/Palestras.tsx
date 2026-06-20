@@ -46,20 +46,20 @@ export default function Palestras() {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-bold mb-8 text-foreground leading-tight">
-              Palestras e Conhecimentos Estratégicos do Congresso MundoGEO Connect 2026
+              Palestras Livres e Painéis Técnicos do Congresso MundoGEO Connect 2026
             </h1>
 
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                As palestras assistidas no Congresso MundoGEO Connect 2026 apresentaram uma visão abrangente sobre o futuro da gestão urbana, com foco na integração entre geotecnologias, inteligência artificial e inteligência geográfica.
+                Além dos cursos técnicos realizados pela equipe da COMLURB, a participação no Congresso MundoGEO Connect 2026 possibilitou o acompanhamento de palestras e painéis voltados à aplicação prática das geotecnologias na gestão pública.
               </p>
 
               <p>
-                Os palestrantes destacaram que as organizações que dominarem a inteligência espacial liderarão as próximas décadas. A mensagem central foi que o investimento em dados de qualidade, adoção de plataformas de IA espacial e capacitação de equipes multidisciplinares são os pilares para a transformação digital.
+                Essas apresentações trouxeram experiências de diferentes cidades, instituições e especialistas, demonstrando que a modernização da gestão urbana não depende apenas da aquisição de ferramentas tecnológicas. O ponto central apresentado foi a necessidade de estruturar dados, integrar sistemas, capacitar pessoas, criar governança e transformar a informação territorial em inteligência para a tomada de decisão.
               </p>
 
               <p>
-                Nesta seção, são apresentadas as principais palestras acompanhadas, com destaque para os temas mais relevantes e sua aplicabilidade na COMLURB.
+                A seguir, são listadas as principais palestras livres e painéis acompanhados, com resumo dos assuntos abordados.
               </p>
             </div>
 
