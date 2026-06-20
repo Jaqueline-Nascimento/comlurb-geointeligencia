@@ -139,22 +139,9 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-6 mb-8">
             {/* Card 1 - Redução de Custos */}
             <div className="group relative h-80 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                <div>
-                  <h3 className="text-xl font-bold mb-4">Redução de Custos</h3>
-                  <p className="text-sm leading-relaxed mb-4">Otimização de rotas reduz combustível em até 30%. Manutenção preditiva evita falhas custosas. ROI em 18 meses.</p>
-                </div>
-                <div className="flex gap-2 flex-col">
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Cursos que participamos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Palestras que assistimos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Geointeligência em outras prefeituras
-                  </button>
-                </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-lg p-8 flex flex-col justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <h3 className="text-xl font-bold mb-4">Redução de Custos</h3>
+                <p className="text-sm leading-relaxed">Otimização de rotas reduz combustível em até 30%. Manutenção preditiva evita falhas custosas. ROI em 18 meses.</p>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-green-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
@@ -167,22 +154,9 @@ export default function Home() {
 
             {/* Card 2 - Eficiência Operacional */}
             <div className="group relative h-80 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                <div>
-                  <h3 className="text-xl font-bold mb-4">Eficiência Operacional</h3>
-                  <p className="text-sm leading-relaxed mb-4">Automação de roteiros aumenta produtividade em 40%. Equipes trabalham com dados em tempo real. Menos desperdício.</p>
-                </div>
-                <div className="flex gap-2 flex-col">
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Cursos que participamos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Palestras que assistimos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Geointeligência em outras prefeituras
-                  </button>
-                </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg p-8 flex flex-col justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <h3 className="text-xl font-bold mb-4">Eficiência Operacional</h3>
+                <p className="text-sm leading-relaxed">Automação de roteiros aumenta produtividade em 40%. Equipes trabalham com dados em tempo real. Menos desperdício.</p>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-blue-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
@@ -195,22 +169,9 @@ export default function Home() {
 
             {/* Card 3 - Fiscalização Inteligente */}
             <div className="group relative h-80 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                <div>
-                  <h3 className="text-xl font-bold mb-4">Fiscalização Inteligente</h3>
-                  <p className="text-sm leading-relaxed mb-4">IA detecta descarte irregular 24/7. Sensores monitoram ativos sem vistoria humana. Resposta em tempo real.</p>
-                </div>
-                <div className="flex gap-2 flex-col">
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Cursos que participamos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Palestras que assistimos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Geointeligência em outras prefeituras
-                  </button>
-                </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg p-8 flex flex-col justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <h3 className="text-xl font-bold mb-4">Fiscalização Inteligente</h3>
+                <p className="text-sm leading-relaxed">IA detecta descarte irregular 24/7. Sensores monitoram ativos sem vistoria humana. Resposta em tempo real.</p>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-purple-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
@@ -223,22 +184,9 @@ export default function Home() {
 
             {/* Card 4 - Sustentabilidade */}
             <div className="group relative h-80 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                <div>
-                  <h3 className="text-xl font-bold mb-4">Sustentabilidade</h3>
-                  <p className="text-sm leading-relaxed mb-4">Redução de emissões de carbono. Otimização de recursos. Cidades mais limpas e verdes. Impacto ambiental mensurável.</p>
-                </div>
-                <div className="flex gap-2 flex-col">
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Cursos que participamos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Palestras que assistimos
-                  </button>
-                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
-                    Geointeligência em outras prefeituras
-                  </button>
-                </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-lg p-8 flex flex-col justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <h3 className="text-xl font-bold mb-4">Sustentabilidade</h3>
+                <p className="text-sm leading-relaxed">Redução de emissões de carbono. Otimização de recursos. Cidades mais limpas e verdes. Impacto ambiental mensurável.</p>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-emerald-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
@@ -430,6 +378,19 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Seção de Botões - Cursos, Palestras e Prefeituras */}
+        <div className="mt-16 flex flex-col md:flex-row gap-6 justify-center">
+          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition duration-300 text-lg">
+            Cursos que participamos
+          </button>
+          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition duration-300 text-lg">
+            Palestras que assistimos
+          </button>
+          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition duration-300 text-lg">
+            Geointeligência em outras prefeituras
+          </button>
         </div>
       </section>
 
