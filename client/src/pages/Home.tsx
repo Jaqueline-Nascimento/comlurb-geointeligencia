@@ -87,23 +87,7 @@ export default function Home() {
         <div className="container">
           <h2 className="text-4xl font-bold mb-12 text-foreground text-center">Networking</h2>
           
-          <div className="relative">
-            <div className="flex items-center justify-between gap-4 overflow-x-auto pb-4">
-              <button className="flex-shrink-0 w-10 h-10 rounded-full bg-white border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100 transition">
-                ‹
-              </button>
-              
-              <div className="flex gap-4 overflow-x-auto flex-1 snap-x snap-mandatory">
-                {networkingContacts.map((contact, index) => (
-                  <NetworkingCard key={index} contact={contact} />
-                ))}
-              </div>
-              
-              <button className="flex-shrink-0 w-10 h-10 rounded-full bg-white border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100 transition">
-                ›
-              </button>
-            </div>
-          </div>
+          <NetworkingCarousel />
         </div>
       </section>
 
@@ -573,6 +557,49 @@ function NetworkingCard({ contact }: { contact: NetworkingContact }) {
           </div>
         )}
       </div>
+    </div>
+  );
+}
+
+function NetworkingCarousel() {
+  const scrollContainerRef = React.useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollContainerRef.current) {
+      const scrollAmount = 400;
+      if (direction === 'left') {
+        scrollContainerRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      } else {
+        scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    }
+  };
+
+  return (
+    <div className="relative flex items-center justify-center gap-4">
+      <button
+        onClick={() => scroll('left')}
+        className="flex-shrink-0 w-10 h-10 rounded-full bg-white border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100 transition z-10"
+      >
+        ‹
+      </button>
+
+      <div
+        ref={scrollContainerRef}
+        className="flex gap-4 overflow-x-auto flex-1 scroll-smooth"
+        style={{ scrollBehavior: 'smooth' }}
+      >
+        {networkingContacts.map((contact, index) => (
+          <NetworkingCard key={index} contact={contact} />
+        ))}
+      </div>
+
+      <button
+        onClick={() => scroll('right')}
+        className="flex-shrink-0 w-10 h-10 rounded-full bg-white border-2 border-gray-300 flex items-center justify-center hover:bg-gray-100 transition z-10"
+      >
+        ›
+      </button>
     </div>
   );
 }
