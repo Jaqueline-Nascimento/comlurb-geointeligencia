@@ -41,7 +41,7 @@ export default function Home() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">Geointeligência na Limpeza Urbana</span>
             </h1>
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-              A COMLURB está pronta para transformar a gestão urbana através de inteligência artificial, dados geoespaciais e inovação operacional. Somos a maior empresa de limpeza pública da América Latina. Agora, nos tornaremos a primeira a operar com geointeligência plena.
+              A Geointeligência Urbana serve para transformar dados complexos em mapas e rotas operacionais, auxiliando governos e empresas na gestão do território, melhoria da infraestrutura e tomada de decisões rápidas e assertivas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
