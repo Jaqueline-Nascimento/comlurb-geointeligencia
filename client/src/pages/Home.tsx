@@ -103,8 +103,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-8 border-l-4 border-l-green-600 hover:shadow-lg transition">
               <Brain className="w-12 h-12 text-green-600 mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-foreground">Inteligência Artificial</h3>
-              <p className="text-muted-foreground">Classificação de imagens, análise de padrões e automação de processos para decisões mais rápidas e precisas.</p>
+              <h3 className="text-xl font-bold mb-3 text-foreground">GeoIA (Inteligência Artificial Geoespacial)</h3>
+              <p className="text-muted-foreground">é o "cérebro" que interpreta o mapa, permitindo que a gestão da limpeza e das áreas verdes seja feita com precisão cirúrgica, economizando combustível, tempo de equipe e recursos públicos.</p>
             </Card>
             <Card className="p-8 border-l-4 border-l-blue-600 hover:shadow-lg transition">
               <Globe className="w-12 h-12 text-blue-600 mb-4" />
