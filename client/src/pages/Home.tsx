@@ -102,11 +102,7 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <GeoIACard />
-            <Card className="p-8 border-l-4 border-l-blue-600 hover:shadow-lg transition cursor-pointer">
-              <Globe className="w-12 h-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-foreground">Gêmeos Digitais</h3>
-              <p className="text-muted-foreground">Se a GeoIA diz à sua empresa quando e onde agir, o Gêmeo Digital mostra como a ação vai impactar o mundo real.</p>
-            </Card>
+            <DigitalTwinsCard />
             <Card className="p-8 border-l-4 border-l-purple-600 hover:shadow-lg transition">
               <Zap className="w-12 h-12 text-purple-600 mb-4" />
               <h3 className="text-xl font-bold mb-3 text-foreground">Internet das Coisas</h3>
@@ -554,6 +550,77 @@ function NetworkingCard({ contact }: { contact: NetworkingContact }) {
         )}
       </div>
     </div>
+  );
+}
+
+function DigitalTwinsCard() {
+  const [isExpanded, setIsExpanded] = React.useState(false);
+
+  return (
+    <Card 
+      className="p-8 border-l-4 border-l-blue-600 hover:shadow-lg transition cursor-pointer"
+      onClick={() => setIsExpanded(!isExpanded)}
+    >
+      <Globe className="w-12 h-12 text-blue-600 mb-4" />
+      <h3 className="text-xl font-bold mb-3 text-foreground">Gêmeos Digitais</h3>
+      <p className="text-muted-foreground">Se a GeoIA diz à sua empresa quando e onde agir, o Gêmeo Digital mostra como a ação vai impactar o mundo real.</p>
+      
+      {isExpanded && (
+        <div className="mt-6 pt-6 border-t border-border">
+          <h4 className="text-lg font-bold mb-4 text-foreground">A Integração: Sentir, Pensar e Agir</h4>
+          <p className="text-sm text-muted-foreground mb-6">A integração da GeoIA e dos Gêmeos Digitais como um ciclo de "Sentir, Pensar e Agir".</p>
+          
+          <div className="space-y-6">
+            <div>
+              <h5 className="font-semibold text-foreground mb-2">Coleta de Resíduos</h5>
+              <p className="text-sm text-muted-foreground"><strong>Com Gêmeo Digital:</strong> Você pode simular no modelo 3D se um novo modelo de caminhão (maior ou elétrico) consegue fazer as curvas em ruas estreitas de uma comunidade ou se a nova posição de um contêiner vai bloquear o fluxo de pedestres na calçada.</p>
+            </div>
+            
+            <div>
+              <h5 className="font-semibold text-foreground mb-2">Varrição de Logradouros</h5>
+              <p className="text-sm text-muted-foreground"><strong>Com Gêmeo Digital:</strong> O gestor visualiza um mapa de calor (heatmap) de sujeira no modelo 3D da cidade. Se uma praça aparece sempre "vermelha" no Gêmeo Digital, a empresa pode decidir, via simulação, que é mais barato instalar mais três lixeiras naquele ponto do que enviar o gari duas vezes ao dia.</p>
+            </div>
+            
+            <div>
+              <h5 className="font-semibold text-foreground mb-2">Poda de Árvores (Manejo de Precisão no ArboRio)</h5>
+              <p className="text-sm text-muted-foreground"><strong>Com Gêmeo Digital:</strong> Antes de enviar o cesto aéreo, o engenheiro florestal abre o Gêmeo Digital e faz uma poda virtual. Ele vê exatamente qual galho deve ser cortado e simula se a remoção daquela massa foliar vai deixar um prédio vizinho exposto a um calor excessivo (perda de sombra), permitindo um ajuste fino no plano de manejo.</p>
+            </div>
+          </div>
+          
+          <div className="mt-6 pt-6 border-t border-border">
+            <h4 className="text-lg font-bold mb-4 text-foreground">Comparação: GeoIA vs Gêmeo Digital</h4>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-border">
+                    <th className="text-left py-2 px-3 font-semibold text-foreground">Atividade</th>
+                    <th className="text-left py-2 px-3 font-semibold text-foreground">O que a GeoIA faz (Inteligência)</th>
+                    <th className="text-left py-2 px-3 font-semibold text-foreground">O que o Gêmeo Digital faz (Visualização/Teste)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-border hover:bg-slate-50">
+                    <td className="py-2 px-3 font-semibold text-foreground">Coleta</td>
+                    <td className="py-2 px-3 text-muted-foreground">Prevé o volume de lixo e cria a rota mais curta.</td>
+                    <td className="py-2 px-3 text-muted-foreground">Testa se o caminhão cabe na rua e o impacto no tránsito.</td>
+                  </tr>
+                  <tr className="border-b border-border hover:bg-slate-50">
+                    <td className="py-2 px-3 font-semibold text-foreground">Varrição</td>
+                    <td className="py-2 px-3 text-muted-foreground">Detecta lixo no chão via câmeras automaticamente.</td>
+                    <td className="py-2 px-3 text-muted-foreground">Identifica visualmente onde o lixo mais se acumula no mapa.</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="py-2 px-3 font-semibold text-foreground">Poda</td>
+                    <td className="py-2 px-3 text-muted-foreground">Identifica conflitos com a rede elétrica via laser.</td>
+                    <td className="py-2 px-3 text-muted-foreground">Permite "ensaiar" o corte e ver o impacto na sombra da rua.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      )}
+    </Card>
   );
 }
 
