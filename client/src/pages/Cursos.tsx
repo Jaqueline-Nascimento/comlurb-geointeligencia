@@ -393,11 +393,11 @@ export default function Cursos() {
           
           <div className="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg overflow-hidden shadow-2xl">
             {/* Main Image */}
-            <div className="relative w-full h-96 md:h-[500px] overflow-hidden">
+            <div className="relative w-full h-auto md:h-auto overflow-hidden">
               <img
                 src={carouselImages[currentImageIndex]}
                 alt={`Imagem ${currentImageIndex + 1}`}
-                className="w-full h-full object-cover transition-opacity duration-500"
+                className="w-full h-auto object-contain transition-opacity duration-500"
               />
               
               {/* Navigation Buttons */}
