@@ -59,7 +59,11 @@ export default function Home() {
               </Button>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold">
+              <Button
+                size="lg"
+                className="bg-green-600 hover:bg-green-700 text-white font-bold"
+                onClick={() => navigate("/cursos")}
+              >
                 Cursos que participamos
               </Button>
               <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold">
