@@ -1,4 +1,4 @@
-import { ArrowLeft, ChevronDown } from "lucide-react";
+import { ArrowLeft, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
@@ -140,12 +140,39 @@ Para a COMLURB, esse curso evidencia que o caminho da inovação passa por uma s
   }
 ];
 
+const carouselImages = [
+  "/manus-storage/20260616_090656_0fb4a5f5.webp",
+  "/manus-storage/20260616_091553_87335347.webp",
+  "/manus-storage/20260616_092655_4ecff374.webp",
+  "/manus-storage/20260616_091448_bd6c52aa.webp",
+  "/manus-storage/20260616_141601_bf1ebec1.webp",
+  "/manus-storage/20260616_142455_d089d76c.webp",
+  "/manus-storage/20260616_142609_4a256e0b.webp",
+  "/manus-storage/20260616_143121_2c174835.webp",
+  "/manus-storage/20260616_142925_7f408d31.webp",
+  "/manus-storage/20260616_143630_a7e593ec.webp",
+  "/manus-storage/20260616_143653_7cf33545.webp",
+  "/manus-storage/20260616_142747_3b5503bc.webp",
+  "/manus-storage/20260617_151921_6ed563ab.webp",
+  "/manus-storage/20260616_102733_cb473748.webp",
+  "/manus-storage/20260617_152228_f0671281.webp"
+];
+
 export default function Cursos() {
   const [, navigate] = useLocation();
   const [expandedCourse, setExpandedCourse] = useState<number | null>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const toggleCourse = (id: number) => {
     setExpandedCourse(expandedCourse === id ? null : id);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % carouselImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
   };
 
   return (
@@ -356,6 +383,67 @@ export default function Cursos() {
               )}
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Carousel Section */}
+      <section className="py-20 bg-white">
+        <div className="container">
+          <h2 className="text-4xl font-bold mb-12 text-foreground text-center">Momentos do Congresso</h2>
+          
+          <div className="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg overflow-hidden shadow-2xl">
+            {/* Main Image */}
+            <div className="relative w-full h-96 md:h-[500px] overflow-hidden">
+              <img
+                src={carouselImages[currentImageIndex]}
+                alt={`Imagem ${currentImageIndex + 1}`}
+                className="w-full h-full object-cover transition-opacity duration-500"
+              />
+              
+              {/* Navigation Buttons */}
+              <button
+                onClick={prevImage}
+                className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition"
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </button>
+              
+              <button
+                onClick={nextImage}
+                className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition"
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
+
+              {/* Image Counter */}
+              <div className="absolute bottom-4 right-4 bg-black/70 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                {currentImageIndex + 1} / {carouselImages.length}
+              </div>
+            </div>
+
+            {/* Thumbnail Navigation */}
+            <div className="bg-slate-50 p-6 overflow-x-auto">
+              <div className="flex gap-3 justify-center md:justify-start">
+                {carouselImages.map((image, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition ${
+                      index === currentImageIndex
+                        ? 'border-green-600 shadow-lg'
+                        : 'border-gray-300 hover:border-gray-400'
+                    }`}
+                  >
+                    <img
+                      src={image}
+                      alt={`Thumbnail ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
