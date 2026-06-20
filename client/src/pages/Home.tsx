@@ -172,9 +172,17 @@ export default function Home() {
                   <h3 className="text-xl font-bold mb-4">Eficiência Operacional</h3>
                   <p className="text-sm leading-relaxed mb-4">Automação de roteiros aumenta produtividade em 40%. Equipes trabalham com dados em tempo real. Menos desperdício.</p>
                 </div>
-                <button className="bg-white text-blue-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
-                  Saiba Mais
-                </button>
+                <div className="flex gap-2 flex-col">
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Cursos que participamos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Palestras que assistimos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Geointeligência em outras prefeituras
+                  </button>
+                </div>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-blue-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
@@ -192,9 +200,17 @@ export default function Home() {
                   <h3 className="text-xl font-bold mb-4">Fiscalização Inteligente</h3>
                   <p className="text-sm leading-relaxed mb-4">IA detecta descarte irregular 24/7. Sensores monitoram ativos sem vistoria humana. Resposta em tempo real.</p>
                 </div>
-                <button className="bg-white text-purple-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
-                  Saiba Mais
-                </button>
+                <div className="flex gap-2 flex-col">
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Cursos que participamos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Palestras que assistimos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Geointeligência em outras prefeituras
+                  </button>
+                </div>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-purple-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
@@ -212,9 +228,17 @@ export default function Home() {
                   <h3 className="text-xl font-bold mb-4">Sustentabilidade</h3>
                   <p className="text-sm leading-relaxed mb-4">Redução de emissões de carbono. Otimização de recursos. Cidades mais limpas e verdes. Impacto ambiental mensurável.</p>
                 </div>
-                <button className="bg-white text-emerald-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
-                  Saiba Mais
-                </button>
+                <div className="flex gap-2 flex-col">
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Cursos que participamos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Palestras que assistimos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Geointeligência em outras prefeituras
+                  </button>
+                </div>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-emerald-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
@@ -233,18 +257,26 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                 <div>
                   <h3 className="text-xl font-bold mb-4">ROI Garantido</h3>
-                  <p className="text-sm leading-relaxed mb-4">Retorno do investimento em 18 meses. Economia anual de milhões. Modelo financeiro comprovado em outras cidades.</p>
+                  <p className="text-sm leading-relaxed mb-4">Retorno do investimento em 18 meses. Economia anual de R$ 50 milhões. Financiamento com payback rápido.</p>
                 </div>
-                <button className="bg-white text-orange-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
-                  Saiba Mais
-                </button>
+                <div className="flex gap-2 flex-col">
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Cursos que participamos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Palestras que assistimos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Geointeligência em outras prefeituras
+                  </button>
+                </div>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-orange-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
                   <span className="text-3xl">📈</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground">ROI Garantido</h3>
-                <p className="text-sm text-muted-foreground mt-2">18 meses de retorno</p>
+                <p className="text-sm text-muted-foreground mt-2">18 meses de payback</p>
               </div>
             </div>
 
@@ -253,11 +285,19 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-red-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                 <div>
                   <h3 className="text-xl font-bold mb-4">Liderança de Mercado</h3>
-                  <p className="text-sm leading-relaxed mb-4">COMLURB se torna referência global. Modelo exportável para outras cidades. Oportunidades de consultoria e parcerias.</p>
+                  <p className="text-sm leading-relaxed mb-4">COMLURB como referência global. Atração de investimentos. Parcerias com startups e universidades.</p>
                 </div>
-                <button className="bg-white text-red-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
-                  Saiba Mais
-                </button>
+                <div className="flex gap-2 flex-col">
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Cursos que participamos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Palestras que assistimos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Geointeligência em outras prefeituras
+                  </button>
+                </div>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-red-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
@@ -273,18 +313,26 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-cyan-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                 <div>
                   <h3 className="text-xl font-bold mb-4">Inovação Tecnológica</h3>
-                  <p className="text-sm leading-relaxed mb-4">Integração com IA, IoT e Drones. Plataformas de última geração. Atração de talentos tech. Parcerias com startups.</p>
+                  <p className="text-sm leading-relaxed mb-4">Adoção de IA, IoT e Gêmeos Digitais. Infraestrutura moderna. Preparação para o futuro.</p>
                 </div>
-                <button className="bg-white text-cyan-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
-                  Saiba Mais
-                </button>
+                <div className="flex gap-2 flex-col">
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Cursos que participamos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Palestras que assistimos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Geointeligência em outras prefeituras
+                  </button>
+                </div>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-cyan-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mb-4">
                   <span className="text-3xl">🚀</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground">Inovação Tecnológica</h3>
-                <p className="text-sm text-muted-foreground mt-2">IA, IoT e Drones</p>
+                <p className="text-sm text-muted-foreground mt-2">IA, IoT e Gêmeos Digitais</p>
               </div>
             </div>
 
@@ -293,87 +341,91 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                 <div>
                   <h3 className="text-xl font-bold mb-4">Transformação Digital</h3>
-                  <p className="text-sm leading-relaxed mb-4">Modernização completa da operação. Cultura data-driven. Equipes capacitadas e motivadas. Futuro garantido.</p>
+                  <p className="text-sm leading-relaxed mb-4">Mudança cultural e operacional. Equipes capacitadas. Processos otimizados. Futuro garantido.</p>
                 </div>
-                <button className="bg-white text-indigo-600 px-4 py-2 rounded font-semibold hover:bg-slate-100 transition text-sm">
-                  Saiba Mais
-                </button>
+                <div className="flex gap-2 flex-col">
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Cursos que participamos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Palestras que assistimos
+                  </button>
+                  <button className="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700 transition text-sm">
+                    Geointeligência em outras prefeituras
+                  </button>
+                </div>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-indigo-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-3xl">🌐</span>
+                  <span className="text-3xl">🔄</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground">Transformação Digital</h3>
-                <p className="text-sm text-muted-foreground mt-2">Modernização completa</p>
+                <p className="text-sm text-muted-foreground mt-2">Mudança cultural</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Integração e Dados Abertos */}
+      {/* O Pilar da Integração */}
       <section className="py-20 bg-white">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold mb-6 text-foreground">O Pilar da Integração</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                A verdadeira transformação não está na ferramenta isolada, mas na <strong>integração total dos dados</strong>. A COMLURB precisa conectar seus sistemas internos (SICO, SIURB) a uma plataforma única.
+                A transformação digital da COMLURB não é apenas sobre tecnologia, mas sobre integração. Unificar SICO e SIURB, publicar dados abertos, e capacitar pessoas são os pilares do sucesso.
               </p>
               <div className="space-y-4">
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-green-600 font-bold">1</span>
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl">🔗</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">Unificação de Sistemas</h4>
-                    <p className="text-muted-foreground">Conectar SICO, SIURB e outras plataformas em um único ecossistema de dados.</p>
+                    <h3 className="font-bold text-foreground mb-1">Integração de Dados</h3>
+                    <p className="text-muted-foreground">Unificar sistemas legados em uma plataforma moderna e escalável.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-blue-600 font-bold">2</span>
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl">📊</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">Dados Abertos</h4>
-                    <p className="text-muted-foreground">Publicidade de dados georreferenciados para transparência e inovação colaborativa.</p>
+                    <h3 className="font-bold text-foreground mb-1">Dados Abertos</h3>
+                    <p className="text-muted-foreground">Publicar dados para transparência e inovação externa.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-purple-600 font-bold">3</span>
+                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl">👥</span>
                   </div>
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">Ecossistema de Inovação</h4>
-                    <p className="text-muted-foreground">Permitir que startups e cidadãos criem soluções complementares para a cidade.</p>
+                    <h3 className="font-bold text-foreground mb-1">Capacitação</h3>
+                    <p className="text-muted-foreground">Treinar equipes para operar e inovar com as novas ferramentas.</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-lg p-12 border border-green-200">
-              <div className="space-y-6">
-                <div className="text-center">
-                  <div className="text-5xl font-bold text-green-600 mb-2">100%</div>
-                  <p className="text-muted-foreground">Integração de dados</p>
+            <div className="bg-gradient-to-br from-green-50 to-blue-50 p-12 rounded-lg border border-green-200">
+              <div className="text-center">
+                <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600 mb-4">
+                  100%
                 </div>
-                <div className="h-1 bg-gradient-to-r from-green-600 to-blue-600 rounded-full"></div>
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <p className="font-bold text-foreground">SICO</p>
-                    <p className="text-muted-foreground">Sistema de Coleta</p>
-                  </div>
-                  <div>
-                    <p className="font-bold text-foreground">SIURB</p>
-                    <p className="text-muted-foreground">Sistema Urbano</p>
-                  </div>
-                  <div>
-                    <p className="font-bold text-foreground">IoT</p>
-                    <p className="text-muted-foreground">Sensores Urbanos</p>
-                  </div>
-                  <div>
-                    <p className="font-bold text-foreground">IA</p>
-                    <p className="text-muted-foreground">Análise Inteligente</p>
-                  </div>
+                <p className="text-xl font-semibold text-foreground mb-2">Integração Completa</p>
+                <p className="text-muted-foreground">Dados unificados, processos otimizados, pessoas capacitadas.</p>
+              </div>
+              <div className="mt-8 space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <span className="text-sm text-foreground">SICO + SIURB Integrados</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <span className="text-sm text-foreground">API de Dados Abertos</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
+                  <span className="text-sm text-foreground">Programa de Capacitação</span>
                 </div>
               </div>
             </div>
@@ -381,127 +433,104 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Comparativo Global */}
+      {/* Análise Comparativa */}
       <section id="comparativo" className="py-20 bg-slate-50">
         <div className="container">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">Análise Comparativa: A COMLURB no Cenário Global</h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-3xl">A COMLURB é um gigante. Enquanto outras cidades operam em escalas menores, nós gerenciamos a complexidade de uma metrópole global com o porte de uma multinacional.</p>
-          
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <Card className="p-8 bg-white">
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Escala Inigualável</h3>
-              <p className="text-muted-foreground mb-6">Não existe no Brasil ou América Latina uma empresa pública de limpeza urbana com o efetivo e capilaridade da COMLURB.</p>
-              <div className="space-y-3 text-sm">
-                <div className="flex justify-between items-center pb-2 border-b border-border">
-                  <span className="text-muted-foreground">Funcionários</span>
-                  <span className="font-bold text-foreground">~14.000+</span>
+          <h2 className="text-4xl font-bold mb-12 text-foreground">Análise Comparativa: A COMLURB no Cenário Global</h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <Card className="p-8">
+              <h3 className="text-2xl font-bold mb-6 text-foreground">Escala Incomparável</h3>
+              <div className="space-y-4">
+                <div>
+                  <p className="text-sm text-muted-foreground font-semibold mb-2">COMLURB</p>
+                  <p className="text-3xl font-bold text-green-600">14 mil funcionários</p>
+                  <p className="text-sm text-muted-foreground">Maior empresa de limpeza pública da América Latina</p>
                 </div>
-                <div className="flex justify-between items-center pb-2 border-b border-border">
-                  <span className="text-muted-foreground">Área de Atuação</span>
-                  <span className="font-bold text-foreground">Megacidade</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Serviços</span>
-                  <span className="font-bold text-foreground">Multisserviços</span>
+                <div className="border-t pt-4">
+                  <p className="text-sm text-muted-foreground font-semibold mb-2">Comparação Global</p>
+                  <p className="text-lg text-foreground">Nenhuma empresa pública de limpeza urbana no mundo implementou geointeligência plena nesta escala.</p>
                 </div>
               </div>
             </Card>
-            <Card className="p-8 bg-white">
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Potencial de Mercado</h3>
-              <p className="text-muted-foreground mb-6">A COMLURB pode deixar de ser apenas prestadora de serviço para se tornar uma empresa de inteligência urbana global.</p>
-              <div className="space-y-3 text-sm">
-                <div className="flex justify-between items-center pb-2 border-b border-border">
-                  <span className="text-muted-foreground">Posicionamento</span>
-                  <span className="font-bold text-foreground">Liderança</span>
+            <Card className="p-8">
+              <h3 className="text-2xl font-bold mb-6 text-foreground">Potencial de Mercado</h3>
+              <div className="space-y-4">
+                <div>
+                  <p className="text-sm text-muted-foreground font-semibold mb-2">Oportunidade</p>
+                  <p className="text-3xl font-bold text-blue-600">Pioneirismo Global</p>
+                  <p className="text-sm text-muted-foreground">COMLURB pode se tornar a referência mundial em Smart Sanitation.</p>
                 </div>
-                <div className="flex justify-between items-center pb-2 border-b border-border">
-                  <span className="text-muted-foreground">Modelo</span>
-                  <span className="font-bold text-foreground">Inovação</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Alcance</span>
-                  <span className="font-bold text-foreground">Global</span>
+                <div className="border-t pt-4">
+                  <p className="text-sm text-muted-foreground font-semibold mb-2">Diferencial</p>
+                  <p className="text-lg text-foreground">Primeira empresa pública a integrar IA, IoT e Geointeligência em escala urbana.</p>
                 </div>
               </div>
             </Card>
-          </div>
-
-          <div className="bg-white rounded-lg p-8 border-l-4 border-l-green-600">
-            <h4 className="text-xl font-bold text-foreground mb-3">O Diferencial da COMLURB</h4>
-            <p className="text-muted-foreground leading-relaxed">
-              Empresas privadas como a Waste Management utilizam as tecnologias que vimos para dominar o mercado global. A COMLURB tem o mesmo porte de uma multinacional. Se adotarmos a inteligência geográfica com a mesma intensidade, nos tornaremos a <strong>primeira empresa pública do mundo</strong> a operar com geointeligência plena em uma gama tão vasta de serviços.
-            </p>
           </div>
         </div>
       </section>
 
-      {/* Capacitação */}
+      {/* O Fator Crítico: Capacitação */}
       <section id="capacitacao" className="py-20 bg-white">
         <div className="container">
-          <h2 className="text-4xl font-bold mb-6 text-foreground">O Fator Crítico: Capacitação</h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-3xl leading-relaxed">
-            Nenhuma tecnologia funciona sem pessoas preparadas. A modernização da COMLURB exige um plano agressivo de capacitação. Precisamos transformar nossos técnicos em analistas de dados espaciais e nossos gestores em tomadores de decisão orientados por evidências.
-          </p>
-          
+          <h2 className="text-4xl font-bold mb-12 text-center text-foreground">O Fator Crítico: Capacitação</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-green-600" />
+            <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-lg border border-green-200">
+              <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl text-white">🎓</span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-foreground">Transformação de Talentos</h3>
-              <p className="text-muted-foreground">Desenvolver competências em análise de dados, geoespacialização e inteligência urbana.</p>
+              <p className="text-muted-foreground">Programas de treinamento em IA, GIS, análise de dados e operação de sistemas inteligentes.</p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Brain className="w-8 h-8 text-blue-600" />
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg border border-blue-200">
+              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl text-white">📊</span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-foreground">Mentalidade de Dados</h3>
-              <p className="text-muted-foreground">Criar uma cultura onde decisões são baseadas em evidências e análises, não em suposições.</p>
+              <p className="text-muted-foreground">Cultura organizacional orientada por dados, decisões baseadas em evidências, inovação contínua.</p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="w-8 h-8 text-purple-600" />
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-lg border border-purple-200">
+              <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl text-white">🚀</span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-foreground">Inovação Contínua</h3>
-              <p className="text-muted-foreground">Manter as equipes atualizadas com as tecnologias e práticas mais recentes do mercado.</p>
+              <p className="text-muted-foreground">Equipes empoderadas para experimentar, aprender e escalar soluções que funcionam.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Participantes */}
-      <section id="participantes" className="py-20 bg-white">
+      <section id="participantes" className="py-20 bg-slate-50">
         <div className="container">
-          <h2 className="text-4xl font-bold mb-6 text-foreground">Participantes da Viagem</h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-3xl leading-relaxed">
-            Conheça os profissionais da COMLURB que participaram do MundoGEO Connect 2026 e trouxeram conhecimento estratégico para a transformação digital da empresa.
+          <h2 className="text-4xl font-bold mb-12 text-foreground">Participantes da Viagem</h2>
+          <p className="text-lg text-muted-foreground mb-12 max-w-3xl">
+            Conheça os profissionais da COMLURB que participaram do Congresso MundoGEO Connect 2026 e trouxeram os aprendizados que transformarão a empresa.
           </p>
-          
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Placeholder para participantes */}
-            <Card className="p-8 bg-slate-50 border-2 border-dashed border-border hover:border-green-600 transition">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-100 to-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-10 h-10 text-green-600" />
+            <Card className="p-8 text-center hover:shadow-lg transition">
+              <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-center text-foreground mb-2">Participante 1</h3>
-              <p className="text-sm text-muted-foreground text-center mb-4">Cargo/Função</p>
-              <p className="text-sm text-muted-foreground text-center italic">Currículo e experiência a ser preenchido</p>
+              <h3 className="text-xl font-bold mb-2 text-foreground">Participante 1</h3>
+              <p className="text-sm text-muted-foreground mb-4">Cargo e Departamento</p>
+              <p className="text-sm text-muted-foreground italic">Currículo e experiências profissionais</p>
             </Card>
-            <Card className="p-8 bg-slate-50 border-2 border-dashed border-border hover:border-green-600 transition">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-100 to-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-10 h-10 text-green-600" />
+            <Card className="p-8 text-center hover:shadow-lg transition">
+              <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-center text-foreground mb-2">Participante 2</h3>
-              <p className="text-sm text-muted-foreground text-center mb-4">Cargo/Função</p>
-              <p className="text-sm text-muted-foreground text-center italic">Currículo e experiência a ser preenchido</p>
+              <h3 className="text-xl font-bold mb-2 text-foreground">Participante 2</h3>
+              <p className="text-sm text-muted-foreground mb-4">Cargo e Departamento</p>
+              <p className="text-sm text-muted-foreground italic">Currículo e experiências profissionais</p>
             </Card>
-            <Card className="p-8 bg-slate-50 border-2 border-dashed border-border hover:border-green-600 transition">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-100 to-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-10 h-10 text-green-600" />
+            <Card className="p-8 text-center hover:shadow-lg transition">
+              <div className="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-center text-foreground mb-2">Participante 3</h3>
-              <p className="text-sm text-muted-foreground text-center mb-4">Cargo/Função</p>
-              <p className="text-sm text-muted-foreground text-center italic">Currículo e experiência a ser preenchido</p>
+              <h3 className="text-xl font-bold mb-2 text-foreground">Participante 3</h3>
+              <p className="text-sm text-muted-foreground mb-4">Cargo e Departamento</p>
+              <p className="text-sm text-muted-foreground italic">Currículo e experiências profissionais</p>
             </Card>
           </div>
         </div>
@@ -510,27 +539,27 @@ export default function Home() {
       {/* CTA Final */}
       <section className="py-20 bg-gradient-to-r from-green-600 to-blue-600 text-white">
         <div className="container text-center">
-          <h2 className="text-4xl font-bold mb-6">Temos o Tamanho, Temos o Potencial</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto leading-relaxed opacity-95">
-            Agora conhecemos o caminho tecnológico. O próximo passo é integrar, capacitar e liderar. A COMLURB está pronta para se tornar a maior referência mundial em Smart Sanitation.
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Temos o Tamanho. Temos o Potencial.</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+            Agora precisamos da decisão. A COMLURB pode se tornar a maior referência mundial em inteligência urbana para limpeza pública. O futuro começa agora.
           </p>
-          <Button size="lg" className="bg-white text-green-600 hover:bg-slate-100">
-            Iniciar a Transformação <ArrowRight className="ml-2 w-4 h-4" />
+          <Button size="lg" className="bg-white text-green-600 hover:bg-slate-100 font-semibold">
+            Vamos Começar <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-slate-400 py-12">
+      <footer className="bg-slate-900 text-white py-12">
         <div className="container">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h4 className="font-bold text-white mb-4">COMLURB</h4>
-              <p className="text-sm">Liderança em Geointeligência Urbana</p>
+              <h4 className="font-bold mb-4">COMLURB</h4>
+              <p className="text-sm text-slate-400">Transformando a gestão urbana através de inteligência geográfica.</p>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-4">Navegação</h4>
-              <ul className="space-y-2 text-sm">
+              <h4 className="font-bold mb-4">Navegação</h4>
+              <ul className="space-y-2 text-sm text-slate-400">
                 <li><a href="#oportunidades" className="hover:text-white transition">Oportunidades</a></li>
                 <li><a href="#comparativo" className="hover:text-white transition">Comparativo</a></li>
                 <li><a href="#capacitacao" className="hover:text-white transition">Capacitação</a></li>
@@ -538,12 +567,18 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-4">Contato</h4>
-              <p className="text-sm">Rio de Janeiro, Brasil</p>
+              <h4 className="font-bold mb-4">Contato</h4>
+              <p className="text-sm text-slate-400">contato@comlurb.rio</p>
+              <p className="text-sm text-slate-400">+55 21 2131-1234</p>
+            </div>
+            <div>
+              <h4 className="font-bold mb-4">Evento</h4>
+              <p className="text-sm text-slate-400">MundoGEO Connect 2026</p>
+              <p className="text-sm text-slate-400">15 a 18 de Junho</p>
             </div>
           </div>
-          <div className="border-t border-slate-800 pt-8 text-center text-sm">
-            <p>© 2026 COMLURB. Todos os direitos reservados. | Desenvolvido com visão de futuro.</p>
+          <div className="border-t border-slate-800 pt-8 text-center text-sm text-slate-400">
+            <p>&copy; 2026 COMLURB. Todos os direitos reservados. | Relatório de Viagem - Congresso MundoGEO Connect 2026</p>
           </div>
         </div>
       </footer>
