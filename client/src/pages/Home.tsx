@@ -23,7 +23,7 @@ export default function Home() {
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="https://jaqueline-nascimento.github.io/relatorioMundoGeo/?v=ae98227" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition">Relatório completo</a>
-            <a href="#comparativo" className="text-sm text-muted-foreground hover:text-foreground transition">Comparativo</a>
+            <a href="#comparativo" className="text-sm text-muted-foreground hover:text-foreground transition">Projetos</a>
             <a href="#capacitacao" className="text-sm text-muted-foreground hover:text-foreground transition">Capacitação</a>
             <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition">Participantes</a>
           </div>
