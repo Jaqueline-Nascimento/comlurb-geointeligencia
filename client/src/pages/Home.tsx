@@ -53,6 +53,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Seção de Abertura - A Isca */}
+      <section className="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-green-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+        
+        <div className="container relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            {/* Título Principal */}
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-400 to-cyan-400">
+                Do Reativo Para o Preditivo
+              </span>
+            </h2>
+            
+            {/* Texto Engajador */}
+            <div className="space-y-6 mb-12">
+              <p className="text-xl text-slate-200 leading-relaxed">
+                Deixar de ter <span className="font-semibold text-red-400">operações reativas e dados dispersos</span> para ter <span className="font-semibold text-green-400">ações preditivas</span>.
+              </p>
+              
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 my-8">
+                <p className="text-lg text-slate-100 leading-relaxed">
+                  Fazer o carioca <span className="font-bold text-green-300">feliz e orgulhoso</span> com a <span className="font-bold text-blue-300">antecipação dos problemas</span>. Análises preditivas resultarão em uma cidade mais limpa, sendo reconhecida como a capital que <span className="font-bold text-cyan-300">analisa dados em tempo real e age cirurgicamente</span> sem desperdício de recursos.
+                </p>
+              </div>
+              
+              <p className="text-slate-300 text-sm italic">
+                Essa é a transformação que o Congresso MundoGEO Connect 2026 nos mostrou ser possível.
+              </p>
+            </div>
+            
+            {/* CTA Visual */}
+            <div className="flex justify-center">
+              <div className="inline-flex items-center gap-2 text-green-400 font-semibold">
+                <span>Explore como isso é possível</span>
+                <ArrowRight className="w-5 h-5 animate-pulse" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Cards de Navegação - Módulos Principais */}
       <section className="py-20 bg-slate-50">
         <div className="container">
