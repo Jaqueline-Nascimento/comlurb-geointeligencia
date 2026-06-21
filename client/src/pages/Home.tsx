@@ -999,7 +999,7 @@ const participantes: Participante[] = [
     cargo: "Desenvolvedor Web Fullstack",
     departamento: "FGI",
     curriculo: "Marcelo Dantas é Desenvolvedor Web Fullstack, especialista em desenvolvimento de aplicações web modernas e integração de sistemas. Com experiência em arquitetura de software e implementação de soluções escaláveis, Marcelo é fundamental na transformação digital da COMLURB.",
-    posicao: { left: "73%", top: "30%" }
+    posicao: { left: "73%", top: "18%" }
   },
   {
     nome: "DIEGO DE FREITAS DIAS SARMANHO LOPES",
