@@ -14,8 +14,7 @@ export default function ApresentacaoPresidencia() {
             <ChevronLeft size={16} />
             Voltar
           </Link>
-          <h1 className="text-4xl font-bold text-gray-900">Apresentação para Presidência</h1>
-          <p className="text-gray-600 mt-2">Chip na Vassoura - Projeto de Geointeligência Urbana</p>
+          <h1 className="text-4xl font-bold text-gray-900">Chip na Vassoura - Projeto de Geointeligência Urbana</h1>
         </div>
       </header>
 
@@ -23,7 +22,7 @@ export default function ApresentacaoPresidencia() {
       <main className="container mx-auto px-4 py-12">
         {/* Infográfico com Zoom */}
         <div className="flex justify-center">
-          <div className="relative max-w-2xl w-full">
+          <div className="relative max-w-lg w-full">
             <div 
               className="relative cursor-pointer group"
               onClick={() => setIsZoomed(true)}
