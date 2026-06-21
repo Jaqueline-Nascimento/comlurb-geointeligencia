@@ -548,13 +548,66 @@ export default function Home() {
               </TabsContent>
               
               <TabsContent value="belohorizonte" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
-                <h3 className="text-2xl font-bold mb-4 text-white">Prefeitura de Belo Horizonte</h3>
-                <p className="text-slate-300">Conteúdo será adicionado em breve...</p>
+                <h3 className="text-2xl font-bold mb-6 text-white">Prefeitura de Belo Horizonte</h3>
+                <div className="space-y-6">
+                  <p className="text-slate-300 leading-relaxed">
+                    Belo Horizonte apresentou sua estratégia de transformação digital em gestão urbana, com foco em integração de dados geoespaciais para otimização de serviços públicos. A prefeitura compartilhou experiências em implementação de sistemas de informação geográfica para monitoramento de infraestrutura urbana.
+                  </p>
+                  <div className="bg-slate-700 p-6 rounded-lg">
+                    <h4 className="text-lg font-bold text-white mb-3">Pontos-chave da apresentação</h4>
+                    <ul className="space-y-2 text-slate-300 text-sm">
+                      <li className="flex items-start gap-3">
+                        <span className="text-green-400 font-bold mt-1">•</span>
+                        <span>Integração de dados de múltiplas secretarias em plataforma única</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-green-400 font-bold mt-1">•</span>
+                        <span>Uso de geointeligência para planejamento de investimentos urbanos</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-green-400 font-bold mt-1">•</span>
+                        <span>Parcerias com universidades para pesquisa em soluções geoespaciais</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-green-400 font-bold mt-1">•</span>
+                        <span>Transparência de dados públicos através de portais abertos</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </TabsContent>
               
               <TabsContent value="topocart" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
-                <h3 className="text-2xl font-bold mb-4 text-white">Topocart - Sistema de Varrição</h3>
-                <p className="text-slate-300">Conteúdo será adicionado em breve...</p>
+                <h3 className="text-2xl font-bold mb-6 text-white">Topocart - Sistema de Varrição</h3>
+                <div className="space-y-6">
+                  <p className="text-slate-300 leading-relaxed">
+                    A Topocart apresentou sua solução inovadora de rastreamento e otimização de operações de varrição urbana. O sistema utiliza GPS de alta precisão e sensores IoT para monitorar a eficiência das equipes de limpeza em tempo real.
+                  </p>
+                  <div className="bg-slate-700 p-6 rounded-lg">
+                    <h4 className="text-lg font-bold text-white mb-3">Funcionalidades principais</h4>
+                    <ul className="space-y-2 text-slate-300 text-sm">
+                      <li className="flex items-start gap-3">
+                        <span className="text-green-400 font-bold mt-1">•</span>
+                        <span>Rastreamento em tempo real de equipes de varrição</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-green-400 font-bold mt-1">•</span>
+                        <span>Análise de cobertura geográfica e eficiência operacional</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-green-400 font-bold mt-1">•</span>
+                        <span>Integração com sistemas de gestão de frota</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-green-400 font-bold mt-1">•</span>
+                        <span>Relatórios automatizados de desempenho por setor</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <p className="text-slate-300 text-sm italic">
+                    Potencial de aplicação na COMLURB: Otimização de rotas de varrição, redução de custos operacionais e melhoria da cobertura de serviços.
+                  </p>
+                </div>
               </TabsContent>
               
               <TabsContent value="esri" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
@@ -563,8 +616,36 @@ export default function Home() {
               </TabsContent>
               
               <TabsContent value="geosampa" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
-                <h3 className="text-2xl font-bold mb-4 text-white">GeoSampa</h3>
-                <p className="text-slate-300">Conteúdo será adicionado em breve...</p>
+                <h3 className="text-2xl font-bold mb-6 text-white">GeoSampa - Portal de Dados Geoespaciais de São Paulo</h3>
+                <div className="space-y-6">
+                  <p className="text-slate-300 leading-relaxed">
+                    O GeoSampa é o portal de dados geoespaciais da Prefeitura de São Paulo, que centraliza informações cartográficas, cadastrais e operacionais da cidade. O projeto demonstra como dados públicos podem ser disponibilizados de forma aberta e acessível para melhorar a gestão urbana.
+                  </p>
+                  <div className="bg-slate-700 p-6 rounded-lg">
+                    <h4 className="text-lg font-bold text-white mb-3">Características principais</h4>
+                    <ul className="space-y-2 text-slate-300 text-sm">
+                      <li className="flex items-start gap-3">
+                        <span className="text-green-400 font-bold mt-1">•</span>
+                        <span>Acesso público a dados cartográficos e cadastrais da cidade</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-green-400 font-bold mt-1">•</span>
+                        <span>Integração de dados de múltiplas secretarias municipais</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-green-400 font-bold mt-1">•</span>
+                        <span>Ferramentas de visualização e análise de dados geoespaciais</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-green-400 font-bold mt-1">•</span>
+                        <span>APIs para integração com aplicações terceiras</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <p className="text-slate-300 text-sm italic">
+                    Aprendizado para COMLURB: Modelo de governança de dados geoespaciais e transparência pública que pode ser adaptado para o Rio de Janeiro.
+                  </p>
+                </div>
               </TabsContent>
             </Tabs>
           </div>
@@ -1066,7 +1147,8 @@ function ParticipantesGrupo() {
 
   return (
     <>
-      <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
+      {/* Desktop: Foto com Badges */}
+      <div className="hidden md:block relative w-full rounded-lg overflow-hidden shadow-lg">
         {/* Foto do Grupo */}
         <img 
           src="/manus-storage/grupo-mundogeo-2026_04b39992.png" 
@@ -1090,6 +1172,21 @@ function ParticipantesGrupo() {
               <div className="text-xs font-bold uppercase tracking-wide leading-tight">{participante.nome}</div>
               <div className="text-xs font-normal lowercase mt-0.5 opacity-90 leading-tight">{participante.cargo}</div>
             </div>
+          </button>
+        ))}
+      </div>
+
+      {/* Mobile: Lista de Participantes */}
+      <div className="md:hidden grid grid-cols-1 gap-3">
+        {participantes.map((participante, index) => (
+          <button
+            key={index}
+            onClick={() => setSelectedParticipant(participante)}
+            className="bg-gradient-to-r from-slate-800 to-slate-900 hover:from-slate-700 hover:to-slate-800 text-white p-4 rounded-lg text-left transition-all duration-300 border border-slate-700 hover:border-green-600"
+          >
+            <div className="font-bold text-sm uppercase tracking-wide">{participante.nome}</div>
+            <div className="text-xs text-green-400 mt-1">{participante.cargo}</div>
+            <div className="text-xs text-slate-400 mt-0.5">{participante.departamento}</div>
           </button>
         ))}
       </div>
