@@ -422,37 +422,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* O Fator Crítico: Capacitação */}
-      <section id="capacitacao" className="py-20 bg-white">
-        <div className="container">
-          <h2 className="text-4xl font-bold mb-12 text-center text-foreground">O Fator Crítico: Capacitação</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-lg border border-green-200">
-              <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4">
-                <span className="text-2xl text-white">🎓</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-foreground">Transformação de Talentos</h3>
-              <p className="text-muted-foreground">Programas de treinamento em IA, GIS, análise de dados e operação de sistemas inteligentes.</p>
-            </div>
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg border border-blue-200">
-              <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
-                <span className="text-2xl text-white">📊</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-foreground">Mentalidade de Dados</h3>
-              <p className="text-muted-foreground">Cultura organizacional orientada por dados, decisões baseadas em evidências, inovação contínua.</p>
-            </div>
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-lg border border-purple-200">
-              <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
-                <span className="text-2xl text-white">🚀</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-foreground">Inovação Contínua</h3>
-              <p className="text-muted-foreground">Equipes empoderadas para experimentar, aprender e escalar soluções que funcionam.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Networking - Relacionamentos Estratégicos */}
+{/* Networking - Relacionamentos Estratégicos */}
       <section className="py-20 bg-white">
         <div className="container">
           <div className="max-w-3xl mb-12">
