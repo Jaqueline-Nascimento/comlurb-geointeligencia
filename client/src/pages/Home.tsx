@@ -326,14 +326,66 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-slate-800 to-slate-700 p-12 rounded-lg border border-slate-600">
-              <div className="text-center">
+              <div className="text-center mb-12">
                 <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 mb-4">
                   100%
                 </div>
                 <p className="text-xl font-semibold text-white mb-2">Integração Completa</p>
                 <p className="text-slate-300">Dados unificados, processos otimizados, pessoas capacitadas.</p>
               </div>
-              <div className="mt-8 space-y-4">
+              
+              {/* Timeline Vertical */}
+              <div className="space-y-8">
+                {/* Item 1 */}
+                <div className="relative">
+                  <div className="flex gap-6">
+                    <div className="flex flex-col items-center">
+                      <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center flex-shrink-0 border-2 border-slate-700">
+                        <span className="text-2xl">🎓</span>
+                      </div>
+                      <div className="w-1 h-16 bg-gradient-to-b from-green-500 to-blue-500 mt-2"></div>
+                    </div>
+                    <div className="pt-2 pb-8">
+                      <h4 className="text-lg font-bold text-white mb-2">Transformação de Talentos</h4>
+                      <p className="text-slate-300 text-sm leading-relaxed">Programas de treinamento em IA, GIS, análise de dados e operação de sistemas inteligentes.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Item 2 */}
+                <div className="relative">
+                  <div className="flex gap-6">
+                    <div className="flex flex-col items-center">
+                      <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 border-2 border-slate-700">
+                        <span className="text-2xl">📊</span>
+                      </div>
+                      <div className="w-1 h-16 bg-gradient-to-b from-blue-500 to-purple-500 mt-2"></div>
+                    </div>
+                    <div className="pt-2 pb-8">
+                      <h4 className="text-lg font-bold text-white mb-2">Mentalidade de Dados</h4>
+                      <p className="text-slate-300 text-sm leading-relaxed">Cultura organizacional orientada por dados, decisões baseadas em evidências, inovação contínua.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Item 3 */}
+                <div className="relative">
+                  <div className="flex gap-6">
+                    <div className="flex flex-col items-center">
+                      <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 border-2 border-slate-700">
+                        <span className="text-2xl">🚀</span>
+                      </div>
+                    </div>
+                    <div className="pt-2">
+                      <h4 className="text-lg font-bold text-white mb-2">Inovação Contínua</h4>
+                      <p className="text-slate-300 text-sm leading-relaxed">Equipes empoderadas para experimentar, aprender e escalar soluções que funcionam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Integração Checklist */}
+              <div className="mt-12 pt-8 border-t border-slate-600 space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                   <span className="text-sm text-slate-200">SICO + SIURB Integrados</span>
