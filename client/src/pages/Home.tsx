@@ -992,7 +992,7 @@ const participantes: Participante[] = [
     cargo: "Coordenadora Geral da Assessoria",
     departamento: "Diretoria de Serviços Urbanos (DSU)",
     curriculo: "Jaqueline Nascimento é Coordenadora Geral da Assessoria na Diretoria de Serviços Urbanos, responsável pela coordenação de projetos estratégicos e assessoria executiva. Sua expertise em gestão estratégica e comunicação institucional é fundamental para a implementação de iniciativas de transformação digital.",
-    posicao: { left: "66%", top: "28%" }
+    posicao: { left: "70%", top: "38%" }
   },
   {
     nome: "MARCELO DANTAS",
