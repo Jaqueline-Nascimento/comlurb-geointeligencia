@@ -971,7 +971,7 @@ const participantes: Participante[] = [
     cargo: "Coordenador Técnico",
     departamento: "Diretoria de Limpeza Urbana (DLU)",
     curriculo: "Felipe Xavier é Coordenador Técnico da Diretoria de Limpeza Urbana, responsável pela supervisão de projetos técnicos e implementação de soluções inovadoras em limpeza urbana. Com experiência em gestão operacional e tecnologia, Felipe liderou iniciativas de otimização de rotas e eficiência operacional na COMLURB.",
-    posicao: { left: "43%", top: "30%" }
+    posicao: { left: "44%", top: "30%" }
   },
   {
     nome: "ALEXANDRA ROBERTA",
