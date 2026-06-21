@@ -86,6 +86,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Seção O Tripé da Gestão Inteligente */}
+      <section className="py-20 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
+        <div className="container">
+          <div className="max-w-4xl mx-auto mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white leading-tight">
+              O Tripé da Gestão Inteligente: Cérebro, Corpo e Sentidos
+            </h2>
+            <p className="text-lg text-slate-300 leading-relaxed">
+              A COMLURB tem conhecimento profundo do território, presença diária nas ruas e equipes distribuídas pela cidade. Conectar esses ativos com tecnologias complementares que funcionam como um sistema nervoso central. Essas três tecnologias são a base para uma gestão urbana que antecipa problemas, reduz custos operacionais e entrega melhores resultados para a cidade.
+            </p>
+          </div>
+          
+          {/* 3 Cards do Tripé */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1 - GeoIA */}
+            <div className="bg-white/10 backdrop-blur-sm border-l-4 border-green-500 rounded-lg p-8 hover:bg-white/15 transition-colors duration-300">
+              <div className="text-4xl mb-4 text-green-400">🧠</div>
+              <h3 className="text-2xl font-bold text-white mb-4">GeoIA (Inteligência Artificial Geoespacial)</h3>
+              <p className="text-slate-300 leading-relaxed">
+                É o "cérebro" que interpreta o mapa e devolve insights permitindo que a gestão da limpeza, das áreas verdes e qualquer outro serviço seja feita com precisão cirúrgica, otimização, tempo de equipe e recursos públicos.
+              </p>
+            </div>
+            
+            {/* Card 2 - Gêmeos Digitais */}
+            <div className="bg-white/10 backdrop-blur-sm border-l-4 border-blue-500 rounded-lg p-8 hover:bg-white/15 transition-colors duration-300">
+              <div className="text-4xl mb-4 text-blue-400">🌐</div>
+              <h3 className="text-2xl font-bold text-white mb-4">Gêmeos Digitais</h3>
+              <p className="text-slate-300 leading-relaxed">
+                Se a GeoIA diz à sua empresa quando e onde agir, o Gêmeo Digital mostra como a ação vai impactar o mundo real.
+              </p>
+            </div>
+            
+            {/* Card 3 - IoT */}
+            <div className="bg-white/10 backdrop-blur-sm border-l-4 border-purple-500 rounded-lg p-8 hover:bg-white/15 transition-colors duration-300">
+              <div className="text-4xl mb-4 text-purple-400">⚡</div>
+              <h3 className="text-2xl font-bold text-white mb-4">IoT - Internet das Coisas</h3>
+              <p className="text-slate-300 leading-relaxed">
+                A IoT elimina a necessidade de "ir lá ver", pois o objeto "avisa" ao sistema como ele está. Se a GeoIA é o "cérebro" e o Gêmeo Digital é o "corpo", a Internet das Coisas (IoT) representa os "sentidos" do sistema.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Cards de Navegação - Módulos Principais */}
       <section className="py-20 bg-slate-50">
         <div className="container">
