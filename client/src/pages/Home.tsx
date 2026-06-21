@@ -285,65 +285,66 @@ export default function Home() {
         </div>
       </section>
 
-      {/* O Pilar da Integração */}
-      <section className="py-20 bg-white">
+      {/* Integração de Dados Passa Primeiro Pela Integração de Pessoas */}
+      <section className="py-20 bg-slate-900">
         <div className="container">
+          <h2 className="text-4xl font-bold mb-12 text-center text-white">Integração de dados passa primeiro pela integração de pessoas</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-foreground">O Pilar da Integração</h2>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-6 text-white">O Pilar da Integração</h3>
+              <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                 A transformação digital da COMLURB não é apenas sobre tecnologia, mas sobre integração. Unificar SICO e SIURB, publicar dados abertos, e capacitar pessoas são os pilares do sucesso.
               </p>
               <div className="space-y-4">
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-xl">🔗</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1">Integração de Dados</h3>
-                    <p className="text-muted-foreground">Unificar sistemas legados em uma plataforma moderna e escalável.</p>
+                    <h3 className="font-bold text-white mb-1">Integração de Dados</h3>
+                    <p className="text-slate-400">Unificar sistemas legados em uma plataforma moderna e escalável.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-xl">📊</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1">Dados Abertos</h3>
-                    <p className="text-muted-foreground">Publicar dados para transparência e inovação externa.</p>
+                    <h3 className="font-bold text-white mb-1">Dados Abertos</h3>
+                    <p className="text-slate-400">Publicar dados para transparência e inovação externa.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-xl">👥</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1">Capacitação</h3>
-                    <p className="text-muted-foreground">Treinar equipes para operar e inovar com as novas ferramentas.</p>
+                    <h3 className="font-bold text-white mb-1">Capacitação</h3>
+                    <p className="text-slate-400">Treinar equipes para operar e inovar com as novas ferramentas.</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-green-50 to-blue-50 p-12 rounded-lg border border-green-200">
+            <div className="bg-gradient-to-br from-slate-800 to-slate-700 p-12 rounded-lg border border-slate-600">
               <div className="text-center">
-                <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600 mb-4">
+                <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 mb-4">
                   100%
                 </div>
-                <p className="text-xl font-semibold text-foreground mb-2">Integração Completa</p>
-                <p className="text-muted-foreground">Dados unificados, processos otimizados, pessoas capacitadas.</p>
+                <p className="text-xl font-semibold text-white mb-2">Integração Completa</p>
+                <p className="text-slate-300">Dados unificados, processos otimizados, pessoas capacitadas.</p>
               </div>
               <div className="mt-8 space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
-                  <span className="text-sm text-foreground">SICO + SIURB Integrados</span>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <span className="text-sm text-slate-200">SICO + SIURB Integrados</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-sm text-foreground">API de Dados Abertos</span>
+                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                  <span className="text-sm text-slate-200">API de Dados Abertos</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
-                  <span className="text-sm text-foreground">Programa de Capacitação</span>
+                  <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                  <span className="text-sm text-slate-200">Programa de Capacitação</span>
                 </div>
               </div>
             </div>
