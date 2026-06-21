@@ -475,13 +475,17 @@ export default function Geointeligencia() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header com imagem */}
+      {/* Header com vídeo */}
       <div className="relative h-96 overflow-hidden">
-        <img
-          src="/manus-storage/geointeligencia-header_3d4bfcaf.png"
-          alt="Geointeligência em outras Prefeituras"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
           className="w-full h-full object-cover"
-        />
+        >
+          <source src="/manus-storage/geointeligencia-banner_0811f1bc.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-end">
           <div className="p-8 text-white max-w-2xl">
             <h1 className="text-5xl font-bold mb-4">Geointeligência em outras Prefeituras</h1>
