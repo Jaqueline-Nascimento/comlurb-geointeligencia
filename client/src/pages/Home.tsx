@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Globe, Zap, Users, TrendingUp, MapPin, Brain, ChevronDown } from "lucide-react";
+import { Globe, Zap, Users, TrendingUp, MapPin, Brain, ChevronDown, Menu, X } from "lucide-react";
 import { useLocation } from "wouter";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Home() {
   const [, navigate] = useLocation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
@@ -28,7 +29,21 @@ export default function Home() {
             <a href="/insights" className="text-sm text-muted-foreground hover:text-foreground transition">Insights</a>
             <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition">Participantes</a>
           </div>
+          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-border bg-white/95 backdrop-blur-sm">
+            <div className="flex flex-col gap-4 p-4">
+              <a href="https://jaqueline-nascimento.github.io/relatorioMundoGeo/?v=ae98227" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Relatório completo</a>
+              <a href="/projetos" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Projetos</a>
+              <a href="/apresentacao-presidencia" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Apresentação para presidência</a>
+              <a href="/insights" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Insights</a>
+              <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Participantes</a>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
