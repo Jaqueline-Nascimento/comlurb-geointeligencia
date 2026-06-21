@@ -82,15 +82,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Networking Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
-        <div className="container">
-          <h2 className="text-4xl font-bold mb-12 text-foreground text-center">Networking</h2>
-          
-          <NetworkingCarousel />
-        </div>
-      </section>
-
       {/* What We Saw at MundoGEO */}
       <section className="py-20 bg-white">
         <div className="container">
