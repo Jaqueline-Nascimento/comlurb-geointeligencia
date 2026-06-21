@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { ArrowRight, Globe, Zap, Users, TrendingUp, MapPin, Brain, ChevronDown } from "lucide-react";
 import { useLocation } from "wouter";
 import React from "react";
@@ -408,6 +409,55 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-3 text-foreground">Inovação Contínua</h3>
               <p className="text-muted-foreground">Equipes empoderadas para experimentar, aprender e escalar soluções que funcionam.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Networking - Relacionamentos Estratégicos */}
+      <section className="py-20 bg-white">
+        <div className="container">
+          <div className="max-w-3xl mb-12">
+            <h2 className="text-4xl font-bold mb-4 text-foreground">Networking</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Um congresso técnico transforma presença institucional em relacionamento, relacionamento em aprendizado e aprendizado em oportunidade concreta para a organização.
+            </p>
+          </div>
+          
+          <div className="w-full">
+            <Tabs defaultValue="fortaleza" className="w-full">
+              <TabsList className="grid w-full grid-cols-5 mb-8">
+                <TabsTrigger value="fortaleza">Prefeitura de Fortaleza</TabsTrigger>
+                <TabsTrigger value="belohorizonte">Prefeitura de Belo Horizonte</TabsTrigger>
+                <TabsTrigger value="topocart">Topocart - Sistema de Varrição</TabsTrigger>
+                <TabsTrigger value="esri">Esri - Imagem</TabsTrigger>
+                <TabsTrigger value="geosampa">GeoSampa</TabsTrigger>
+              </TabsList>
+              
+              <TabsContent value="fortaleza" className="bg-slate-50 p-8 rounded-lg">
+                <h3 className="text-2xl font-bold mb-4 text-foreground">Prefeitura de Fortaleza</h3>
+                <p className="text-muted-foreground">Conteúdo será adicionado em breve...</p>
+              </TabsContent>
+              
+              <TabsContent value="belohorizonte" className="bg-slate-50 p-8 rounded-lg">
+                <h3 className="text-2xl font-bold mb-4 text-foreground">Prefeitura de Belo Horizonte</h3>
+                <p className="text-muted-foreground">Conteúdo será adicionado em breve...</p>
+              </TabsContent>
+              
+              <TabsContent value="topocart" className="bg-slate-50 p-8 rounded-lg">
+                <h3 className="text-2xl font-bold mb-4 text-foreground">Topocart - Sistema de Varrição</h3>
+                <p className="text-muted-foreground">Conteúdo será adicionado em breve...</p>
+              </TabsContent>
+              
+              <TabsContent value="esri" className="bg-slate-50 p-8 rounded-lg">
+                <h3 className="text-2xl font-bold mb-4 text-foreground">Esri - Imagem</h3>
+                <p className="text-muted-foreground">Conteúdo será adicionado em breve...</p>
+              </TabsContent>
+              
+              <TabsContent value="geosampa" className="bg-slate-50 p-8 rounded-lg">
+                <h3 className="text-2xl font-bold mb-4 text-foreground">GeoSampa</h3>
+                <p className="text-muted-foreground">Conteúdo será adicionado em breve...</p>
+              </TabsContent>
+            </Tabs>
           </div>
         </div>
       </section>
