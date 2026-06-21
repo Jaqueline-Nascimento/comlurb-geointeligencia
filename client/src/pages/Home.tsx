@@ -386,38 +386,87 @@ export default function Home() {
       </section>
 
       {/* Análise Comparativa */}
-      <section id="comparativo" className="py-20 bg-slate-50">
+      <section id="roadmap" className="py-20 bg-white">
         <div className="container">
-          <h2 className="text-4xl font-bold mb-12 text-foreground">Análise Comparativa: A COMLURB no Cenário Global</h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <Card className="p-8">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">Escala Incomparável</h3>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-sm text-muted-foreground font-semibold mb-2">COMLURB</p>
-                  <p className="text-3xl font-bold text-green-600">14 mil funcionários</p>
-                  <p className="text-sm text-muted-foreground">Maior empresa de limpeza pública da América Latina</p>
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold mb-4 text-foreground">Caminho para Smart Sanitation Global</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl">Visão estratégica de 5 anos para transformar a COMLURB em referência mundial em geointeligência urbana e saneamento inteligente.</p>
+          </div>
+          
+          {/* Roadmap Timeline Horizontal */}
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-green-400 via-blue-400 to-purple-400"></div>
+            
+            {/* Roadmap Items */}
+            <div className="grid md:grid-cols-5 gap-6 relative z-10">
+              {/* Fase 1 */}
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-6 border-4 border-white shadow-lg">
+                  <span className="text-2xl">🤝</span>
                 </div>
-                <div className="border-t pt-4">
-                  <p className="text-sm text-muted-foreground font-semibold mb-2">Comparação Global</p>
-                  <p className="text-lg text-foreground">Nenhuma empresa pública de limpeza urbana no mundo implementou geointeligência plena nesta escala.</p>
-                </div>
-              </div>
-            </Card>
-            <Card className="p-8">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">Potencial de Mercado</h3>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-sm text-muted-foreground font-semibold mb-2">Oportunidade</p>
-                  <p className="text-3xl font-bold text-blue-600">Pioneirismo Global</p>
-                  <p className="text-sm text-muted-foreground">COMLURB pode se tornar a referência mundial em Smart Sanitation.</p>
-                </div>
-                <div className="border-t pt-4">
-                  <p className="text-sm text-muted-foreground font-semibold mb-2">Diferencial</p>
-                  <p className="text-lg text-foreground">Primeira empresa pública a integrar IA, IoT e Geointeligência em escala urbana.</p>
+                <div className="bg-white p-6 rounded-lg border-2 border-green-200 text-center">
+                  <h3 className="text-lg font-bold text-foreground mb-3">Integração de Setores</h3>
+                  <p className="text-sm text-muted-foreground mb-4">Troca de informações entre departamentos e informação de fácil acesso</p>
+                  <p className="text-xs font-semibold text-green-600">Ano 1</p>
                 </div>
               </div>
-            </Card>
+              
+              {/* Fase 2 */}
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-6 border-4 border-white shadow-lg">
+                  <span className="text-2xl">🎓</span>
+                </div>
+                <div className="bg-white p-6 rounded-lg border-2 border-blue-200 text-center">
+                  <h3 className="text-lg font-bold text-foreground mb-3">Capacitação</h3>
+                  <p className="text-sm text-muted-foreground mb-4">Treinamento de equipes em IA, GIS, análise de dados</p>
+                  <p className="text-xs font-semibold text-blue-600">Anos 1-2</p>
+                </div>
+              </div>
+              
+              {/* Fase 3 */}
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center mb-6 border-4 border-white shadow-lg">
+                  <span className="text-2xl">🗺️</span>
+                </div>
+                <div className="bg-white p-6 rounded-lg border-2 border-cyan-200 text-center">
+                  <h3 className="text-lg font-bold text-foreground mb-3">Camadas de Georreferenciamento</h3>
+                  <p className="text-sm text-muted-foreground mb-4">Mapeamento e estruturação de dados geoespaciais</p>
+                  <p className="text-xs font-semibold text-cyan-600">Anos 2-3</p>
+                </div>
+              </div>
+              
+              {/* Fase 4 */}
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mb-6 border-4 border-white shadow-lg">
+                  <span className="text-2xl">🔗</span>
+                </div>
+                <div className="bg-white p-6 rounded-lg border-2 border-purple-200 text-center">
+                  <h3 className="text-lg font-bold text-foreground mb-3">Integração SICO + SIURB</h3>
+                  <p className="text-sm text-muted-foreground mb-4">Unificação dos sistemas legados em plataforma moderna</p>
+                  <p className="text-xs font-semibold text-purple-600">Anos 3-4</p>
+                </div>
+              </div>
+              
+              {/* Fase 5 */}
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center mb-6 border-4 border-white shadow-lg">
+                  <span className="text-2xl">🌍</span>
+                </div>
+                <div className="bg-white p-6 rounded-lg border-2 border-amber-200 text-center">
+                  <h3 className="text-lg font-bold text-foreground mb-3">Referência Global</h3>
+                  <p className="text-sm text-muted-foreground mb-4">COMLURB como benchmark mundial em Smart Sanitation</p>
+                  <p className="text-xs font-semibold text-amber-600">Ano 5</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Vision Statement */}
+          <div className="mt-16 bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg border-l-4 border-green-500">
+            <p className="text-lg text-foreground leading-relaxed">
+              <span className="font-bold">Visão 2031:</span> A COMLURB será a primeira empresa pública de limpeza urbana do mundo a implementar geointeligência plena em escala, transformando 14 mil funcionários em agentes de mudança digital, gerando dados que informam decisões em tempo real e estabelecendo o padrão global para saneamento inteligente e sustentável.
+            </p>
           </div>
         </div>
       </section>
