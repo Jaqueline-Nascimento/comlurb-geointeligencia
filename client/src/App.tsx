@@ -9,6 +9,7 @@ import MundoGEO from "./pages/MundoGEO";
 import Cursos from "./pages/Cursos";
 import Palestras from "./pages/Palestras";
 import Geointeligencia from "./pages/Geointeligencia";
+import Projetos from "./pages/Projetos";
 
 
 function Router() {
@@ -18,7 +19,8 @@ function Router() {
       <Route path={"/mundogeo"} component={MundoGEO} />
       <Route path={"/cursos"} component={Cursos} />
       <Route path={"/palestras"} component={Palestras} />
-      <Route path={"/geointeligencia"} component={Geointeligencia} />
+      <Route path={"geointeligencia"} component={Geointeligencia} />
+      <Route path={"projetos"} component={Projetos} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
