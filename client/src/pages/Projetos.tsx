@@ -1,85 +1,13 @@
 import { Link } from "wouter";
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, Zap } from "lucide-react";
 
 export default function Projetos() {
   const projetos = [
     {
       id: 1,
-      nome: "LOGRADOUROS",
-      cor: "bg-green-500",
-      descricao: "Mapeamento e gestão inteligente de logradouros urbanos"
-    },
-    {
-      id: 2,
-      nome: "RALOS",
-      cor: "bg-blue-500",
-      descricao: "Sistema de monitoramento e manutenção de ralos"
-    },
-    {
-      id: 3,
-      nome: "VARRIÇÃO",
-      cor: "bg-orange-500",
-      descricao: "Otimização de rotas e operações de varrição"
-    },
-    {
-      id: 4,
-      nome: "COLETA DOMICILIAR",
-      cor: "bg-purple-500",
-      descricao: "Gestão eficiente da coleta de resíduos domiciliares"
-    },
-    {
-      id: 5,
-      nome: "LIXO PÚBLICO",
-      cor: "bg-yellow-600",
-      descricao: "Monitoramento de lixeiras públicas e pontos de descarte"
-    },
-    {
-      id: 6,
-      nome: "FAVELAS",
-      cor: "bg-red-800",
-      descricao: "Soluções de limpeza e gestão em áreas de favela"
-    },
-    {
-      id: 7,
-      nome: "ATERRO SANITÁRIO",
-      cor: "bg-amber-700",
-      descricao: "Monitoramento e gestão de aterros sanitários"
-    },
-    {
-      id: 8,
-      nome: "DESCARTE IRREGULAR",
-      cor: "bg-pink-500",
-      descricao: "Identificação e combate a descartes irregulares"
-    },
-    {
-      id: 9,
-      nome: "ESCOLAS C/ COLETA",
-      cor: "bg-cyan-500",
-      descricao: "Programa de coleta seletiva em instituições educacionais"
-    },
-    {
-      id: 10,
-      nome: "HOSPITAIS C/ COLETA HOSP.",
-      cor: "bg-red-500",
-      descricao: "Gestão de resíduos hospitalares com segurança"
-    },
-    {
-      id: 11,
-      nome: "COLETA SELETIVA",
-      cor: "bg-teal-500",
-      descricao: "Programa de coleta seletiva e reciclagem"
-    },
-    {
-      id: 12,
-      nome: "PRAÇAS DO RIO",
-      cor: "bg-green-600",
-      descricao: "Limpeza e manutenção de praças e espaços públicos"
-    },
-    {
-      id: 13,
-      nome: "SOLICITAÇÕES 1746",
-      cor: "bg-orange-700",
-      descricao: "Sistema de gestão de solicitações de limpeza"
+      nome: "Chip na Vassoura",
+      cor: "bg-gradient-to-br from-purple-500 to-blue-500",
+      descricao: "Projeto principal de geointeligência urbana"
     }
   ];
 
@@ -127,17 +55,19 @@ export default function Projetos() {
         {/* Grid de Projetos */}
         <div className="mt-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-8">Projetos em Desenvolvimento</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex justify-center">
             {projetos.map((projeto) => (
               <div 
                 key={projeto.id} 
-                className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
+                className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300 w-full max-w-md"
               >
-                <div className="flex items-start gap-4 mb-4">
-                  <div className={`${projeto.cor} w-12 h-12 rounded-lg flex-shrink-0`}></div>
-                  <h4 className="text-lg font-bold text-gray-900">{projeto.nome}</h4>
+                <div className="flex flex-col items-center gap-4 text-center">
+                  <div className={`${projeto.cor} w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0`}>
+                    <Zap size={32} className="text-white" />
+                  </div>
+                  <h4 className="text-2xl font-bold text-gray-900">{projeto.nome}</h4>
                 </div>
-                <p className="text-gray-600 text-sm leading-relaxed">{projeto.descricao}</p>
+                <p className="text-gray-600 text-sm leading-relaxed mt-4 text-center">{projeto.descricao}</p>
               </div>
             ))}
           </div>
