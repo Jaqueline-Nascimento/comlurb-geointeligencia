@@ -281,76 +281,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Segunda Fileira - 4 Cards */}
-          <div className="grid md:grid-cols-4 gap-6">
-            {/* Card 5 - ROI Garantido */}
-            <div className="group relative h-80 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                <div>
-                  <h3 className="text-xl font-bold mb-4">ROI Garantido</h3>
-                  <p className="text-sm leading-relaxed mb-4">Retorno do investimento em 18 meses. Economia anual de R$ 50 milhões. Financiamento com payback rápido.</p>
-                </div>
-              </div>
-              <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-orange-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
-                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-3xl">📈</span>
-                </div>
-                <h3 className="text-xl font-bold text-foreground">ROI Garantido</h3>
-                <p className="text-sm text-muted-foreground mt-2">18 meses de payback</p>
-              </div>
-            </div>
 
-            {/* Card 6 - Liderança de Mercado */}
-            <div className="group relative h-80 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-red-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                <div>
-                  <h3 className="text-xl font-bold mb-4">Liderança de Mercado</h3>
-                  <p className="text-sm leading-relaxed mb-4">Referência global em geointeligência urbana. Modelo para outras cidades. Atração de talentos e parcerias.</p>
-                </div>
-              </div>
-              <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-red-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
-                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-3xl">👑</span>
-                </div>
-                <h3 className="text-xl font-bold text-foreground">Liderança de Mercado</h3>
-                <p className="text-sm text-muted-foreground mt-2">Referência global</p>
-              </div>
-            </div>
-
-            {/* Card 7 - Inovação Tecnológica */}
-            <div className="group relative h-80 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-cyan-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                <div>
-                  <h3 className="text-xl font-bold mb-4">Inovação Tecnológica</h3>
-                  <p className="text-sm leading-relaxed mb-4">Adoção de IA, IoT e Gêmeos Digitais. Infraestrutura moderna. Preparação para o futuro.</p>
-                </div>
-              </div>
-              <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-cyan-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
-                <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-3xl">🚀</span>
-                </div>
-                <h3 className="text-xl font-bold text-foreground">Inovação Tecnológica</h3>
-                <p className="text-sm text-muted-foreground mt-2">IA, IoT e Gêmeos Digitais</p>
-              </div>
-            </div>
-
-            {/* Card 8 - Transformação Digital */}
-            <div className="group relative h-80 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-lg p-8 flex flex-col justify-between text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                <div>
-                  <h3 className="text-xl font-bold mb-4">Transformação Digital</h3>
-                  <p className="text-sm leading-relaxed mb-4">Mudança cultural e operacional. Equipes capacitadas. Processos otimizados. Futuro garantido.</p>
-                </div>
-              </div>
-              <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-indigo-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
-                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-3xl">🔄</span>
-                </div>
-                <h3 className="text-xl font-bold text-foreground">Transformação Digital</h3>
-                <p className="text-sm text-muted-foreground mt-2">Mudança cultural</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
