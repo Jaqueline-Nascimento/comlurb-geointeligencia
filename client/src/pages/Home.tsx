@@ -992,14 +992,14 @@ const participantes: Participante[] = [
     cargo: "Coordenadora Geral da Assessoria",
     departamento: "Diretoria de Serviços Urbanos (DSU)",
     curriculo: "Jaqueline Nascimento é Coordenadora Geral da Assessoria na Diretoria de Serviços Urbanos, responsável pela coordenação de projetos estratégicos e assessoria executiva. Sua expertise em gestão estratégica e comunicação institucional é fundamental para a implementação de iniciativas de transformação digital.",
-    posicao: { left: "70%", top: "48%" }
+    posicao: { left: "70%", top: "58%" }
   },
   {
     nome: "MARCELO DANTAS",
     cargo: "Desenvolvedor Web Fullstack",
     departamento: "FGI",
     curriculo: "Marcelo Dantas é Desenvolvedor Web Fullstack, especialista em desenvolvimento de aplicações web modernas e integração de sistemas. Com experiência em arquitetura de software e implementação de soluções escaláveis, Marcelo é fundamental na transformação digital da COMLURB.",
-    posicao: { left: "73%", top: "10%" }
+    posicao: { left: "73%", top: "20%" }
   },
   {
     nome: "DIEGO DE FREITAS DIAS SARMANHO LOPES",
