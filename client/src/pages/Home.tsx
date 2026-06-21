@@ -286,95 +286,95 @@ export default function Home() {
       </section>
 
       {/* Integração de Dados Passa Primeiro Pela Integração de Pessoas */}
-      <section className="py-20 bg-slate-900">
+      <section className="py-8 bg-slate-900">
         <div className="container">
-          <h2 className="text-4xl font-bold mb-12 text-center text-white">Integração de dados passa primeiro pela integração de pessoas</h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <h2 className="text-3xl font-bold mb-6 text-center text-white">Integração de dados passa primeiro pela integração de pessoas</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-white">O Pilar da Integração</h3>
-              <p className="text-lg text-slate-300 mb-6 leading-relaxed">
+              <h3 className="text-xl font-bold mb-3 text-white">O Pilar da Integração</h3>
+              <p className="text-sm text-slate-300 mb-3 leading-relaxed">
                 A transformação digital da COMLURB não é apenas sobre tecnologia, mas sobre integração. Unificar SICO e SIURB, publicar dados abertos, e capacitar pessoas são os pilares do sucesso.
               </p>
-              <div className="space-y-4">
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="space-y-2">
+                <div className="flex gap-3">
+                  <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-xl">🔗</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-white mb-1">Integração de Dados</h3>
-                    <p className="text-slate-400">Unificar sistemas legados em uma plataforma moderna e escalável.</p>
+                    <h3 className="font-bold text-white mb-0 text-sm">Integração de Dados</h3>
+                    <p className="text-slate-400 text-xs">Unificar sistemas legados em uma plataforma moderna e escalável.</p>
                   </div>
                 </div>
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl">📊</span>
+                <div className="flex gap-3">
+                  <div className="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-lg">📊</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-white mb-1">Dados Abertos</h3>
-                    <p className="text-slate-400">Publicar dados para transparência e inovação externa.</p>
+                    <h3 className="font-bold text-white mb-0 text-sm">Dados Abertos</h3>
+                    <p className="text-slate-400 text-xs">Publicar dados para transparência e inovação externa.</p>
                   </div>
                 </div>
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl">👥</span>
+                <div className="flex gap-3">
+                  <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-lg">👥</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-white mb-1">Capacitação</h3>
-                    <p className="text-slate-400">Treinar equipes para operar e inovar com as novas ferramentas.</p>
+                    <h3 className="font-bold text-white mb-0 text-sm">Capacitação</h3>
+                    <p className="text-slate-400 text-xs">Treinar equipes para operar e inovar com as novas ferramentas.</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-slate-800 to-slate-700 p-12 rounded-lg border border-slate-600">
-              <div className="text-center mb-12">
-                <p className="text-3xl font-bold text-white">A capacitação é o pilar da transformação digital</p>
+            <div className="bg-gradient-to-br from-slate-800 to-slate-700 p-6 rounded-lg border border-slate-600">
+              <div className="text-center mb-6">
+                <p className="text-2xl font-bold text-white">A capacitação é o pilar da transformação digital</p>
               </div>
               
               {/* Timeline Vertical */}
-              <div className="space-y-8">
+              <div className="space-y-4">
                 {/* Item 1 */}
                 <div className="relative">
-                  <div className="flex gap-6">
+                  <div className="flex gap-3">
                     <div className="flex flex-col items-center">
-                      <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center flex-shrink-0 border-2 border-slate-700">
-                        <span className="text-2xl">🎓</span>
+                      <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center flex-shrink-0 border-2 border-slate-700">
+                        <span className="text-lg">🎓</span>
                       </div>
-                      <div className="w-1 h-16 bg-gradient-to-b from-green-500 to-blue-500 mt-2"></div>
+                      <div className="w-1 h-8 bg-gradient-to-b from-green-500 to-blue-500 mt-1"></div>
                     </div>
-                    <div className="pt-2 pb-8">
-                      <h4 className="text-lg font-bold text-white mb-2">Transformação de Talentos</h4>
-                      <p className="text-slate-300 text-sm leading-relaxed">Programas de treinamento em IA, GIS, análise de dados e operação de sistemas inteligentes.</p>
+                    <div className="pt-1 pb-2">
+                      <h4 className="text-sm font-bold text-white mb-1">Transformação de Talentos</h4>
+                      <p className="text-slate-300 text-xs leading-relaxed">Programas de treinamento em IA, GIS, análise de dados e operação de sistemas inteligentes.</p>
                     </div>
                   </div>
                 </div>
                 
                 {/* Item 2 */}
                 <div className="relative">
-                  <div className="flex gap-6">
+                  <div className="flex gap-3">
                     <div className="flex flex-col items-center">
-                      <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 border-2 border-slate-700">
-                        <span className="text-2xl">📊</span>
+                      <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 border-2 border-slate-700">
+                        <span className="text-lg">📊</span>
                       </div>
-                      <div className="w-1 h-16 bg-gradient-to-b from-blue-500 to-purple-500 mt-2"></div>
+                      <div className="w-1 h-8 bg-gradient-to-b from-blue-500 to-purple-500 mt-1"></div>
                     </div>
-                    <div className="pt-2 pb-8">
-                      <h4 className="text-lg font-bold text-white mb-2">Mentalidade de Dados</h4>
-                      <p className="text-slate-300 text-sm leading-relaxed">Cultura organizacional orientada por dados, decisões baseadas em evidências, inovação contínua.</p>
+                    <div className="pt-1 pb-2">
+                      <h4 className="text-sm font-bold text-white mb-1">Mentalidade de Dados</h4>
+                      <p className="text-slate-300 text-xs leading-relaxed">Cultura organizacional orientada por dados, decisões baseadas em evidências, inovação contínua.</p>
                     </div>
                   </div>
                 </div>
                 
                 {/* Item 3 */}
                 <div className="relative">
-                  <div className="flex gap-6">
+                  <div className="flex gap-3">
                     <div className="flex flex-col items-center">
-                      <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 border-2 border-slate-700">
-                        <span className="text-2xl">🚀</span>
+                      <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 border-2 border-slate-700">
+                        <span className="text-lg">🚀</span>
                       </div>
                     </div>
-                    <div className="pt-2">
-                      <h4 className="text-lg font-bold text-white mb-2">Inovação Contínua</h4>
-                      <p className="text-slate-300 text-sm leading-relaxed">Equipes empoderadas para experimentar, aprender e escalar soluções que funcionam.</p>
+                    <div className="pt-1">
+                      <h4 className="text-sm font-bold text-white mb-1">Inovação Contínua</h4>
+                      <p className="text-slate-300 text-xs leading-relaxed">Equipes empoderadas para experimentar, aprender e escalar soluções que funcionam.</p>
                     </div>
                   </div>
                 </div>
