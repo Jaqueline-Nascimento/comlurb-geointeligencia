@@ -211,66 +211,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Impacto em Escala - Rio, Brasil, Mundo */}
-      <section id="oportunidades" className="py-20 bg-slate-50">
-        <div className="container">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">Geointeligência em Escala: Do Local ao Global</h2>
-          <p className="text-lg text-muted-foreground mb-16 max-w-3xl">Compreenda como a transformação digital da gestão urbana se manifesta em diferentes contextos: na COMLURB, nas cidades brasileiras e no cenário mundial.</p>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Card 1 - Rio de Janeiro */}
-            <div 
-              className="relative overflow-hidden rounded-lg border-2 border-green-600 cursor-pointer group h-80"
-            >
-              <div 
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                style={{
-                  backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310419663028691309/9JRRkzoyMYLptPPRXBm35g/impact-rio-bg-K9AP79W3Jq67A77HeN6qwZ.webp)'
-                }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/70 transition-colors duration-300" />
-              <div className="relative z-10 p-8 h-full flex flex-col justify-end">
-                <h3 className="text-2xl font-bold mb-2 text-white">Rio de Janeiro</h3>
-                <p className="text-slate-200 text-sm">Transformação da gestão urbana com foco em limpeza, arborização e mobilidade sustentável na capital carioca.</p>
-              </div>
-            </div>
-            
-            {/* Card 2 - Brasil */}
-            <div 
-              className="relative overflow-hidden rounded-lg border-2 border-purple-600 cursor-pointer group h-80"
-            >
-              <div 
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                style={{
-                  backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310419663028691309/9JRRkzoyMYLptPPRXBm35g/impact-brasil-bg-6bs8j7AmkrGAxxqBcBVCcg.webp)'
-                }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/70 transition-colors duration-300" />
-              <div className="relative z-10 p-8 h-full flex flex-col justify-end">
-                <h3 className="text-2xl font-bold mb-2 text-white">Brasil Conectado</h3>
-                <p className="text-slate-200 text-sm">Visão nacional de planejamento estratégico com 5.570 cidades e infraestrutura integrada para gestão urbana inteligente.</p>
-              </div>
-            </div>
-            
-            {/* Card 3 - Mundo */}
-            <div 
-              className="relative overflow-hidden rounded-lg border-2 border-teal-600 cursor-pointer group h-80"
-            >
-              <div 
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                style={{
-                  backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310419663028691309/9JRRkzoyMYLptPPRXBm35g/impact-mundo-bg-awwZoWzX8MoX4vV4yDCEED.webp)'
-                }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/70 transition-colors duration-300" />
-              <div className="relative z-10 p-8 h-full flex flex-col justify-end">
-                <h3 className="text-2xl font-bold mb-2 text-white">Rede Global</h3>
-                <p className="text-slate-200 text-sm">195 países conectados em rede de cidades inteligentes, compartilhando conhecimento e soluções de geointeligência urbana.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Cards Interativos - Benefícios Estratégicos */}
       <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
