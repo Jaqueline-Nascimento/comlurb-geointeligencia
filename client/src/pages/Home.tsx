@@ -472,11 +472,11 @@ export default function Home() {
       </section>
 
 {/* Networking - Relacionamentos Estratégicos */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-900">
         <div className="container">
           <div className="max-w-3xl mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-foreground">Networking</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <h2 className="text-4xl font-bold mb-4 text-white">Networking</h2>
+            <p className="text-lg text-slate-300 leading-relaxed">
               Um congresso técnico transforma presença institucional em relacionamento, relacionamento em aprendizado e aprendizado em oportunidade concreta para a organização.
             </p>
           </div>
