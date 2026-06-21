@@ -334,6 +334,33 @@ export default function ApresentacaoPresidencia() {
           </p>
         </div>
       </div>
+
+      {/* Infográfico Pitch Deck */}
+      <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-white mb-2">Geointeligência Urbana - Pitch Deck</h2>
+            <p className="text-slate-300">Clique na imagem para ampliar</p>
+          </div>
+          <div className="cursor-pointer hover:opacity-90 transition-opacity" onClick={() => {
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4';
+            modal.innerHTML = `
+              <div className="max-w-7xl w-full">
+                <img src="/manus-storage/pitch_deck_infografico_v3_92a85670.webp" alt="Pitch Deck" className="w-full h-auto rounded-lg" />
+              </div>
+            `;
+            modal.addEventListener('click', () => modal.remove());
+            document.body.appendChild(modal);
+          }}>
+            <img 
+              src="/manus-storage/pitch_deck_infografico_v3_92a85670.webp" 
+              alt="Pitch Deck Infográfico" 
+              className="w-full h-auto rounded-lg shadow-2xl"
+            />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
