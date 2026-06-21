@@ -978,7 +978,7 @@ const participantes: Participante[] = [
     cargo: "Coordenador de Projetos",
     departamento: "Diretoria de Gestão e Gente (DGG)",
     curriculo: "Alexandra Roberta é Coordenadora de Projetos na Diretoria de Gestão e Gente, com foco em desenvolvimento de pessoas e gestão de projetos estratégicos. Sua experiência inclui capacitação de equipes, mudança organizacional e implementação de novas metodologias de trabalho.",
-    posicao: { left: "60%", top: "52%" }
+    posicao: { left: "50%", top: "52%" }
   },
   {
     nome: "RÔMULO GUIMARÃES GIÁCOMO",
