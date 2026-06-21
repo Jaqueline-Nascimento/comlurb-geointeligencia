@@ -105,8 +105,8 @@ export default function Home() {
             <DigitalTwinsCard />
             <Card className="p-8 border-l-4 border-l-purple-600 hover:shadow-lg transition">
               <Zap className="w-12 h-12 text-purple-600 mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-foreground">Internet das Coisas</h3>
-              <p className="text-muted-foreground">Sensores para rastreamento de ativos, monitoramento ambiental e gestão inteligente de resíduos.</p>
+              <h3 className="text-xl font-bold mb-3 text-foreground">IoT - Internet das Coisas</h3>
+              <p className="text-muted-foreground">A IoT elimina a necessidade de ir lá ver, pois o objeto avisa ao sistema como ele está. Se a GeoIA é o cérebro e o Gêmeo Digital é o corpo, a Internet das Coisas (IoT) representa os sentidos do sistema. Ela é a rede de dispositivos físicos (sensores, rastreadores, câmeras) que coleta dados brutos do mundo real e os envia para o sistema em tempo real.</p>
             </Card>
           </div>
         </div>
