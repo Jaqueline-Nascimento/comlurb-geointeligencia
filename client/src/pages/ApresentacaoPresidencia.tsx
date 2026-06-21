@@ -22,7 +22,7 @@ export default function ApresentacaoPresidencia() {
       <main className="container mx-auto px-4 py-12">
         {/* Infográfico com Zoom */}
         <div className="flex justify-center">
-          <div className="relative max-w-lg w-full">
+          <div className="relative max-w-sm w-full">
             <div 
               className="relative cursor-pointer group"
               onClick={() => setIsZoomed(true)}
