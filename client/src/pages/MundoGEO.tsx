@@ -19,10 +19,12 @@ export default function MundoGEO() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
         <div className="container flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-green-600 to-green-700 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">C</span>
+            <img src="/manus-storage/broom-icon_0293fe4d.png" alt="Broom Icon" className="w-10 h-10" />
+            <div className="border-l-2 border-gray-400 h-8"></div>
+            <div className="flex flex-col">
+              <span className="font-bold text-sm text-foreground">RELATÓRIO DE VIAGEM - Congresso MundoGeo SP</span>
+              <span className="text-xs text-muted-foreground">15 a 18 de Junho de 2026</span>
             </div>
-            <span className="font-bold text-lg text-foreground">COMLURB</span>
           </div>
           <Button
             variant="ghost"
