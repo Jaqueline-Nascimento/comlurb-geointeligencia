@@ -552,6 +552,30 @@ export default function Home() {
               <p className="text-sm text-muted-foreground mb-4">Cargo e Departamento</p>
               <p className="text-sm text-muted-foreground italic">Currículo e experiências profissionais</p>
             </Card>
+            <Card className="p-8 text-center hover:shadow-lg transition">
+              <div className="w-20 h-20 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-foreground">Participante 4</h3>
+              <p className="text-sm text-muted-foreground mb-4">Cargo e Departamento</p>
+              <p className="text-sm text-muted-foreground italic">Currículo e experiências profissionais</p>
+            </Card>
+            <Card className="p-8 text-center hover:shadow-lg transition">
+              <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-foreground">Participante 5</h3>
+              <p className="text-sm text-muted-foreground mb-4">Cargo e Departamento</p>
+              <p className="text-sm text-muted-foreground italic">Currículo e experiências profissionais</p>
+            </Card>
+            <Card className="p-8 text-center hover:shadow-lg transition">
+              <div className="w-20 h-20 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-foreground">Participante 6</h3>
+              <p className="text-sm text-muted-foreground mb-4">Cargo e Departamento</p>
+              <p className="text-sm text-muted-foreground italic">Currículo e experiências profissionais</p>
+            </Card>
           </div>
         </div>
       </section>
