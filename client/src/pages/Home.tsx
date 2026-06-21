@@ -25,6 +25,7 @@ export default function Home() {
             <a href="https://jaqueline-nascimento.github.io/relatorioMundoGeo/?v=ae98227" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition">Relatório completo</a>
             <a href="/projetos" className="text-sm text-muted-foreground hover:text-foreground transition">Projetos</a>
             <a href="/apresentacao-presidencia" className="text-sm text-muted-foreground hover:text-foreground transition">Apresentação para presidência</a>
+            <a href="/insights" className="text-sm text-muted-foreground hover:text-foreground transition">Insights</a>
             <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition">Participantes</a>
           </div>
         </div>

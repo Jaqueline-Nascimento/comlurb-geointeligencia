@@ -12,6 +12,7 @@ import Geointeligencia from "./pages/Geointeligencia";
 import Projetos from "./pages/Projetos";
 import ApresentacaoPresidencia from './pages/ApresentacaoPresidencia';
 import PitchDeck from './pages/PitchDeck';
+import Insights from './pages/Insights';
 
 
 function Router() {
@@ -25,6 +26,7 @@ function Router() {
       <Route path={"projetos"} component={Projetos} />
       <Route path="/apresentacao-presidencia" component={ApresentacaoPresidencia} />
       <Route path="/pitch-deck" component={PitchDeck} />
+      <Route path="/insights" component={Insights} />
       <Route path="*" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
