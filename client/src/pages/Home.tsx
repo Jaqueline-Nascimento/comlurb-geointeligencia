@@ -379,22 +379,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              
-              {/* Integração Checklist */}
-              <div className="mt-12 pt-8 border-t border-slate-600 space-y-3">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span className="text-sm text-slate-200">SICO + SIURB Integrados</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  <span className="text-sm text-slate-200">API de Dados Abertos</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                  <span className="text-sm text-slate-200">Programa de Capacitação</span>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
