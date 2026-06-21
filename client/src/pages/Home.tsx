@@ -22,7 +22,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hidden md:flex items-center gap-8">
-            <a href="#oportunidades" className="text-sm text-muted-foreground hover:text-foreground transition">Oportunidades</a>
+            <a href="https://jaqueline-nascimento.github.io/relatorioMundoGeo/?v=ae98227" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition">Relatório completo</a>
             <a href="#comparativo" className="text-sm text-muted-foreground hover:text-foreground transition">Comparativo</a>
             <a href="#capacitacao" className="text-sm text-muted-foreground hover:text-foreground transition">Capacitação</a>
             <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition">Participantes</a>
@@ -483,37 +483,37 @@ export default function Home() {
           
           <div className="w-full">
             <Tabs defaultValue="fortaleza" className="w-full">
-              <TabsList className="grid w-full grid-cols-5 mb-8">
-                <TabsTrigger value="fortaleza">Prefeitura de Fortaleza</TabsTrigger>
-                <TabsTrigger value="belohorizonte">Prefeitura de Belo Horizonte</TabsTrigger>
-                <TabsTrigger value="topocart">Topocart - Sistema de Varrição</TabsTrigger>
-                <TabsTrigger value="esri">Esri - Imagem</TabsTrigger>
-                <TabsTrigger value="geosampa">GeoSampa</TabsTrigger>
+              <TabsList className="grid w-full grid-cols-5 mb-8 bg-transparent border-b border-slate-700">
+                <TabsTrigger value="fortaleza" className="text-white data-[state=active]:text-white data-[state=active]:bg-slate-800 data-[state=active]:border-b-2 data-[state=active]:border-green-500 transition-all duration-200 hover:bg-slate-800/50">Prefeitura de Fortaleza</TabsTrigger>
+                <TabsTrigger value="belohorizonte" className="text-white data-[state=active]:text-white data-[state=active]:bg-slate-800 data-[state=active]:border-b-2 data-[state=active]:border-green-500 transition-all duration-200 hover:bg-slate-800/50">Prefeitura de Belo Horizonte</TabsTrigger>
+                <TabsTrigger value="topocart" className="text-white data-[state=active]:text-white data-[state=active]:bg-slate-800 data-[state=active]:border-b-2 data-[state=active]:border-green-500 transition-all duration-200 hover:bg-slate-800/50">Topocart - Sistema de Varrição</TabsTrigger>
+                <TabsTrigger value="esri" className="text-white data-[state=active]:text-white data-[state=active]:bg-slate-800 data-[state=active]:border-b-2 data-[state=active]:border-green-500 transition-all duration-200 hover:bg-slate-800/50">Esri - Imagem</TabsTrigger>
+                <TabsTrigger value="geosampa" className="text-white data-[state=active]:text-white data-[state=active]:bg-slate-800 data-[state=active]:border-b-2 data-[state=active]:border-green-500 transition-all duration-200 hover:bg-slate-800/50">GeoSampa</TabsTrigger>
               </TabsList>
               
-              <TabsContent value="fortaleza" className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Prefeitura de Fortaleza</h3>
-                <p className="text-muted-foreground">Conteúdo será adicionado em breve...</p>
+              <TabsContent value="fortaleza" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
+                <h3 className="text-2xl font-bold mb-4 text-white">Prefeitura de Fortaleza</h3>
+                <p className="text-slate-300">Conteúdo será adicionado em breve...</p>
               </TabsContent>
               
-              <TabsContent value="belohorizonte" className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Prefeitura de Belo Horizonte</h3>
-                <p className="text-muted-foreground">Conteúdo será adicionado em breve...</p>
+              <TabsContent value="belohorizonte" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
+                <h3 className="text-2xl font-bold mb-4 text-white">Prefeitura de Belo Horizonte</h3>
+                <p className="text-slate-300">Conteúdo será adicionado em breve...</p>
               </TabsContent>
               
-              <TabsContent value="topocart" className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Topocart - Sistema de Varrição</h3>
-                <p className="text-muted-foreground">Conteúdo será adicionado em breve...</p>
+              <TabsContent value="topocart" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
+                <h3 className="text-2xl font-bold mb-4 text-white">Topocart - Sistema de Varrição</h3>
+                <p className="text-slate-300">Conteúdo será adicionado em breve...</p>
               </TabsContent>
               
-              <TabsContent value="esri" className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Esri - Imagem</h3>
-                <p className="text-muted-foreground">Conteúdo será adicionado em breve...</p>
+              <TabsContent value="esri" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
+                <h3 className="text-2xl font-bold mb-4 text-white">Esri - Imagem</h3>
+                <p className="text-slate-300">Conteúdo será adicionado em breve...</p>
               </TabsContent>
               
-              <TabsContent value="geosampa" className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-2xl font-bold mb-4 text-foreground">GeoSampa</h3>
-                <p className="text-muted-foreground">Conteúdo será adicionado em breve...</p>
+              <TabsContent value="geosampa" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
+                <h3 className="text-2xl font-bold mb-4 text-white">GeoSampa</h3>
+                <p className="text-slate-300">Conteúdo será adicionado em breve...</p>
               </TabsContent>
             </Tabs>
           </div>
