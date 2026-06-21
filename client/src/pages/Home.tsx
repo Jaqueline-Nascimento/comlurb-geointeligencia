@@ -48,37 +48,7 @@ export default function Home() {
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
               A Geointeligência Urbana serve para transformar dados complexos em mapas e rotas operacionais, auxiliando governos e empresas na gestão do território, melhoria da infraestrutura e tomada de decisões rápidas e assertivas.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button
-                size="lg"
-                className="bg-green-600 hover:bg-green-700 text-white"
-                onClick={() => navigate("/mundogeo")}
-              >
-                O que é MundoGEO <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Saiba Mais
-              </Button>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-green-600 hover:bg-green-700 text-white font-bold"
-                onClick={() => navigate("/cursos")}
-              >
-                Cursos que participamos
-              </Button>
-              <Button
-                size="lg"
-                className="bg-green-600 hover:bg-green-700 text-white font-bold"
-                onClick={() => navigate("/palestras")}
-              >
-                Palestras que assistimos
-              </Button>
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold">
-                Geointeligência em outras prefeituras
-              </Button>
-            </div>
+
           </div>
         </div>
       </section>
