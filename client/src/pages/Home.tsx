@@ -83,6 +83,49 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Cards de Navegação - Módulos Principais */}
+      <section className="py-20 bg-slate-50">
+        <div className="container">
+          <div className="grid md:grid-cols-4 gap-6">
+            {/* Card 1 - O que é MundoGEO */}
+            <div 
+              onClick={() => navigate('/mundogeo')}
+              className="bg-white p-8 rounded-lg border-2 border-green-600 cursor-pointer hover:shadow-lg transition transform hover:scale-105"
+            >
+              <h3 className="text-xl font-bold mb-3 text-foreground">O que é MundoGEO</h3>
+              <p className="text-muted-foreground text-sm">Conheça o maior congresso de geotecnologia da América Latina e sua relevância para a COMLURB.</p>
+            </div>
+            
+            {/* Card 2 - Cursos que Participamos */}
+            <div 
+              onClick={() => navigate('/cursos')}
+              className="bg-white p-8 rounded-lg border-2 border-blue-600 cursor-pointer hover:shadow-lg transition transform hover:scale-105"
+            >
+              <h3 className="text-xl font-bold mb-3 text-foreground">Cursos que Participamos</h3>
+              <p className="text-muted-foreground text-sm">Explore os 4 cursos técnicos realizados e o conhecimento estratégico adquirido.</p>
+            </div>
+            
+            {/* Card 3 - Palestras que Assistimos */}
+            <div 
+              onClick={() => navigate('/palestras')}
+              className="bg-white p-8 rounded-lg border-2 border-purple-600 cursor-pointer hover:shadow-lg transition transform hover:scale-105"
+            >
+              <h3 className="text-xl font-bold mb-3 text-foreground">Palestras que Assistimos</h3>
+              <p className="text-muted-foreground text-sm">Confira as 11 palestras e painéis técnicos que transformam a gestão urbana.</p>
+            </div>
+            
+            {/* Card 4 - Geointeligência em outras prefeituras */}
+            <div 
+              onClick={() => navigate('/geointeligencia')}
+              className="bg-white p-8 rounded-lg border-2 border-teal-600 cursor-pointer hover:shadow-lg transition transform hover:scale-105"
+            >
+              <h3 className="text-xl font-bold mb-3 text-foreground">Geointeligência em outras Prefeituras</h3>
+              <p className="text-muted-foreground text-sm">Veja como outras cidades aplicam geointeligência e os resultados alcançados.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What We Saw at MundoGEO */}
       <section className="py-20 bg-white">
         <div className="container">
