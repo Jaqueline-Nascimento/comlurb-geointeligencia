@@ -239,14 +239,14 @@ export default function Home() {
             <div className="group relative h-80 cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg p-8 flex flex-col justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                 <h3 className="text-xl font-bold mb-4">Eficiência Operacional</h3>
-                <p className="text-sm leading-relaxed">Automação de roteiros aumenta produtividade em 40%. Equipes trabalham com dados em tempo real. Menos desperdício.</p>
+                <p className="text-sm leading-relaxed">Transformar o invisível em visível: mapear densidade de resíduos em tempo real, rastrear cada tonelada até destinação final, mensura impacto ambiental. Resultado: operações baseadas em dados, não em intuição.</p>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-blue-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                   <span className="text-3xl">⚡</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground">Eficiência Operacional</h3>
-                <p className="text-sm text-muted-foreground mt-2">+40% de produtividade</p>
+                <p className="text-sm text-muted-foreground mt-2">Do invisível ao acionável</p>
               </div>
             </div>
 
