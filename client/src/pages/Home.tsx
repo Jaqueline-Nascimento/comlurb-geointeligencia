@@ -971,42 +971,42 @@ const participantes: Participante[] = [
     cargo: "Coordenador Técnico",
     departamento: "Diretoria de Limpeza Urbana (DLU)",
     curriculo: "Felipe Xavier é Coordenador Técnico da Diretoria de Limpeza Urbana, responsável pela supervisão de projetos técnicos e implementação de soluções inovadoras em limpeza urbana. Com experiência em gestão operacional e tecnologia, Felipe liderou iniciativas de otimização de rotas e eficiência operacional na COMLURB.",
-    posicao: { left: "8%", top: "55%" }
+    posicao: { left: "13%", top: "30%" }
   },
   {
     nome: "ALEXANDRA ROBERTA",
     cargo: "Coordenadora de Projetos",
     departamento: "Diretoria de Gestão e Gente (DGG)",
     curriculo: "Alexandra Roberta é Coordenadora de Projetos na Diretoria de Gestão e Gente, com foco em desenvolvimento de pessoas e gestão de projetos estratégicos. Sua experiência inclui capacitação de equipes, mudança organizacional e implementação de novas metodologias de trabalho.",
-    posicao: { left: "25%", top: "50%" }
+    posicao: { left: "28%", top: "28%" }
   },
   {
     nome: "RÔMULO GUIMARÃES GIÁCOMO",
     cargo: "Engenheiro Sênior",
     departamento: "Diretoria de Serviços Urbanos (DSU)",
     curriculo: "Rômulo Guimarães Giácomo é Engenheiro Sênior da Diretoria de Serviços Urbanos, especialista em infraestrutura urbana e soluções de engenharia. Com vasta experiência em projetos de grande escala, Rômulo contribui para a otimização de processos e implementação de tecnologias avançadas.",
-    posicao: { left: "42%", top: "55%" }
+    posicao: { left: "43%", top: "30%" }
   },
   {
     nome: "JAQUELINE NASCIMENTO",
     cargo: "Coordenadora Geral da Assessoria",
     departamento: "Diretoria de Serviços Urbanos (DSU)",
     curriculo: "Jaqueline Nascimento é Coordenadora Geral da Assessoria na Diretoria de Serviços Urbanos, responsável pela coordenação de projetos estratégicos e assessoria executiva. Sua expertise em gestão estratégica e comunicação institucional é fundamental para a implementação de iniciativas de transformação digital.",
-    posicao: { left: "58%", top: "50%" }
+    posicao: { left: "58%", top: "28%" }
   },
   {
     nome: "MARCELO DANTAS",
     cargo: "Desenvolvedor Web Fullstack",
     departamento: "FGI",
     curriculo: "Marcelo Dantas é Desenvolvedor Web Fullstack, especialista em desenvolvimento de aplicações web modernas e integração de sistemas. Com experiência em arquitetura de software e implementação de soluções escaláveis, Marcelo é fundamental na transformação digital da COMLURB.",
-    posicao: { left: "74%", top: "55%" }
+    posicao: { left: "73%", top: "30%" }
   },
   {
     nome: "DIEGO DE FREITAS DIAS SARMANHO LOPES",
     cargo: "Desenvolvedor Web Fullstack",
     departamento: "FGI",
     curriculo: "Diego de Freitas Dias Sarmanho Lopes é Desenvolvedor Web Fullstack, especialista em desenvolvimento full-stack e implementação de plataformas integradas. Com experiência em tecnologias modernas e metodologias ágeis, Diego contribui para a construção de soluções inovadoras em geointeligência urbana.",
-    posicao: { left: "90%", top: "50%" }
+    posicao: { left: "87%", top: "28%" }
   }
 ];
 
@@ -1028,16 +1028,16 @@ function ParticipantesGrupo() {
           <button
             key={index}
             onClick={() => setSelectedParticipant(participante)}
-            className="absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group"
+            className="absolute transform -translate-x-1/2 cursor-pointer group"
             style={{
               left: participante.posicao.left,
               top: participante.posicao.top
             }}
           >
             {/* Badge Transparente */}
-            <div className="bg-black/40 backdrop-blur-sm px-4 py-3 rounded-lg text-white font-bold text-center hover:bg-black/60 transition-all duration-300 min-w-max">
-              <div className="text-sm font-bold uppercase tracking-wide">{participante.nome}</div>
-              <div className="text-xs font-normal lowercase mt-1 opacity-90">{participante.cargo}</div>
+            <div className="bg-black/50 backdrop-blur-md px-3 py-2 rounded-lg text-white font-bold text-center hover:bg-black/70 transition-all duration-300 min-w-max whitespace-nowrap">
+              <div className="text-xs font-bold uppercase tracking-wide leading-tight">{participante.nome}</div>
+              <div className="text-xs font-normal lowercase mt-0.5 opacity-90 leading-tight">{participante.cargo}</div>
             </div>
           </button>
         ))}
