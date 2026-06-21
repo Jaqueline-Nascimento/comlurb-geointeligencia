@@ -269,14 +269,14 @@ export default function Home() {
             <div className="group relative h-80 cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-lg p-8 flex flex-col justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                 <h3 className="text-xl font-bold mb-4">Sustentabilidade</h3>
-                <p className="text-sm leading-relaxed">Redução de emissões de carbono. Otimização de recursos. Cidades mais limpas e verdes. Impacto ambiental mensurável.</p>
+                <p className="text-sm leading-relaxed">Geointeligência transforma aterro de passivo ambiental em ativo produtivo: monitora biogás em tempo real para geração de energia limpa, reduz emissões de metano, rastreia cada tonelada de resíduo até reciclagem. Coleta seletiva inteligente com contentóres conectados otimiza fluxo. Compostagem comunitária e biodiegestores convertem orgânicos em recursos. Resultado: rumo a lixo zero com dados que comprovam impacto ambiental real.</p>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-emerald-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
                   <span className="text-3xl">🌱</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground">Sustentabilidade</h3>
-                <p className="text-sm text-muted-foreground mt-2">Redução de carbono</p>
+                <p className="text-sm text-muted-foreground mt-2">De passivo a ativo ambiental</p>
               </div>
             </div>
           </div>
