@@ -60,37 +60,73 @@ export default function Home() {
             {/* Card 1 - O que é MundoGEO */}
             <div 
               onClick={() => navigate('/mundogeo')}
-              className="bg-white p-8 rounded-lg border-2 border-green-600 cursor-pointer hover:shadow-lg transition transform hover:scale-105"
+              className="relative overflow-hidden rounded-lg border-2 border-green-600 cursor-pointer group h-64"
             >
-              <h3 className="text-xl font-bold mb-3 text-foreground">O que é MundoGEO</h3>
-              <p className="text-muted-foreground text-sm">Conheça o maior congresso de geotecnologia da América Latina e sua relevância para a COMLURB.</p>
+              <div 
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style={{
+                  backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310419663028691309/9JRRkzoyMYLptPPRXBm35g/card-mundogeo-bg-8YBCdxM9ug5Lt4u5cMjUWr.webp)'
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/70 transition-colors duration-300" />
+              <div className="relative z-10 p-8 h-full flex flex-col justify-end">
+                <h3 className="text-xl font-bold mb-3 text-white">O que é MundoGEO</h3>
+                <p className="text-slate-200 text-sm">Conheça o maior congresso de geotecnologia da América Latina e sua relevância para a COMLURB.</p>
+              </div>
             </div>
             
             {/* Card 2 - Cursos que Participamos */}
             <div 
               onClick={() => navigate('/cursos')}
-              className="bg-white p-8 rounded-lg border-2 border-blue-600 cursor-pointer hover:shadow-lg transition transform hover:scale-105"
+              className="relative overflow-hidden rounded-lg border-2 border-blue-600 cursor-pointer group h-64"
             >
-              <h3 className="text-xl font-bold mb-3 text-foreground">Cursos que Participamos</h3>
-              <p className="text-muted-foreground text-sm">Explore os 4 cursos técnicos realizados e o conhecimento estratégico adquirido.</p>
+              <div 
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style={{
+                  backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310419663028691309/9JRRkzoyMYLptPPRXBm35g/card-cursos-bg-aqpJdF9QEFqaNZqQBBtSnW.webp)'
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/70 transition-colors duration-300" />
+              <div className="relative z-10 p-8 h-full flex flex-col justify-end">
+                <h3 className="text-xl font-bold mb-3 text-white">Cursos que Participamos</h3>
+                <p className="text-slate-200 text-sm">Explore os 4 cursos técnicos realizados e o conhecimento estratégico adquirido.</p>
+              </div>
             </div>
             
             {/* Card 3 - Palestras que Assistimos */}
             <div 
               onClick={() => navigate('/palestras')}
-              className="bg-white p-8 rounded-lg border-2 border-purple-600 cursor-pointer hover:shadow-lg transition transform hover:scale-105"
+              className="relative overflow-hidden rounded-lg border-2 border-purple-600 cursor-pointer group h-64"
             >
-              <h3 className="text-xl font-bold mb-3 text-foreground">Palestras que Assistimos</h3>
-              <p className="text-muted-foreground text-sm">Confira as 11 palestras e painéis técnicos que transformam a gestão urbana.</p>
+              <div 
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style={{
+                  backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310419663028691309/9JRRkzoyMYLptPPRXBm35g/card-palestras-bg-FMjAxJjEANvi9yznhcUAtE.webp)'
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/70 transition-colors duration-300" />
+              <div className="relative z-10 p-8 h-full flex flex-col justify-end">
+                <h3 className="text-xl font-bold mb-3 text-white">Palestras que Assistimos</h3>
+                <p className="text-slate-200 text-sm">Confira as 11 palestras e painéis técnicos que transformam a gestão urbana.</p>
+              </div>
             </div>
             
             {/* Card 4 - Geointeligência em outras prefeituras */}
             <div 
               onClick={() => navigate('/geointeligencia')}
-              className="bg-white p-8 rounded-lg border-2 border-teal-600 cursor-pointer hover:shadow-lg transition transform hover:scale-105"
+              className="relative overflow-hidden rounded-lg border-2 border-teal-600 cursor-pointer group h-64"
             >
-              <h3 className="text-xl font-bold mb-3 text-foreground">Geointeligência em outras Prefeituras</h3>
-              <p className="text-muted-foreground text-sm">Veja como outras cidades aplicam geointeligência e os resultados alcançados.</p>
+              <div 
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style={{
+                  backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310419663028691309/9JRRkzoyMYLptPPRXBm35g/card-geointeligencia-bg-a9Y7Gyr9jmQf2LoS2yA9tP.webp)'
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/70 transition-colors duration-300" />
+              <div className="relative z-10 p-8 h-full flex flex-col justify-end">
+                <h3 className="text-xl font-bold mb-3 text-white">Geointeligência em outras Prefeituras</h3>
+                <p className="text-slate-200 text-sm">Veja como outras cidades aplicam geointeligência e os resultados alcançados.</p>
+              </div>
             </div>
           </div>
         </div>
