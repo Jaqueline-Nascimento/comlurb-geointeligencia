@@ -220,18 +220,18 @@ export default function Home() {
           
           {/* Primeira Fileira - 4 Cards */}
           <div className="grid md:grid-cols-4 gap-6 mb-8">
-            {/* Card 1 - Redução de Custos */}
+            {/* Card 1 - O Custo de Não Inovar */}
             <div className="group relative h-80 cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-lg p-8 flex flex-col justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-                <h3 className="text-xl font-bold mb-4">Redução de Custos</h3>
-                <p className="text-sm leading-relaxed">Otimização de rotas reduz combustível em até 30%. Manutenção preditiva evita falhas custosas. ROI em 18 meses.</p>
+                <h3 className="text-xl font-bold mb-4">O Custo de Não Inovar</h3>
+                <p className="text-sm leading-relaxed">Em limpeza urbana, a falta de geointeligência resulta em operações sem visibilidade: rotas não otimizadas geram congestionamento operacional, deslocamentos até vazadouro sem planejamento aumentam hora extra, e custos crescem sem controle. Prefeituras que implementam geointeligência conseguem previsibilidade orçamentária e eficiência operacional. A pergunta não é se você pode inovar, mas quanto custa não fazer isso.</p>
               </div>
               <div className="absolute inset-0 bg-white rounded-lg p-8 border-2 border-green-600 flex flex-col items-center justify-center text-center group-hover:opacity-0 transition-opacity duration-300">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
                   <span className="text-3xl">💰</span>
                 </div>
-                <h3 className="text-xl font-bold text-foreground">Redução de Custos</h3>
-                <p className="text-sm text-muted-foreground mt-2">Até 30% em combustível</p>
+                <h3 className="text-xl font-bold text-foreground">O Custo de Não Inovar</h3>
+                <p className="text-sm text-muted-foreground mt-2">Qual o custo de não ter o custo on time?</p>
               </div>
             </div>
 
