@@ -95,9 +95,9 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container">
           <div className="max-w-3xl mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-foreground">Inovações que é importante saber</h2>
+            <h2 className="text-4xl font-bold mb-4 text-foreground">O Tripé da Gestão Inteligente: Cérebro, Corpo e Sentidos</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              O futuro da gestão urbana é geoespacial e automatizado. Vimos soluções maduras de IA, Gêmeos Digitais e IoT prontas para escala. A tecnologia não é mais uma promessa, mas uma ferramenta de prateleira pronta para transformar cidades.
+              A COMLURB tem conhecimento profundo do território, presença diária nas ruas e equipes distribuídas pela cidade. Conectar esses ativos com tecnologias complementares que funcionam como um sistema nervoso central. Essas três tecnologias são a base para uma gestão urbana que antecipa problemas, reduz custos operacionais e entrega melhores resultados para a cidade.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
