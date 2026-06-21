@@ -491,8 +491,32 @@ export default function Home() {
               </TabsList>
               
               <TabsContent value="fortaleza" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
-                <h3 className="text-2xl font-bold mb-4 text-white">Prefeitura de Fortaleza</h3>
-                <p className="text-slate-300">Conteúdo será adicionado em breve...</p>
+                <h3 className="text-2xl font-bold mb-6 text-white">Prefeitura de Fortaleza</h3>
+                <div className="relative w-full">
+                  <div className="overflow-x-auto pb-4">
+                    <div className="flex gap-6 snap-x snap-mandatory">
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_150835_4146623e.webp" alt="O desafio dos Municípios" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_150906_baf2126a.webp" alt="Fortaleza: Da Informação Territorial à Inteligência Geográfica" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_151124_21c4e00c.webp" alt="Quando os dados começam a conversar" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_151319_95c3796f.webp" alt="Inteligência Geográfica a Serviço dos Municípios" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_151543_e9da6b46.webp" alt="Inteligência Geográfica Gera Resultados" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_151725_b593595c.webp" alt="Os Desafios Continuam" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-slate-300 text-sm mt-4 text-center">Deslize para ver mais imagens da apresentação</p>
+                </div>
               </TabsContent>
               
               <TabsContent value="belohorizonte" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
