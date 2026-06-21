@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { ChevronLeft, Zap } from "lucide-react";
+import { ChevronLeft, Zap, ExternalLink } from "lucide-react";
 
 export default function Projetos() {
   const projetos = [
@@ -57,18 +57,23 @@ export default function Projetos() {
           <h3 className="text-2xl font-bold text-gray-900 mb-8">Projetos em Desenvolvimento</h3>
           <div className="flex justify-center">
             {projetos.map((projeto) => (
-              <div 
-                key={projeto.id} 
-                className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300 w-full max-w-md"
-              >
-                <div className="flex flex-col items-center gap-4 text-center">
-                  <div className={`${projeto.cor} w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0`}>
-                    <Zap size={32} className="text-white" />
+              <Link key={projeto.id} href="/apresentacao-presidencia">
+                <div 
+                  className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300 w-full max-w-md cursor-pointer group"
+                >
+                  <div className="flex flex-col items-center gap-4 text-center">
+                    <div className={`${projeto.cor} w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0`}>
+                      <Zap size={32} className="text-white" />
+                    </div>
+                    <h4 className="text-2xl font-bold text-gray-900">{projeto.nome}</h4>
                   </div>
-                  <h4 className="text-2xl font-bold text-gray-900">{projeto.nome}</h4>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-4 text-center">{projeto.descricao}</p>
+                  <div className="mt-6 flex items-center justify-center gap-2 text-blue-600 group-hover:text-blue-800 transition-colors">
+                    <span className="text-sm font-semibold">Ver apresentacao</span>
+                    <ExternalLink size={16} />
+                  </div>
                 </div>
-                <p className="text-gray-600 text-sm leading-relaxed mt-4 text-center">{projeto.descricao}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
