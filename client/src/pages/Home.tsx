@@ -103,11 +103,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <GeoIACard />
             <DigitalTwinsCard />
-            <Card className="p-8 border-l-4 border-l-purple-600 hover:shadow-lg transition">
-              <Zap className="w-12 h-12 text-purple-600 mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-foreground">IoT - Internet das Coisas</h3>
-              <p className="text-muted-foreground">A IoT elimina a necessidade de ir lá ver, pois o objeto avisa ao sistema como ele está. Se a GeoIA é o cérebro e o Gêmeo Digital é o corpo, a Internet das Coisas (IoT) representa os sentidos do sistema. Ela é a rede de dispositivos físicos (sensores, rastreadores, câmeras) que coleta dados brutos do mundo real e os envia para o sistema em tempo real.</p>
-            </Card>
+            <IoTCard />
           </div>
         </div>
       </section>
@@ -550,6 +546,48 @@ function NetworkingCard({ contact }: { contact: NetworkingContact }) {
         )}
       </div>
     </div>
+  );
+}
+
+function IoTCard() {
+  const [isExpanded, setIsExpanded] = React.useState(false);
+
+  return (
+    <Card 
+      className="p-8 border-l-4 border-l-purple-600 hover:shadow-lg transition cursor-pointer"
+      onClick={() => setIsExpanded(!isExpanded)}
+    >
+      <Zap className="w-12 h-12 text-purple-600 mb-4" />
+      <h3 className="text-xl font-bold mb-3 text-foreground">IoT - Internet das Coisas</h3>
+      <p className="text-muted-foreground">A IoT elimina a necessidade de ir lá ver, pois o objeto avisa ao sistema como ele está. Se a GeoIA é o cérebro e o Gêmeo Digital é o corpo, a Internet das Coisas (IoT) representa os sentidos do sistema. Ela é a rede de dispositivos físicos (sensores, rastreadores, câmeras) que coleta dados brutos do mundo real e os envia para o sistema em tempo real.</p>
+      
+      {isExpanded && (
+        <div className="mt-6 pt-6 border-t border-border">
+          <h4 className="text-lg font-bold mb-4 text-foreground">Aplicações Práticas na COMLURB</h4>
+          
+          <div className="space-y-6">
+            <div>
+              <h5 className="font-semibold text-foreground mb-2">Na Coleta</h5>
+              <p className="text-sm text-muted-foreground">Sensores de peso e volume nos contéineres de lixo. O sistema recebe o sinal de que o setor X atingiu o limite de carga e despacha automaticamente o caminhão mais próximo, otimizando a logística de resíduos.</p>
+            </div>
+            
+            <div>
+              <h5 className="font-semibold text-foreground mb-2">Na Varrição</h5>
+              <p className="text-sm text-muted-foreground">GPS de alta precisão nos carrinhos dos garis e sopradores. O gestor consegue ver no mapa quais ruas já foram varridas hoje e quais ficaram "buracos" na operação, garantindo que 100% do logradouro foi atendido.</p>
+            </div>
+            
+            <div>
+              <h5 className="font-semibold text-foreground mb-2">Na Poda</h5>
+              <p className="text-sm text-muted-foreground">Sensores de estabilidade (acelerômetros) fixados no tronco de árvores históricas ou de alto risco. Se a árvore inclinar mais de 5 graus devido a ventos fortes, o IoT envia um alerta de emergência para o sistema, priorizando a equipe de poda para aquele local antes que ocorra um acidente.</p>
+            </div>
+          </div>
+          
+          <div className="mt-6 pt-6 border-t border-border">
+            <p className="text-sm text-muted-foreground italic">Com a IoT, o seu sistema deixa de depender de relatórios manuais preenchidos por humanos (que podem ter erros) e passa a ler a realidade diretamente dos objetos, tornando a gestão da empresa à prova de falhas.</p>
+          </div>
+        </div>
+      )}
+    </Card>
   );
 }
 
