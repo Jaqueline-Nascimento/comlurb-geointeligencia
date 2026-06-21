@@ -517,6 +517,17 @@ export default function Home() {
                   </div>
                   <p className="text-slate-300 text-sm mt-4 text-center">Deslize para ver mais imagens da apresentação</p>
                 </div>
+                
+                <div className="mt-12 pt-8 border-t border-slate-700">
+                  <div className="flex flex-col lg:flex-row gap-8 items-start">
+                    <div className="w-full lg:w-1/3 flex-shrink-0">
+                      <img src="/manus-storage/20260617_183344_99ae7c35.webp" alt="Equipe da COMLURB" className="w-full h-64 object-cover rounded-lg shadow-lg" />
+                    </div>
+                    <div className="w-full lg:w-2/3">
+                      <p className="text-slate-300 leading-relaxed">Aqui você pode adicionar um texto descritivo sobre a imagem e a experiência da Prefeitura de Fortaleza com geointeligência.</p>
+                    </div>
+                  </div>
+                </div>
               </TabsContent>
               
               <TabsContent value="belohorizonte" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
