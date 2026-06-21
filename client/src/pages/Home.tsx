@@ -527,56 +527,7 @@ export default function Home() {
           <p className="text-lg text-muted-foreground mb-12 max-w-3xl">
             Conheça os profissionais da COMLURB que participaram do Congresso MundoGEO Connect 2026 e trouxeram os aprendizados que transformarão a empresa.
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8 text-center hover:shadow-lg transition">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">Participante 1</h3>
-              <p className="text-sm text-muted-foreground mb-4">Cargo e Departamento</p>
-              <p className="text-sm text-muted-foreground italic">Currículo e experiências profissionais</p>
-            </Card>
-            <Card className="p-8 text-center hover:shadow-lg transition">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">Participante 2</h3>
-              <p className="text-sm text-muted-foreground mb-4">Cargo e Departamento</p>
-              <p className="text-sm text-muted-foreground italic">Currículo e experiências profissionais</p>
-            </Card>
-            <Card className="p-8 text-center hover:shadow-lg transition">
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">Participante 3</h3>
-              <p className="text-sm text-muted-foreground mb-4">Cargo e Departamento</p>
-              <p className="text-sm text-muted-foreground italic">Currículo e experiências profissionais</p>
-            </Card>
-            <Card className="p-8 text-center hover:shadow-lg transition">
-              <div className="w-20 h-20 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">Participante 4</h3>
-              <p className="text-sm text-muted-foreground mb-4">Cargo e Departamento</p>
-              <p className="text-sm text-muted-foreground italic">Currículo e experiências profissionais</p>
-            </Card>
-            <Card className="p-8 text-center hover:shadow-lg transition">
-              <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">Participante 5</h3>
-              <p className="text-sm text-muted-foreground mb-4">Cargo e Departamento</p>
-              <p className="text-sm text-muted-foreground italic">Currículo e experiências profissionais</p>
-            </Card>
-            <Card className="p-8 text-center hover:shadow-lg transition">
-              <div className="w-20 h-20 bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-foreground">Participante 6</h3>
-              <p className="text-sm text-muted-foreground mb-4">Cargo e Departamento</p>
-              <p className="text-sm text-muted-foreground italic">Currículo e experiências profissionais</p>
-            </Card>
-          </div>
+          <ParticipantesGrupo />
         </div>
       </section>
 
@@ -1003,3 +954,124 @@ A ideia de um aplicativo ou solução digital voltada ao horário correto da col
 Para a COMLURB, esse contato pode contribuir para comunicação mais clara sobre dias e horários de coleta, redução de resíduos colocados fora do horário, melhoria da relação entre operação e cidadão, e envio de alertas sobre mudanças de rota, feriados e eventos. A importância está em lembrar que tecnologia pública não deve servir apenas à gestão interna. Ela também deve facilitar a vida do cidadão.`
   }
 ];
+
+
+// Componente de Participantes com Foto do Grupo
+interface Participante {
+  nome: string;
+  cargo: string;
+  departamento: string;
+  curriculo: string;
+  posicao: { left: string; top: string };
+}
+
+const participantes: Participante[] = [
+  {
+    nome: "FELIPE XAVIER",
+    cargo: "Coordenador Técnico",
+    departamento: "Diretoria de Limpeza Urbana (DLU)",
+    curriculo: "Felipe Xavier é Coordenador Técnico da Diretoria de Limpeza Urbana, responsável pela supervisão de projetos técnicos e implementação de soluções inovadoras em limpeza urbana. Com experiência em gestão operacional e tecnologia, Felipe liderou iniciativas de otimização de rotas e eficiência operacional na COMLURB.",
+    posicao: { left: "8%", top: "55%" }
+  },
+  {
+    nome: "ALEXANDRA ROBERTA",
+    cargo: "Coordenadora de Projetos",
+    departamento: "Diretoria de Gestão e Gente (DGG)",
+    curriculo: "Alexandra Roberta é Coordenadora de Projetos na Diretoria de Gestão e Gente, com foco em desenvolvimento de pessoas e gestão de projetos estratégicos. Sua experiência inclui capacitação de equipes, mudança organizacional e implementação de novas metodologias de trabalho.",
+    posicao: { left: "25%", top: "50%" }
+  },
+  {
+    nome: "RÔMULO GUIMARÃES GIÁCOMO",
+    cargo: "Engenheiro Sênior",
+    departamento: "Diretoria de Serviços Urbanos (DSU)",
+    curriculo: "Rômulo Guimarães Giácomo é Engenheiro Sênior da Diretoria de Serviços Urbanos, especialista em infraestrutura urbana e soluções de engenharia. Com vasta experiência em projetos de grande escala, Rômulo contribui para a otimização de processos e implementação de tecnologias avançadas.",
+    posicao: { left: "42%", top: "55%" }
+  },
+  {
+    nome: "JAQUELINE NASCIMENTO",
+    cargo: "Coordenadora Geral da Assessoria",
+    departamento: "Diretoria de Serviços Urbanos (DSU)",
+    curriculo: "Jaqueline Nascimento é Coordenadora Geral da Assessoria na Diretoria de Serviços Urbanos, responsável pela coordenação de projetos estratégicos e assessoria executiva. Sua expertise em gestão estratégica e comunicação institucional é fundamental para a implementação de iniciativas de transformação digital.",
+    posicao: { left: "58%", top: "50%" }
+  },
+  {
+    nome: "MARCELO DANTAS",
+    cargo: "Desenvolvedor Web Fullstack",
+    departamento: "FGI",
+    curriculo: "Marcelo Dantas é Desenvolvedor Web Fullstack, especialista em desenvolvimento de aplicações web modernas e integração de sistemas. Com experiência em arquitetura de software e implementação de soluções escaláveis, Marcelo é fundamental na transformação digital da COMLURB.",
+    posicao: { left: "74%", top: "55%" }
+  },
+  {
+    nome: "DIEGO DE FREITAS DIAS SARMANHO LOPES",
+    cargo: "Desenvolvedor Web Fullstack",
+    departamento: "FGI",
+    curriculo: "Diego de Freitas Dias Sarmanho Lopes é Desenvolvedor Web Fullstack, especialista em desenvolvimento full-stack e implementação de plataformas integradas. Com experiência em tecnologias modernas e metodologias ágeis, Diego contribui para a construção de soluções inovadoras em geointeligência urbana.",
+    posicao: { left: "90%", top: "50%" }
+  }
+];
+
+function ParticipantesGrupo() {
+  const [selectedParticipant, setSelectedParticipant] = React.useState<Participante | null>(null);
+
+  return (
+    <>
+      <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
+        {/* Foto do Grupo */}
+        <img 
+          src="/manus-storage/grupo-mundogeo-2026_04b39992.png" 
+          alt="Grupo de Participantes MundoGEO 2026"
+          className="w-full h-auto object-cover"
+        />
+        
+        {/* Badges Flutuantes com Nomes */}
+        {participantes.map((participante, index) => (
+          <button
+            key={index}
+            onClick={() => setSelectedParticipant(participante)}
+            className="absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group"
+            style={{
+              left: participante.posicao.left,
+              top: participante.posicao.top
+            }}
+          >
+            {/* Badge Transparente */}
+            <div className="bg-black/40 backdrop-blur-sm px-4 py-3 rounded-lg text-white font-bold text-center hover:bg-black/60 transition-all duration-300 min-w-max">
+              <div className="text-sm font-bold uppercase tracking-wide">{participante.nome}</div>
+              <div className="text-xs font-normal lowercase mt-1 opacity-90">{participante.cargo}</div>
+            </div>
+          </button>
+        ))}
+      </div>
+
+      {/* Modal de Currículo */}
+      {selectedParticipant && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={() => setSelectedParticipant(null)}>
+          <Card className="w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+            <div className="p-8">
+              <div className="flex items-start justify-between mb-6">
+                <div>
+                  <h2 className="text-3xl font-bold text-foreground mb-2">{selectedParticipant.nome}</h2>
+                  <p className="text-lg text-green-600 font-semibold">{selectedParticipant.cargo}</p>
+                  <p className="text-sm text-muted-foreground mt-1">{selectedParticipant.departamento}</p>
+                </div>
+                <button
+                  onClick={() => setSelectedParticipant(null)}
+                  className="text-muted-foreground hover:text-foreground transition text-2xl"
+                >
+                  ✕
+                </button>
+              </div>
+              
+              <div className="border-t border-border pt-6">
+                <h3 className="text-lg font-bold text-foreground mb-4">Currículo e Experiências</h3>
+                <p className="text-muted-foreground leading-relaxed whitespace-pre-wrap">
+                  {selectedParticipant.curriculo}
+                </p>
+              </div>
+            </div>
+          </Card>
+        </div>
+      )}
+    </>
+  );
+}
