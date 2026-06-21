@@ -327,11 +327,7 @@ export default function Home() {
             </div>
             <div className="bg-gradient-to-br from-slate-800 to-slate-700 p-12 rounded-lg border border-slate-600">
               <div className="text-center mb-12">
-                <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400 mb-4">
-                  100%
-                </div>
-                <p className="text-xl font-semibold text-white mb-2">Integração Completa</p>
-                <p className="text-slate-300">Dados unificados, processos otimizados, pessoas capacitadas.</p>
+                <p className="text-3xl font-bold text-white">A capacitação é o pilar da transformação digital</p>
               </div>
               
               {/* Timeline Vertical */}
