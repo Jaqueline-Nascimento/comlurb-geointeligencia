@@ -985,7 +985,7 @@ const participantes: Participante[] = [
     cargo: "Engenheiro Sênior",
     departamento: "Diretoria de Serviços Urbanos (DSU)",
     curriculo: "Rômulo Guimarães Giácomo é Engenheiro Sênior da Diretoria de Serviços Urbanos, especialista em infraestrutura urbana e soluções de engenharia. Com vasta experiência em projetos de grande escala, Rômulo contribui para a otimização de processos e implementação de tecnologias avançadas.",
-    posicao: { left: "43%", top: "30%" }
+    posicao: { left: "53%", top: "30%" }
   },
   {
     nome: "JAQUELINE NASCIMENTO",
