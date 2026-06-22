@@ -1125,9 +1125,9 @@ const participantes: Participante[] = [
   },
   {
     nome: "MARCELO DANTAS",
-    cargo: "Desenvolvedor Web Fullstack",
-    departamento: "FGI",
-    curriculo: "Marcelo Dantas é Desenvolvedor Web Fullstack, especialista em desenvolvimento de aplicações web modernas e integração de sistemas. Com experiência em arquitetura de software e implementação de soluções escaláveis, Marcelo é fundamental na transformação digital da COMLURB.",
+    cargo: "Líder de Projetos e Soluções Estratégicas",
+    departamento: "FGI - Tecnologia da Informação",
+    curriculo: "Profissional de Tecnologia da Informação com 30 anos de experiência em análise, desenvolvimento e gestão de soluções digitais, sendo 26 anos dedicados à Comlurb. Ingressou como estagiário, sendo posteriormente efetivado como Analista de Sistemas e assumindo posições de liderança técnica e coordenação de equipes. Atualmente atua como líder de projetos responsável por soluções estratégicas voltadas à gestão operacional, com destaque para o Sistema Integrado de Controle Operacional (SICO), plataforma corporativa responsável pelo planejamento, monitoramento, controle e medição dos serviços de limpeza urbana.\n\nPossui sólida experiência em levantamento e modelagem de processos de negócio, arquitetura de sistemas, desenvolvimento de aplicações corporativas, bancos de dados, integração de sistemas, automação de regras operacionais e construção de indicadores gerenciais.\n\nParalelamente à atuação corporativa, exerce atividades de docência há mais de 25 anos em instituições de ensino técnico, ministrando disciplinas de programação, desenvolvimento web, bancos de dados, engenharia de software e análise de sistemas. Combina visão técnica e conhecimento de negócio na concepção e implementação de soluções que contribuem para eficiência operacional, governança de dados e tomada de decisão estratégica.",
     posicao: { left: "73%", top: "20%" }
   },
   {
