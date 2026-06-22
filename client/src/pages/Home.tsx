@@ -1103,10 +1103,10 @@ const participantes: Participante[] = [
     posicao: { left: "44%", top: "30%" }
   },
   {
-    nome: "ALEXANDRA ROBERTA",
-    cargo: "Coordenador de Projetos",
-    departamento: "Diretoria de Gestão e Gente (DGG)",
-    curriculo: "Alexandra Roberta é Coordenadora de Projetos na Diretoria de Gestão e Gente, com foco em desenvolvimento de pessoas e gestão de projetos estratégicos. Sua experiência inclui capacitação de equipes, mudança organizacional e implementação de novas metodologias de trabalho.",
+    nome: "ALEXANDRA ROBERTA DA SILVA",
+    cargo: "Especialista em Dados | Business Intelligence | Indicadores e Performance",
+    departamento: "Rio de Janeiro – RJ | (21) 99964-5556 | alexa.roberta19@gmail.com | linkedin.com/in/alexandrarobertadasilva",
+    curriculo: "Sou Especialista em Dados e Inteligência de Negócios, com sólida experiência em análise de dados, Business Intelligence e indicadores de performance, atuando diretamente no suporte à tomada de decisão estratégica. Ao longo da minha trajetória, desenvolvi dashboards executivos, análises estratégicas e automações de processos que apoiam lideranças na definição de diretrizes e ações.\n\nAtualmente curso MBA em IA, Data Science e Big Data para Negócios, aprofundando minha atuação em soluções analíticas orientadas a resultados e geração de valor para o negócio.\n\nColoco-me à disposição para contribuir com minha experiência analítica, visão estratégica e forte orientação a resultados.",
     posicao: { left: "55%", top: "52%" }
   },
   {
