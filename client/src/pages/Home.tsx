@@ -1147,48 +1147,50 @@ function ParticipantesGrupo() {
 
   return (
     <>
-      {/* Desktop: Foto com Badges */}
-      <div className="hidden md:block relative w-full rounded-lg overflow-hidden shadow-lg">
-        {/* Foto do Grupo */}
+      {/* Foto do Grupo - Visível em ambas as versões */}
+      <div className="relative w-full rounded-lg overflow-hidden shadow-lg mb-8">
         <img 
           src="/manus-storage/grupo-mundogeo-2026_04b39992.png" 
           alt="Grupo de Participantes MundoGEO 2026"
           className="w-full h-auto object-cover"
         />
         
-        {/* Badges Flutuantes com Nomes */}
-        {participantes.map((participante, index) => (
-          <button
-            key={index}
-            onClick={() => setSelectedParticipant(participante)}
-            className="absolute transform -translate-x-1/2 cursor-pointer group"
-            style={{
-              left: participante.posicao.left,
-              top: participante.posicao.top
-            }}
-          >
-            {/* Badge Transparente */}
-            <div className="bg-black/50 backdrop-blur-md px-3 py-2 rounded-lg text-white font-bold text-center hover:bg-black/70 transition-all duration-300 min-w-max whitespace-nowrap">
-              <div className="text-xs font-bold uppercase tracking-wide leading-tight">{participante.nome}</div>
-              <div className="text-xs font-normal lowercase mt-0.5 opacity-90 leading-tight">{participante.cargo}</div>
-            </div>
-          </button>
-        ))}
+        {/* Desktop: Badges Flutuantes com Nomes */}
+        <div className="hidden md:block">
+          {participantes.map((participante, index) => (
+            <button
+              key={index}
+              onClick={() => setSelectedParticipant(participante)}
+              className="absolute transform -translate-x-1/2 cursor-pointer group"
+              style={{
+                left: participante.posicao.left,
+                top: participante.posicao.top
+              }}
+            >
+              {/* Badge Transparente */}
+              <div className="bg-black/50 backdrop-blur-md px-3 py-2 rounded-lg text-white font-bold text-center hover:bg-black/70 transition-all duration-300 min-w-max whitespace-nowrap">
+                <div className="text-xs font-bold uppercase tracking-wide leading-tight">{participante.nome}</div>
+                <div className="text-xs font-normal lowercase mt-0.5 opacity-90 leading-tight">{participante.cargo}</div>
+              </div>
+            </button>
+          ))}
+        </div>
       </div>
 
-      {/* Mobile: Lista de Participantes */}
-      <div className="md:hidden grid grid-cols-1 gap-3">
-        {participantes.map((participante, index) => (
-          <button
-            key={index}
-            onClick={() => setSelectedParticipant(participante)}
-            className="bg-gradient-to-r from-slate-800 to-slate-900 hover:from-slate-700 hover:to-slate-800 text-white p-4 rounded-lg text-left transition-all duration-300 border border-slate-700 hover:border-green-600"
-          >
-            <div className="font-bold text-sm uppercase tracking-wide">{participante.nome}</div>
-            <div className="text-xs text-green-400 mt-1">{participante.cargo}</div>
-            <div className="text-xs text-slate-400 mt-0.5">{participante.departamento}</div>
-          </button>
-        ))}
+      {/* Mobile: Lista de Nomes abaixo da Foto */}
+      <div className="md:hidden">
+        <div className="grid grid-cols-2 gap-3">
+          {participantes.map((participante, index) => (
+            <button
+              key={index}
+              onClick={() => setSelectedParticipant(participante)}
+              className="bg-gradient-to-r from-slate-800 to-slate-900 hover:from-slate-700 hover:to-slate-800 text-white p-3 rounded-lg text-center transition-all duration-300 border border-slate-700 hover:border-green-600"
+            >
+              <div className="font-bold text-xs uppercase tracking-wide leading-tight">{participante.nome}</div>
+              <div className="text-xs text-green-400 mt-1">{participante.cargo}</div>
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Modal de Currículo */}
