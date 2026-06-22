@@ -1118,7 +1118,7 @@ const participantes: Participante[] = [
   },
   {
     nome: "JAQUELINE NASCIMENTO",
-    cargo: "Coordenadora Geral da Assessoria",
+    cargo: "Analista de Dados e Pós graduada em Gestão de Pessoas",
     departamento: "Diretoria de Serviços Urbanos (DSU)",
     curriculo: "Minha trajetória na COMLURB tem sido marcada pelo compromisso com a gestão pública, com a melhoria dos serviços urbanos e com a busca constante por soluções que tornem a operação mais eficiente, integrada e transparente.\n\nTive a oportunidade de contribuir diretamente com áreas estratégicas da Companhia, passando pela gestão regional da limpeza urbana, pelo acompanhamento de metas operacionais, pela organização de processos internos e pela articulação entre equipes, diretorias e órgãos parceiros. Minha experiência na ponta da operação me permitiu compreender, de forma prática, os desafios reais da cidade, das equipes em campo e da população que depende diariamente dos serviços prestados pela COMLURB.\n\nAtuei na análise de dados, no planejamento de serviços, no acompanhamento de indicadores, na melhoria de fluxos de trabalho e na construção de soluções voltadas à modernização da gestão.\n\nTenho prazer em transformar problemas complexos em soluções fáceis e acessível para todos.\n\nSigo comprometida com a valorização das equipes e com a construção de uma gestão pública mais moderna, humana e eficiente. Minha trajetória ainda está em construção, mas carrego a certeza de que meu potencial está justamente na capacidade de unir experiência prática, sensibilidade para ouvir as pessoas e coragem para propor mudanças e inovações.",
     posicao: { left: "70%", top: "58%" }
