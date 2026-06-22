@@ -56,6 +56,16 @@ export default function Home() {
       >
         {/* Overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/20 via-slate-900/15 to-slate-900/10"></div>
+        
+        {/* Logo Prefeitura RIO + COMLURB - Top Right */}
+        <div className="absolute top-6 right-6 z-20 md:w-64 w-48">
+          <img 
+            src="/manus-storage/logo-rio-comlurb-white_d525a732.png" 
+            alt="Prefeitura RIO - COMLURB"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+        
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
