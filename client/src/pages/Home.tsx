@@ -679,24 +679,10 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-12">
         <div className="container">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
               <h4 className="font-bold mb-4">COMLURB</h4>
               <p className="text-sm text-slate-400">Transformando a gestão urbana através de inteligência geográfica.</p>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Navegação</h4>
-              <ul className="space-y-2 text-sm text-slate-400">
-                <li><a href="#oportunidades" className="hover:text-white transition">Oportunidades</a></li>
-                <li><a href="#comparativo" className="hover:text-white transition">Comparativo</a></li>
-                <li><a href="#capacitacao" className="hover:text-white transition">Capacitação</a></li>
-                <li><a href="#participantes" className="hover:text-white transition">Participantes</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Contato</h4>
-              <p className="text-sm text-slate-400">contato@comlurb.rio</p>
-              <p className="text-sm text-slate-400">+55 21 2131-1234</p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Evento</h4>
