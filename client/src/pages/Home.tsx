@@ -1132,9 +1132,9 @@ const participantes: Participante[] = [
   },
   {
     nome: "DIEGO DE FREITAS DIAS SARMANHO LOPES",
-    cargo: "Desenvolvedor Web Fullstack",
-    departamento: "FGI",
-    curriculo: "Diego de Freitas Dias Sarmanho Lopes é Desenvolvedor Web Fullstack, especialista em desenvolvimento full-stack e implementação de plataformas integradas. Com experiência em tecnologias modernas e metodologias ágeis, Diego contribui para a construção de soluções inovadoras em geointeligência urbana.",
+    cargo: "Desenvolvedor Full Stack | IA e Machine Learning",
+    departamento: "FGI - Tecnologia da Informação",
+    curriculo: "Tecnólogo em Análise e Desenvolvimento de Sistemas e MBA em Engenharia de Software pela UFRJ. Desenvolvedor Full Stack com mais de 7 anos de experiência no desenvolvimento de sistemas web, desktop e soluções corporativas, atuando com foco em automação de processos, integração de sistemas, análise de dados e transformação digital.\n\nAtualmente é Desenvolvedor Full Stack na COMLURB, onde participa da concepção, desenvolvimento e manutenção de aplicações estratégicas para apoio à gestão operacional. Atua na criação de soluções utilizando Python, PHP e bancos de dados relacionais, promovendo integração entre sistemas, otimização de processos e disponibilização de informações para suporte à tomada de decisão.\n\nPossui experiência no desenvolvimento de APIs, aplicações web e desktop, modelagem e otimização de bancos de dados, implantação de sistemas em ambiente Linux e utilização de tecnologias de containerização. Desenvolve ainda soluções que incorporam técnicas de Inteligência Artificial e Machine Learning para análise de dados, automação de atividades e geração de conhecimento aplicado à gestão pública.\n\nDomina tecnologias como Python, PHP, JavaScript, Flask, FastAPI, PostgreSQL, MySQL, Docker e Linux, combinando visão técnica e capacidade analítica para entrega de soluções escaláveis, seguras e orientadas a resultados.",
     posicao: { left: "87%", top: "28%" }
   }
 ];
