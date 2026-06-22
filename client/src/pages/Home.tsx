@@ -60,7 +60,7 @@ export default function Home() {
         {/* Logo Prefeitura RIO + COMLURB - Top Right */}
         <div className="absolute top-6 right-6 z-20 md:w-64 w-48">
           <img 
-            src="/manus-storage/logo-rio-comlurb-transparent_a9aaaacd.png" 
+            src="/manus-storage/logo-rio-comlurb-novo_c0e5dae7.jpg" 
             alt="Prefeitura RIO - COMLURB"
             className="w-full h-auto object-contain"
           />
