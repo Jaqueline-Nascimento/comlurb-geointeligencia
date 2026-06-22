@@ -1111,9 +1111,9 @@ const participantes: Participante[] = [
   },
   {
     nome: "RÔMULO GUIMARÃES GIÁCOMO",
-    cargo: "Engenheiro Sênior",
+    cargo: "Engenheiro Sênior | Geotecnologias e Inovação",
     departamento: "Diretoria de Serviços Urbanos (DSU)",
-    curriculo: "Rômulo Guimarães Giácomo é Engenheiro Sênior da Diretoria de Serviços Urbanos, especialista em infraestrutura urbana e soluções de engenharia. Com vasta experiência em projetos de grande escala, Rômulo contribui para a otimização de processos e implementação de tecnologias avançadas.",
+    curriculo: "Engenheiro Florestal, Mestre em Ciências Ambientais e Florestais, Doutorados em Agronomia (UNESP) e Ciência e Tecnologia Ambiental (Universidad da Coruña, Espanha). Engenheiro Sênior na COMLURB desde 2011. Representante titular e ponto focal da companhia junto ao Sistema Municipal de Informações Urbanas - SIURB.\n\nCom larga experiência em projetos envolvendo geotecnologias aplicadas à gestão pública, é responsável pelo desenvolvimento de plataformas estratégicas da empresa. Entre suas criações estão o ArboRio (Sistema Integrado de Gestão da Arborização Urbana do Município do Rio de Janeiro) e o sistema de gestão de grandes eventos da COMLURB, que otimizam a logística de limpeza em operações de alta complexidade como o Todo Mundo no Rio e o Réveillon.\n\nHabilidades e ampla vivência no ecossistema ArcGIS, desenvolvendo soluções por meio de diversas aplicações da plataforma (ArcGIS Pro, Survey123, Dashboards, Field Maps e Experience Builder). Uso de Inteligência Artificial em fluxos de trabalho para realização de análises complexas de dados com objetivo de extrair novas potencialidades tecnológicas e de inovação.",
     posicao: { left: "61%", top: "25%" }
   },
   {
