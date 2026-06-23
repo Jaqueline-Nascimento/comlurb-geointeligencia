@@ -52,32 +52,6 @@ export default function Projetos() {
           </div>
         </div>
 
-        {/* Grid de Projetos */}
-        <div className="mt-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">Projetos em Desenvolvimento</h3>
-          <div className="flex justify-center">
-            {projetos.map((projeto) => (
-              <Link key={projeto.id} href="/apresentacao-presidencia">
-                <div 
-                  className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300 w-full max-w-md cursor-pointer group"
-                >
-                  <div className="flex flex-col items-center gap-4 text-center">
-                    <div className={`${projeto.cor} w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0`}>
-                      <Zap size={32} className="text-white" />
-                    </div>
-                    <h4 className="text-2xl font-bold text-gray-900">{projeto.nome}</h4>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed mt-4 text-center">{projeto.descricao}</p>
-                  <div className="mt-6 flex items-center justify-center gap-2 text-blue-600 group-hover:text-blue-800 transition-colors">
-                    <span className="text-sm font-semibold">Ver apresentacao</span>
-                    <ExternalLink size={16} />
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-
         {/* CTA Section */}
         <div className="mt-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">Quer saber mais sobre nossos projetos?</h3>
