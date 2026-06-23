@@ -31,8 +31,8 @@ export default function Projetos() {
           {/* Imagem */}
           <div className="w-full lg:w-1/3 flex-shrink-0">
             <img 
-              src="/manus-storage/edited_image_b006e6ac.png" 
-              alt="Portfólio de Projetos" 
+              src="/manus-storage/comlurb-layers-with-trees_026d898e.png" 
+              alt="Portfólio de Projetos - Camadas de Geointeligência" 
               className="w-full rounded-lg shadow-lg"
             />
           </div>
