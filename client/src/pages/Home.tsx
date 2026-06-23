@@ -552,7 +552,7 @@ export default function Home() {
                       <img src="/manus-storage/20260617_183344_99ae7c35.webp" alt="Equipe da COMLURB" className="w-full h-64 object-cover rounded-lg shadow-lg" />
                     </div>
                     <div className="w-full lg:w-2/3">
-                      <p className="text-slate-300 leading-relaxed">Aqui você pode adicionar um texto descritivo sobre a imagem e a experiência da Prefeitura de Fortaleza com geointeligência.</p>
+                      <p className="text-slate-300 leading-relaxed">A palestra partiu de uma ideia muito simples: toda decisão pública acontece em algum lugar. Quando os dados começam a conversar, surge a inteligência geográfica. Isso significa conectar cadastro, cartografia, planejamento urbano, infraestrutura, informações ambientais, mercado imobiliário, informações tributárias e dados operacionais. A partir dessa conexão, o município deixa de enxergar problemas isolados e passa a compreender padrões.</p>
                     </div>
                   </div>
                 </div>
