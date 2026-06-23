@@ -29,38 +29,7 @@ export default function ApresentacaoPresidencia() {
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
-        {/* MundoGEO Connect 2026 */}
-        <section className="mb-16">
-          <div className="max-w-4xl mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-foreground">Conteúdo Estratégico - MundoGEO Connect 2026</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Conteúdo apresentado no MundoGEO Connect 2026, estruturado para comunicar a visão de geointeligência urbana e as oportunidades de inovação na gestão pública.
-            </p>
-          </div>
-          
-          <div className="w-full bg-white p-8 rounded-lg border border-slate-200">
-            <h3 className="text-2xl font-bold mb-6 text-foreground">Apresentação MundoGEO Connect 2026</h3>
-            <div className="w-full" style={{ aspectRatio: '16 / 9' }}>
-              <iframe
-                src="https://www.canva.com/design/DAHNAz9u1Do/2hAYOENm0nb9GUpfGg_kZg/view?embed"
-                allowFullScreen
-                loading="lazy"
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  border: 'none',
-                  borderRadius: '8px'
-                }}
-              ></iframe>
-            </div>
-            <p className="text-sm text-muted-foreground mt-4">
-              Apresentação atualizada automaticamente. Clique no link para visualizar em tela cheia: <a href="https://canva.link/4ul24fslj4qi6fw" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">MundoGEO Connect 2026</a>
-            </p>
-          </div>
-        </section>
 
-        {/* Separador */}
-        <div className="my-16 border-t-2 border-slate-200"></div>
 
         {/* Infográficos - Grid de 2 colunas */}
         <section className="py-8">
