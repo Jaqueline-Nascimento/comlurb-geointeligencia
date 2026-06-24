@@ -17,14 +17,6 @@ export default function Benchmarking() {
       isFeatured: true
     },
     {
-      id: 2,
-      title: 'Benchmarking Global de Geointeligência Urbana',
-      description: 'Análise comparativa de práticas e indicadores de geointeligência urbana em cidades líderes mundiais. Explore dados de coleta seletiva, eficiência operacional e inovação em gestão de resíduos de cidades como Curitiba, São Paulo, Estocolmo, Copenhague e Singapura.',
-      icon: MapPin,
-      url: 'https://storymaps.arcgis.com/stories/02ee7a55e3244a6ca3bb71522813b65c',
-      color: 'from-blue-600 to-blue-400'
-    },
-    {
       id: 3,
       title: 'Visão de Governança - Geointeligência na COMLURB',
       description: 'Estrutura de governança e implementação de geointeligência urbana. Conheça os pilares estratégicos, responsabilidades, tecnologias e roadmap para transformação digital da COMLURB em limpeza urbana inteligente.',
