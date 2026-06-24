@@ -111,7 +111,7 @@ export default function Benchmarking() {
             <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer">
               <div className="relative w-full bg-black" style={{ paddingBottom: '56.25%' }}>
                 <iframe
-                  src="https://www.kaltura.com//p/3057483/embedPlaykitJs/uiconf_id/49806163?iframeembed=true&entry_id=1_og3741ll&kalturaStartTime=7"
+                  src="https://mediaspace.esri.com/media/1_og3741ll?kalturaSeekFrom=0&kalturaClipTo=1128&kalturaStartTime=1"
                   className="absolute top-0 left-0 w-full h-full"
                   allowFullScreen
                   frameBorder="0"
