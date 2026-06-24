@@ -88,31 +88,21 @@ export default function GeoIA() {
         <section>
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Soluções em Ação</h2>
           
-          {/* Vídeo Principal - Primeira linha (destaque) */}
+        {/* Vídeo Principal - Primeira linha (destaque) */}
           <div className="mb-8">
-            <a
-              href={videos[0].url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <Card className="overflow-hidden hover:shadow-xl transition-shadow h-full">
-                <div className={`bg-gradient-to-r ${videos[0].color} p-8 relative overflow-hidden`}>
-                  <div className="absolute inset-0 opacity-10">
-                    <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%23ffffff%27%20fill-opacity%3D%270.1%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
-                  </div>
-                  <div className="relative z-10 flex items-center justify-between">
-                    <div>
-                      <h3 className="text-3xl font-bold text-white mb-2">{videos[0].title}</h3>
-                      <p className="text-white/90 text-lg">{videos[0].description}</p>
-                    </div>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/30 transition-all">
-                      <Play className="w-8 h-8 text-white fill-white" />
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            </a>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow h-full">
+              <video
+                className="w-full h-auto object-cover"
+                style={{ minHeight: '400px' }}
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source src="/manus-storage/radar_da_poda_42a39195.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos HTML5.
+              </video>
+            </Card>
           </div>
 
           {/* Grid de Vídeos Secundários - 2x2 */}
