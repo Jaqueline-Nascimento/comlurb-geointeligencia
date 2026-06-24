@@ -1,8 +1,58 @@
-import { ChevronLeft } from 'lucide-react';
+import { ChevronLeft, Play } from 'lucide-react';
 import { useLocation } from 'wouter';
+import { Card } from '@/components/ui/card';
+
+interface VideoItem {
+  title: string;
+  description: string;
+  url: string;
+  color: string;
+}
 
 export default function GeoIA() {
   const [, setLocation] = useLocation();
+
+  const videos: VideoItem[] = [
+    {
+      title: 'Performance Poda',
+      description: 'Análise de desempenho e eficiência das operações de poda urbana em tempo real.',
+      url: 'https://drive.google.com/file/d/19f1KYdJQFu5c75T7f2nW25CeAoT98k4M/view?usp=drivesdk',
+      color: 'from-green-500 to-green-600'
+    },
+    {
+      title: 'Ache Seu Ecoponto',
+      description: 'Localização inteligente de ecopontos e pontos de coleta seletiva próximos ao usuário.',
+      url: 'https://drive.google.com/file/d/1KM03R8mmCR0zSo2X8mj3v8CjbQnva1hQ/view?usp=drivesdk',
+      color: 'from-blue-500 to-blue-600'
+    },
+    {
+      title: 'Radar da Poda',
+      description: 'Monitoramento geoespacial em tempo real das operações de poda em toda a cidade.',
+      url: 'https://drive.google.com/file/d/1cvzGTDnFLuSZca5HVivQ9gnenzxqpOwU/view?usp=drivesdk',
+      color: 'from-purple-500 to-purple-600'
+    },
+    {
+      title: 'Arbório Operacional',
+      description: 'Sistema operacional integrado para gestão de árvores e manejo arbóreo urbano.',
+      url: 'https://drive.google.com/file/d/1CiJnBNoqRsIny3SrVQyNQMHlpMVzaisz/view?usp=drivesdk',
+      color: 'from-emerald-500 to-emerald-600'
+    },
+    {
+      title: 'GeoIA Inteligência',
+      description: 'Plataforma integrada de geointeligência com IA para otimização de operações urbanas.',
+      url: 'https://drive.google.com/file/d/1Xcijf75bu705Gw7TNGD0cDHd5X5guMTH/view?usp=drivesdk',
+      color: 'from-orange-500 to-orange-600'
+    }
+  ];
+
+  const getEmbedUrl = (driveUrl: string) => {
+    // Extrai o ID do arquivo do link do Google Drive
+    const fileId = driveUrl.match(/\/d\/([a-zA-Z0-9-_]+)/)?.[1];
+    if (fileId) {
+      return `https://drive.google.com/file/d/${fileId}/preview`;
+    }
+    return driveUrl;
+  };
 
   return (
     <main className="min-h-screen bg-white">
@@ -17,19 +67,97 @@ export default function GeoIA() {
 
       {/* Header */}
       <div className="bg-gradient-to-r from-slate-900 to-slate-800 text-white py-12">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">GeoIA na Comlurb</h1>
           <p className="text-blue-200 text-lg">
-            Conteúdo em desenvolvimento
+            Soluções Inteligentes de Geointeligência para Limpeza Urbana
           </p>
         </div>
       </div>
 
       {/* Conteúdo Principal */}
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className="text-center text-gray-600">
-          <p className="text-lg">Conteúdo será adicionado em breve...</p>
-        </div>
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        {/* Introdução */}
+        <section className="mb-12">
+          <p className="text-gray-700 leading-relaxed text-lg">
+            Conheça as principais soluções de geointeligência e IA desenvolvidas para otimizar as operações de limpeza urbana e gestão de resíduos no Rio de Janeiro.
+          </p>
+        </section>
+
+        {/* Grid de Vídeos */}
+        <section>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Soluções em Ação</h2>
+          
+          {/* Vídeo Principal - Primeira linha (destaque) */}
+          <div className="mb-8">
+            <a
+              href={videos[0].url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
+            >
+              <Card className="overflow-hidden hover:shadow-xl transition-shadow h-full">
+                <div className={`bg-gradient-to-r ${videos[0].color} p-8 relative overflow-hidden`}>
+                  <div className="absolute inset-0 opacity-10">
+                    <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%23ffffff%27%20fill-opacity%3D%270.1%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+                  </div>
+                  <div className="relative z-10 flex items-center justify-between">
+                    <div>
+                      <h3 className="text-3xl font-bold text-white mb-2">{videos[0].title}</h3>
+                      <p className="text-white/90 text-lg">{videos[0].description}</p>
+                    </div>
+                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:bg-white/30 transition-all">
+                      <Play className="w-8 h-8 text-white fill-white" />
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </a>
+          </div>
+
+          {/* Grid de Vídeos Secundários - 2x2 */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {videos.slice(1).map((video, index) => (
+              <a
+                key={index + 1}
+                href={video.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group"
+              >
+                <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
+                  {/* Cabeçalho com Gradient */}
+                  <div className={`bg-gradient-to-r ${video.color} p-6 relative overflow-hidden min-h-[120px] flex items-end`}>
+                    <div className="absolute inset-0 opacity-5">
+                      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%23ffffff%27%20fill-opacity%3D%270.1%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+                    </div>
+                    <div className="relative z-10 flex items-center justify-between w-full">
+                      <h3 className="text-xl font-bold text-white">{video.title}</h3>
+                      <div className="bg-white/20 backdrop-blur-sm rounded-full p-2 group-hover:bg-white/30 transition-all">
+                        <Play className="w-5 h-5 text-white fill-white" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Descrição */}
+                  <div className="p-6 flex-1 flex items-center">
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {video.description}
+                    </p>
+                  </div>
+                </Card>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        {/* Seção de Informação */}
+        <section className="mt-12 bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg p-8 border border-blue-200">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Sobre as Soluções</h2>
+          <p className="text-gray-700 leading-relaxed">
+            Estas soluções representam a integração de geointeligência urbana com inteligência artificial para transformar a gestão de limpeza urbana no Rio de Janeiro. Cada solução foi desenvolvida para resolver desafios operacionais específicos, melhorando eficiência, sustentabilidade e qualidade de vida dos cariocas.
+          </p>
+        </section>
       </div>
     </main>
   );
