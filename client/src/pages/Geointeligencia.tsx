@@ -477,6 +477,15 @@ export default function Geointeligencia() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Botão Voltar - Topo Esquerdo */}
+      <button
+        onClick={() => setLocation('/')}
+        className="fixed top-4 left-4 z-40 flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-lg hover:bg-white transition-all shadow-md hover:shadow-lg text-gray-700 font-medium"
+      >
+        <ChevronLeft size={20} />
+        <span>Voltar</span>
+      </button>
+
       {/* Header com vídeo */}
       <div className="relative h-96 overflow-hidden">
         <video
@@ -500,14 +509,6 @@ export default function Geointeligencia() {
 
       {/* Conteúdo principal */}
       <div className="max-w-7xl mx-auto px-4 py-12">
-        {/* Botão Voltar */}
-        <button
-          onClick={() => setLocation('/')}
-          className="flex items-center gap-2 mb-8 hover:opacity-70 transition-opacity text-gray-700 font-medium"
-        >
-          <ChevronLeft size={20} />
-          <span>Voltar</span>
-        </button>
         {/* Seção de busca e filtros */}
         <div className="mb-8">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
