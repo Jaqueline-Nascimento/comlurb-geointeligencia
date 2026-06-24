@@ -8,6 +8,16 @@ export default function Benchmarking() {
   const benchmarkingResources = [
     {
       id: 1,
+      title: 'GEO LOGOS - Sistema de Gestão de Limpeza Urbana',
+      description: 'Desenvolvida para otimizar a gestão da limpeza pública e dos serviços urbanos. Focado operação e planejamento, o sistema permite criar e gerenciar planos de coleta, varrição e roteirização com alto nível de precisão e integração.',
+      icon: MapPin,
+      url: 'https://www.geologosbr.com.br/sistema-geosvclixo-e-seus-modulos',
+      color: 'from-green-600 to-green-400',
+      image: '/manus-storage/pasted_file_xbj7Wp_image_76c29c22.png',
+      isFeatured: true
+    },
+    {
+      id: 2,
       title: 'Segurança no Trabalho',
       description: 'Conjunto de normas e práticas para assegurar condições dignas e seguras aos trabalhadores, prevenindo acidentes e doenças ocupacionais.',
       icon: Shield,
@@ -49,77 +59,78 @@ export default function Benchmarking() {
 
       {/* Conteúdo Principal */}
       <div className="max-w-6xl mx-auto px-4 py-12">
-        {/* Card em Destaque - Segurança no Trabalho */}
+        {/* Cards em Destaque - Grid 2 colunas */}
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {benchmarkingResources.slice(0, 2).map((resource) => (
+            <a
+              key={resource.id}
+              href={resource.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
+            >
+              <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer h-full">
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={resource.image}
+                    alt={resource.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className={`bg-gradient-to-r ${resource.color} rounded-lg p-2`}>
+                        {resource.icon === MapPin ? (
+                          <MapPin className="w-5 h-5 text-white" />
+                        ) : (
+                          <Shield className="w-5 h-5 text-white" />
+                        )}
+                      </div>
+                    </div>
+                    <h2 className="text-2xl font-bold mb-2">{resource.title}</h2>
+                    <p className="text-white/90 text-sm mb-3 line-clamp-3">{resource.description}</p>
+                    <div className="flex items-center gap-2 text-white font-medium group-hover:gap-3 transition-all">
+                      <span>Acessar</span>
+                      <ExternalLink className="w-4 h-4" />
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </a>
+          ))}
+        </div>
+
+        {/* Card Simples - Visão de Governança */}
         <div className="mb-12">
           <a
-            href={benchmarkingResources[0].url}
+            href={benchmarkingResources[2].url}
             target="_blank"
             rel="noopener noreferrer"
             className="block group"
           >
-            <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer">
-              <div className="relative h-96 overflow-hidden">
-                <img
-                  src={benchmarkingResources[0].image}
-                  alt={benchmarkingResources[0].title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className={`bg-gradient-to-r ${benchmarkingResources[0].color} rounded-lg p-3`}>
-                      <Shield className="w-6 h-6 text-white" />
-                    </div>
-                  </div>
-                  <h2 className="text-3xl font-bold mb-2">{benchmarkingResources[0].title}</h2>
-                  <p className="text-white/90 mb-4">{benchmarkingResources[0].description}</p>
-                  <div className="flex items-center gap-2 text-white font-medium group-hover:gap-3 transition-all">
-                    <span>Acessar</span>
-                    <ExternalLink className="w-4 h-4" />
-                  </div>
-                </div>
+            <Card className="h-full p-8 hover:shadow-xl transition-all duration-300 cursor-pointer border-2 border-transparent hover:border-blue-300">
+              {/* Ícone e Gradient */}
+              <div className={`bg-gradient-to-r ${benchmarkingResources[2].color} rounded-lg p-4 w-fit mb-6 group-hover:scale-110 transition-transform`}>
+                <Zap className="w-8 h-8 text-white" />
+              </div>
+
+              {/* Título */}
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
+                {benchmarkingResources[2].title}
+              </h2>
+
+              {/* Descrição */}
+              <p className="text-gray-700 leading-relaxed mb-6">
+                {benchmarkingResources[2].description}
+              </p>
+
+              {/* Link Externo */}
+              <div className="flex items-center gap-2 text-blue-600 font-medium group-hover:gap-3 transition-all">
+                <span>Acessar</span>
+                <ExternalLink className="w-4 h-4" />
               </div>
             </Card>
           </a>
-        </div>
-
-        {/* Grid de Cards */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {benchmarkingResources.slice(1).map((resource) => {
-            const IconComponent = resource.icon;
-            return (
-              <a
-                key={resource.id}
-                href={resource.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group"
-              >
-                <Card className="h-full p-8 hover:shadow-xl transition-all duration-300 cursor-pointer border-2 border-transparent hover:border-blue-300">
-                  {/* Ícone e Gradient */}
-                  <div className={`bg-gradient-to-r ${resource.color} rounded-lg p-4 w-fit mb-6 group-hover:scale-110 transition-transform`}>
-                    <IconComponent className="w-8 h-8 text-white" />
-                  </div>
-
-                  {/* Título */}
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
-                    {resource.title}
-                  </h2>
-
-                  {/* Descrição */}
-                  <p className="text-gray-700 leading-relaxed mb-6">
-                    {resource.description}
-                  </p>
-
-                  {/* Link Externo */}
-                  <div className="flex items-center gap-2 text-blue-600 font-medium group-hover:gap-3 transition-all">
-                    <span>Acessar</span>
-                    <ExternalLink className="w-4 h-4" />
-                  </div>
-                </Card>
-              </a>
-            );
-          })}
         </div>
 
         {/* Seção de Contexto */}
