@@ -28,6 +28,16 @@ export default function Benchmarking() {
     },
     {
       id: 3,
+      title: 'Cidades Inteligentes no Brasil',
+      description: 'Como os dados geográficos promovem uma gestão pública mais transparente e eficiente. Conheça as melhores práticas de cidades inteligentes no Brasil.',
+      icon: MapPin,
+      url: 'https://blog.img.com.br/governo/cidades-inteligentes-brasil-gestao-publica-transparente/',
+      color: 'from-blue-600 to-blue-400',
+      image: '/manus-storage/pasted_file_1bACrr_image_100d4c9b.png',
+      isFeatured: true
+    },
+    {
+      id: 4,
       title: 'Visão de Governança - Geointeligência na COMLURB',
       description: 'Estrutura de governança e implementação de geointeligência urbana. Conheça os pilares estratégicos, responsabilidades, tecnologias e roadmap para transformação digital da COMLURB em limpeza urbana inteligente.',
       icon: Zap,
@@ -59,9 +69,9 @@ export default function Benchmarking() {
 
       {/* Conteúdo Principal */}
       <div className="max-w-6xl mx-auto px-4 py-12">
-        {/* Cards em Destaque - Grid 2 colunas */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {benchmarkingResources.slice(0, 2).map((resource) => (
+        {/* Cards em Destaque - Grid 3 colunas */}
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          {benchmarkingResources.slice(0, 3).map((resource) => (
             <a
               key={resource.id}
               href={resource.url}
@@ -82,8 +92,10 @@ export default function Benchmarking() {
                       <div className={`bg-gradient-to-r ${resource.color} rounded-lg p-2`}>
                         {resource.icon === MapPin ? (
                           <MapPin className="w-5 h-5 text-white" />
-                        ) : (
+                        ) : resource.icon === Shield ? (
                           <Shield className="w-5 h-5 text-white" />
+                        ) : (
+                          <Zap className="w-5 h-5 text-white" />
                         )}
                       </div>
                     </div>
@@ -133,25 +145,25 @@ export default function Benchmarking() {
         {/* Card Simples - Visão de Governança */}
         <div className="mb-12">
           <a
-            href={benchmarkingResources[2].url}
+            href={benchmarkingResources[3].url}
             target="_blank"
             rel="noopener noreferrer"
             className="block group"
           >
             <Card className="h-full p-8 hover:shadow-xl transition-all duration-300 cursor-pointer border-2 border-transparent hover:border-blue-300">
               {/* Ícone e Gradient */}
-              <div className={`bg-gradient-to-r ${benchmarkingResources[2].color} rounded-lg p-4 w-fit mb-6 group-hover:scale-110 transition-transform`}>
+              <div className={`bg-gradient-to-r ${benchmarkingResources[3].color} rounded-lg p-4 w-fit mb-6 group-hover:scale-110 transition-transform`}>
                 <Zap className="w-8 h-8 text-white" />
               </div>
 
               {/* Título */}
               <h2 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
-                {benchmarkingResources[2].title}
+                {benchmarkingResources[3].title}
               </h2>
 
               {/* Descrição */}
               <p className="text-gray-700 leading-relaxed mb-6">
-                {benchmarkingResources[2].description}
+                {benchmarkingResources[3].description}
               </p>
 
               {/* Link Externo */}
