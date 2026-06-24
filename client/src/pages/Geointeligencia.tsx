@@ -541,8 +541,8 @@ export default function Geointeligencia() {
           </p>
         </div>
 
-        {/* Tabela otimizada - Uma linha por prefeitura */}
-        <div className="space-y-2">
+        {/* Tabela interativa */}
+        <div className="space-y-3">
           {filteredData.map((row, index) => (
             <div
               key={index}
@@ -551,33 +551,27 @@ export default function Geointeligencia() {
               {/* Linha principal - clicável */}
               <button
                 onClick={() => toggleRow(index)}
-                className="w-full px-4 py-3 bg-white hover:bg-gray-50 flex items-center justify-between text-left transition-colors"
+                className="w-full px-6 py-4 bg-white hover:bg-gray-50 flex items-center justify-between text-left transition-colors"
               >
-                <div className="flex-1 flex items-center gap-3">
-                  <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
-                    {row["Localização"].substring(0, 1)}
+                <div className="flex-1 grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+                  <div>
+                    <h3 className="font-semibold text-gray-900">{row["Órgão"]}</h3>
+                    <p className="text-sm text-gray-600">{row["Localização"]}</p>
                   </div>
-                  
-                  <div className="flex-1 grid grid-cols-1 md:grid-cols-5 gap-3 items-center">
-                    <div className="min-w-0">
-                      <h3 className="font-semibold text-gray-900 text-sm truncate">{row["Órgão"]}</h3>
-                      <p className="text-xs text-gray-600 truncate">{row["Localização"]}</p>
-                    </div>
-                    <div className="min-w-0">
-                      <p className="font-medium text-gray-900 text-sm truncate">{row["Projeto/Sistema"]}</p>
-                      <p className="text-xs text-gray-600 truncate">{row["Área de aplicação"]}</p>
-                    </div>
-                    <div className="hidden md:block min-w-0">
-                      <p className="text-xs text-gray-600 truncate">{row["Tecnologia/Plataforma"]}</p>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Badge className={`${getPotentialColor(row["Potencial COMLURB"])} border text-xs`}>
-                        {row["Potencial COMLURB"]}
-                      </Badge>
-                    </div>
+                  <div>
+                    <p className="font-medium text-gray-900">{row["Projeto/Sistema"]}</p>
+                    <p className="text-sm text-gray-600">{row["Área de aplicação"]}</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-600">{row["Tecnologia/Plataforma"]}</p>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <Badge className={`${getPotentialColor(row["Potencial COMLURB"])} border`}>
+                      {row["Potencial COMLURB"]}
+                    </Badge>
                   </div>
                 </div>
-                <div className="ml-2 flex-shrink-0">
+                <div className="ml-4">
                   {expandedRows.has(index) ? (
                     <ChevronUp className="w-5 h-5 text-gray-400" />
                   ) : (
