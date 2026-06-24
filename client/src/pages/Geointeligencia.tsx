@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
-import { ChevronDown, ChevronUp, ExternalLink, Search } from "lucide-react";
+import { ChevronDown, ChevronUp, ExternalLink, Search, ChevronLeft } from "lucide-react";
+import { useLocation } from "wouter";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 
@@ -432,6 +433,7 @@ const getPotentialColor = (potential: string) => {
 };
 
 export default function Geointeligencia() {
+  const [, setLocation] = useLocation();
   const [searchTerm, setSearchTerm] = useState("");
   const [expandedRows, setExpandedRows] = useState<Set<number>>(new Set());
   const [sortBy, setSortBy] = useState<"potential" | "state" | "name">("potential");
@@ -498,6 +500,14 @@ export default function Geointeligencia() {
 
       {/* Conteúdo principal */}
       <div className="max-w-7xl mx-auto px-4 py-12">
+        {/* Botão Voltar */}
+        <button
+          onClick={() => setLocation('/')}
+          className="flex items-center gap-2 mb-8 hover:opacity-70 transition-opacity text-gray-700 font-medium"
+        >
+          <ChevronLeft size={20} />
+          <span>Voltar</span>
+        </button>
         {/* Seção de busca e filtros */}
         <div className="mb-8">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
