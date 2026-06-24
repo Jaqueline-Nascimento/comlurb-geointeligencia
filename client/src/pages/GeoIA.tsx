@@ -38,8 +38,8 @@ export default function GeoIA() {
       color: 'from-emerald-500 to-emerald-600'
     },
     {
-      title: 'GeoIA Inteligência',
-      description: 'Plataforma integrada de geointeligência com IA para otimização de operações urbanas.',
+      title: 'Ordem de Serviço de Manejo Arbóreo',
+      description: 'Sistema de gestão de ordens de serviço para operações de manejo e poda arbórea urbana.',
       url: 'https://drive.google.com/file/d/1Xcijf75bu705Gw7TNGD0cDHd5X5guMTH/view?usp=drivesdk',
       color: 'from-orange-500 to-orange-600'
     }
