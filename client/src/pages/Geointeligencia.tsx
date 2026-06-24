@@ -541,80 +541,108 @@ export default function Geointeligencia() {
           </p>
         </div>
 
-        {/* Tabela interativa */}
+        {/* Tabela interativa - agrupada por prefeitura */}
         <div className="space-y-3">
-          {filteredData.map((row, index) => (
-            <div
-              key={index}
-              className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow"
-            >
-              {/* Linha principal - clicável */}
-              <button
-                onClick={() => toggleRow(index)}
-                className="w-full px-6 py-4 bg-white hover:bg-gray-50 flex items-center justify-between text-left transition-colors"
-              >
-                <div className="flex-1 grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
-                  <div>
-                    <h3 className="font-semibold text-gray-900">{row["Órgão"]}</h3>
-                    <p className="text-sm text-gray-600">{row["Localização"]}</p>
-                  </div>
-                  <div>
-                    <p className="font-medium text-gray-900">{row["Projeto/Sistema"]}</p>
-                    <p className="text-sm text-gray-600">{row["Área de aplicação"]}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-600">{row["Tecnologia/Plataforma"]}</p>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <Badge className={`${getPotentialColor(row["Potencial COMLURB"])} border`}>
-                      {row["Potencial COMLURB"]}
-                    </Badge>
-                  </div>
-                </div>
-                <div className="ml-4">
-                  {expandedRows.has(index) ? (
-                    <ChevronUp className="w-5 h-5 text-gray-400" />
-                  ) : (
-                    <ChevronDown className="w-5 h-5 text-gray-400" />
+          {(() => {
+            // Agrupar dados por prefeitura
+            const groupedByOrgao = filteredData.reduce((acc, row, index) => {
+              const key = row["Órgão"];
+              if (!acc[key]) {
+                acc[key] = { prefeitura: row, projetos: [], indices: [] };
+              }
+              acc[key].projetos.push(row);
+              acc[key].indices.push(index);
+              return acc;
+            }, {} as Record<string, any>);
+
+            // Renderizar cada prefeitura com seus projetos
+            return Object.entries(groupedByOrgao).map(([orgaoKey, data]) => {
+              const mainIndex = data.indices[0];
+              const isExpanded = expandedRows.has(mainIndex);
+
+              return (
+                <div
+                  key={orgaoKey}
+                  className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow"
+                >
+                  {/* Linha principal - clicável */}
+                  <button
+                    onClick={() => toggleRow(mainIndex)}
+                    className="w-full px-6 py-4 bg-white hover:bg-gray-50 flex items-center justify-between text-left transition-colors"
+                  >
+                    <div className="flex-1 grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+                      <div>
+                        <h3 className="font-semibold text-gray-900">{data.prefeitura["Órgão"]}</h3>
+                        <p className="text-sm text-gray-600">{data.prefeitura["Localização"]}</p>
+                      </div>
+                      <div>
+                        <p className="font-medium text-gray-900">{data.projetos.length} projeto{data.projetos.length > 1 ? "s" : ""}</p>
+                        <p className="text-sm text-gray-600">{data.projetos.map((p: LevantamentoRow) => p["Projeto/Sistema"]).join(", ")}</p>
+                      </div>
+                      <div>
+                        <p className="text-sm text-gray-600">{data.projetos.map((p: LevantamentoRow) => p["Tecnologia/Plataforma"]).join(", ")}</p>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <Badge className={`${getPotentialColor(data.prefeitura["Potencial COMLURB"])} border`}>
+                          {data.prefeitura["Potencial COMLURB"]}
+                        </Badge>
+                      </div>
+                    </div>
+                    <div className="ml-4">
+                      {isExpanded ? (
+                        <ChevronUp className="w-5 h-5 text-gray-400" />
+                      ) : (
+                        <ChevronDown className="w-5 h-5 text-gray-400" />
+                      )}
+                    </div>
+                  </button>
+
+                  {/* Conteúdo expandido - lista de projetos */}
+                  {isExpanded && (
+                    <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 space-y-4">
+                      {data.projetos.map((projeto: LevantamentoRow, projIndex: number) => (
+                        <div key={projIndex} className={projIndex > 0 ? "pt-4 border-t border-gray-300" : ""}>
+                          <div className="mb-3">
+                            <h4 className="font-semibold text-gray-900">{projeto["Projeto/Sistema"]}</h4>
+                            <p className="text-sm text-gray-600 mt-1">{projeto["Área de aplicação"]}</p>
+                          </div>
+
+                          <div>
+                            <h5 className="font-medium text-gray-900 mb-2 text-sm">Finalidade</h5>
+                            <p className="text-gray-700 text-sm leading-relaxed">
+                              {projeto["Finalidade/Como utiliza o georreferenciamento"]}
+                            </p>
+                          </div>
+
+                          <div className="mt-3">
+                            <h5 className="font-medium text-gray-900 mb-2 text-sm">Como pode inspirar a COMLURB</h5>
+                            <p className="text-gray-700 text-sm leading-relaxed">
+                              {projeto["Como pode inspirar a COMLURB"]}
+                            </p>
+                          </div>
+
+                          <div className="flex items-center justify-between pt-3 mt-3 border-t border-gray-200">
+                            <div className="text-sm text-gray-600">
+                              <span className="font-medium">Tecnologia:</span> {projeto["Tecnologia/Plataforma"]}
+                            </div>
+                            <a
+                              href={projeto["Fonte oficial / URL"]}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-sm font-medium"
+                            >
+                              <ExternalLink className="w-4 h-4" />
+                              Link
+                            </a>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   )}
                 </div>
-              </button>
-
-              {/* Conteúdo expandido */}
-              {expandedRows.has(index) && (
-                <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Finalidade</h4>
-                    <p className="text-gray-700 text-sm leading-relaxed">
-                      {row["Finalidade/Como utiliza o georreferenciamento"]}
-                    </p>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Como pode inspirar a COMLURB</h4>
-                    <p className="text-gray-700 text-sm leading-relaxed">
-                      {row["Como pode inspirar a COMLURB"]}
-                    </p>
-                  </div>
-
-                  <div className="flex items-center justify-between pt-2 border-t border-gray-200">
-                    <div className="text-sm text-gray-600">
-                      <span className="font-medium">UF:</span> {row["UF"]}
-                    </div>
-                    <a
-                      href={row["Fonte oficial / URL"]}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      Acessar Link
-                    </a>
-                  </div>
-                </div>
-              )}
-            </div>
-          ))}
+              );
+            });
+          })()}
         </div>
 
         {filteredData.length === 0 && (
