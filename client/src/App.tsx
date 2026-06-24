@@ -13,6 +13,7 @@ import Projetos from "./pages/Projetos";
 import ApresentacaoPresidencia from './pages/ApresentacaoPresidencia';
 import PitchDeck from './pages/PitchDeck';
 import Insights from './pages/Insights';
+import Benchmarking from './pages/Benchmarking';
 
 
 function Router() {
@@ -27,6 +28,7 @@ function Router() {
       <Route path="/apresentacao-presidencia" component={ApresentacaoPresidencia} />
       <Route path="/pitch-deck" component={PitchDeck} />
       <Route path="/insights" component={Insights} />
+      <Route path="/benchmarking" component={Benchmarking} />
       <Route path="*" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
