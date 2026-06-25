@@ -7,6 +7,8 @@ interface VideoItem {
   description: string;
   url: string;
   color: string;
+  type: 'link' | 'video';
+  videoSrc?: string;
 }
 
 export default function GeoIA() {
@@ -14,34 +16,41 @@ export default function GeoIA() {
 
   const videos: VideoItem[] = [
     {
-      title: 'Performance Poda',
+      title: 'Radar de Solicitação de Poda',
+      description: 'Monitoramento geoespacial em tempo real das operações de poda em toda a cidade.',
+      url: 'https://drive.google.com/file/d/1cvzGTDnFLuSZca5HVivQ9gnenzxqpOwU/view?usp=drivesdk',
+      color: 'from-purple-500 to-purple-600',
+      type: 'video',
+      videoSrc: '/manus-storage/radar_da_poda_42a39195.mp4'
+    },
+    {
+      title: 'Performance de Poda',
       description: 'Análise de desempenho e eficiência das operações de poda urbana em tempo real.',
       url: 'https://drive.google.com/file/d/19f1KYdJQFu5c75T7f2nW25CeAoT98k4M/view?usp=drivesdk',
-      color: 'from-green-500 to-green-600'
+      color: 'from-green-500 to-green-600',
+      type: 'video',
+      videoSrc: '/manus-storage/performance_poda_7a070d53.mp4'
     },
     {
       title: 'Ache Seu Ecoponto',
       description: 'Localização inteligente de ecopontos e pontos de coleta seletiva próximos ao usuário.',
       url: 'https://drive.google.com/file/d/1KM03R8mmCR0zSo2X8mj3v8CjbQnva1hQ/view?usp=drivesdk',
-      color: 'from-blue-500 to-blue-600'
-    },
-    {
-      title: 'Radar da Poda',
-      description: 'Monitoramento geoespacial em tempo real das operações de poda em toda a cidade.',
-      url: 'https://drive.google.com/file/d/1cvzGTDnFLuSZca5HVivQ9gnenzxqpOwU/view?usp=drivesdk',
-      color: 'from-purple-500 to-purple-600'
+      color: 'from-blue-500 to-blue-600',
+      type: 'link'
     },
     {
       title: 'Arbório Operacional',
       description: 'Sistema operacional integrado para gestão de árvores e manejo arbóreo urbano.',
       url: 'https://drive.google.com/file/d/1CiJnBNoqRsIny3SrVQyNQMHlpMVzaisz/view?usp=drivesdk',
-      color: 'from-emerald-500 to-emerald-600'
+      color: 'from-emerald-500 to-emerald-600',
+      type: 'link'
     },
     {
       title: 'Ordem de Serviço de Manejo Arbóreo',
       description: 'Sistema de gestão de ordens de serviço para operações de manejo e poda arbórea urbana.',
       url: 'https://drive.google.com/file/d/1Xcijf75bu705Gw7TNGD0cDHd5X5guMTH/view?usp=drivesdk',
-      color: 'from-orange-500 to-orange-600'
+      color: 'from-orange-500 to-orange-600',
+      type: 'link'
     }
   ];
 
@@ -88,28 +97,53 @@ export default function GeoIA() {
         <section>
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Soluções em Ação</h2>
           
-        {/* Vídeo Principal - Primeira linha (destaque) */}
-          <div className="mb-8">
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow h-full">
-              <video
-                className="w-full h-auto object-cover"
-                style={{ minHeight: '400px' }}
-                autoPlay
-                muted
-                loop
-                playsInline
-              >
-                <source src="/manus-storage/radar_da_poda_42a39195.mp4" type="video/mp4" />
-                Seu navegador não suporta vídeos HTML5.
-              </video>
-            </Card>
+          {/* Grid de Vídeos - 2 colunas */}
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {videos.slice(0, 2).map((video, index) => (
+              <div key={index} className="block group">
+                <Card className="overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
+                  {/* Vídeo */}
+                  <div className="relative w-full bg-black" style={{ paddingBottom: '56.25%' }}>
+                    <video
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src={video.videoSrc} type="video/mp4" />
+                      Seu navegador não suporta vídeos HTML5.
+                    </video>
+                  </div>
+
+                  {/* Título e Descrição */}
+                  <div className="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-3">{video.title}</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                        {video.description}
+                      </p>
+                    </div>
+                    <a
+                      href={video.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 font-medium hover:text-blue-700 transition-colors flex items-center gap-2"
+                    >
+                      <span>Acessar</span>
+                      <Play className="w-4 h-4" />
+                    </a>
+                  </div>
+                </Card>
+              </div>
+            ))}
           </div>
 
           {/* Grid de Vídeos Secundários - 2x2 */}
           <div className="grid md:grid-cols-2 gap-6">
-            {videos.slice(1).map((video, index) => (
+            {videos.slice(2).map((video, index) => (
               <a
-                key={index + 1}
+                key={index + 2}
                 href={video.url}
                 target="_blank"
                 rel="noopener noreferrer"
