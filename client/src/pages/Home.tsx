@@ -685,6 +685,42 @@ export default function Home() {
               
               <TabsContent value="topocart" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
                 <h3 className="text-2xl font-bold mb-6 text-white">Topocart - Sistema de Varrição</h3>
+                
+                <div className="relative w-full mb-8">
+                  <div className="overflow-x-auto pb-4">
+                    <div className="flex gap-6 snap-x snap-mandatory">
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/IMG-20260617-WA0088_e2cc41c5.jpg" alt="Topocart - Apresentação 1" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_161416_e8c57a3d.webp" alt="Topocart - Apresentação 2" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_160927_a8cc08b6.webp" alt="Topocart - Apresentação 3" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_161043_971109a4.webp" alt="Topocart - Apresentação 4" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_161217_88b1d97c.webp" alt="Topocart - Apresentação 5" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_161128_65005ca3.webp" alt="Topocart - Apresentação 6" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_161145_b9e5a015.webp" alt="Topocart - Apresentação 7" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_161408_db5bf3af.webp" alt="Topocart - Apresentação 8" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_160945_b8e0d955.webp" alt="Topocart - Apresentação 9" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-slate-300 text-sm mt-4 text-center">Deslize para ver mais imagens da apresentação</p>
+                </div>
+                
                 <div className="space-y-6">
                   <p className="text-slate-300 leading-relaxed">
                     A Topocart apresentou sua solução inovadora de rastreamento e otimização de operações de varrição urbana. O sistema utiliza GPS de alta precisão e sensores IoT para monitorar a eficiência das equipes de limpeza em tempo real.
