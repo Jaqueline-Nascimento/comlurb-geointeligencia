@@ -165,14 +165,6 @@ export default function GeoIA() {
 
 
         </section>
-
-        {/* Seção de Informação */}
-        <section className="mt-12 bg-gradient-to-r from-blue-50 to-slate-50 rounded-lg p-8 border border-blue-200">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Sobre as Soluções</h2>
-          <p className="text-gray-700 leading-relaxed">
-            Estas soluções representam a integração de geointeligência urbana com inteligência artificial para transformar a gestão de limpeza urbana no Rio de Janeiro. Cada solução foi desenvolvida para resolver desafios operacionais específicos, melhorando eficiência, sustentabilidade e qualidade de vida dos cariocas.
-          </p>
-        </section>
       </div>
     </main>
   );
