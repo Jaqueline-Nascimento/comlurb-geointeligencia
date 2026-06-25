@@ -17,7 +17,7 @@ export default function GeoIA() {
   const videos: VideoItem[] = [
     {
       title: 'Radar de Solicitação de Poda',
-      description: 'Monitoramento geoespacial em tempo real das operações de poda em toda a cidade.',
+      description: 'Radar da Poda - Metas. Totalmente integrado ao CAS, o Radar da Poda foi projetado para cumprir as metas estipuladas no acordo de resultados. O aplicativo calcula mensalmente o volume de pedidos necessários para atingir os objetivos e classifica as demandas por prioridade de atendimento. Operando de forma responsiva em diferentes dispositivos, a solução otimiza o fluxo de atendimento e melhora a eficiência operacional.',
       url: 'https://drive.google.com/file/d/1cvzGTDnFLuSZca5HVivQ9gnenzxqpOwU/view?usp=drivesdk',
       color: 'from-purple-500 to-purple-600',
       type: 'video',
@@ -144,7 +144,7 @@ export default function GeoIA() {
                   <div className="p-6 flex-1 flex flex-col justify-between">
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-3">{video.title}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-5">
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-6">
                         {video.description}
                       </p>
                     </div>
