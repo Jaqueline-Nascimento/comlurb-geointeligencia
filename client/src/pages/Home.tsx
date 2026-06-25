@@ -624,31 +624,51 @@ export default function Home() {
               
               <TabsContent value="belohorizonte" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
                 <h3 className="text-2xl font-bold mb-6 text-white">Prefeitura de Belo Horizonte</h3>
-                <div className="space-y-6">
-                  <p className="text-slate-300 leading-relaxed">
-                    Belo Horizonte apresentou sua estratégia de transformação digital em gestão urbana, com foco em integração de dados geoespaciais para otimização de serviços públicos. A prefeitura compartilhou experiências em implementação de sistemas de informação geográfica para monitoramento de infraestrutura urbana.
-                  </p>
-                  <div className="bg-slate-700 p-6 rounded-lg">
-                    <h4 className="text-lg font-bold text-white mb-3">Pontos-chave da apresentação</h4>
-                    <ul className="space-y-2 text-slate-300 text-sm">
-                      <li className="flex items-start gap-3">
-                        <span className="text-green-400 font-bold mt-1">•</span>
-                        <span>Integração de dados de múltiplas secretarias em plataforma única</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="text-green-400 font-bold mt-1">•</span>
-                        <span>Uso de geointeligência para planejamento de investimentos urbanos</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="text-green-400 font-bold mt-1">•</span>
-                        <span>Parcerias com universidades para pesquisa em soluções geoespaciais</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="text-green-400 font-bold mt-1">•</span>
-                        <span>Transparência de dados públicos através de portais abertos</span>
-                      </li>
-                    </ul>
+                <div className="relative w-full">
+                  <div className="overflow-x-auto pb-4">
+                    <div className="flex gap-6 snap-x snap-mandatory">
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_150706_2b5c74a2.webp" alt="Belo Horizonte - Apresentação 1" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_150807_e614fa06.webp" alt="Belo Horizonte - Apresentação 2" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_151954_d215d2c2.webp" alt="Belo Horizonte - Apresentação 3" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_152228_c78f74f5.webp" alt="Belo Horizonte - Apresentação 4" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_150738_32774ba8.webp" alt="Belo Horizonte - Apresentação 5" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_150835_43bf239f.webp" alt="Belo Horizonte - Apresentação 6" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_150906_42b13da9.webp" alt="Belo Horizonte - Apresentação 7" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_151124_312673dc.webp" alt="Belo Horizonte - Apresentação 8" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_151319_a8a52148.webp" alt="Belo Horizonte - Apresentação 9" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_151543_0cb1dd6f.webp" alt="Belo Horizonte - Apresentação 10" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_151725_7ca60b77.webp" alt="Belo Horizonte - Apresentação 11" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_151921_179379aa.webp" alt="Belo Horizonte - Apresentação 12" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                      <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
+                        <img src="/manus-storage/20260617_152135_e423a061.webp" alt="Belo Horizonte - Apresentação 13" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                      </div>
+                    </div>
                   </div>
+                  <p className="text-slate-300 text-sm mt-4 text-center">Deslize para ver mais imagens da apresentação</p>
                 </div>
               </TabsContent>
               
