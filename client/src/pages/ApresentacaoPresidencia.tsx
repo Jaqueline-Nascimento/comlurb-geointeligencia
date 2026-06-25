@@ -1,12 +1,31 @@
 'use client';
 
-import { useState } from 'react';
-import { ChevronLeft } from 'lucide-react';
+import { useState, useRef } from 'react';
+import { ChevronLeft, Maximize2 } from 'lucide-react';
 import { useLocation } from 'wouter';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 export default function ApresentacaoPresidencia() {
   const [, setLocation] = useLocation();
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
+  const handleFullscreen = () => {
+    if (iframeRef.current) {
+      if (iframeRef.current.requestFullscreen) {
+        iframeRef.current.requestFullscreen().catch(() => {
+          window.open('https://geointel-presentation-9f86qdbs.manus.space/', '_blank');
+        });
+      } else if ((iframeRef.current as any).webkitRequestFullscreen) {
+        (iframeRef.current as any).webkitRequestFullscreen();
+      } else if ((iframeRef.current as any).mozRequestFullScreen) {
+        (iframeRef.current as any).mozRequestFullScreen();
+      } else if ((iframeRef.current as any).msRequestFullscreen) {
+        (iframeRef.current as any).msRequestFullscreen();
+      } else {
+        window.open('https://geointel-presentation-9f86qdbs.manus.space/', '_blank');
+      }
+    }
+  };
 
   return (
     <main className="min-h-screen bg-white">
@@ -37,15 +56,24 @@ export default function ApresentacaoPresidencia() {
                 <h3 className="text-2xl font-bold text-white mb-2">Apresentação Executiva - Geointeligência Urbana</h3>
                 <p className="text-slate-300 text-sm">Navegue pelos slides usando os controles ou clique para ampliar</p>
               </div>
-              <div className="rounded-lg overflow-hidden shadow-2xl bg-black">
+              <div className="relative rounded-lg overflow-hidden shadow-2xl bg-black">
+                <button
+                  onClick={handleFullscreen}
+                  className="absolute top-4 right-4 z-10 bg-white/90 hover:bg-white p-2 rounded-lg transition flex items-center gap-2 text-sm font-medium text-slate-900"
+                  title="Ampliar em tela cheia"
+                >
+                  <Maximize2 size={18} />
+                  Tela Cheia
+                </button>
                 <iframe
+                  ref={iframeRef}
                   src="https://geointel-presentation-9f86qdbs.manus.space/"
                   className="w-full h-[600px] border-0"
                   allowFullScreen
                   title="Apresentação Geointeligência Urbana"
                 />
               </div>
-              <p className="text-slate-300 text-sm mt-4 italic">Clique na apresentação para ampliar em tela cheia. Use os controles de navegação para passar os slides.</p>
+              <p className="text-slate-300 text-sm mt-4 italic">Clique no botão "Tela Cheia" para ampliar a apresentação. Use os controles de navegação para passar os slides.</p>
             </div>
           </div>
         </section>
