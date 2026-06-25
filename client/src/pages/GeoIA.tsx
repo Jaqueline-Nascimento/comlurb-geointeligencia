@@ -33,7 +33,7 @@ export default function GeoIA() {
     },
     {
       title: 'ArboRio',
-      description: 'Sistema operacional integrado para gestão de árvores e manejo arbóreo urbano.',
+      description: 'O ArboRio é o sistema operacional voltado para a gestão da arborização urbana e a construção do censo arbóreo do município do Rio. A plataforma otimiza a programação de serviços com roteiros eficientes e gera relatórios e laudos técnicos inteligentes. Através de painéis operacionais acessíveis em smartphones e ambiente web, o sistema exibe informações em tempo real e o histórico das atividades, garantindo o controle total da operação em poucos cliques.',
       url: 'https://drive.google.com/file/d/1CiJnBNoqRsIny3SrVQyNQMHlpMVzaisz/view?usp=drivesdk',
       color: 'from-emerald-500 to-emerald-600',
       type: 'video',
@@ -144,7 +144,7 @@ export default function GeoIA() {
                   <div className="p-6 flex-1 flex flex-col justify-between">
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-3">{video.title}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-4">
                         {video.description}
                       </p>
                     </div>
