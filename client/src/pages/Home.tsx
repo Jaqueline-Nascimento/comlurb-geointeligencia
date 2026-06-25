@@ -830,7 +830,7 @@ export default function Home() {
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
             Agora precisamos da decisão. A COMLURB pode se tornar a maior referência mundial em inteligência urbana para limpeza pública. O futuro começa agora.
           </p>
-          <Button size="lg" className="bg-white text-green-600 hover:bg-slate-100 font-semibold">
+          <Button size="lg" className="bg-white text-green-600 hover:bg-slate-100 font-semibold" onClick={() => navigate('/percepcoes')}>
             Vamos Começar
           </Button>
         </div>

@@ -15,6 +15,7 @@ import PitchDeck from './pages/PitchDeck';
 import Insights from './pages/Insights';
 import Benchmarking from './pages/Benchmarking';
 import GeoIA from './pages/GeoIA';
+import Percepcoes from './pages/Percepcoes';
 
 
 function Router() {
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/insights" component={Insights} />
       <Route path="/benchmarking" component={Benchmarking} />
       <Route path="/geoia" component={GeoIA} />
+      <Route path="/percepcoes" component={Percepcoes} />
       <Route path="*" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
