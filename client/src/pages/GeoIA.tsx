@@ -40,6 +40,14 @@ export default function GeoIA() {
       videoSrc: '/manus-storage/arborio_operacional_3c5a1a53.mp4'
     },
     {
+      title: 'Ordem de Serviço de Poda',
+      description: 'Sistema de gestão de ordens de serviço para operações de manejo e poda arbórea urbana.',
+      url: 'https://drive.google.com/file/d/1Xcijf75bu705Gw7TNGD0cDHd5X5guMTH/view?usp=drivesdk',
+      color: 'from-orange-500 to-orange-600',
+      type: 'video',
+      videoSrc: '/manus-storage/uso_os_Ucv_677b7916.mp4'
+    },
+    {
       title: 'Ache Seu Ecoponto',
       description: 'Localização inteligente de ecopontos e pontos de coleta seletiva próximos ao usuário.',
       url: 'https://drive.google.com/file/d/1KM03R8mmCR0zSo2X8mj3v8CjbQnva1hQ/view?usp=drivesdk',
@@ -107,7 +115,7 @@ export default function GeoIA() {
           
           {/* Grid de Vídeos - 2 colunas */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {videos.slice(0, 3).map((video, index) => (
+            {videos.slice(0, 4).map((video, index) => (
               <div key={index} className="block group">
                 <Card className="overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
                   {/* Vídeo */}
