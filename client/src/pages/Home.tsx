@@ -75,8 +75,7 @@ export default function Home() {
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">Geointeligência na </span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-500">Limpeza Urbana</span>
+              <span className="text-orange-400">Geointeligência em Serviços e Limpeza Urbana</span>
             </h1>
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
               A Geointeligência Urbana serve para transformar dados complexos em mapas e rotas operacionais, auxiliando governos e empresas na gestão do território, melhoria da infraestrutura e tomada de decisões rápidas e assertivas.
