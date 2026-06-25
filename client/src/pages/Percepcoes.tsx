@@ -1,9 +1,11 @@
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ZoomIn } from "lucide-react";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 export default function Percepcoes() {
   const [, navigate] = useLocation();
+  const [isImageOpen, setIsImageOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
@@ -25,17 +27,37 @@ export default function Percepcoes() {
       {/* Main Content */}
       <section className="py-12 bg-white">
         <div className="container max-w-4xl">
-          {/* Video Section */}
-          <div className="mb-12">
-            <video
-              className="w-full h-auto rounded-lg shadow-lg"
-              controls
-              autoPlay
-              muted
-            >
-              <source src="/manus-storage/Cena_inicial_-_2026-06-24_202606240833_24981117.mp4" type="video/mp4" />
-              Seu navegador não suporta o elemento de vídeo.
-            </video>
+          {/* Video and Infographic Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            {/* Video Section */}
+            <div>
+              <video
+                className="w-full h-auto rounded-lg shadow-lg"
+                controls
+                autoPlay
+                muted
+              >
+                <source src="/manus-storage/Cena_inicial_-_2026-06-24_202606240833_24981117.mp4" type="video/mp4" />
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+            </div>
+            
+            {/* Infographic Section */}
+            <div>
+              <div className="relative group cursor-pointer" onClick={() => setIsImageOpen(true)}>
+                <img
+                  src="/manus-storage/infografico_por_que_transformacao_v2_b88bbafc.png"
+                  alt="Por quê estamos fazendo isso - Infográfico"
+                  className="w-full h-auto rounded-lg shadow-lg transition-transform group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-lg transition-colors flex items-center justify-center">
+                  <div className="bg-white/90 p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                    <ZoomIn size={24} className="text-foreground" />
+                  </div>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground mt-2 text-center">Clique para ampliar</p>
+            </div>
           </div>
 
           {/* Article Section */}
@@ -138,6 +160,31 @@ export default function Percepcoes() {
           </div>
         </div>
       </section>
+
+      {/* Image Modal */}
+      {isImageOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4"
+          onClick={() => setIsImageOpen(false)}
+        >
+          <div className="relative max-w-4xl max-h-[90vh] w-full h-full flex items-center justify-center">
+            <img
+              src="/manus-storage/infografico_por_que_transformacao_v2_b88bbafc.png"
+              alt="Por quê estamos fazendo isso - Infográfico Ampliado"
+              className="max-w-full max-h-full object-contain rounded-lg"
+            />
+            <button
+              onClick={() => setIsImageOpen(false)}
+              className="absolute top-4 right-4 bg-white/90 hover:bg-white p-2 rounded-full transition"
+              aria-label="Fechar"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
