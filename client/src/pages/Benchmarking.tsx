@@ -112,35 +112,7 @@ export default function Benchmarking() {
           ))}
         </div>
 
-        {/* Card com Vídeo - Emergency Debris Management */}
-        <div className="mb-12">
-          <a
-            href="https://www.arcgis.com/apps/solutions/emergency-debris-management"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block group"
-          >
-            <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer">
-              <div className="relative w-full bg-black" style={{ paddingBottom: '56.25%' }}>
-                <iframe
-                  src="https://mediaspace.esri.com/media/1_og3741ll?kalturaSeekFrom=0&kalturaClipTo=1128&kalturaStartTime=1"
-                  className="absolute top-0 left-0 w-full h-full"
-                  allowFullScreen
-                  frameBorder="0"
-                  allow="accelerometer *; autoplay *; encrypted-media *; gyroscope *; picture-in-picture *"
-                />
-              </div>
-              <div className="p-6 bg-white group-hover:bg-gray-50 transition-colors">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">Emergency Debris Management</h3>
-                <p className="text-gray-700 mb-4">Solução ArcGIS para gestão de resíduos em situações de emergência com mapeamento e análise em tempo real.</p>
-                <div className="flex items-center gap-2 text-blue-600 font-medium group-hover:gap-3 transition-all">
-                  <span>Acessar</span>
-                  <ExternalLink className="w-4 h-4" />
-                </div>
-              </div>
-            </Card>
-          </a>
-        </div>
+
 
         {/* Card Simples - Visão de Governança */}
         <div className="mb-12">
