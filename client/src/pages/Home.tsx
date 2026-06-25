@@ -574,11 +574,10 @@ export default function Home() {
           
           <div className="w-full">
             <Tabs defaultValue="fortaleza" className="w-full">
-              <TabsList className="grid w-full grid-cols-5 mb-8 bg-transparent border-b border-slate-700">
+              <TabsList className="grid w-full grid-cols-4 mb-8 bg-transparent border-b border-slate-700">
                 <TabsTrigger value="fortaleza" className="text-white data-[state=active]:text-white data-[state=active]:bg-slate-800 data-[state=active]:border-b-2 data-[state=active]:border-green-500 transition-all duration-200 hover:bg-slate-800/50">Prefeitura de Fortaleza</TabsTrigger>
                 <TabsTrigger value="belohorizonte" className="text-white data-[state=active]:text-white data-[state=active]:bg-slate-800 data-[state=active]:border-b-2 data-[state=active]:border-green-500 transition-all duration-200 hover:bg-slate-800/50">Prefeitura de Belo Horizonte</TabsTrigger>
                 <TabsTrigger value="topocart" className="text-white data-[state=active]:text-white data-[state=active]:bg-slate-800 data-[state=active]:border-b-2 data-[state=active]:border-green-500 transition-all duration-200 hover:bg-slate-800/50">Topocart - Sistema de Varrição</TabsTrigger>
-                <TabsTrigger value="esri" className="text-white data-[state=active]:text-white data-[state=active]:bg-slate-800 data-[state=active]:border-b-2 data-[state=active]:border-green-500 transition-all duration-200 hover:bg-slate-800/50">Esri - Imagem</TabsTrigger>
                 <TabsTrigger value="geosampa" className="text-white data-[state=active]:text-white data-[state=active]:bg-slate-800 data-[state=active]:border-b-2 data-[state=active]:border-green-500 transition-all duration-200 hover:bg-slate-800/50">GeoSampa</TabsTrigger>
               </TabsList>
               
@@ -752,11 +751,7 @@ export default function Home() {
                 </div>
               </TabsContent>
               
-              <TabsContent value="esri" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
-                <h3 className="text-2xl font-bold mb-4 text-white">Esri - Imagem</h3>
-                <p className="text-slate-300">Conteúdo será adicionado em breve...</p>
-              </TabsContent>
-              
+
               <TabsContent value="geosampa" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
                 <h3 className="text-2xl font-bold mb-6 text-white">GeoSampa - Portal de Dados Geoespaciais de São Paulo</h3>
                 {/* Galeria de Fotos */}
