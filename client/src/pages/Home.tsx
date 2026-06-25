@@ -84,6 +84,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Bloco MundoGEO Connect 2026 - Contextualização */}
+      <section className="py-12 bg-white">
+        <div className="container">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Vídeo à Esquerda - Reduzido pela metade */}
+            <div className="flex justify-center">
+              <div className="w-1/2">
+                <video
+                  className="w-full h-auto rounded-lg shadow-lg"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="/manus-storage/WhatsAppVideo2026-06-25at04.53.33_3a985b3d.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            {/* Texto à Direita */}
+            <div className="space-y-4">
+              <h2 className="text-2xl font-bold text-gray-900">MundoGEO Connect 2026</h2>
+              
+              <div className="space-y-3 text-sm text-gray-700 leading-relaxed">
+                <p>
+                  A COMLURB marcou presença na MundoGEO Connect 2026, o maior evento de tecnologia geoespacial da América Latina, realizado em São Paulo. A Companhia acompanhou de perto as principais tendências globais em inteligência geográfica, integração de dados e o uso de Inteligência Artificial (IA) aplicada ao setor público.
+                </p>
+                
+                <p>
+                  A participação no evento reforça o compromisso da COMLURB com a transformação digital e a gestão baseada em evidências. Durante os três dias, nossa equipe pôde conhecer soluções inovadoras de monitoramento, trocar experiências com grandes especialistas do setor e identificar oportunidades valiosas para aprimorar os sistemas que já utilizamos no dia a dia da nossa cidade.
+                </p>
+                
+                <div className="bg-blue-50 border-l-4 border-blue-600 p-3 italic text-xs text-gray-800">
+                  "A experiência nos permitiu vislumbrar novas ferramentas para fortalecer a integração de dados geoespaciais, otimizar o planejamento operacional e garantir entregas cada vez mais eficientes e sustentáveis para a população do Rio de Janeiro."
+                </div>
+                
+                <p>
+                  Com os insights trazidos do evento, a COMLURB segue firme no propósito de usar a tecnologia como aliada estratégica, transformando dados em decisões inteligentes que impactam diretamente a zeladoria e a limpeza urbana da nossa cidade.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Seção de Abertura - A Isca */}
       <section className="py-8 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
         <div className="container relative z-10">
@@ -112,51 +157,6 @@ export default function Home() {
               >
                 <source src="/manus-storage/Pippit_20260621_Cleaning_V2_d4df2970.mp4" type="video/mp4" />
               </video>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-      {/* Bloco MundoGEO Connect 2026 - Contextualização */}
-      <section className="py-16 bg-white">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Vídeo à Esquerda */}
-            <div className="flex justify-center">
-              <video
-                className="w-full h-auto rounded-lg shadow-lg"
-                autoPlay
-                muted
-                loop
-                playsInline
-              >
-                <source src="/manus-storage/WhatsAppVideo2026-06-25at04.53.33_3a985b3d.mp4" type="video/mp4" />
-              </video>
-            </div>
-
-            {/* Texto à Direita */}
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">MundoGEO Connect 2026</h2>
-              
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  A COMLURB marcou presença na MundoGEO Connect 2026, o maior evento de tecnologia geoespacial da América Latina, realizado em São Paulo. A Companhia acompanhou de perto as principais tendências globais em inteligência geográfica, integração de dados e o uso de Inteligência Artificial (IA) aplicada ao setor público.
-                </p>
-                
-                <p>
-                  A participação no evento reforça o compromisso da COMLURB com a transformação digital e a gestão baseada em evidências. Durante os três dias, nossa equipe pôde conhecer soluções inovadoras de monitoramento, trocar experiências com grandes especialistas do setor e identificar oportunidades valiosas para aprimorar os sistemas que já utilizamos no dia a dia da nossa cidade.
-                </p>
-                
-                <div className="bg-blue-50 border-l-4 border-blue-600 p-4 italic text-gray-800">
-                  "A experiência nos permitiu vislumbrar novas ferramentas para fortalecer a integração de dados geoespaciais, otimizar o planejamento operacional e garantir entregas cada vez mais eficientes e sustentáveis para a população do Rio de Janeiro."
-                </div>
-                
-                <p>
-                  Com os insights trazidos do evento, a COMLURB segue firme no propósito de usar a tecnologia como aliada estratégica, transformando dados em decisões inteligentes que impactam diretamente a zeladoria e a limpeza urbana da nossa cidade.
-                </p>
-              </div>
             </div>
           </div>
         </div>
