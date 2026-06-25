@@ -113,7 +113,7 @@ export default function GeoIA() {
         {/* Introdução */}
         <section className="mb-12">
           <p className="text-gray-700 leading-relaxed text-lg">
-            Conheça as principais soluções de geointeligência e IA desenvolvidas para otimizar as operações de limpeza urbana e gestão de resíduos no Rio de Janeiro.
+            Conheça as principais soluções de geotecnologias desenvolvidas para otimizar as operações em ambiente do SIURB
           </p>
         </section>
 
