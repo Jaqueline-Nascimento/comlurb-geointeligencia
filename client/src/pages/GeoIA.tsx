@@ -48,6 +48,14 @@ export default function GeoIA() {
       videoSrc: '/manus-storage/uso_os_Ucv_677b7916.mp4'
     },
     {
+      title: 'Ache seu Ecoponto',
+      description: 'Localização inteligente de ecopontos e pontos de coleta seletiva próximos ao usuário.',
+      url: 'https://drive.google.com/file/d/1KM03R8mmCR0zSo2X8mj3v8CjbQnva1hQ/view?usp=drivesdk',
+      color: 'from-blue-500 to-blue-600',
+      type: 'video',
+      videoSrc: '/manus-storage/ache_seu_ecoponto_c3b1ba80.mp4'
+    },
+    {
       title: 'Ache Seu Ecoponto',
       description: 'Localização inteligente de ecopontos e pontos de coleta seletiva próximos ao usuário.',
       url: 'https://drive.google.com/file/d/1KM03R8mmCR0zSo2X8mj3v8CjbQnva1hQ/view?usp=drivesdk',
@@ -115,7 +123,7 @@ export default function GeoIA() {
           
           {/* Grid de Vídeos - 2 colunas */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {videos.slice(0, 4).map((video, index) => (
+            {videos.slice(0, 5).map((video, index) => (
               <div key={index} className="block group">
                 <Card className="overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
                   {/* Vídeo */}
