@@ -759,6 +759,17 @@ export default function Home() {
               
               <TabsContent value="geosampa" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
                 <h3 className="text-2xl font-bold mb-6 text-white">GeoSampa - Portal de Dados Geoespaciais de São Paulo</h3>
+                {/* Galeria de Fotos */}
+                <div className="mb-8 overflow-x-auto scroll-smooth snap-x snap-mandatory">
+                  <div className="flex gap-4 pb-4 min-w-min">
+                    <img src="/manus-storage/20260618_121755_6c32f7aa.webp" alt="GeoSampa 1" className="h-16 w-auto object-contain rounded-lg hover:shadow-lg transition-shadow snap-start flex-shrink-0" />
+                    <img src="/manus-storage/20260618_122344_15475f22.webp" alt="GeoSampa 2" className="h-16 w-auto object-contain rounded-lg hover:shadow-lg transition-shadow snap-start flex-shrink-0" />
+                    <img src="/manus-storage/20260618_120419_183620ab.webp" alt="GeoSampa 3" className="h-16 w-auto object-contain rounded-lg hover:shadow-lg transition-shadow snap-start flex-shrink-0" />
+                    <img src="/manus-storage/20260618_120422_fe781bb2.webp" alt="GeoSampa 4" className="h-16 w-auto object-contain rounded-lg hover:shadow-lg transition-shadow snap-start flex-shrink-0" />
+                    <img src="/manus-storage/20260618_121826_9e9c167f.webp" alt="GeoSampa 5" className="h-16 w-auto object-contain rounded-lg hover:shadow-lg transition-shadow snap-start flex-shrink-0" />
+                  </div>
+                  <p className="text-xs text-slate-400 mt-2">Deslize para ver mais imagens da apresentação</p>
+                </div>
                 <div className="space-y-6">
                   <p className="text-slate-300 leading-relaxed">
                     O GeoSampa é o portal de dados geoespaciais da Prefeitura de São Paulo, que centraliza informações cartográficas, cadastrais e operacionais da cidade. O projeto demonstra como dados públicos podem ser disponibilizados de forma aberta e acessível para melhorar a gestão urbana.
