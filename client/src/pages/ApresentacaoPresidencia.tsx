@@ -29,7 +29,26 @@ export default function ApresentacaoPresidencia() {
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
-
+        {/* Apresentação em Slides */}
+        <section className="mb-12">
+          <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-8 rounded-lg">
+            <div className="px-4">
+              <div className="mb-6">
+                <h3 className="text-2xl font-bold text-white mb-2">Apresentação Executiva - Geointeligência Urbana</h3>
+                <p className="text-slate-300 text-sm">Navegue pelos slides usando os controles ou clique para ampliar</p>
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-2xl bg-black">
+                <iframe
+                  src="https://geointel-presentation-9f86qdbs.manus.space/"
+                  className="w-full h-[600px] border-0"
+                  allowFullScreen
+                  title="Apresentação Geointeligência Urbana"
+                />
+              </div>
+              <p className="text-slate-300 text-sm mt-4 italic">Clique na apresentação para ampliar em tela cheia. Use os controles de navegação para passar os slides.</p>
+            </div>
+          </div>
+        </section>
 
         {/* Infográficos - Grid de 2 colunas */}
         <section className="py-8">
@@ -39,7 +58,7 @@ export default function ApresentacaoPresidencia() {
               <div className="px-4">
                 <div className="mb-6">
                   <h3 className="text-2xl font-bold text-white mb-2">Geointeligência Urbana - Pitch Deck</h3>
-                  <p className="text-slate-300 text-sm">Clique na imagem para ampliar</p>
+                  <p className="text-slate-300 text-sm">Infográfico - Clique na imagem para ampliar</p>
                 </div>
                 <div className="cursor-pointer hover:opacity-90 transition-opacity" onClick={() => {
                   const modal = document.createElement('div');
