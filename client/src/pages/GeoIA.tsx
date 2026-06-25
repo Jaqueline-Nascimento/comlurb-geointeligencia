@@ -25,7 +25,7 @@ export default function GeoIA() {
     },
     {
       title: 'Performance de Poda',
-      description: 'Análise de desempenho e eficiência das operações de poda urbana em tempo real.',
+      description: 'Painel de Performance da Poda Mecanizada. Esta ferramenta realiza cálculos automatizados combinando dados de telemetria e a produção do SICO, fornecendo um verdadeiro "RX" de toda a operação ao longo do turno de trabalho. Com o suporte da inteligência artificial, o painel gera relatórios inteligentes e define o índice final de performance de cada equipe. O sistema atua como um facilitador estratégico, auxiliando o gestor a otimizar o uso de todos os recursos disponíveis.',
       url: 'https://drive.google.com/file/d/19f1KYdJQFu5c75T7f2nW25CeAoT98k4M/view?usp=drivesdk',
       color: 'from-green-500 to-green-600',
       type: 'video',
@@ -144,7 +144,7 @@ export default function GeoIA() {
                   <div className="p-6 flex-1 flex flex-col justify-between">
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-3">{video.title}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-4">
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-5">
                         {video.description}
                       </p>
                     </div>
