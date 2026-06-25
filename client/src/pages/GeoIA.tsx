@@ -49,7 +49,7 @@ export default function GeoIA() {
     },
     {
       title: 'Ache seu Ecoponto',
-      description: 'Localização inteligente de ecopontos e pontos de coleta seletiva próximos ao usuário.',
+      description: 'Esta aplicação de utilidade pública apresenta a distribuição geográfica dos ecopontos pela cidade e detalha os tipos de resíduos aceitos em cada local. Funciona como um localizador intuitivo para que o cidadão encontre a unidade mais próxima de sua residência. Para facilitar o acesso, o sistema traz um roteirizador integrado que traça o melhor caminho para o deslocamento seguro e rápido do usuário até o ponto escolhido.',
       url: 'https://drive.google.com/file/d/1KM03R8mmCR0zSo2X8mj3v8CjbQnva1hQ/view?usp=drivesdk',
       color: 'from-blue-500 to-blue-600',
       type: 'video',
@@ -57,7 +57,7 @@ export default function GeoIA() {
     },
     {
       title: 'Ache Seu Ecoponto',
-      description: 'Localização inteligente de ecopontos e pontos de coleta seletiva próximos ao usuário.',
+      description: 'Esta aplicação de utilidade pública apresenta a distribuição geográfica dos ecopontos pela cidade e detalha os tipos de resíduos aceitos em cada local. Funciona como um localizador intuitivo para que o cidadão encontre a unidade mais próxima de sua residência. Para facilitar o acesso, o sistema traz um roteirizador integrado que traça o melhor caminho para o deslocamento seguro e rápido do usuário até o ponto escolhido.',
       url: 'https://drive.google.com/file/d/1KM03R8mmCR0zSo2X8mj3v8CjbQnva1hQ/view?usp=drivesdk',
       color: 'from-blue-500 to-blue-600',
       type: 'link'
@@ -144,7 +144,7 @@ export default function GeoIA() {
                   <div className="p-6 flex-1 flex flex-col justify-between">
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-3">{video.title}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-5">
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-4">
                         {video.description}
                       </p>
                     </div>
