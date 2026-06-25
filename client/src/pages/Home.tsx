@@ -87,10 +87,10 @@ export default function Home() {
       {/* Bloco MundoGEO Connect 2026 - Contextualização */}
       <section className="py-12 bg-white">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            {/* Vídeo à Esquerda - Reduzido pela metade */}
-            <div className="flex justify-center">
-              <div className="w-1/2">
+          <div className="grid md:grid-cols-3 gap-6 items-start">
+            {/* Vídeo à Esquerda - Reduzido ainda mais */}
+            <div className="flex justify-center md:col-span-1">
+              <div className="w-2/3">
                 <video
                   className="w-full h-auto rounded-lg shadow-lg"
                   autoPlay
@@ -103,11 +103,11 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Texto à Direita */}
-            <div className="space-y-4">
+            {/* Texto à Direita - Expandido */}
+            <div className="space-y-3 md:col-span-2">
               <h2 className="text-2xl font-bold text-gray-900">MundoGEO Connect 2026</h2>
               
-              <div className="space-y-3 text-sm text-gray-700 leading-relaxed">
+              <div className="space-y-2 text-sm text-gray-700 leading-relaxed">
                 <p>
                   A COMLURB marcou presença na MundoGEO Connect 2026, o maior evento de tecnologia geoespacial da América Latina, realizado em São Paulo. A Companhia acompanhou de perto as principais tendências globais em inteligência geográfica, integração de dados e o uso de Inteligência Artificial (IA) aplicada ao setor público.
                 </p>
@@ -116,7 +116,7 @@ export default function Home() {
                   A participação no evento reforça o compromisso da COMLURB com a transformação digital e a gestão baseada em evidências. Durante os três dias, nossa equipe pôde conhecer soluções inovadoras de monitoramento, trocar experiências com grandes especialistas do setor e identificar oportunidades valiosas para aprimorar os sistemas que já utilizamos no dia a dia da nossa cidade.
                 </p>
                 
-                <div className="bg-blue-50 border-l-4 border-blue-600 p-3 italic text-xs text-gray-800">
+                <div className="bg-blue-50 border-l-4 border-blue-600 p-2 italic text-xs text-gray-800">
                   "A experiência nos permitiu vislumbrar novas ferramentas para fortalecer a integração de dados geoespaciais, otimizar o planejamento operacional e garantir entregas cada vez mais eficientes e sustentáveis para a população do Rio de Janeiro."
                 </div>
                 
