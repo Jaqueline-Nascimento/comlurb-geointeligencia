@@ -87,7 +87,7 @@ export default function Home() {
       {/* Bloco MundoGEO Connect 2026 - Contextualização */}
       <section className="py-12 bg-white">
         <div className="container">
-          <div className="grid md:grid-cols-4 gap-2 items-start">
+          <div className="grid md:grid-cols-5 gap-2 items-start">
             {/* Vídeo à Esquerda - Reduzido em 1/3 */}
             <div className="flex justify-center md:col-span-1">
               <div className="w-1/2">
@@ -104,7 +104,7 @@ export default function Home() {
             </div>
 
             {/* Texto no Centro - Ajustado proporcionalmente */}
-            <div className="space-y-2 md:col-span-1.5">
+            <div className="space-y-2 md:col-span-2">
               <h2 className="text-xl font-bold text-gray-900">MundoGEO Connect 2026</h2>
               
               <div className="space-y-1.5 text-sm text-gray-700 leading-relaxed">
@@ -127,8 +127,8 @@ export default function Home() {
             </div>
 
             {/* Vídeo à Direita */}
-            <div className="flex justify-center md:col-span-1.5">
-              <div className="w-2/3">
+            <div className="flex justify-center md:col-span-1">
+              <div className="w-1/2">
                 <video
                   className="w-full h-auto rounded-lg shadow-lg"
                   autoPlay
