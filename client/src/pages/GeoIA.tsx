@@ -41,7 +41,7 @@ export default function GeoIA() {
     },
     {
       title: 'Ordem de Serviço de Poda',
-      description: 'Sistema de gestão de ordens de serviço para operações de manejo e poda arbórea urbana.',
+      description: 'Em fase de desenvolvimento, este sistema operará de forma 100% integrada ao ArboRio, ao Painel de Performance da Poda Mecanizada e ao SICO3. A aplicação trará uma entrada de dados otimizada com cruzamento automatizado de informações para sinalizar possíveis dados contraditórios. Além disso, contará com painéis em tempo real para o monitoramento completo e detalhado de todas as operações da Coordenadoria de Manejo Arbóreo - UCV.',
       url: 'https://drive.google.com/file/d/1Xcijf75bu705Gw7TNGD0cDHd5X5guMTH/view?usp=drivesdk',
       color: 'from-orange-500 to-orange-600',
       type: 'video',
@@ -144,7 +144,7 @@ export default function GeoIA() {
                   <div className="p-6 flex-1 flex flex-col justify-between">
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-3">{video.title}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-6">
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-5">
                         {video.description}
                       </p>
                     </div>
