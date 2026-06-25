@@ -88,9 +88,9 @@ export default function Home() {
       <section className="py-12 bg-white">
         <div className="container">
           <div className="grid md:grid-cols-3 gap-6 items-start">
-            {/* Vídeo à Esquerda - Reduzido ainda mais */}
+            {/* Vídeo à Esquerda - Reduzido em 1/3 */}
             <div className="flex justify-center md:col-span-1">
-              <div className="w-2/3">
+              <div className="w-1/2">
                 <video
                   className="w-full h-auto rounded-lg shadow-lg"
                   autoPlay
@@ -103,11 +103,11 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Texto à Direita - Expandido */}
-            <div className="space-y-3 md:col-span-2">
-              <h2 className="text-2xl font-bold text-gray-900">MundoGEO Connect 2026</h2>
+            {/* Texto à Direita - Ajustado proporcionalmente */}
+            <div className="space-y-2 md:col-span-2">
+              <h2 className="text-xl font-bold text-gray-900">MundoGEO Connect 2026</h2>
               
-              <div className="space-y-2 text-sm text-gray-700 leading-relaxed">
+              <div className="space-y-1.5 text-xs text-gray-700 leading-relaxed">
                 <p>
                   A COMLURB marcou presença na MundoGEO Connect 2026, o maior evento de tecnologia geoespacial da América Latina, realizado em São Paulo. A Companhia acompanhou de perto as principais tendências globais em inteligência geográfica, integração de dados e o uso de Inteligência Artificial (IA) aplicada ao setor público.
                 </p>
