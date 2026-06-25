@@ -139,40 +139,7 @@ export default function GeoIA() {
             ))}
           </div>
 
-          {/* Grid de Vídeos Secundários - 2x2 */}
-          <div className="grid md:grid-cols-2 gap-6">
-            {videos.slice(2).map((video, index) => (
-              <a
-                key={index + 2}
-                href={video.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block group"
-              >
-                <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
-                  {/* Cabeçalho com Gradient */}
-                  <div className={`bg-gradient-to-r ${video.color} p-6 relative overflow-hidden min-h-[120px] flex items-end`}>
-                    <div className="absolute inset-0 opacity-5">
-                      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2760%27%20height%3D%2760%27%20viewBox%3D%270%200%2060%2060%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Cg%20fill%3D%27none%27%20fill-rule%3D%27evenodd%27%3E%3Cg%20fill%3D%27%23ffffff%27%20fill-opacity%3D%270.1%27%3E%3Cpath%20d%3D%27M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%27/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
-                    </div>
-                    <div className="relative z-10 flex items-center justify-between w-full">
-                      <h3 className="text-xl font-bold text-white">{video.title}</h3>
-                      <div className="bg-white/20 backdrop-blur-sm rounded-full p-2 group-hover:bg-white/30 transition-all">
-                        <Play className="w-5 h-5 text-white fill-white" />
-                      </div>
-                    </div>
-                  </div>
 
-                  {/* Descrição */}
-                  <div className="p-6 flex-1 flex items-center">
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {video.description}
-                    </p>
-                  </div>
-                </Card>
-              </a>
-            ))}
-          </div>
         </section>
 
         {/* Seção de Informação */}
