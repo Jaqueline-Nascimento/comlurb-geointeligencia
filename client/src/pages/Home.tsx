@@ -670,6 +670,17 @@ export default function Home() {
                   </div>
                   <p className="text-slate-300 text-sm mt-4 text-center">Deslize para ver mais imagens da apresentação</p>
                 </div>
+                
+                <div className="mt-12 pt-8 border-t border-slate-700">
+                  <div className="flex flex-col lg:flex-row gap-8 items-start">
+                    <div className="w-full lg:w-1/3 flex-shrink-0">
+                      <img src="/manus-storage/20260617_150835_43bf239f.webp" alt="Equipe de Belo Horizonte" className="w-full h-64 object-cover rounded-lg shadow-lg" />
+                    </div>
+                    <div className="w-full lg:w-2/3">
+                      <p className="text-slate-300 leading-relaxed">Belo Horizonte apresentou sua estratégia de transformação digital em gestão urbana, com foco em integração de dados geoespaciais para otimização de serviços públicos. A prefeitura compartilhou experiências em implementação de sistemas de informação geográfica para monitoramento de infraestrutura urbana, demonstrando como a geointeligência pode transformar a tomada de decisões e melhorar a eficiência operacional.</p>
+                    </div>
+                  </div>
+                </div>
               </TabsContent>
               
               <TabsContent value="topocart" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
