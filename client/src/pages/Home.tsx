@@ -28,7 +28,7 @@ export default function Home() {
             <a href="/projetos" className="text-sm text-muted-foreground hover:text-foreground transition">Projetos</a>
             <a href="/apresentacao-presidencia" className="text-sm text-muted-foreground hover:text-foreground transition">Apresentação para presidência</a>
             <a href="/benchmarking" className="text-sm text-muted-foreground hover:text-foreground transition">Benchmarking</a>
-            <a href="/geoia" className="text-sm text-muted-foreground hover:text-foreground transition">GeoIA na Comlurb</a>
+            <a href="/geoia" className="text-sm text-muted-foreground hover:text-foreground transition">SIURB</a>
             <a href="/insights" className="text-sm text-muted-foreground hover:text-foreground transition">Percepções</a>
             <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition">Participantes</a>
           </div>
@@ -44,7 +44,7 @@ export default function Home() {
               <a href="/projetos" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Projetos</a>
               <a href="/apresentacao-presidencia" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Apresentação para presidência</a>
               <a href="/benchmarking" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Benchmarking</a>
-              <a href="/geoia" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>GeoIA na Comlurb</a>
+              <a href="/geoia" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>SIURB</a>
               <a href="/insights" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Percepções</a>
               <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Participantes</a>
             </div>
