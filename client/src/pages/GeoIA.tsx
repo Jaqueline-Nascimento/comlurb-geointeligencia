@@ -108,6 +108,32 @@ export default function GeoIA() {
 
       {/* Conteúdo Principal */}
       <div className="max-w-7xl mx-auto px-4 py-12">
+        {/* Infográfico SIURB */}
+        <section className="mb-12">
+          <div className="flex justify-center">
+            <button
+              onClick={(e) => {
+                const modal = document.createElement('div');
+                modal.className = 'fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4';
+                modal.innerHTML = `
+                  <div class="relative max-w-4xl w-full">
+                    <button onclick="this.parentElement.parentElement.remove()" class="absolute -top-10 right-0 text-white hover:text-gray-300 text-2xl">✕</button>
+                    <img src="/manus-storage/SIURB_Inteligencia_Urbana_Rio_eea528c0.webp" alt="SIURB Infográfico" class="w-full h-auto rounded-lg" />
+                  </div>
+                `;
+                document.body.appendChild(modal);
+              }}
+              className="hover:opacity-90 transition-opacity cursor-pointer"
+            >
+              <img
+                src="/manus-storage/SIURB_Inteligencia_Urbana_Rio_eea528c0.webp"
+                alt="SIURB: O Coração da Inteligência Urbana do Rio de Janeiro"
+                className="w-full max-w-4xl h-auto rounded-lg shadow-lg"
+              />
+            </button>
+          </div>
+        </section>
+
         {/* Introdução */}
         <section className="mb-12">
           <p className="text-gray-700 leading-relaxed text-lg">
