@@ -15,7 +15,7 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
         <div className="container flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <img src="/manus-storage/broom-icon_0293fe4d.png" alt="Broom Icon" className="w-10 h-10" />
+            <img src="assets/media/broom-icon_0293fe4d.png" alt="Broom Icon" className="w-10 h-10" />
             <div className="border-l-2 border-gray-400 h-8"></div>
             <div className="flex flex-col">
               <span className="font-bold text-sm text-foreground">RELATÓRIO DE VIAGEM - Congresso MundoGeo SP</span>
@@ -25,11 +25,11 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-8">
             <a href="https://jaqueline-nascimento.github.io/relatorioMundoGeo/?v=ae98227" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition">Relatório completo</a>
             <a href="https://comlurb-insight.lovable.app/cursos" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition">HUB</a>
-            <a href={`${import.meta.env.BASE_URL}projetos`} className="text-sm text-muted-foreground hover:text-foreground transition">Projetos</a>
-            <a href={`${import.meta.env.BASE_URL}apresentacao-presidencia`} className="text-sm text-muted-foreground hover:text-foreground transition">Apresentação para presidência</a>
-            <a href={`${import.meta.env.BASE_URL}benchmarking`} className="text-sm text-muted-foreground hover:text-foreground transition">Benchmarking</a>
-            <a href={`${import.meta.env.BASE_URL}geoia`} className="text-sm text-muted-foreground hover:text-foreground transition">SIURB</a>
-            <a href={`${import.meta.env.BASE_URL}insights`} className="text-sm text-muted-foreground hover:text-foreground transition">Percepções</a>
+            <a href="/projetos" className="text-sm text-muted-foreground hover:text-foreground transition">Projetos</a>
+            <a href="/apresentacao-presidencia" className="text-sm text-muted-foreground hover:text-foreground transition">Apresentação para presidência</a>
+            <a href="/benchmarking" className="text-sm text-muted-foreground hover:text-foreground transition">Benchmarking</a>
+            <a href="/geoia" className="text-sm text-muted-foreground hover:text-foreground transition">SIURB</a>
+            <a href="/insights" className="text-sm text-muted-foreground hover:text-foreground transition">Percepções</a>
             <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition">Participantes</a>
           </div>
           <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -41,11 +41,11 @@ export default function Home() {
             <div className="flex flex-col gap-4 p-4">
               <a href="https://jaqueline-nascimento.github.io/relatorioMundoGeo/?v=ae98227" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Relatório completo</a>
               <a href="https://comlurb-insight.lovable.app/cursos" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>HUB</a>
-              <a href={`${import.meta.env.BASE_URL}projetos`} className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Projetos</a>
-              <a href={`${import.meta.env.BASE_URL}apresentacao-presidencia`} className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Apresentação para presidência</a>
-              <a href={`${import.meta.env.BASE_URL}benchmarking`} className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Benchmarking</a>
-              <a href={`${import.meta.env.BASE_URL}geoia`} className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>SIURB</a>
-              <a href={`${import.meta.env.BASE_URL}insights`} className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Percepções</a>
+              <a href="/projetos" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Projetos</a>
+              <a href="/apresentacao-presidencia" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Apresentação para presidência</a>
+              <a href="/benchmarking" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Benchmarking</a>
+              <a href="/geoia" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>SIURB</a>
+              <a href="/insights" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Percepções</a>
               <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Participantes</a>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function Home() {
       <section
         className="relative overflow-hidden text-white py-24 bg-cover bg-center"
         style={{
-          backgroundImage: 'url(/manus-storage/hero-geointeligencia_8fe6595f.webp)',
+          backgroundImage: 'url(assets/media/hero-geointeligencia_8fe6595f.webp)',
           backgroundAttachment: 'fixed'
         }}
       >
@@ -66,7 +66,7 @@ export default function Home() {
         {/* Logo Prefeitura RIO + COMLURB - Top Right */}
         <div className="absolute top-6 right-6 z-20 md:w-64 w-48">
           <img
-            src="/manus-storage/logo-rio-comlurb-dark_420b1041.jpg"
+            src="assets/media/logo-rio-comlurb-dark_420b1041.jpg"
             alt="Prefeitura RIO - COMLURB"
             className="w-full h-auto object-contain"
           />
@@ -99,7 +99,7 @@ export default function Home() {
                   loop
                   playsInline
                 >
-                  <source src="/manus-storage/WhatsAppVideo2026-06-25at04.53.33_3a985b3d.mp4" type="video/mp4" />
+                  <source src="assets/media/WhatsAppVideo2026-06-25at04.53.33_3a985b3d.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function Home() {
                   loop
                   playsInline
                 >
-                  <source src="/manus-storage/WhatsAppVideo2026-06-25at05.23.42_ad550378.mp4" type="video/mp4" />
+                  <source src="assets/media/WhatsAppVideo2026-06-25at05.23.42_ad550378.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function Home() {
                 loop
                 playsInline
               >
-                <source src="/manus-storage/Pippit_20260621_Cleaning_V2_d4df2970.mp4" type="video/mp4" />
+                <source src="assets/media/Pippit_20260621_Cleaning_V2_d4df2970.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
@@ -586,22 +586,22 @@ export default function Home() {
                   <div className="overflow-x-auto pb-4">
                     <div className="flex gap-6 snap-x snap-mandatory">
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_150835_4146623e.webp" alt="O desafio dos Municípios" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_150835_4146623e.webp" alt="O desafio dos Municípios" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_150906_baf2126a.webp" alt="Fortaleza: Da Informação Territorial à Inteligência Geográfica" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_150906_baf2126a.webp" alt="Fortaleza: Da Informação Territorial à Inteligência Geográfica" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_151124_21c4e00c.webp" alt="Quando os dados começam a conversar" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_151124_21c4e00c.webp" alt="Quando os dados começam a conversar" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_151319_95c3796f.webp" alt="Inteligência Geográfica a Serviço dos Municípios" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_151319_95c3796f.webp" alt="Inteligência Geográfica a Serviço dos Municípios" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_151543_e9da6b46.webp" alt="Inteligência Geográfica Gera Resultados" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_151543_e9da6b46.webp" alt="Inteligência Geográfica Gera Resultados" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_151725_b593595c.webp" alt="Os Desafios Continuam" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_151725_b593595c.webp" alt="Os Desafios Continuam" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                     </div>
                   </div>
@@ -611,7 +611,7 @@ export default function Home() {
                 <div className="mt-12 pt-8 border-t border-slate-700">
                   <div className="flex flex-col lg:flex-row gap-8 items-start">
                     <div className="w-full lg:w-1/3 flex-shrink-0">
-                      <img src="/manus-storage/20260617_183344_99ae7c35.webp" alt="Equipe da COMLURB" className="w-full h-64 object-cover rounded-lg shadow-lg" />
+                      <img src="assets/media/20260617_183344_99ae7c35.webp" alt="Equipe da COMLURB" className="w-full h-64 object-cover rounded-lg shadow-lg" />
                     </div>
                     <div className="w-full lg:w-2/3">
                       <p className="text-slate-300 leading-relaxed">A palestra partiu de uma ideia muito simples: toda decisão pública acontece em algum lugar. Quando os dados começam a conversar, surge a inteligência geográfica. Isso significa conectar cadastro, cartografia, planejamento urbano, infraestrutura, informações ambientais, mercado imobiliário, informações tributárias e dados operacionais. A partir dessa conexão, o município deixa de enxergar problemas isolados e passa a compreender padrões.</p>
@@ -626,43 +626,43 @@ export default function Home() {
                   <div className="overflow-x-auto pb-4">
                     <div className="flex gap-6 snap-x snap-mandatory">
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_150706_2b5c74a2.webp" alt="Belo Horizonte - Apresentação 1" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_150706_2b5c74a2.webp" alt="Belo Horizonte - Apresentação 1" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_150807_e614fa06.webp" alt="Belo Horizonte - Apresentação 2" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_150807_e614fa06.webp" alt="Belo Horizonte - Apresentação 2" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_151954_d215d2c2.webp" alt="Belo Horizonte - Apresentação 3" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_151954_d215d2c2.webp" alt="Belo Horizonte - Apresentação 3" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_152228_c78f74f5.webp" alt="Belo Horizonte - Apresentação 4" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_152228_c78f74f5.webp" alt="Belo Horizonte - Apresentação 4" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_150738_32774ba8.webp" alt="Belo Horizonte - Apresentação 5" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_150738_32774ba8.webp" alt="Belo Horizonte - Apresentação 5" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_150835_43bf239f.webp" alt="Belo Horizonte - Apresentação 6" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_150835_43bf239f.webp" alt="Belo Horizonte - Apresentação 6" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_150906_42b13da9.webp" alt="Belo Horizonte - Apresentação 7" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_150906_42b13da9.webp" alt="Belo Horizonte - Apresentação 7" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_151124_312673dc.webp" alt="Belo Horizonte - Apresentação 8" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_151124_312673dc.webp" alt="Belo Horizonte - Apresentação 8" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_151319_a8a52148.webp" alt="Belo Horizonte - Apresentação 9" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_151319_a8a52148.webp" alt="Belo Horizonte - Apresentação 9" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_151543_0cb1dd6f.webp" alt="Belo Horizonte - Apresentação 10" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_151543_0cb1dd6f.webp" alt="Belo Horizonte - Apresentação 10" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_151725_7ca60b77.webp" alt="Belo Horizonte - Apresentação 11" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_151725_7ca60b77.webp" alt="Belo Horizonte - Apresentação 11" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_151921_179379aa.webp" alt="Belo Horizonte - Apresentação 12" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_151921_179379aa.webp" alt="Belo Horizonte - Apresentação 12" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_152135_e423a061.webp" alt="Belo Horizonte - Apresentação 13" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_152135_e423a061.webp" alt="Belo Horizonte - Apresentação 13" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                     </div>
                   </div>
@@ -672,7 +672,7 @@ export default function Home() {
                 <div className="mt-12 pt-8 border-t border-slate-700">
                   <div className="flex flex-col lg:flex-row gap-8 items-start">
                     <div className="w-full lg:w-1/3 flex-shrink-0">
-                      <img src="/manus-storage/20260617_150835_43bf239f.webp" alt="Equipe de Belo Horizonte" className="w-full h-64 object-cover rounded-lg shadow-lg" />
+                      <img src="assets/media/20260617_150835_43bf239f.webp" alt="Equipe de Belo Horizonte" className="w-full h-64 object-cover rounded-lg shadow-lg" />
                     </div>
                     <div className="w-full lg:w-2/3">
                       <p className="text-slate-300 leading-relaxed">Belo Horizonte apresentou sua estratégia de transformação digital em gestão urbana, com foco em integração de dados geoespaciais para otimização de serviços públicos. A prefeitura compartilhou experiências em implementação de sistemas de informação geográfica para monitoramento de infraestrutura urbana, demonstrando como a geointeligência pode transformar a tomada de decisões e melhorar a eficiência operacional.</p>
@@ -688,31 +688,31 @@ export default function Home() {
                   <div className="overflow-x-auto pb-4">
                     <div className="flex gap-6 snap-x snap-mandatory">
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/IMG-20260617-WA0088_e2cc41c5.jpg" alt="Topocart - Apresentação 1" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/IMG-20260617-WA0088_e2cc41c5.jpg" alt="Topocart - Apresentação 1" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_161416_e8c57a3d.webp" alt="Topocart - Apresentação 2" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_161416_e8c57a3d.webp" alt="Topocart - Apresentação 2" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_160927_a8cc08b6.webp" alt="Topocart - Apresentação 3" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_160927_a8cc08b6.webp" alt="Topocart - Apresentação 3" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_161043_971109a4.webp" alt="Topocart - Apresentação 4" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_161043_971109a4.webp" alt="Topocart - Apresentação 4" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_161217_88b1d97c.webp" alt="Topocart - Apresentação 5" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_161217_88b1d97c.webp" alt="Topocart - Apresentação 5" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_161128_65005ca3.webp" alt="Topocart - Apresentação 6" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_161128_65005ca3.webp" alt="Topocart - Apresentação 6" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_161145_b9e5a015.webp" alt="Topocart - Apresentação 7" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_161145_b9e5a015.webp" alt="Topocart - Apresentação 7" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_161408_db5bf3af.webp" alt="Topocart - Apresentação 8" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_161408_db5bf3af.webp" alt="Topocart - Apresentação 8" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260617_160945_b8e0d955.webp" alt="Topocart - Apresentação 9" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260617_160945_b8e0d955.webp" alt="Topocart - Apresentação 9" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                     </div>
                   </div>
@@ -758,19 +758,19 @@ export default function Home() {
                   <div className="overflow-x-auto pb-4">
                     <div className="flex gap-6 snap-x snap-mandatory">
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260618_121755_6c32f7aa.webp" alt="GeoSampa 1" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260618_121755_6c32f7aa.webp" alt="GeoSampa 1" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260618_122344_15475f22.webp" alt="GeoSampa 2" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260618_122344_15475f22.webp" alt="GeoSampa 2" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260618_120419_183620ab.webp" alt="GeoSampa 3" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260618_120419_183620ab.webp" alt="GeoSampa 3" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260618_120422_fe781bb2.webp" alt="GeoSampa 4" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260618_120422_fe781bb2.webp" alt="GeoSampa 4" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                       <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 snap-center">
-                        <img src="/manus-storage/20260618_121826_9e9c167f.webp" alt="GeoSampa 5" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+                        <img src="assets/media/20260618_121826_9e9c167f.webp" alt="GeoSampa 5" className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
                       </div>
                     </div>
                   </div>
@@ -1295,7 +1295,7 @@ function ParticipantesGrupo() {
       {/* Foto do Grupo - Visível em ambas as versões */}
       <div className="relative w-full rounded-lg overflow-hidden shadow-lg mb-8">
         <img
-          src="/manus-storage/grupo-mundogeo-2026_04b39992.png"
+          src="assets/media/grupo-mundogeo-2026_04b39992.png"
           alt="Grupo de Participantes MundoGEO 2026"
           className="w-full h-auto object-cover"
         />

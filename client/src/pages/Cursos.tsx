@@ -141,21 +141,21 @@ Para a COMLURB, esse curso evidencia que o caminho da inovação passa por uma s
 ];
 
 const carouselImages = [
-  "/manus-storage/20260616_090656_0fb4a5f5.webp",
-  "/manus-storage/20260616_091553_87335347.webp",
-  "/manus-storage/20260616_092655_4ecff374.webp",
-  "/manus-storage/20260616_091448_bd6c52aa.webp",
-  "/manus-storage/20260616_141601_bf1ebec1.webp",
-  "/manus-storage/20260616_142455_d089d76c.webp",
-  "/manus-storage/20260616_142609_4a256e0b.webp",
-  "/manus-storage/20260616_143121_2c174835.webp",
-  "/manus-storage/20260616_142925_7f408d31.webp",
-  "/manus-storage/20260616_143630_a7e593ec.webp",
-  "/manus-storage/20260616_143653_7cf33545.webp",
-  "/manus-storage/20260616_142747_3b5503bc.webp",
-  "/manus-storage/20260617_151921_6ed563ab.webp",
-  "/manus-storage/20260616_102733_cb473748.webp",
-  "/manus-storage/20260617_152228_f0671281.webp"
+  "assets/media/20260616_090656_0fb4a5f5.webp",
+  "assets/media/20260616_091553_87335347.webp",
+  "assets/media/20260616_092655_4ecff374.webp",
+  "assets/media/20260616_091448_bd6c52aa.webp",
+  "assets/media/20260616_141601_bf1ebec1.webp",
+  "assets/media/20260616_142455_d089d76c.webp",
+  "assets/media/20260616_142609_4a256e0b.webp",
+  "assets/media/20260616_143121_2c174835.webp",
+  "assets/media/20260616_142925_7f408d31.webp",
+  "assets/media/20260616_143630_a7e593ec.webp",
+  "assets/media/20260616_143653_7cf33545.webp",
+  "assets/media/20260616_142747_3b5503bc.webp",
+  "assets/media/20260617_151921_6ed563ab.webp",
+  "assets/media/20260616_102733_cb473748.webp",
+  "assets/media/20260617_152228_f0671281.webp"
 ];
 
 export default function Cursos() {
@@ -181,7 +181,7 @@ export default function Cursos() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
         <div className="container flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <img src="/manus-storage/broom-icon_0293fe4d.png" alt="Broom Icon" className="w-10 h-10" />
+            <img src="assets/media/broom-icon_0293fe4d.png" alt="Broom Icon" className="w-10 h-10" />
             <div className="border-l-2 border-gray-400 h-8"></div>
             <div className="flex flex-col">
               <span className="font-bold text-sm text-foreground">RELATÓRIO DE VIAGEM - Congresso MundoGeo SP</span>
@@ -207,7 +207,7 @@ export default function Cursos() {
             {/* Image Column */}
             <div className="flex justify-center">
               <img
-                src="/manus-storage/geointeligencia_limpeza_urbana_83763dcd.png"
+                src="assets/media/geointeligencia_limpeza_urbana_83763dcd.png"
                 alt="Geointeligência na Limpeza Urbana"
                 className="w-full max-w-2xl h-auto object-contain"
               />

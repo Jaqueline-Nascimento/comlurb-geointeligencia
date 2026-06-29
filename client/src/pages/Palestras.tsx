@@ -12,7 +12,7 @@ export default function Palestras() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
         <div className="container flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <img src="/manus-storage/broom-icon_0293fe4d.png" alt="Broom Icon" className="w-10 h-10" />
+            <img src="assets/media/broom-icon_0293fe4d.png" alt="Broom Icon" className="w-10 h-10" />
             <div className="border-l-2 border-gray-400 h-8"></div>
             <div className="flex flex-col">
               <span className="font-bold text-sm text-foreground">RELATÓRIO DE VIAGEM - Congresso MundoGeo SP</span>
@@ -35,7 +35,7 @@ export default function Palestras() {
       <section className="w-full">
         <div className="w-full h-auto">
           <img
-            src="/manus-storage/pasted_file_HN6pVF_image_8478aebe.png"
+            src="assets/media/pasted_file_HN6pVF_image_8478aebe.png"
             alt="Palestras do Congresso MundoGEO"
             className="w-full h-auto object-cover"
           />

@@ -37,7 +37,7 @@ export default function Percepcoes() {
                 autoPlay
                 muted
               >
-                <source src="/manus-storage/Cena_inicial_-_2026-06-24_202606240833_24981117.mp4" type="video/mp4" />
+                <source src="assets/media/Cena_inicial_-_2026-06-24_202606240833_24981117.mp4" type="video/mp4" />
                 Seu navegador não suporta o elemento de vídeo.
               </video>
             </div>
@@ -46,7 +46,7 @@ export default function Percepcoes() {
             <div>
               <div className="relative group cursor-pointer" onClick={() => setIsImageOpen(true)}>
                 <img
-                  src="/manus-storage/infografico_por_que_transformacao_v2_b88bbafc.png"
+                  src="assets/media/infografico_por_que_transformacao_v2_b88bbafc.png"
                   alt="Por quê estamos fazendo isso - Infográfico"
                   className="w-full h-auto rounded-lg shadow-lg transition-transform group-hover:scale-105"
                 />
@@ -169,7 +169,7 @@ export default function Percepcoes() {
         >
           <div className="relative max-w-4xl max-h-[90vh] w-full h-full flex items-center justify-center">
             <img
-              src="/manus-storage/infografico_por_que_transformacao_v2_b88bbafc.png"
+              src="assets/media/infografico_por_que_transformacao_v2_b88bbafc.png"
               alt="Por quê estamos fazendo isso - Infográfico Ampliado"
               className="max-w-full max-h-full object-contain rounded-lg"
             />

@@ -21,7 +21,7 @@ export default function GeoIA() {
       url: 'https://drive.google.com/file/d/1cvzGTDnFLuSZca5HVivQ9gnenzxqpOwU/view?usp=drivesdk',
       color: 'from-purple-500 to-purple-600',
       type: 'video',
-      videoSrc: '/manus-storage/radar_da_poda_42a39195.mp4'
+      videoSrc: 'assets/media/radar_da_poda_42a39195.mp4'
     },
     {
       title: 'Performance de Poda',
@@ -29,7 +29,7 @@ export default function GeoIA() {
       url: 'https://drive.google.com/file/d/19f1KYdJQFu5c75T7f2nW25CeAoT98k4M/view?usp=drivesdk',
       color: 'from-green-500 to-green-600',
       type: 'video',
-      videoSrc: '/manus-storage/performance_poda_7a070d53.mp4'
+      videoSrc: 'assets/media/performance_poda_7a070d53.mp4'
     },
     {
       title: 'ArboRio',
@@ -37,7 +37,7 @@ export default function GeoIA() {
       url: 'https://drive.google.com/file/d/1CiJnBNoqRsIny3SrVQyNQMHlpMVzaisz/view?usp=drivesdk',
       color: 'from-emerald-500 to-emerald-600',
       type: 'video',
-      videoSrc: '/manus-storage/arborio_operacional_3c5a1a53.mp4'
+      videoSrc: 'assets/media/arborio_operacional_3c5a1a53.mp4'
     },
     {
       title: 'Ordem de Serviço de Poda',
@@ -45,7 +45,7 @@ export default function GeoIA() {
       url: 'https://drive.google.com/file/d/1Xcijf75bu705Gw7TNGD0cDHd5X5guMTH/view?usp=drivesdk',
       color: 'from-orange-500 to-orange-600',
       type: 'video',
-      videoSrc: '/manus-storage/uso_os_Ucv_677b7916.mp4'
+      videoSrc: 'assets/media/uso_os_Ucv_677b7916.mp4'
     },
     {
       title: 'Ache seu Ecoponto',
@@ -53,7 +53,7 @@ export default function GeoIA() {
       url: 'https://drive.google.com/file/d/1KM03R8mmCR0zSo2X8mj3v8CjbQnva1hQ/view?usp=drivesdk',
       color: 'from-blue-500 to-blue-600',
       type: 'video',
-      videoSrc: '/manus-storage/ache_seu_ecoponto_c3b1ba80.mp4'
+      videoSrc: 'assets/media/ache_seu_ecoponto_c3b1ba80.mp4'
     },
     {
       title: 'Ache Seu Ecoponto',
@@ -120,7 +120,7 @@ export default function GeoIA() {
                   controls
                   playsInline
                 >
-                  <source src="/manus-storage/0629_0f74cfd0.mp4" type="video/mp4" />
+                  <source src="assets/media/0629_0f74cfd0.mp4" type="video/mp4" />
                   Seu navegador não suporta vídeos HTML5.
                 </video>
               </div>
@@ -135,7 +135,7 @@ export default function GeoIA() {
                   modal.innerHTML = `
                     <div class="relative max-w-4xl w-full">
                       <button onclick="this.parentElement.parentElement.remove()" class="absolute -top-10 right-0 text-white hover:text-gray-300 text-2xl">✕</button>
-                      <img src="/manus-storage/SIURB_Inteligencia_Urbana_Rio_eea528c0.webp" alt="SIURB Infográfico" class="w-full h-auto rounded-lg" />
+                      <img src="assets/media/SIURB_Inteligencia_Urbana_Rio_eea528c0.webp" alt="SIURB Infográfico" class="w-full h-auto rounded-lg" />
                     </div>
                   `;
                   document.body.appendChild(modal);
@@ -143,7 +143,7 @@ export default function GeoIA() {
                 className="hover:opacity-90 transition-opacity cursor-pointer w-full"
               >
                 <img
-                  src="/manus-storage/SIURB_Inteligencia_Urbana_Rio_eea528c0.webp"
+                  src="assets/media/SIURB_Inteligencia_Urbana_Rio_eea528c0.webp"
                   alt="SIURB: O Coração da Inteligência Urbana do Rio de Janeiro"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -256,7 +256,7 @@ export default function GeoIA() {
                   modal.innerHTML = `
                     <div class="relative max-w-4xl w-full">
                       <button onclick="this.parentElement.parentElement.remove()" class="absolute -top-10 right-0 text-white hover:text-gray-300 text-2xl">✕</button>
-                      <img src="/manus-storage/centros_custos_app_e99bbc69.jpg" alt="App Centros de Custos" class="w-full h-auto rounded-lg" />
+                      <img src="assets/media/centros_custos_app_e99bbc69.jpg" alt="App Centros de Custos" class="w-full h-auto rounded-lg" />
                     </div>
                   `;
                   document.body.appendChild(modal);
@@ -266,7 +266,7 @@ export default function GeoIA() {
                 <Card className="overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
                   <div className="relative w-full bg-black" style={{ paddingBottom: '56.25%' }}>
                     <img
-                      src="/manus-storage/centros_custos_app_e99bbc69.jpg"
+                      src="assets/media/centros_custos_app_e99bbc69.jpg"
                       alt="App Centros de Custos"
                       className="absolute top-0 left-0 w-full h-full object-cover"
                     />

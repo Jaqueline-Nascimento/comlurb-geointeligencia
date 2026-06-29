@@ -13,7 +13,7 @@ export default function Benchmarking() {
       icon: MapPin,
       url: 'https://www.geologosbr.com.br/sistema-geosvclixo-e-seus-modulos',
       color: 'from-green-600 to-green-400',
-      image: '/manus-storage/pasted_file_xbj7Wp_image_76c29c22.png',
+      image: 'assets/media/pasted_file_xbj7Wp_image_76c29c22.png',
       isFeatured: true
     },
     {
@@ -23,7 +23,7 @@ export default function Benchmarking() {
       icon: Shield,
       url: 'https://storymaps.arcgis.com/stories/02ee7a55e3244a6ca3bb71522813b65c',
       color: 'from-red-600 to-red-400',
-      image: '/manus-storage/pasted_file_dSZZye_image_f9e0371d.png',
+      image: 'assets/media/pasted_file_dSZZye_image_f9e0371d.png',
       isFeatured: true
     },
     {
@@ -33,7 +33,7 @@ export default function Benchmarking() {
       icon: MapPin,
       url: 'https://blog.img.com.br/governo/cidades-inteligentes-brasil-gestao-publica-transparente/',
       color: 'from-blue-600 to-blue-400',
-      image: '/manus-storage/pasted_file_1bACrr_image_100d4c9b.png',
+      image: 'assets/media/pasted_file_1bACrr_image_100d4c9b.png',
       isFeatured: true
     },
     {

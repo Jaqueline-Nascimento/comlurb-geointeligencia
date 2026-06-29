@@ -93,15 +93,15 @@ export default function ApresentacaoPresidencia() {
                   modal.className = 'fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4';
                   modal.innerHTML = `
                     <div class="max-w-7xl w-full">
-                      <img src="/manus-storage/pitch_deck_infografico_v3_92a85670.webp" alt="Pitch Deck" class="w-full h-auto rounded-lg" />
+                      <img src="assets/media/pitch_deck_infografico_v3_92a85670.webp" alt="Pitch Deck" class="w-full h-auto rounded-lg" />
                     </div>
                   `;
                   modal.addEventListener('click', () => modal.remove());
                   document.body.appendChild(modal);
                 }}>
-                  <img 
-                    src="/manus-storage/pitch_deck_infografico_v3_92a85670.webp" 
-                    alt="Pitch Deck Infográfico" 
+                  <img
+                    src="assets/media/pitch_deck_infografico_v3_92a85670.webp"
+                    alt="Pitch Deck Infográfico"
                     className="w-full h-auto rounded-lg shadow-2xl"
                   />
                 </div>
@@ -121,15 +121,15 @@ export default function ApresentacaoPresidencia() {
                   modal.className = 'fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4';
                   modal.innerHTML = `
                     <div class="max-w-7xl w-full">
-                      <img src="/manus-storage/mundogeo-sistemas-inteligentes_9100901a.jpeg" alt="MundoGEO Sistemas Inteligentes" class="w-full h-auto rounded-lg" />
+                      <img src="assets/media/mundogeo-sistemas-inteligentes_9100901a.jpeg" alt="MundoGEO Sistemas Inteligentes" class="w-full h-auto rounded-lg" />
                     </div>
                   `;
                   modal.addEventListener('click', () => modal.remove());
                   document.body.appendChild(modal);
                 }}>
-                  <img 
-                    src="/manus-storage/mundogeo-sistemas-inteligentes_9100901a.jpeg" 
-                    alt="MundoGEO Sistemas Inteligentes Infográfico" 
+                  <img
+                    src="assets/media/mundogeo-sistemas-inteligentes_9100901a.jpeg"
+                    alt="MundoGEO Sistemas Inteligentes Infográfico"
                     className="w-full h-auto rounded-lg shadow-2xl"
                   />
                 </div>
@@ -142,4 +142,3 @@ export default function ApresentacaoPresidencia() {
     </main>
   );
 }
-

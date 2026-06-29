@@ -495,7 +495,7 @@ export default function Geointeligencia() {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="/manus-storage/geointeligencia-banner_0811f1bc.mp4" type="video/mp4" />
+          <source src="assets/media/geointeligencia-banner_0811f1bc.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-end">
           <div className="p-8 text-white max-w-2xl">
