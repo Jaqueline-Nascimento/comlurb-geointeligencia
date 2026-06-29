@@ -108,29 +108,47 @@ export default function GeoIA() {
 
       {/* Conteúdo Principal */}
       <div className="max-w-7xl mx-auto px-4 py-12">
-        {/* Infográfico SIURB */}
+        {/* Vídeo e Infográfico SIURB */}
         <section className="mb-12">
-          <div className="flex justify-center">
-            <button
-              onClick={(e) => {
-                const modal = document.createElement('div');
-                modal.className = 'fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4';
-                modal.innerHTML = `
-                  <div class="relative max-w-4xl w-full">
-                    <button onclick="this.parentElement.parentElement.remove()" class="absolute -top-10 right-0 text-white hover:text-gray-300 text-2xl">✕</button>
-                    <img src="/manus-storage/SIURB_Inteligencia_Urbana_Rio_eea528c0.webp" alt="SIURB Infográfico" class="w-full h-auto rounded-lg" />
-                  </div>
-                `;
-                document.body.appendChild(modal);
-              }}
-              className="hover:opacity-90 transition-opacity cursor-pointer"
-            >
-              <img
-                src="/manus-storage/SIURB_Inteligencia_Urbana_Rio_eea528c0.webp"
-                alt="SIURB: O Coração da Inteligência Urbana do Rio de Janeiro"
-                className="w-full max-w-4xl h-auto rounded-lg shadow-lg"
-              />
-            </button>
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">Entenda o que é o SIURB</h3>
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            {/* Vídeo à Esquerda */}
+            <div>
+              <div className="relative w-full bg-black rounded-lg shadow-lg overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+                <video
+                  className="absolute top-0 left-0 w-full h-full object-cover"
+                  controls
+                  playsInline
+                >
+                  <source src="/manus-storage/0629_0f74cfd0.mp4" type="video/mp4" />
+                  Seu navegador não suporta vídeos HTML5.
+                </video>
+              </div>
+            </div>
+
+            {/* Infográfico à Direita */}
+            <div>
+              <button
+                onClick={(e) => {
+                  const modal = document.createElement('div');
+                  modal.className = 'fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4';
+                  modal.innerHTML = `
+                    <div class="relative max-w-4xl w-full">
+                      <button onclick="this.parentElement.parentElement.remove()" class="absolute -top-10 right-0 text-white hover:text-gray-300 text-2xl">✕</button>
+                      <img src="/manus-storage/SIURB_Inteligencia_Urbana_Rio_eea528c0.webp" alt="SIURB Infográfico" class="w-full h-auto rounded-lg" />
+                    </div>
+                  `;
+                  document.body.appendChild(modal);
+                }}
+                className="hover:opacity-90 transition-opacity cursor-pointer w-full"
+              >
+                <img
+                  src="/manus-storage/SIURB_Inteligencia_Urbana_Rio_eea528c0.webp"
+                  alt="SIURB: O Coração da Inteligência Urbana do Rio de Janeiro"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+              </button>
+            </div>
           </div>
         </section>
 
@@ -147,7 +165,7 @@ export default function GeoIA() {
           
           {/* Grid de Vídeos - 2 colunas */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {videos.slice(0, 5).map((video, index) => (
+            {videos.slice(0, 4).map((video, index) => (
               <div key={index} className="block group">
                 <Card className="overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
                   {/* Vídeo */}
@@ -187,6 +205,85 @@ export default function GeoIA() {
             ))}
           </div>
 
+          {/* Ecoponto + App Centros de Custos - mesma linha */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Ecoponto */}
+            {videos.slice(4, 5).map((video, index) => (
+              <div key={index} className="block group">
+                <Card className="overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
+                  {/* Vídeo */}
+                  <div className="relative w-full bg-black" style={{ paddingBottom: '56.25%' }}>
+                    <video
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src={video.videoSrc} type="video/mp4" />
+                      Seu navegador não suporta vídeos HTML5.
+                    </video>
+                  </div>
+
+                  {/* Título e Descrição */}
+                  <div className="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-3">{video.title}</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-4">
+                        {video.description}
+                      </p>
+                    </div>
+                    <a
+                      href={video.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 font-medium hover:text-blue-700 transition-colors flex items-center gap-2"
+                    >
+                      <span>Acessar</span>
+                      <Play className="w-4 h-4" />
+                    </a>
+                  </div>
+                </Card>
+              </div>
+            ))}
+
+            {/* App Centros de Custos */}
+            <div className="block group">
+              <button
+                onClick={(e) => {
+                  const modal = document.createElement('div');
+                  modal.className = 'fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4';
+                  modal.innerHTML = `
+                    <div class="relative max-w-4xl w-full">
+                      <button onclick="this.parentElement.parentElement.remove()" class="absolute -top-10 right-0 text-white hover:text-gray-300 text-2xl">✕</button>
+                      <img src="/manus-storage/centros_custos_app_e99bbc69.jpg" alt="App Centros de Custos" class="w-full h-auto rounded-lg" />
+                    </div>
+                  `;
+                  document.body.appendChild(modal);
+                }}
+                className="hover:opacity-90 transition-opacity cursor-pointer w-full text-left h-full"
+              >
+                <Card className="overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
+                  <div className="relative w-full bg-black" style={{ paddingBottom: '56.25%' }}>
+                    <img
+                      src="/manus-storage/centros_custos_app_e99bbc69.jpg"
+                      alt="App Centros de Custos"
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-3">App Centros de Custos</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-4">
+                        Aplicação para gestão e monitoramento de centros de custos da COMLURB com visualização geográfica e análise de dados em tempo real.
+                      </p>
+                    </div>
+                    <span className="text-blue-600 font-medium flex items-center gap-2">Visualizar</span>
+                  </div>
+                </Card>
+              </button>
+            </div>
+          </div>
 
         </section>
       </div>
