@@ -30,9 +30,9 @@ export default function Projetos() {
         <div className="flex flex-col lg:flex-row gap-12 items-start mb-16">
           {/* Imagem */}
           <div className="w-full lg:w-1/3 flex-shrink-0">
-            <img 
-              src="/manus-storage/comlurb-layers-with-trees_026d898e.png" 
-              alt="Portfólio de Projetos - Camadas de Geointeligência" 
+            <img
+              src="/manus-storage/comlurb-layers-with-trees_026d898e.png"
+              alt="Portfólio de Projetos - Camadas de Geointeligência"
               className="w-full rounded-lg shadow-lg"
             />
           </div>
@@ -41,12 +41,12 @@ export default function Projetos() {
           <div className="w-full lg:w-2/3">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Soluções Integradas para Cidades Inteligentes</h2>
             <p className="text-gray-700 leading-relaxed mb-6">
-              Nossa plataforma de geointeligência integra diversos projetos e soluções para transformar a gestão urbana. 
-              Cada projeto foi cuidadosamente desenvolvido para resolver desafios específicos da administração municipal, 
+              Nossa plataforma de geointeligência integra diversos projetos e soluções para transformar a gestão urbana.
+              Cada projeto foi cuidadosamente desenvolvido para resolver desafios específicos da administração municipal,
               desde a coleta de resíduos até o monitoramento de espaços públicos.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Utilizando dados geoespaciais, inteligência artificial e análise preditiva, nossas soluções permitem 
+              Utilizando dados geoespaciais, inteligência artificial e análise preditiva, nossas soluções permitem
               que gestores públicos tomem decisões mais rápidas, eficientes e baseadas em informações precisas.
             </p>
           </div>

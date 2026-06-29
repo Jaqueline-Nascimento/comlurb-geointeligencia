@@ -25,11 +25,11 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-8">
             <a href="https://jaqueline-nascimento.github.io/relatorioMundoGeo/?v=ae98227" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition">Relatório completo</a>
             <a href="https://comlurb-insight.lovable.app/cursos" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition">HUB</a>
-            <a href="/projetos" className="text-sm text-muted-foreground hover:text-foreground transition">Projetos</a>
-            <a href="/apresentacao-presidencia" className="text-sm text-muted-foreground hover:text-foreground transition">Apresentação para presidência</a>
-            <a href="/benchmarking" className="text-sm text-muted-foreground hover:text-foreground transition">Benchmarking</a>
-            <a href="/geoia" className="text-sm text-muted-foreground hover:text-foreground transition">SIURB</a>
-            <a href="/insights" className="text-sm text-muted-foreground hover:text-foreground transition">Percepções</a>
+            <a href={`${import.meta.env.BASE_URL}projetos`} className="text-sm text-muted-foreground hover:text-foreground transition">Projetos</a>
+            <a href={`${import.meta.env.BASE_URL}apresentacao-presidencia`} className="text-sm text-muted-foreground hover:text-foreground transition">Apresentação para presidência</a>
+            <a href={`${import.meta.env.BASE_URL}benchmarking`} className="text-sm text-muted-foreground hover:text-foreground transition">Benchmarking</a>
+            <a href={`${import.meta.env.BASE_URL}geoia`} className="text-sm text-muted-foreground hover:text-foreground transition">SIURB</a>
+            <a href={`${import.meta.env.BASE_URL}insights`} className="text-sm text-muted-foreground hover:text-foreground transition">Percepções</a>
             <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition">Participantes</a>
           </div>
           <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -41,11 +41,11 @@ export default function Home() {
             <div className="flex flex-col gap-4 p-4">
               <a href="https://jaqueline-nascimento.github.io/relatorioMundoGeo/?v=ae98227" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Relatório completo</a>
               <a href="https://comlurb-insight.lovable.app/cursos" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>HUB</a>
-              <a href="/projetos" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Projetos</a>
-              <a href="/apresentacao-presidencia" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Apresentação para presidência</a>
-              <a href="/benchmarking" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Benchmarking</a>
-              <a href="/geoia" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>SIURB</a>
-              <a href="/insights" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Percepções</a>
+              <a href={`${import.meta.env.BASE_URL}projetos`} className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Projetos</a>
+              <a href={`${import.meta.env.BASE_URL}apresentacao-presidencia`} className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Apresentação para presidência</a>
+              <a href={`${import.meta.env.BASE_URL}benchmarking`} className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Benchmarking</a>
+              <a href={`${import.meta.env.BASE_URL}geoia`} className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>SIURB</a>
+              <a href={`${import.meta.env.BASE_URL}insights`} className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Percepções</a>
               <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Participantes</a>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section 
+      <section
         className="relative overflow-hidden text-white py-24 bg-cover bg-center"
         style={{
           backgroundImage: 'url(/manus-storage/hero-geointeligencia_8fe6595f.webp)',
@@ -62,16 +62,16 @@ export default function Home() {
       >
         {/* Overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/20 via-slate-900/15 to-slate-900/10"></div>
-        
+
         {/* Logo Prefeitura RIO + COMLURB - Top Right */}
         <div className="absolute top-6 right-6 z-20 md:w-64 w-48">
-          <img 
-            src="/manus-storage/logo-rio-comlurb-dark_420b1041.jpg" 
+          <img
+            src="/manus-storage/logo-rio-comlurb-dark_420b1041.jpg"
             alt="Prefeitura RIO - COMLURB"
             className="w-full h-auto object-contain"
           />
         </div>
-        
+
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
@@ -107,20 +107,20 @@ export default function Home() {
             {/* Texto no Centro */}
             <div className="space-y-2">
               <h2 className="text-xl font-bold text-gray-900">MundoGEO Connect 2026</h2>
-              
+
               <div className="space-y-1.5 text-sm text-gray-700 leading-relaxed">
                 <p>
                   A COMLURB marcou presença na MundoGEO Connect 2026, o maior evento de tecnologia geoespacial da América Latina, realizado em São Paulo. A Companhia acompanhou de perto as principais tendências globais em inteligência geográfica, integração de dados e o uso de Inteligência Artificial (IA) aplicada ao setor público.
                 </p>
-                
+
                 <p>
                   A participação no evento reforça o compromisso da COMLURB com a transformação digital e a gestão baseada em evidências. Durante os três dias, nossa equipe pôde conhecer soluções inovadoras de monitoramento, trocar experiências com grandes especialistas do setor e identificar oportunidades valiosas para aprimorar os sistemas que já utilizamos no dia a dia da nossa cidade.
                 </p>
-                
+
                 <div className="bg-blue-50 border-l-4 border-blue-600 p-2 italic text-xs text-gray-800">
                   "A experiência nos permitiu vislumbrar novas ferramentas para fortalecer a integração de dados geoespaciais, otimizar o planejamento operacional e garantir entregas cada vez mais eficientes e sustentáveis para a população do Rio de Janeiro."
                 </div>
-                
+
                 <p>
                   Com os insights trazidos do evento, a COMLURB segue firme no propósito de usar a tecnologia como aliada estratégica, transformando dados em decisões inteligentes que impactam diretamente a zeladoria e a limpeza urbana da nossa cidade.
                 </p>
@@ -154,20 +154,20 @@ export default function Home() {
               <p className="text-base text-white leading-relaxed text-justify">
                 Deixar de ter operações reativas e dados dispersos para ter ações preditivas.
               </p>
-              
+
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6">
                 <p className="text-base text-white leading-relaxed text-justify">
                   Fazer o carioca feliz e orgulhoso com a antecipação dos problemas. Análises preditivas resultarão em uma cidade mais limpa, sendo reconhecida como a capital que analisa dados em tempo real e age cirurgicamente sem desperdício de recursos.
                 </p>
               </div>
             </div>
-            
+
             {/* Vídeo à Direita */}
             <div className="flex justify-center">
-              <video 
-                className="w-full h-auto rounded-lg" 
-                autoPlay 
-                muted 
+              <video
+                className="w-full h-auto rounded-lg"
+                autoPlay
+                muted
                 loop
                 playsInline
               >
@@ -183,11 +183,11 @@ export default function Home() {
         <div className="container">
           <div className="grid md:grid-cols-4 gap-6">
             {/* Card 1 - O que é MundoGEO */}
-            <div 
+            <div
               onClick={() => navigate('/mundogeo')}
               className="relative overflow-hidden rounded-lg border-2 border-green-600 cursor-pointer group h-64"
             >
-              <div 
+              <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                 style={{
                   backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310419663028691309/9JRRkzoyMYLptPPRXBm35g/card-mundogeo-bg-8YBCdxM9ug5Lt4u5cMjUWr.webp)'
@@ -199,13 +199,13 @@ export default function Home() {
                 <p className="text-slate-200 text-sm">Conheça o maior congresso de geotecnologia da América Latina e sua relevância para a COMLURB.</p>
               </div>
             </div>
-            
+
             {/* Card 2 - Cursos que Participamos */}
-            <div 
+            <div
               onClick={() => navigate('/cursos')}
               className="relative overflow-hidden rounded-lg border-2 border-blue-600 cursor-pointer group h-64"
             >
-              <div 
+              <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                 style={{
                   backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310419663028691309/9JRRkzoyMYLptPPRXBm35g/card-cursos-bg-aqpJdF9QEFqaNZqQBBtSnW.webp)'
@@ -217,13 +217,13 @@ export default function Home() {
                 <p className="text-slate-200 text-sm">Explore os 4 cursos técnicos realizados e o conhecimento estratégico adquirido.</p>
               </div>
             </div>
-            
+
             {/* Card 3 - Palestras que Assistimos */}
-            <div 
+            <div
               onClick={() => navigate('/palestras')}
               className="relative overflow-hidden rounded-lg border-2 border-purple-600 cursor-pointer group h-64"
             >
-              <div 
+              <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                 style={{
                   backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310419663028691309/9JRRkzoyMYLptPPRXBm35g/card-palestras-bg-FMjAxJjEANvi9yznhcUAtE.webp)'
@@ -235,13 +235,13 @@ export default function Home() {
                 <p className="text-slate-200 text-sm">Confira as 11 palestras e painéis técnicos que transformam a gestão urbana.</p>
               </div>
             </div>
-            
+
             {/* Card 4 - Geointeligência em outras prefeituras */}
-            <div 
+            <div
               onClick={() => navigate('/geointeligencia')}
               className="relative overflow-hidden rounded-lg border-2 border-teal-600 cursor-pointer group h-64"
             >
-              <div 
+              <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                 style={{
                   backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310419663028691309/9JRRkzoyMYLptPPRXBm35g/card-geointeligencia-bg-a9Y7Gyr9jmQf2LoS2yA9tP.webp)'
@@ -268,7 +268,7 @@ export default function Home() {
               A COMLURB tem conhecimento profundo do território, presença diária nas ruas e equipes distribuídas pela cidade. Conectar esses ativos com tecnologias complementares que funcionam como um sistema nervoso central. Essas três tecnologias são a base para uma gestão urbana que antecipa problemas, reduz custos operacionais e entrega melhores resultados para a cidade.
             </p>
           </div>
-          
+
           {/* 3 Cards do Tripé */}
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1 - GeoIA */}
@@ -279,7 +279,7 @@ export default function Home() {
                 É o "cérebro" que interpreta o mapa e devolve insights permitindo que a gestão da limpeza, das áreas verdes e qualquer outro serviço seja feita com precisão cirúrgica, otimização, tempo de equipe e recursos públicos.
               </p>
             </div>
-            
+
             {/* Card 2 - Gêmeos Digitais */}
             <div className="bg-white/10 backdrop-blur-sm border-l-4 border-blue-500 rounded-lg p-8 hover:bg-white/15 transition-colors duration-300">
               <div className="text-4xl mb-4 text-blue-400">🌐</div>
@@ -288,7 +288,7 @@ export default function Home() {
                 Se a GeoIA diz à sua empresa quando e onde agir, o Gêmeo Digital mostra como a ação vai impactar o mundo real.
               </p>
             </div>
-            
+
             {/* Card 3 - IoT */}
             <div className="bg-white/10 backdrop-blur-sm border-l-4 border-purple-500 rounded-lg p-8 hover:bg-white/15 transition-colors duration-300">
               <div className="text-4xl mb-4 text-purple-400">⚡</div>
@@ -307,7 +307,7 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
         <div className="container">
           <h2 className="text-4xl font-bold mb-12 text-center text-foreground">Benefícios Estratégicos da Geointeligência</h2>
-          
+
           {/* Primeira Fileira - 4 Cards */}
           <div className="grid md:grid-cols-4 gap-6 mb-8">
             {/* Card 1 - O Custo de Não Inovar */}
@@ -419,7 +419,7 @@ export default function Home() {
               <div className="text-center mb-6">
                 <p className="text-2xl font-bold text-white">A capacitação é o pilar da transformação digital</p>
               </div>
-              
+
               {/* Timeline Vertical */}
               <div className="space-y-4">
                 {/* Item 1 */}
@@ -437,7 +437,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Item 2 */}
                 <div className="relative">
                   <div className="flex gap-3">
@@ -453,7 +453,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Item 3 */}
                 <div className="relative">
                   <div className="flex gap-3">
@@ -482,12 +482,12 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-4 text-foreground">Caminho para Smart Sanitation Global</h2>
             <p className="text-lg text-muted-foreground max-w-3xl">Visão estratégica de 5 anos para transformar a COMLURB em referência mundial em geointeligência urbana e saneamento inteligente.</p>
           </div>
-          
+
           {/* Roadmap Timeline Horizontal */}
           <div className="relative">
             {/* Timeline Line */}
             <div className="absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-green-400 via-blue-400 to-purple-400"></div>
-            
+
             {/* Roadmap Items */}
             <div className="grid md:grid-cols-5 gap-6 relative z-10">
               {/* Fase 1 */}
@@ -501,7 +501,7 @@ export default function Home() {
                   <p className="text-xs font-semibold text-green-600">Ano 1</p>
                 </div>
               </div>
-              
+
               {/* Fase 2 */}
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-6 border-4 border-white shadow-lg">
@@ -513,7 +513,7 @@ export default function Home() {
                   <p className="text-xs font-semibold text-blue-600">Anos 1-2</p>
                 </div>
               </div>
-              
+
               {/* Fase 3 */}
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center mb-6 border-4 border-white shadow-lg">
@@ -525,7 +525,7 @@ export default function Home() {
                   <p className="text-xs font-semibold text-cyan-600">Anos 2-3</p>
                 </div>
               </div>
-              
+
               {/* Fase 4 */}
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mb-6 border-4 border-white shadow-lg">
@@ -537,7 +537,7 @@ export default function Home() {
                   <p className="text-xs font-semibold text-purple-600">Anos 3-4</p>
                 </div>
               </div>
-              
+
               {/* Fase 5 */}
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center mb-6 border-4 border-white shadow-lg">
@@ -551,7 +551,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+
           {/* Vision Statement */}
           <div className="mt-16 bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg border-l-4 border-green-500">
             <p className="text-lg text-foreground leading-relaxed">
@@ -570,7 +570,7 @@ export default function Home() {
               Um congresso técnico transforma presença institucional em relacionamento, relacionamento em aprendizado e aprendizado em oportunidade concreta para a organização.
             </p>
           </div>
-          
+
           <div className="w-full">
             <Tabs defaultValue="fortaleza" className="w-full">
               <TabsList className="grid w-full grid-cols-4 mb-8 bg-transparent border-b border-slate-700">
@@ -579,7 +579,7 @@ export default function Home() {
                 <TabsTrigger value="topocart" className="text-white data-[state=active]:text-white data-[state=active]:bg-slate-800 data-[state=active]:border-b-2 data-[state=active]:border-green-500 transition-all duration-200 hover:bg-slate-800/50">Topocart - Sistema de Varrição</TabsTrigger>
                 <TabsTrigger value="geosampa" className="text-white data-[state=active]:text-white data-[state=active]:bg-slate-800 data-[state=active]:border-b-2 data-[state=active]:border-green-500 transition-all duration-200 hover:bg-slate-800/50">GeoSampa</TabsTrigger>
               </TabsList>
-              
+
               <TabsContent value="fortaleza" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
                 <h3 className="text-2xl font-bold mb-6 text-white">Prefeitura de Fortaleza</h3>
                 <div className="relative w-full">
@@ -607,7 +607,7 @@ export default function Home() {
                   </div>
                   <p className="text-slate-300 text-sm mt-4 text-center">Deslize para ver mais imagens da apresentação</p>
                 </div>
-                
+
                 <div className="mt-12 pt-8 border-t border-slate-700">
                   <div className="flex flex-col lg:flex-row gap-8 items-start">
                     <div className="w-full lg:w-1/3 flex-shrink-0">
@@ -619,7 +619,7 @@ export default function Home() {
                   </div>
                 </div>
               </TabsContent>
-              
+
               <TabsContent value="belohorizonte" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
                 <h3 className="text-2xl font-bold mb-6 text-white">Prefeitura de Belo Horizonte</h3>
                 <div className="relative w-full">
@@ -668,7 +668,7 @@ export default function Home() {
                   </div>
                   <p className="text-slate-300 text-sm mt-4 text-center">Deslize para ver mais imagens da apresentação</p>
                 </div>
-                
+
                 <div className="mt-12 pt-8 border-t border-slate-700">
                   <div className="flex flex-col lg:flex-row gap-8 items-start">
                     <div className="w-full lg:w-1/3 flex-shrink-0">
@@ -680,10 +680,10 @@ export default function Home() {
                   </div>
                 </div>
               </TabsContent>
-              
+
               <TabsContent value="topocart" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
                 <h3 className="text-2xl font-bold mb-6 text-white">Topocart - Sistema de Varrição</h3>
-                
+
                 <div className="relative w-full mb-8">
                   <div className="overflow-x-auto pb-4">
                     <div className="flex gap-6 snap-x snap-mandatory">
@@ -718,7 +718,7 @@ export default function Home() {
                   </div>
                   <p className="text-slate-300 text-sm mt-4 text-center">Deslize para ver mais imagens da apresentação</p>
                 </div>
-                
+
                 <div className="space-y-6">
                   <p className="text-slate-300 leading-relaxed">
                     A Topocart apresentou sua solução inovadora de rastreamento e otimização de operações de varrição urbana. O sistema utiliza GPS de alta precisão e sensores IoT para monitorar a eficiência das equipes de limpeza em tempo real.
@@ -749,7 +749,7 @@ export default function Home() {
                   </p>
                 </div>
               </TabsContent>
-              
+
 
               <TabsContent value="geosampa" className="bg-slate-800 p-8 rounded-lg transition-all duration-300">
                 <h3 className="text-2xl font-bold mb-6 text-white">GeoSampa - Portal de Dados Geoespaciais de São Paulo</h3>
@@ -874,7 +874,7 @@ function NetworkingCard({ contact }: { contact: NetworkingContact }) {
   return (
     <div className="flex-shrink-0 w-72 snap-center">
       <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition h-full flex flex-col">
-        <div 
+        <div
           className={`${corAtual} text-white p-6 flex flex-col items-center justify-center cursor-pointer hover:opacity-90 transition min-h-48`}
           onClick={() => setIsExpanded(!isExpanded)}
         >
@@ -904,35 +904,35 @@ function IoTCard() {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   return (
-    <Card 
+    <Card
       className="p-8 border-l-4 border-l-purple-600 hover:shadow-lg transition cursor-pointer"
       onClick={() => setIsExpanded(!isExpanded)}
     >
       <Zap className="w-12 h-12 text-purple-600 mb-4" />
       <h3 className="text-xl font-bold mb-3 text-foreground">IoT - Internet das Coisas</h3>
       <p className="text-muted-foreground">A IoT elimina a necessidade de ir lá ver, pois o objeto avisa ao sistema como ele está. Se a GeoIA é o cérebro e o Gêmeo Digital é o corpo, a Internet das Coisas (IoT) representa os sentidos do sistema. Ela é a rede de dispositivos físicos (sensores, rastreadores, câmeras) que coleta dados brutos do mundo real e os envia para o sistema em tempo real.</p>
-      
+
       {isExpanded && (
         <div className="mt-6 pt-6 border-t border-border">
           <h4 className="text-lg font-bold mb-4 text-foreground">Aplicações Práticas na COMLURB</h4>
-          
+
           <div className="space-y-6">
             <div>
               <h5 className="font-semibold text-foreground mb-2">Na Coleta</h5>
               <p className="text-sm text-muted-foreground">Sensores de peso e volume nos contéineres de lixo. O sistema recebe o sinal de que o setor X atingiu o limite de carga e despacha automaticamente o caminhão mais próximo, otimizando a logística de resíduos.</p>
             </div>
-            
+
             <div>
               <h5 className="font-semibold text-foreground mb-2">Na Varrição</h5>
               <p className="text-sm text-muted-foreground">GPS de alta precisão nos carrinhos dos garis e sopradores. O gestor consegue ver no mapa quais ruas já foram varridas hoje e quais ficaram "buracos" na operação, garantindo que 100% do logradouro foi atendido.</p>
             </div>
-            
+
             <div>
               <h5 className="font-semibold text-foreground mb-2">Na Poda</h5>
               <p className="text-sm text-muted-foreground">Sensores de estabilidade (acelerômetros) fixados no tronco de árvores históricas ou de alto risco. Se a árvore inclinar mais de 5 graus devido a ventos fortes, o IoT envia um alerta de emergência para o sistema, priorizando a equipe de poda para aquele local antes que ocorra um acidente.</p>
             </div>
           </div>
-          
+
           <div className="mt-6 pt-6 border-t border-border">
             <p className="text-sm text-muted-foreground italic">Com a IoT, o seu sistema deixa de depender de relatórios manuais preenchidos por humanos (que podem ter erros) e passa a ler a realidade diretamente dos objetos, tornando a gestão da empresa à prova de falhas.</p>
           </div>
@@ -946,36 +946,36 @@ function DigitalTwinsCard() {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   return (
-    <Card 
+    <Card
       className="p-8 border-l-4 border-l-blue-600 hover:shadow-lg transition cursor-pointer"
       onClick={() => setIsExpanded(!isExpanded)}
     >
       <Globe className="w-12 h-12 text-blue-600 mb-4" />
       <h3 className="text-xl font-bold mb-3 text-foreground">Gêmeos Digitais</h3>
       <p className="text-muted-foreground">Se a GeoIA diz à sua empresa quando e onde agir, o Gêmeo Digital mostra como a ação vai impactar o mundo real.</p>
-      
+
       {isExpanded && (
         <div className="mt-6 pt-6 border-t border-border">
           <h4 className="text-lg font-bold mb-4 text-foreground">A Integração: Sentir, Pensar e Agir</h4>
           <p className="text-sm text-muted-foreground mb-6">A integração da GeoIA e dos Gêmeos Digitais como um ciclo de "Sentir, Pensar e Agir".</p>
-          
+
           <div className="space-y-6">
             <div>
               <h5 className="font-semibold text-foreground mb-2">Coleta de Resíduos</h5>
               <p className="text-sm text-muted-foreground"><strong>Com Gêmeo Digital:</strong> Você pode simular no modelo 3D se um novo modelo de caminhão (maior ou elétrico) consegue fazer as curvas em ruas estreitas de uma comunidade ou se a nova posição de um contêiner vai bloquear o fluxo de pedestres na calçada.</p>
             </div>
-            
+
             <div>
               <h5 className="font-semibold text-foreground mb-2">Varrição de Logradouros</h5>
               <p className="text-sm text-muted-foreground"><strong>Com Gêmeo Digital:</strong> O gestor visualiza um mapa de calor (heatmap) de sujeira no modelo 3D da cidade. Se uma praça aparece sempre "vermelha" no Gêmeo Digital, a empresa pode decidir, via simulação, que é mais barato instalar mais três lixeiras naquele ponto do que enviar o gari duas vezes ao dia.</p>
             </div>
-            
+
             <div>
               <h5 className="font-semibold text-foreground mb-2">Poda de Árvores (Manejo de Precisão no ArboRio)</h5>
               <p className="text-sm text-muted-foreground"><strong>Com Gêmeo Digital:</strong> Antes de enviar o cesto aéreo, o engenheiro florestal abre o Gêmeo Digital e faz uma poda virtual. Ele vê exatamente qual galho deve ser cortado e simula se a remoção daquela massa foliar vai deixar um prédio vizinho exposto a um calor excessivo (perda de sombra), permitindo um ajuste fino no plano de manejo.</p>
             </div>
           </div>
-          
+
           <div className="mt-6 pt-6 border-t border-border">
             <h4 className="text-lg font-bold mb-4 text-foreground">Comparação: GeoIA vs Gêmeo Digital</h4>
             <div className="overflow-x-auto">
@@ -1017,36 +1017,36 @@ function GeoIACard() {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   return (
-    <Card 
+    <Card
       className="p-8 border-l-4 border-l-green-600 hover:shadow-lg transition cursor-pointer"
       onClick={() => setIsExpanded(!isExpanded)}
     >
       <Brain className="w-12 h-12 text-green-600 mb-4" />
       <h3 className="text-xl font-bold mb-3 text-foreground">GeoIA (Inteligência Artificial Geoespacial)</h3>
       <p className="text-muted-foreground">É o "cérebro" que interpreta o mapa e devolve insights permitindo que a gestão da limpeza, das áreas verdes e qualquer outro serviço seja feita com precisão cirúrgica, otimização, tempo de equipe e recursos públicos.</p>
-      
+
       {isExpanded && (
         <div className="mt-6 pt-6 border-t border-border">
           <h4 className="text-lg font-bold mb-4 text-foreground">GeoIA na Limpeza</h4>
           <p className="text-sm text-muted-foreground mb-4">Para a operação de limpeza GeoIA foca em logística e eficiência:</p>
-          
+
           <div className="space-y-4">
             <div>
               <h5 className="font-semibold text-foreground mb-2">Otimização de Rotas Dinâmicas</h5>
               <p className="text-sm text-muted-foreground">Diferente de rotas fixas, a GeoIA pode recalcular o trajeto das equipes de limpeza em tempo real, baseando-se na densidade de resíduos detectada por sensores ou frequência de chamados (como o 1746).</p>
             </div>
-            
+
             <div>
               <h5 className="font-semibold text-foreground mb-2">Manutenção Preditiva da Arborização</h5>
               <p className="text-sm text-muted-foreground">No caso do ArboRio, a GeoIA pode analisar o histórico de crescimento de certas espécies e condições climáticas para prever qual árvore tem maior risco de queda ou necessidade de poda iminente, transformando a limpeza urbana de "reativa" em "preventiva".</p>
             </div>
-            
+
             <div>
               <h5 className="font-semibold text-foreground mb-2">Monitoramento de Pontos Críticos</h5>
               <p className="text-sm text-muted-foreground">Identificação de padrões geográficos de descarte irregular de lixo, permitindo que a empresa direcione ações de limpeza e fiscalização para os locais com maior probabilidade de reincidência.</p>
             </div>
           </div>
-          
+
           <div className="mt-6 pt-6 border-t border-border">
             <h4 className="text-lg font-bold mb-4 text-foreground">Comparação: GIS Tradicional vs GeoIA</h4>
             <div className="overflow-x-auto">
@@ -1294,12 +1294,12 @@ function ParticipantesGrupo() {
     <>
       {/* Foto do Grupo - Visível em ambas as versões */}
       <div className="relative w-full rounded-lg overflow-hidden shadow-lg mb-8">
-        <img 
-          src="/manus-storage/grupo-mundogeo-2026_04b39992.png" 
+        <img
+          src="/manus-storage/grupo-mundogeo-2026_04b39992.png"
           alt="Grupo de Participantes MundoGEO 2026"
           className="w-full h-auto object-cover"
         />
-        
+
         {/* Desktop: Badges Flutuantes com Nomes */}
         <div className="hidden md:block">
           {participantes.map((participante, index) => (
@@ -1356,7 +1356,7 @@ function ParticipantesGrupo() {
                   ✕
                 </button>
               </div>
-              
+
               <div className="border-t border-border pt-6">
                 <h3 className="text-lg font-bold text-foreground mb-4">Currículo e Experiências</h3>
                 <p className="text-muted-foreground leading-relaxed whitespace-pre-wrap">
