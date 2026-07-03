@@ -50,15 +50,15 @@ export default function GeoIA() {
     {
       title: 'Ache seu Ecoponto',
       description: 'Esta aplicação de utilidade pública apresenta a distribuição geográfica dos ecopontos pela cidade e detalha os tipos de resíduos aceitos em cada local. Funciona como um localizador intuitivo para que o cidadão encontre a unidade mais próxima de sua residência. Para facilitar o acesso, o sistema traz um roteirizador integrado que traça o melhor caminho para o deslocamento seguro e rápido do usuário até o ponto escolhido.',
-      url: 'https://drive.google.com/file/d/1KM03R8mmCR0zSo2X8mj3v8CjbQnva1hQ/view?usp=drivesdk',
+      url: 'https://github.com/Jaqueline-Nascimento/comlurb-geointeligencia/releases/download/media-2026-07-03/ache_seu_ecoponto.mp4',
       color: 'from-blue-500 to-blue-600',
       type: 'video',
-      videoSrc: 'https://github.com/Jaqueline-Nascimento/comlurb-geointeligencia/releases/download/media-2026-07-03/ache_seu_ecoponto_c3b1ba80.mp4'
+      videoSrc: 'https://github.com/Jaqueline-Nascimento/comlurb-geointeligencia/releases/download/media-2026-07-03/ache_seu_ecoponto.mp4'
     },
     {
       title: 'Ache Seu Ecoponto',
       description: 'Esta aplicação de utilidade pública apresenta a distribuição geográfica dos ecopontos pela cidade e detalha os tipos de resíduos aceitos em cada local. Funciona como um localizador intuitivo para que o cidadão encontre a unidade mais próxima de sua residência. Para facilitar o acesso, o sistema traz um roteirizador integrado que traça o melhor caminho para o deslocamento seguro e rápido do usuário até o ponto escolhido.',
-      url: 'https://drive.google.com/file/d/1KM03R8mmCR0zSo2X8mj3v8CjbQnva1hQ/view?usp=drivesdk',
+      url: 'https://github.com/Jaqueline-Nascimento/comlurb-geointeligencia/releases/download/media-2026-07-03/ache_seu_ecoponto.mp4',
       color: 'from-blue-500 to-blue-600',
       type: 'link'
     },
