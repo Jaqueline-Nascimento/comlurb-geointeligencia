@@ -1,4 +1,4 @@
-import { ArrowLeft, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
+﻿import { ArrowLeft, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
@@ -7,136 +7,136 @@ const coursesData = [
   {
     id: 1,
     number: "01",
-    title: "Automação e IA no ArcGIS",
+    title: "AutomaÃ§Ã£o e IA no ArcGIS",
     color: "from-green-500 to-green-600",
     textColor: "text-green-600",
-    fullText: `O curso "Automação e IA no ArcGIS" apresentou formas de utilizar recursos de automação e inteligência artificial dentro do ambiente ArcGIS, com foco na melhoria dos fluxos de trabalho técnicos e operacionais.
+    fullText: `O curso "AutomaÃ§Ã£o e IA no ArcGIS" apresentou formas de utilizar recursos de automaÃ§Ã£o e inteligÃªncia artificial dentro do ambiente ArcGIS, com foco na melhoria dos fluxos de trabalho tÃ©cnicos e operacionais.
 
-O conteúdo abordou o uso de assistentes de inteligência artificial como apoio à construção de expressões e rotinas dentro do ArcGIS Pro e de aplicações web. Também foi apresentado o uso da linguagem Arcade, que permite criar regras, cálculos, validações, expressões condicionais e automatizações dentro dos mapas, formulários, painéis e relatórios.
+O conteÃºdo abordou o uso de assistentes de inteligÃªncia artificial como apoio Ã  construÃ§Ã£o de expressÃµes e rotinas dentro do ArcGIS Pro e de aplicaÃ§Ãµes web. TambÃ©m foi apresentado o uso da linguagem Arcade, que permite criar regras, cÃ¡lculos, validaÃ§Ãµes, expressÃµes condicionais e automatizaÃ§Ãµes dentro dos mapas, formulÃ¡rios, painÃ©is e relatÃ³rios.
 
-Outro ponto relevante foi a introdução ao uso de Python e técnicas de Deep Learning para classificação de imagens. Essa abordagem permite que imagens obtidas por sensores remotos, drones ou outras fontes sejam analisadas por modelos computacionais capazes de reconhecer padrões, classificar áreas e apoiar diagnósticos territoriais.
+Outro ponto relevante foi a introduÃ§Ã£o ao uso de Python e tÃ©cnicas de Deep Learning para classificaÃ§Ã£o de imagens. Essa abordagem permite que imagens obtidas por sensores remotos, drones ou outras fontes sejam analisadas por modelos computacionais capazes de reconhecer padrÃµes, classificar Ã¡reas e apoiar diagnÃ³sticos territoriais.
 
-Em síntese, o curso demonstrou que o ArcGIS pode deixar de ser apenas uma ferramenta de visualização de mapas e passar a funcionar como uma plataforma de automação de processos, análise territorial e apoio à decisão.
+Em sÃ­ntese, o curso demonstrou que o ArcGIS pode deixar de ser apenas uma ferramenta de visualizaÃ§Ã£o de mapas e passar a funcionar como uma plataforma de automaÃ§Ã£o de processos, anÃ¡lise territorial e apoio Ã  decisÃ£o.
 
-Na COMLURB, esse conhecimento pode ser aplicado diretamente na automação de atividades que hoje dependem de conferências manuais, planilhas paralelas ou produção repetitiva de relatórios.
+Na COMLURB, esse conhecimento pode ser aplicado diretamente na automaÃ§Ã£o de atividades que hoje dependem de conferÃªncias manuais, planilhas paralelas ou produÃ§Ã£o repetitiva de relatÃ³rios.
 
-A linguagem Arcade e os recursos de automação podem ser utilizados para melhorar formulários de campo, validar preenchimentos, gerar campos calculados, classificar automaticamente tipos de ocorrência, organizar painéis de acompanhamento e produzir relatórios técnicos de forma mais padronizada.
+A linguagem Arcade e os recursos de automaÃ§Ã£o podem ser utilizados para melhorar formulÃ¡rios de campo, validar preenchimentos, gerar campos calculados, classificar automaticamente tipos de ocorrÃªncia, organizar painÃ©is de acompanhamento e produzir relatÃ³rios tÃ©cnicos de forma mais padronizada.
 
-Esse aprendizado tem aplicação direta em processos como poda urbana, coleta seletiva, limpeza de escolas e unidades de saúde, apoio a eventos, manutenção de praças, controle de ordens de serviço e acompanhamento de demandas oriundas do 1746.
+Esse aprendizado tem aplicaÃ§Ã£o direta em processos como poda urbana, coleta seletiva, limpeza de escolas e unidades de saÃºde, apoio a eventos, manutenÃ§Ã£o de praÃ§as, controle de ordens de serviÃ§o e acompanhamento de demandas oriundas do 1746.
 
-A inteligência artificial e o Deep Learning também podem apoiar a análise de imagens aéreas, imagens de drones ou registros fotográficos de campo, permitindo identificar padrões relacionados a vegetação, áreas com acúmulo de resíduos, alterações no território, pontos críticos de descarte irregular e locais que exigem maior atenção operacional.
+A inteligÃªncia artificial e o Deep Learning tambÃ©m podem apoiar a anÃ¡lise de imagens aÃ©reas, imagens de drones ou registros fotogrÃ¡ficos de campo, permitindo identificar padrÃµes relacionados a vegetaÃ§Ã£o, Ã¡reas com acÃºmulo de resÃ­duos, alteraÃ§Ãµes no territÃ³rio, pontos crÃ­ticos de descarte irregular e locais que exigem maior atenÃ§Ã£o operacional.
 
-Para a Companhia, o principal ganho está em reduzir retrabalho, aumentar a velocidade de resposta, melhorar a qualidade dos dados e transformar o ArcGIS em uma ferramenta ativa de gestão, e não apenas em um repositório de mapas.
+Para a Companhia, o principal ganho estÃ¡ em reduzir retrabalho, aumentar a velocidade de resposta, melhorar a qualidade dos dados e transformar o ArcGIS em uma ferramenta ativa de gestÃ£o, e nÃ£o apenas em um repositÃ³rio de mapas.
 
-Princípios: Segurança, Privacidade, Transparência, Justiça, Confiabilidade e Responsabilidade. Importância da auditabilidade no setor público.
+PrincÃ­pios: SeguranÃ§a, Privacidade, TransparÃªncia, JustiÃ§a, Confiabilidade e Responsabilidade. ImportÃ¢ncia da auditabilidade no setor pÃºblico.
 
 Assistentes de IA:
-• Assistente Arcade: geração de expressões para mapas, rótulos e simbologia.
-• Assistente Notebooks: geração de código Python usando linguagem natural.
-• Survey123: criação automática de formulários e interpretação de imagens.
-• StoryMaps: criação de narrativas geográficas interativas.
-• Business Analyst: análises territoriais e recomendações.
-• Teams: integração do ArcGIS ao Microsoft Teams.
-• Documentação: geração de metadados.
-• Solutions: descoberta de soluções prontas.
+â€¢ Assistente Arcade: geraÃ§Ã£o de expressÃµes para mapas, rÃ³tulos e simbologia.
+â€¢ Assistente Notebooks: geraÃ§Ã£o de cÃ³digo Python usando linguagem natural.
+â€¢ Survey123: criaÃ§Ã£o automÃ¡tica de formulÃ¡rios e interpretaÃ§Ã£o de imagens.
+â€¢ StoryMaps: criaÃ§Ã£o de narrativas geogrÃ¡ficas interativas.
+â€¢ Business Analyst: anÃ¡lises territoriais e recomendaÃ§Ãµes.
+â€¢ Teams: integraÃ§Ã£o do ArcGIS ao Microsoft Teams.
+â€¢ DocumentaÃ§Ã£o: geraÃ§Ã£o de metadados.
+â€¢ Solutions: descoberta de soluÃ§Ãµes prontas.
 
 Data Explorer:
-• Criação automática de aplicações geográficas baseadas em dados.
-• Interação via linguagem natural.
-• Chat de chamada única.
+â€¢ CriaÃ§Ã£o automÃ¡tica de aplicaÃ§Ãµes geogrÃ¡ficas baseadas em dados.
+â€¢ InteraÃ§Ã£o via linguagem natural.
+â€¢ Chat de chamada Ãºnica.
 
-Aplicações potenciais na COMLURB:
-• Coleta inteligente em campo com Survey123.
-• Automação com Notebooks.
-• Exploração de dados do SICO por gestores.
-• Dashboards e StoryMaps para comunicação.
-• Planejamento territorial baseado em dados.`
+AplicaÃ§Ãµes potenciais na COMLURB:
+â€¢ Coleta inteligente em campo com Survey123.
+â€¢ AutomaÃ§Ã£o com Notebooks.
+â€¢ ExploraÃ§Ã£o de dados do SICO por gestores.
+â€¢ Dashboards e StoryMaps para comunicaÃ§Ã£o.
+â€¢ Planejamento territorial baseado em dados.`
   },
   {
     id: 2,
     number: "02",
-    title: "GIS e Inteligência Artificial",
+    title: "GIS e InteligÃªncia Artificial",
     color: "from-blue-500 to-blue-600",
     textColor: "text-blue-600",
-    fullText: `O curso "GIS e Inteligência Artificial" apresentou a relação entre os Sistemas de Informação Geográfica e os diferentes níveis de inteligência artificial aplicados ao território.
+    fullText: `O curso "GIS e InteligÃªncia Artificial" apresentou a relaÃ§Ã£o entre os Sistemas de InformaÃ§Ã£o GeogrÃ¡fica e os diferentes nÃ­veis de inteligÃªncia artificial aplicados ao territÃ³rio.
 
-Foi possível observar uma introdução conceitual sobre inteligência artificial, machine learning, deep learning, redes neurais e inteligência artificial generativa. O curso mostrou que a inteligência artificial não é uma tecnologia única, mas um conjunto de métodos capazes de aprender padrões a partir de dados.
+Foi possÃ­vel observar uma introduÃ§Ã£o conceitual sobre inteligÃªncia artificial, machine learning, deep learning, redes neurais e inteligÃªncia artificial generativa. O curso mostrou que a inteligÃªncia artificial nÃ£o Ã© uma tecnologia Ãºnica, mas um conjunto de mÃ©todos capazes de aprender padrÃµes a partir de dados.
 
-Também foi demonstrado que o desempenho dos modelos de inteligência artificial depende diretamente da quantidade, da qualidade e da organização dos dados disponíveis. Em outras palavras, quanto melhor estruturada for a base de informações, maior será a capacidade da tecnologia de produzir análises confiáveis.
+TambÃ©m foi demonstrado que o desempenho dos modelos de inteligÃªncia artificial depende diretamente da quantidade, da qualidade e da organizaÃ§Ã£o dos dados disponÃ­veis. Em outras palavras, quanto melhor estruturada for a base de informaÃ§Ãµes, maior serÃ¡ a capacidade da tecnologia de produzir anÃ¡lises confiÃ¡veis.
 
-Os exemplos apresentados envolveram aplicações de machine learning em estudos ambientais e territoriais, como mapeamento de áreas de risco de deslizamento em São Sebastião, classificação de áreas úmidas no Rio Grande do Sul e análise de imagens e variáveis geográficas para identificação de padrões.
+Os exemplos apresentados envolveram aplicaÃ§Ãµes de machine learning em estudos ambientais e territoriais, como mapeamento de Ã¡reas de risco de deslizamento em SÃ£o SebastiÃ£o, classificaÃ§Ã£o de Ã¡reas Ãºmidas no Rio Grande do Sul e anÃ¡lise de imagens e variÃ¡veis geogrÃ¡ficas para identificaÃ§Ã£o de padrÃµes.
 
-O curso reforçou uma ideia central: a inteligência artificial só gera bons resultados quando está apoiada em dados consistentes, bem georreferenciados e corretamente interpretados por equipes capacitadas.
+O curso reforÃ§ou uma ideia central: a inteligÃªncia artificial sÃ³ gera bons resultados quando estÃ¡ apoiada em dados consistentes, bem georreferenciados e corretamente interpretados por equipes capacitadas.
 
-Na COMLURB, o uso combinado de GIS e inteligência artificial pode apoiar uma mudança importante: sair de uma gestão predominantemente reativa para uma gestão mais preventiva e estratégica.
+Na COMLURB, o uso combinado de GIS e inteligÃªncia artificial pode apoiar uma mudanÃ§a importante: sair de uma gestÃ£o predominantemente reativa para uma gestÃ£o mais preventiva e estratÃ©gica.
 
-Com bases históricas de atendimento, registros do 1746, ordens de serviço, dados de campo, imagens, rotas operacionais e informações territoriais, a Companhia poderá desenvolver análises para identificar padrões de ocorrência, prever áreas de maior demanda e orientar melhor a distribuição de equipes e recursos.
+Com bases histÃ³ricas de atendimento, registros do 1746, ordens de serviÃ§o, dados de campo, imagens, rotas operacionais e informaÃ§Ãµes territoriais, a Companhia poderÃ¡ desenvolver anÃ¡lises para identificar padrÃµes de ocorrÃªncia, prever Ã¡reas de maior demanda e orientar melhor a distribuiÃ§Ã£o de equipes e recursos.
 
-Esse conhecimento pode ser aplicado, por exemplo, na identificação de locais com maior recorrência de descarte irregular, na previsão de aumento de resíduos em determinadas épocas, no apoio ao planejamento da limpeza urbana em eventos, na análise de áreas com maior necessidade de poda, na priorização de serviços por criticidade e na definição de rotas mais eficientes.
+Esse conhecimento pode ser aplicado, por exemplo, na identificaÃ§Ã£o de locais com maior recorrÃªncia de descarte irregular, na previsÃ£o de aumento de resÃ­duos em determinadas Ã©pocas, no apoio ao planejamento da limpeza urbana em eventos, na anÃ¡lise de Ã¡reas com maior necessidade de poda, na priorizaÃ§Ã£o de serviÃ§os por criticidade e na definiÃ§Ã£o de rotas mais eficientes.
 
-A inteligência artificial também pode apoiar a leitura de imagens e fotografias, classificando situações operacionais, reconhecendo elementos urbanos e auxiliando na organização de evidências para relatórios técnicos.
+A inteligÃªncia artificial tambÃ©m pode apoiar a leitura de imagens e fotografias, classificando situaÃ§Ãµes operacionais, reconhecendo elementos urbanos e auxiliando na organizaÃ§Ã£o de evidÃªncias para relatÃ³rios tÃ©cnicos.
 
-O principal aprendizado para a COMLURB é que a inteligência artificial não substitui o conhecimento operacional dos empregados. Ao contrário, ela depende desse conhecimento para interpretar corretamente o território. A tecnologia deve ser vista como uma ferramenta de apoio, capaz de ampliar a capacidade de análise da Companhia e tornar as decisões mais rápidas, precisas e baseadas em evidências.`
+O principal aprendizado para a COMLURB Ã© que a inteligÃªncia artificial nÃ£o substitui o conhecimento operacional dos empregados. Ao contrÃ¡rio, ela depende desse conhecimento para interpretar corretamente o territÃ³rio. A tecnologia deve ser vista como uma ferramenta de apoio, capaz de ampliar a capacidade de anÃ¡lise da Companhia e tornar as decisÃµes mais rÃ¡pidas, precisas e baseadas em evidÃªncias.`
   },
   {
     id: 3,
     number: "03",
-    title: "Inteligência Geográfica nos Municípios",
+    title: "InteligÃªncia GeogrÃ¡fica nos MunicÃ­pios",
     color: "from-purple-500 to-purple-600",
     textColor: "text-purple-600",
-    fullText: `O curso "Inteligência Geográfica nos Municípios" trouxe uma visão ampla sobre o papel da informação territorial na administração pública. A mensagem central apresentada foi que toda decisão pública acontece em algum lugar. Escolas, unidades de saúde, equipamentos públicos, atividades econômicas, áreas residenciais, infraestrutura urbana e serviços municipais estão todos localizados no território.
+    fullText: `O curso "InteligÃªncia GeogrÃ¡fica nos MunicÃ­pios" trouxe uma visÃ£o ampla sobre o papel da informaÃ§Ã£o territorial na administraÃ§Ã£o pÃºblica. A mensagem central apresentada foi que toda decisÃ£o pÃºblica acontece em algum lugar. Escolas, unidades de saÃºde, equipamentos pÃºblicos, atividades econÃ´micas, Ã¡reas residenciais, infraestrutura urbana e serviÃ§os municipais estÃ£o todos localizados no territÃ³rio.
 
-Quando os dados começam a se conectar, surge a inteligência geográfica. Essa inteligência nasce da integração entre cadastro, cartografia, planejamento urbano, mercado imobiliário, informações tributárias, infraestrutura urbana e dados ambientais.
+Quando os dados comeÃ§am a se conectar, surge a inteligÃªncia geogrÃ¡fica. Essa inteligÃªncia nasce da integraÃ§Ã£o entre cadastro, cartografia, planejamento urbano, mercado imobiliÃ¡rio, informaÃ§Ãµes tributÃ¡rias, infraestrutura urbana e dados ambientais.
 
-Foram apresentados exemplos de municípios que utilizam a informação territorial como infraestrutura estratégica de governo, com destaque para experiências de Belo Horizonte e Fortaleza.
+Foram apresentados exemplos de municÃ­pios que utilizam a informaÃ§Ã£o territorial como infraestrutura estratÃ©gica de governo, com destaque para experiÃªncias de Belo Horizonte e Fortaleza.
 
-No caso de Belo Horizonte, foi apresentado o Cadastro Territorial Multifinalitário, a construção de uma Base de Dados Geográfica única, o papel da IDE-BHGEO, o SisCTM, o SIURBE e a integração de diferentes órgãos municipais em torno de uma visão única do território. A palestra mostrou que o maior desafio não é tecnológico, mas institucional: integrar pessoas, processos e dados.
+No caso de Belo Horizonte, foi apresentado o Cadastro Territorial MultifinalitÃ¡rio, a construÃ§Ã£o de uma Base de Dados GeogrÃ¡fica Ãºnica, o papel da IDE-BHGEO, o SisCTM, o SIURBE e a integraÃ§Ã£o de diferentes Ã³rgÃ£os municipais em torno de uma visÃ£o Ãºnica do territÃ³rio. A palestra mostrou que o maior desafio nÃ£o Ã© tecnolÃ³gico, mas institucional: integrar pessoas, processos e dados.
 
-Também foi destacada a experiência de Fortaleza, com uma trajetória de evolução da informação territorial à inteligência geográfica. O percurso apresentado passou por etapas como conhecer, mapear, integrar, conectar e decidir. Essa lógica demonstra que os municípios precisam primeiro estruturar sua base de dados para, depois, avançar em inteligência artificial, GeoBIM, gêmeos digitais e modelos mais sofisticados de tomada de decisão.
+TambÃ©m foi destacada a experiÃªncia de Fortaleza, com uma trajetÃ³ria de evoluÃ§Ã£o da informaÃ§Ã£o territorial Ã  inteligÃªncia geogrÃ¡fica. O percurso apresentado passou por etapas como conhecer, mapear, integrar, conectar e decidir. Essa lÃ³gica demonstra que os municÃ­pios precisam primeiro estruturar sua base de dados para, depois, avanÃ§ar em inteligÃªncia artificial, GeoBIM, gÃªmeos digitais e modelos mais sofisticados de tomada de decisÃ£o.
 
-O cadastro deixou de ser apenas um instrumento ligado à arrecadação. Ele passou a ser compreendido como uma infraestrutura estratégica de governo, capaz de apoiar habitação, mobilidade urbana, regularização fundiária, defesa civil, meio ambiente, planejamento territorial, Limpeza Urbana, tributação e integração de dados.
+O cadastro deixou de ser apenas um instrumento ligado Ã  arrecadaÃ§Ã£o. Ele passou a ser compreendido como uma infraestrutura estratÃ©gica de governo, capaz de apoiar habitaÃ§Ã£o, mobilidade urbana, regularizaÃ§Ã£o fundiÃ¡ria, defesa civil, meio ambiente, planejamento territorial, Limpeza Urbana, tributaÃ§Ã£o e integraÃ§Ã£o de dados.
 
-Para a COMLURB, esse curso tem aplicação direta na construção de uma visão integrada do território operacional da limpeza urbana.
+Para a COMLURB, esse curso tem aplicaÃ§Ã£o direta na construÃ§Ã£o de uma visÃ£o integrada do territÃ³rio operacional da limpeza urbana.
 
-A Companhia atua diariamente em toda a cidade: ruas, praças, escolas, unidades de saúde, áreas de lazer, comunidades, grandes eventos, praias, parques, logradouros e áreas de descarte irregular. Cada serviço executado ocorre em um ponto do território e produz uma informação que pode ser utilizada para melhorar o planejamento.
+A Companhia atua diariamente em toda a cidade: ruas, praÃ§as, escolas, unidades de saÃºde, Ã¡reas de lazer, comunidades, grandes eventos, praias, parques, logradouros e Ã¡reas de descarte irregular. Cada serviÃ§o executado ocorre em um ponto do territÃ³rio e produz uma informaÃ§Ã£o que pode ser utilizada para melhorar o planejamento.
 
-A inteligência geográfica pode apoiar a COMLURB na criação de uma base única e confiável de informações operacionais, reunindo dados de coleta, varrição, poda, coleta seletiva, remoção, limpeza hospitalar, limpeza escolar, eventos, praças, equipamentos urbanos e atendimento ao cidadão.
+A inteligÃªncia geogrÃ¡fica pode apoiar a COMLURB na criaÃ§Ã£o de uma base Ãºnica e confiÃ¡vel de informaÃ§Ãµes operacionais, reunindo dados de coleta, varriÃ§Ã£o, poda, coleta seletiva, remoÃ§Ã£o, limpeza hospitalar, limpeza escolar, eventos, praÃ§as, equipamentos urbanos e atendimento ao cidadÃ£o.
 
-Esse conhecimento também reforça a necessidade de integração com bases municipais já existentes, como logradouros, bairros, áreas de planejamento, equipamentos públicos, dados do 1746, bases do IPP, SIURB, sistemas internos e demais informações produzidas pela Prefeitura.
+Esse conhecimento tambÃ©m reforÃ§a a necessidade de integraÃ§Ã£o com bases municipais jÃ¡ existentes, como logradouros, bairros, Ã¡reas de planejamento, equipamentos pÃºblicos, dados do 1746, bases do IPP, SIURB, sistemas internos e demais informaÃ§Ãµes produzidas pela Prefeitura.
 
-A aplicação prática está em permitir que a COMLURB enxergue a cidade de forma mais precisa, evitando decisões baseadas apenas em percepção ou demanda isolada. Com inteligência geográfica, será possível identificar onde estão os maiores problemas, quais áreas demandam mais recursos, onde há repetição de ocorrências, onde a operação precisa ser reforçada e quais serviços podem ser planejados de forma integrada.
+A aplicaÃ§Ã£o prÃ¡tica estÃ¡ em permitir que a COMLURB enxergue a cidade de forma mais precisa, evitando decisÃµes baseadas apenas em percepÃ§Ã£o ou demanda isolada. Com inteligÃªncia geogrÃ¡fica, serÃ¡ possÃ­vel identificar onde estÃ£o os maiores problemas, quais Ã¡reas demandam mais recursos, onde hÃ¡ repetiÃ§Ã£o de ocorrÃªncias, onde a operaÃ§Ã£o precisa ser reforÃ§ada e quais serviÃ§os podem ser planejados de forma integrada.
 
-O aprendizado mais importante é que a cidade não pode ser administrada por bases fragmentadas. Para uma empresa como a COMLURB, que atua diretamente no território, a informação geográfica integrada é uma condição para melhorar a eficiência operacional, a transparência, o planejamento e a qualidade dos serviços prestados à população.`
+O aprendizado mais importante Ã© que a cidade nÃ£o pode ser administrada por bases fragmentadas. Para uma empresa como a COMLURB, que atua diretamente no territÃ³rio, a informaÃ§Ã£o geogrÃ¡fica integrada Ã© uma condiÃ§Ã£o para melhorar a eficiÃªncia operacional, a transparÃªncia, o planejamento e a qualidade dos serviÃ§os prestados Ã  populaÃ§Ã£o.`
   },
   {
     id: 4,
     number: "04",
-    title: "Informação Geográfica e IA",
+    title: "InformaÃ§Ã£o GeogrÃ¡fica e IA",
     color: "from-orange-500 to-orange-600",
     textColor: "text-orange-600",
-    fullText: `O curso "Informação Geográfica e Inteligência Artificial" aprofundou a relação entre dados territoriais, modelos computacionais e apoio à tomada de decisão.
+    fullText: `O curso "InformaÃ§Ã£o GeogrÃ¡fica e InteligÃªncia Artificial" aprofundou a relaÃ§Ã£o entre dados territoriais, modelos computacionais e apoio Ã  tomada de decisÃ£o.
 
-A partir dos slides enviados, observou-se que o curso destacou o papel das geotecnologias no tratamento de imagens, mapas, variáveis ambientais, bases territoriais e informações espaciais. Foram apresentados exemplos de uso de inteligência artificial para classificação de áreas, identificação de padrões e produção de diagnósticos sobre o território.
+A partir dos slides enviados, observou-se que o curso destacou o papel das geotecnologias no tratamento de imagens, mapas, variÃ¡veis ambientais, bases territoriais e informaÃ§Ãµes espaciais. Foram apresentados exemplos de uso de inteligÃªncia artificial para classificaÃ§Ã£o de Ã¡reas, identificaÃ§Ã£o de padrÃµes e produÃ§Ã£o de diagnÃ³sticos sobre o territÃ³rio.
 
-O curso também apresentou a importância dos dados de entrada para os modelos de inteligência artificial. Nas lâminas sobre redes neurais, foi possível observar a lógica de funcionamento com camadas de entrada, camadas ocultas e camadas de saída. Essa estrutura demonstra que a inteligência artificial processa diferentes variáveis e procura padrões que possam gerar uma resposta ou classificação.
+O curso tambÃ©m apresentou a importÃ¢ncia dos dados de entrada para os modelos de inteligÃªncia artificial. Nas lÃ¢minas sobre redes neurais, foi possÃ­vel observar a lÃ³gica de funcionamento com camadas de entrada, camadas ocultas e camadas de saÃ­da. Essa estrutura demonstra que a inteligÃªncia artificial processa diferentes variÃ¡veis e procura padrÃµes que possam gerar uma resposta ou classificaÃ§Ã£o.
 
-Outro ponto destacado foi a evolução da inteligência artificial, do machine learning e do deep learning ao longo do tempo. O material mostrou que os métodos mais recentes têm maior capacidade de desempenho quando alimentados por grandes volumes de dados.
+Outro ponto destacado foi a evoluÃ§Ã£o da inteligÃªncia artificial, do machine learning e do deep learning ao longo do tempo. O material mostrou que os mÃ©todos mais recentes tÃªm maior capacidade de desempenho quando alimentados por grandes volumes de dados.
 
-A palestra também abordou aplicações práticas em geotecnologias, como análise de imagens, mapeamento de riscos, classificação de áreas, reconhecimento de padrões ambientais e apoio ao planejamento urbano.
+A palestra tambÃ©m abordou aplicaÃ§Ãµes prÃ¡ticas em geotecnologias, como anÃ¡lise de imagens, mapeamento de riscos, classificaÃ§Ã£o de Ã¡reas, reconhecimento de padrÃµes ambientais e apoio ao planejamento urbano.
 
-A principal mensagem é que a inteligência artificial aplicada à informação geográfica permite transformar grandes quantidades de dados espaciais em conhecimento útil para a gestão pública.
+A principal mensagem Ã© que a inteligÃªncia artificial aplicada Ã  informaÃ§Ã£o geogrÃ¡fica permite transformar grandes quantidades de dados espaciais em conhecimento Ãºtil para a gestÃ£o pÃºblica.
 
-Na COMLURB, a informação geográfica combinada com inteligência artificial pode apoiar a transformação dos dados operacionais em conhecimento estratégico.
+Na COMLURB, a informaÃ§Ã£o geogrÃ¡fica combinada com inteligÃªncia artificial pode apoiar a transformaÃ§Ã£o dos dados operacionais em conhecimento estratÃ©gico.
 
-A Companhia possui grande potencial de produção de dados territoriais: registros de equipes, roteiros, ordens de serviço, demandas do cidadão, imagens de campo, localização de pontos críticos, serviços executados, áreas atendidas, periodicidade operacional e indicadores de produtividade.
+A Companhia possui grande potencial de produÃ§Ã£o de dados territoriais: registros de equipes, roteiros, ordens de serviÃ§o, demandas do cidadÃ£o, imagens de campo, localizaÃ§Ã£o de pontos crÃ­ticos, serviÃ§os executados, Ã¡reas atendidas, periodicidade operacional e indicadores de produtividade.
 
-Com esse conhecimento, a COMLURB poderá avançar na criação de modelos de análise capazes de indicar prioridades, identificar padrões e auxiliar na previsão de demandas. Isso pode apoiar o planejamento de serviços como coleta seletiva, poda urbana, limpeza de praias, remoção de resíduos, manutenção de praças, limpeza de escolas e unidades de saúde, além do planejamento de grandes eventos.
+Com esse conhecimento, a COMLURB poderÃ¡ avanÃ§ar na criaÃ§Ã£o de modelos de anÃ¡lise capazes de indicar prioridades, identificar padrÃµes e auxiliar na previsÃ£o de demandas. Isso pode apoiar o planejamento de serviÃ§os como coleta seletiva, poda urbana, limpeza de praias, remoÃ§Ã£o de resÃ­duos, manutenÃ§Ã£o de praÃ§as, limpeza de escolas e unidades de saÃºde, alÃ©m do planejamento de grandes eventos.
 
-A inteligência artificial também pode auxiliar na classificação de imagens de campo, permitindo reconhecer situações como acúmulo de resíduos, presença de vegetação, obstruções, necessidade de limpeza, descarte irregular ou alterações no espaço urbano.
+A inteligÃªncia artificial tambÃ©m pode auxiliar na classificaÃ§Ã£o de imagens de campo, permitindo reconhecer situaÃ§Ãµes como acÃºmulo de resÃ­duos, presenÃ§a de vegetaÃ§Ã£o, obstruÃ§Ãµes, necessidade de limpeza, descarte irregular ou alteraÃ§Ãµes no espaÃ§o urbano.
 
-No entanto, o curso reforça um cuidado essencial: a inteligência artificial não deve ser usada sobre bases desorganizadas ou inconsistentes. Antes de avançar para modelos mais sofisticados, é necessário estruturar os dados, padronizar informações, garantir qualidade, definir regras de governança e integrar sistemas.
+No entanto, o curso reforÃ§a um cuidado essencial: a inteligÃªncia artificial nÃ£o deve ser usada sobre bases desorganizadas ou inconsistentes. Antes de avanÃ§ar para modelos mais sofisticados, Ã© necessÃ¡rio estruturar os dados, padronizar informaÃ§Ãµes, garantir qualidade, definir regras de governanÃ§a e integrar sistemas.
 
-Para a COMLURB, esse curso evidencia que o caminho da inovação passa por uma sequência lógica: primeiro organizar os dados, capacitar as pessoas, depois integrar os sistemas, em seguida automatizar processos e, por fim, aplicar inteligência artificial para apoiar decisões mais qualificadas.`
+Para a COMLURB, esse curso evidencia que o caminho da inovaÃ§Ã£o passa por uma sequÃªncia lÃ³gica: primeiro organizar os dados, capacitar as pessoas, depois integrar os sistemas, em seguida automatizar processos e, por fim, aplicar inteligÃªncia artificial para apoiar decisÃµes mais qualificadas.`
   }
 ];
 
@@ -184,7 +184,7 @@ export default function Cursos() {
             <img src="assets/media/broom-icon_0293fe4d.png" alt="Broom Icon" className="w-10 h-10" />
             <div className="border-l-2 border-gray-400 h-8"></div>
             <div className="flex flex-col">
-              <span className="font-bold text-sm text-foreground">RELATÓRIO DE VIAGEM - Congresso MundoGeo SP</span>
+              <span className="font-bold text-sm text-foreground">RELATÃ“RIO DE VIAGEM - Congresso MundoGeo SP</span>
               <span className="text-xs text-muted-foreground">15 a 18 de Junho de 2026</span>
             </div>
           </div>
@@ -208,7 +208,7 @@ export default function Cursos() {
             <div className="flex justify-center">
               <img
                 src="assets/media/geointeligencia_limpeza_urbana_83763dcd.png"
-                alt="Geointeligência na Limpeza Urbana"
+                alt="GeointeligÃªncia na Limpeza Urbana"
                 className="w-full max-w-2xl h-auto object-contain"
               />
             </div>
@@ -216,20 +216,20 @@ export default function Cursos() {
             {/* Text Column */}
             <div className="flex flex-col gap-6">
               <h1 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">
-                Cursos e Conhecimentos Estratégicos Adquiridos no Congresso MundoGEO Connect 2026
+                Cursos e Conhecimentos EstratÃ©gicos Adquiridos no Congresso MundoGEO Connect 2026
               </h1>
 
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  A participação da COMLURB no Congresso MundoGEO Connect 2026 teve como objetivo ampliar a compreensão institucional sobre o uso das geotecnologias, da inteligência artificial, da automação e da inteligência geográfica como instrumentos de modernização da gestão pública.
+                  A participaÃ§Ã£o da COMLURB no Congresso MundoGEO Connect 2026 teve como objetivo ampliar a compreensÃ£o institucional sobre o uso das geotecnologias, da inteligÃªncia artificial, da automaÃ§Ã£o e da inteligÃªncia geogrÃ¡fica como instrumentos de modernizaÃ§Ã£o da gestÃ£o pÃºblica.
                 </p>
 
                 <p>
-                  Os conteúdos acompanhados demonstraram que a tecnologia, isoladamente, não resolve os desafios urbanos. A principal mensagem extraída dos cursos e palestras é que a transformação digital depende da integração entre pessoas, processos, dados e sistemas. A cidade contemporânea muda todos os dias, e, para administrá-la com eficiência, é necessário conhecer o território, atualizar informações continuamente e transformar dados em decisões melhores.
+                  Os conteÃºdos acompanhados demonstraram que a tecnologia, isoladamente, nÃ£o resolve os desafios urbanos. A principal mensagem extraÃ­da dos cursos e palestras Ã© que a transformaÃ§Ã£o digital depende da integraÃ§Ã£o entre pessoas, processos, dados e sistemas. A cidade contemporÃ¢nea muda todos os dias, e, para administrÃ¡-la com eficiÃªncia, Ã© necessÃ¡rio conhecer o territÃ³rio, atualizar informaÃ§Ãµes continuamente e transformar dados em decisÃµes melhores.
                 </p>
 
                 <p>
-                  Neste primeiro módulo, são apresentados os cursos custeados pela COMLURB, com a descrição objetiva dos conteúdos abordados e a indicação de como esse conhecimento pode ser aplicado na Companhia.
+                  Neste primeiro mÃ³dulo, sÃ£o apresentados os cursos custeados pela COMLURB, com a descriÃ§Ã£o objetiva dos conteÃºdos abordados e a indicaÃ§Ã£o de como esse conhecimento pode ser aplicado na Companhia.
                 </p>
               </div>
 
@@ -276,10 +276,10 @@ export default function Cursos() {
                     <div>
                       <h4 className="text-lg font-bold text-green-600 mb-3">O que foi abordado</h4>
                       <p className="text-muted-foreground leading-relaxed">
-                        {course.id === 1 && "Recursos de automação e inteligência artificial dentro do ambiente ArcGIS, com foco na melhoria dos fluxos de trabalho técnicos e operacionais. Uso de assistentes de IA para construção de expressões, linguagem Arcade para automatizações, e Python com Deep Learning para classificação de imagens de sensores remotos e drones."}
-                        {course.id === 2 && "Relação entre Sistemas de Informação Geográfica e diferentes níveis de inteligência artificial. Conceitos de machine learning, deep learning, redes neurais e IA generativa. Demonstração de que o desempenho dos modelos depende da quantidade, qualidade e organização dos dados."}
-                        {course.id === 3 && "Papel da informação territorial na administração pública. Integração entre cadastro, cartografia, planejamento urbano e dados ambientais. Experiências de municípios como Belo Horizonte e Fortaleza na construção de bases de dados geográficas únicas."}
-                        {course.id === 4 && "Relação entre dados territoriais, modelos computacionais e apoio à tomada de decisão. Papel das geotecnologias no tratamento de imagens, mapas e variáveis ambientais. Importância dos dados de entrada para modelos de IA."}
+                        {course.id === 1 && "Recursos de automaÃ§Ã£o e inteligÃªncia artificial dentro do ambiente ArcGIS, com foco na melhoria dos fluxos de trabalho tÃ©cnicos e operacionais. Uso de assistentes de IA para construÃ§Ã£o de expressÃµes, linguagem Arcade para automatizaÃ§Ãµes, e Python com Deep Learning para classificaÃ§Ã£o de imagens de sensores remotos e drones."}
+                        {course.id === 2 && "RelaÃ§Ã£o entre Sistemas de InformaÃ§Ã£o GeogrÃ¡fica e diferentes nÃ­veis de inteligÃªncia artificial. Conceitos de machine learning, deep learning, redes neurais e IA generativa. DemonstraÃ§Ã£o de que o desempenho dos modelos depende da quantidade, qualidade e organizaÃ§Ã£o dos dados."}
+                        {course.id === 3 && "Papel da informaÃ§Ã£o territorial na administraÃ§Ã£o pÃºblica. IntegraÃ§Ã£o entre cadastro, cartografia, planejamento urbano e dados ambientais. ExperiÃªncias de municÃ­pios como Belo Horizonte e Fortaleza na construÃ§Ã£o de bases de dados geogrÃ¡ficas Ãºnicas."}
+                        {course.id === 4 && "RelaÃ§Ã£o entre dados territoriais, modelos computacionais e apoio Ã  tomada de decisÃ£o. Papel das geotecnologias no tratamento de imagens, mapas e variÃ¡veis ambientais. ImportÃ¢ncia dos dados de entrada para modelos de IA."}
                       </p>
                     </div>
                     <div className="border-t pt-4">
@@ -288,80 +288,80 @@ export default function Cursos() {
                         {course.id === 1 && (
                           <>
                             <li className="flex gap-3">
-                              <span className="text-green-600 font-bold">✓</span>
-                              <span>Automação de atividades que dependem de conferências manuais e relatórios repetitivos</span>
+                              <span className="text-green-600 font-bold">âœ“</span>
+                              <span>AutomaÃ§Ã£o de atividades que dependem de conferÃªncias manuais e relatÃ³rios repetitivos</span>
                             </li>
                             <li className="flex gap-3">
-                              <span className="text-green-600 font-bold">✓</span>
-                              <span>Melhoria de formulários de campo e validação automática de preenchimentos</span>
+                              <span className="text-green-600 font-bold">âœ“</span>
+                              <span>Melhoria de formulÃ¡rios de campo e validaÃ§Ã£o automÃ¡tica de preenchimentos</span>
                             </li>
                             <li className="flex gap-3">
-                              <span className="text-green-600 font-bold">✓</span>
-                              <span>Análise de imagens aéreas e fotografias para identificar padrões de resíduos e vegetação</span>
+                              <span className="text-green-600 font-bold">âœ“</span>
+                              <span>AnÃ¡lise de imagens aÃ©reas e fotografias para identificar padrÃµes de resÃ­duos e vegetaÃ§Ã£o</span>
                             </li>
                             <li className="flex gap-3">
-                              <span className="text-green-600 font-bold">✓</span>
-                              <span>Aplicação em poda urbana, coleta seletiva, limpeza de escolas e controle de ordens de serviço</span>
+                              <span className="text-green-600 font-bold">âœ“</span>
+                              <span>AplicaÃ§Ã£o em poda urbana, coleta seletiva, limpeza de escolas e controle de ordens de serviÃ§o</span>
                             </li>
                           </>
                         )}
                         {course.id === 2 && (
                           <>
                             <li className="flex gap-3">
-                              <span className="text-blue-600 font-bold">✓</span>
-                              <span>Transição de gestão reativa para gestão preventiva e estratégica</span>
+                              <span className="text-blue-600 font-bold">âœ“</span>
+                              <span>TransiÃ§Ã£o de gestÃ£o reativa para gestÃ£o preventiva e estratÃ©gica</span>
                             </li>
                             <li className="flex gap-3">
-                              <span className="text-blue-600 font-bold">✓</span>
-                              <span>Identificação de padrões de ocorrência e previsão de áreas de maior demanda</span>
+                              <span className="text-blue-600 font-bold">âœ“</span>
+                              <span>IdentificaÃ§Ã£o de padrÃµes de ocorrÃªncia e previsÃ£o de Ã¡reas de maior demanda</span>
                             </li>
                             <li className="flex gap-3">
-                              <span className="text-blue-600 font-bold">✓</span>
-                              <span>Análise de imagens para classificar situações operacionais e reconhecer elementos urbanos</span>
+                              <span className="text-blue-600 font-bold">âœ“</span>
+                              <span>AnÃ¡lise de imagens para classificar situaÃ§Ãµes operacionais e reconhecer elementos urbanos</span>
                             </li>
                             <li className="flex gap-3">
-                              <span className="text-blue-600 font-bold">✓</span>
-                              <span>Melhor distribuição de equipes e recursos baseada em dados históricos</span>
+                              <span className="text-blue-600 font-bold">âœ“</span>
+                              <span>Melhor distribuiÃ§Ã£o de equipes e recursos baseada em dados histÃ³ricos</span>
                             </li>
                           </>
                         )}
                         {course.id === 3 && (
                           <>
                             <li className="flex gap-3">
-                              <span className="text-purple-600 font-bold">✓</span>
-                              <span>Criação de visão integrada do território operacional da limpeza urbana</span>
+                              <span className="text-purple-600 font-bold">âœ“</span>
+                              <span>CriaÃ§Ã£o de visÃ£o integrada do territÃ³rio operacional da limpeza urbana</span>
                             </li>
                             <li className="flex gap-3">
-                              <span className="text-purple-600 font-bold">✓</span>
-                              <span>Base única e confiável de informações operacionais reunindo todos os serviços</span>
+                              <span className="text-purple-600 font-bold">âœ“</span>
+                              <span>Base Ãºnica e confiÃ¡vel de informaÃ§Ãµes operacionais reunindo todos os serviÃ§os</span>
                             </li>
                             <li className="flex gap-3">
-                              <span className="text-purple-600 font-bold">✓</span>
-                              <span>Integração com bases municipais existentes (logradouros, bairros, equipamentos públicos)</span>
+                              <span className="text-purple-600 font-bold">âœ“</span>
+                              <span>IntegraÃ§Ã£o com bases municipais existentes (logradouros, bairros, equipamentos pÃºblicos)</span>
                             </li>
                             <li className="flex gap-3">
-                              <span className="text-purple-600 font-bold">✓</span>
-                              <span>Identificação de áreas críticas e melhor planejamento de recursos</span>
+                              <span className="text-purple-600 font-bold">âœ“</span>
+                              <span>IdentificaÃ§Ã£o de Ã¡reas crÃ­ticas e melhor planejamento de recursos</span>
                             </li>
                           </>
                         )}
                         {course.id === 4 && (
                           <>
                             <li className="flex gap-3">
-                              <span className="text-orange-600 font-bold">✓</span>
-                              <span>Transformação de dados operacionais em conhecimento estratégico</span>
+                              <span className="text-orange-600 font-bold">âœ“</span>
+                              <span>TransformaÃ§Ã£o de dados operacionais em conhecimento estratÃ©gico</span>
                             </li>
                             <li className="flex gap-3">
-                              <span className="text-orange-600 font-bold">✓</span>
-                              <span>Criação de modelos de análise para indicar prioridades e identificar padrões</span>
+                              <span className="text-orange-600 font-bold">âœ“</span>
+                              <span>CriaÃ§Ã£o de modelos de anÃ¡lise para indicar prioridades e identificar padrÃµes</span>
                             </li>
                             <li className="flex gap-3">
-                              <span className="text-orange-600 font-bold">✓</span>
-                              <span>Classificação de imagens para reconhecer acúmulo de resíduos e alterações urbanas</span>
+                              <span className="text-orange-600 font-bold">âœ“</span>
+                              <span>ClassificaÃ§Ã£o de imagens para reconhecer acÃºmulo de resÃ­duos e alteraÃ§Ãµes urbanas</span>
                             </li>
                             <li className="flex gap-3">
-                              <span className="text-orange-600 font-bold">✓</span>
-                              <span>Sequência lógica: organizar dados → capacitar pessoas → integrar sistemas → automatizar → aplicar IA</span>
+                              <span className="text-orange-600 font-bold">âœ“</span>
+                              <span>SequÃªncia lÃ³gica: organizar dados â†’ capacitar pessoas â†’ integrar sistemas â†’ automatizar â†’ aplicar IA</span>
                             </li>
                           </>
                         )}
@@ -451,27 +451,27 @@ export default function Cursos() {
       <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
         <div className="container">
           <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-12">
-            <h2 className="text-3xl font-bold mb-8 text-foreground">Convergência e Oportunidades</h2>
+            <h2 className="text-3xl font-bold mb-8 text-foreground">ConvergÃªncia e Oportunidades</h2>
             
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Os quatro cursos convergem para uma mesma conclusão: a COMLURB tem a oportunidade de transformar sua grande capacidade operacional em uma gestão cada vez mais orientada por dados e preditiva, com capacidade de se antecipar aos fatos.
+                Os quatro cursos convergem para uma mesma conclusÃ£o: a COMLURB tem a oportunidade de transformar sua grande capacidade operacional em uma gestÃ£o cada vez mais orientada por dados e preditiva, com capacidade de se antecipar aos fatos.
               </p>
 
               <p>
-                A Companhia já possui conhecimento de território, presença diária nas ruas, equipes distribuídas pela cidade e grande volume de informações produzidas em campo. O desafio é organizar esse conhecimento em bases geográficas integradas, confiáveis e atualizadas.
+                A Companhia jÃ¡ possui conhecimento de territÃ³rio, presenÃ§a diÃ¡ria nas ruas, equipes distribuÃ­das pela cidade e grande volume de informaÃ§Ãµes produzidas em campo. O desafio Ã© organizar esse conhecimento em bases geogrÃ¡ficas integradas, confiÃ¡veis e atualizadas.
               </p>
 
               <p>
-                A automação no ArcGIS pode reduzir tarefas repetitivas. A inteligência artificial pode identificar padrões e apoiar previsões. A inteligência geográfica pode conectar diferentes áreas da Companhia em torno de uma mesma visão territorial. E a informação geográfica estruturada pode transformar dados dispersos em decisões mais rápidas, transparentes e eficientes.
+                A automaÃ§Ã£o no ArcGIS pode reduzir tarefas repetitivas. A inteligÃªncia artificial pode identificar padrÃµes e apoiar previsÃµes. A inteligÃªncia geogrÃ¡fica pode conectar diferentes Ã¡reas da Companhia em torno de uma mesma visÃ£o territorial. E a informaÃ§Ã£o geogrÃ¡fica estruturada pode transformar dados dispersos em decisÃµes mais rÃ¡pidas, transparentes e eficientes.
               </p>
 
               <p>
-                A principal lição extraída do Congresso MundoGEO é que tecnologia não é o fim. Tecnologia é o meio. A finalidade é melhorar a gestão pública, apoiar os trabalhadores, qualificar o planejamento e entregar melhores serviços à cidade.
+                A principal liÃ§Ã£o extraÃ­da do Congresso MundoGEO Ã© que tecnologia nÃ£o Ã© o fim. Tecnologia Ã© o meio. A finalidade Ã© melhorar a gestÃ£o pÃºblica, apoiar os trabalhadores, qualificar o planejamento e entregar melhores serviÃ§os Ã  cidade.
               </p>
 
               <p className="border-l-4 border-green-600 pl-6 py-4 bg-green-50 rounded">
-                <span className="font-semibold text-foreground">Para a COMLURB, isso significa avançar para uma operação mais inteligente, integrada e preventiva, capaz de compreender melhor o território e responder com mais eficiência às necessidades da população carioca.</span>
+                <span className="font-semibold text-foreground">Para a COMLURB, isso significa avanÃ§ar para uma operaÃ§Ã£o mais inteligente, integrada e preventiva, capaz de compreender melhor o territÃ³rio e responder com mais eficiÃªncia Ã s necessidades da populaÃ§Ã£o carioca.</span>
               </p>
             </div>
           </div>

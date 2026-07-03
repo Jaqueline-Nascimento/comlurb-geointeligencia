@@ -18,15 +18,15 @@ import GeoIA from './pages/GeoIA';
 import Percepcoes from './pages/Percepcoes';
 
 
-function AppRouter() {
+function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/mundogeo"} component={MundoGEO} />
       <Route path={"/cursos"} component={Cursos} />
       <Route path={"/palestras"} component={Palestras} />
-      <Route path={"geointeligencia"} component={Geointeligencia} />
-      <Route path={"projetos"} component={Projetos} />
+      <Route path={"/geointeligencia"} component={Geointeligencia} />
+      <Route path={"/projetos"} component={Projetos} />
       <Route path="/apresentacao-presidencia" component={ApresentacaoPresidencia} />
       <Route path="/pitch-deck" component={PitchDeck} />
       <Route path="/insights" component={Insights} />
@@ -55,7 +55,7 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-            <AppRouter />
+            <Router />
           </WouterRouter>
         </TooltipProvider>
       </ThemeProvider>

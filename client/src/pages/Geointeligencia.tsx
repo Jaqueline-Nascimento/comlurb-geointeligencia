@@ -1,15 +1,15 @@
-import { useState, useMemo } from "react";
+﻿import { useState, useMemo } from "react";
 import { ChevronDown, ChevronUp, ExternalLink, Search, ChevronLeft } from "lucide-react";
 import { useLocation } from "wouter";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 
 interface LevantamentoRow {
-  "Órgão": string;
+  "Ã“rgÃ£o": string;
   "UF": string;
-  "Localização": string;
+  "LocalizaÃ§Ã£o": string;
   "Projeto/Sistema": string;
-  "Área de aplicação": string;
+  "Ãrea de aplicaÃ§Ã£o": string;
   "Finalidade/Como utiliza o georreferenciamento": string;
   "Tecnologia/Plataforma": string;
   "Potencial COMLURB": string;
@@ -17,399 +17,399 @@ interface LevantamentoRow {
   "Fonte oficial / URL": string;
 }
 
-// Dados extraídos da aba Levantamento
+// Dados extraÃ­dos da aba Levantamento
 const levantamentoData: LevantamentoRow[] = [
   {
-    "Órgão": "Prefeitura de São Paulo",
+    "Ã“rgÃ£o": "Prefeitura de SÃ£o Paulo",
     "UF": "SP",
-    "Localização": "São Paulo",
+    "LocalizaÃ§Ã£o": "SÃ£o Paulo",
     "Projeto/Sistema": "GeoSampa",
-    "Área de aplicação": "Cadastro imobiliário / planejamento urbano / transparência",
-    "Finalidade/Como utiliza o georreferenciamento": "Portal de informações geográficas e geoespaciais com camadas de lotes, zoneamento, equipamentos públicos, áreas ambientais, acessibilidade, imagens históricas e cadastro fiscal imobiliário.",
+    "Ãrea de aplicaÃ§Ã£o": "Cadastro imobiliÃ¡rio / planejamento urbano / transparÃªncia",
+    "Finalidade/Como utiliza o georreferenciamento": "Portal de informaÃ§Ãµes geogrÃ¡ficas e geoespaciais com camadas de lotes, zoneamento, equipamentos pÃºblicos, Ã¡reas ambientais, acessibilidade, imagens histÃ³ricas e cadastro fiscal imobiliÃ¡rio.",
     "Tecnologia/Plataforma": "GeoSampa / SIG web",
     "Potencial COMLURB": "Alta",
-    "Como pode inspirar a COMLURB": "Modelo de IDE urbana para integrar lotes, áreas públicas, praças, equipamentos, poda, coleta e chamados 1746.",
+    "Como pode inspirar a COMLURB": "Modelo de IDE urbana para integrar lotes, Ã¡reas pÃºblicas, praÃ§as, equipamentos, poda, coleta e chamados 1746.",
     "Fonte oficial / URL": "https://prefeitura.sp.gov.br/w/noticia/geosampa-completa-7-anos-e-se-consolida-como-o-maior-portal-de-dados-georreferenciados-do-pais"
   },
   {
-    "Órgão": "Prefeitura de São Paulo",
+    "Ã“rgÃ£o": "Prefeitura de SÃ£o Paulo",
     "UF": "SP",
-    "Localização": "São Paulo",
+    "LocalizaÃ§Ã£o": "SÃ£o Paulo",
     "Projeto/Sistema": "GeoSampa - camada de lotes",
-    "Área de aplicação": "IPTU / cadastro fiscal imobiliário",
-    "Finalidade/Como utiliza o georreferenciamento": "Disponibilização de lotes associados a SQL/SQCd, base para lançamento de IPTU e localização de edificações, hospitais, escolas e outras tipologias.",
+    "Ãrea de aplicaÃ§Ã£o": "IPTU / cadastro fiscal imobiliÃ¡rio",
+    "Finalidade/Como utiliza o georreferenciamento": "DisponibilizaÃ§Ã£o de lotes associados a SQL/SQCd, base para lanÃ§amento de IPTU e localizaÃ§Ã£o de edificaÃ§Ãµes, hospitais, escolas e outras tipologias.",
     "Tecnologia/Plataforma": "GeoSampa",
     "Potencial COMLURB": "Alta",
-    "Como pode inspirar a COMLURB": "Referência para cadastro territorial e identificação oficial de imóveis/equipamentos urbanos.",
+    "Como pode inspirar a COMLURB": "ReferÃªncia para cadastro territorial e identificaÃ§Ã£o oficial de imÃ³veis/equipamentos urbanos.",
     "Fonte oficial / URL": "https://prefeitura.sp.gov.br/web/fazenda/w/noticias/26982"
   },
   {
-    "Órgão": "Prefeitura de Belo Horizonte",
+    "Ã“rgÃ£o": "Prefeitura de Belo Horizonte",
     "UF": "MG",
-    "Localização": "Belo Horizonte",
+    "LocalizaÃ§Ã£o": "Belo Horizonte",
     "Projeto/Sistema": "BHGEO / IDE-BHGEO",
-    "Área de aplicação": "Infraestrutura de Dados Espaciais municipal",
-    "Finalidade/Como utiliza o georreferenciamento": "Acesso centralizado a dados geográficos: equipamentos públicos, imagens de satélite georreferenciadas, ortofotos, lotes, quarteirões e outras feições.",
+    "Ãrea de aplicaÃ§Ã£o": "Infraestrutura de Dados Espaciais municipal",
+    "Finalidade/Como utiliza o georreferenciamento": "Acesso centralizado a dados geogrÃ¡ficos: equipamentos pÃºblicos, imagens de satÃ©lite georreferenciadas, ortofotos, lotes, quarteirÃµes e outras feiÃ§Ãµes.",
     "Tecnologia/Plataforma": "IDE-BHGEO / Prodabel",
     "Potencial COMLURB": "Alta",
-    "Como pode inspirar a COMLURB": "Modelo de governança geoespacial corporativa para padronizar dados da COMLURB com SIURB.RIO.",
+    "Como pode inspirar a COMLURB": "Modelo de governanÃ§a geoespacial corporativa para padronizar dados da COMLURB com SIURB.RIO.",
     "Fonte oficial / URL": "https://prefeitura.pbh.gov.br/prodabel/bhgeo"
   },
   {
-    "Órgão": "Prefeitura de Belo Horizonte",
+    "Ã“rgÃ£o": "Prefeitura de Belo Horizonte",
     "UF": "MG",
-    "Localização": "Belo Horizonte",
+    "LocalizaÃ§Ã£o": "Belo Horizonte",
     "Projeto/Sistema": "API Geocoder e Geocoder Reverso",
-    "Área de aplicação": "Endereçamento oficial / integração de sistemas",
-    "Finalidade/Como utiliza o georreferenciamento": "Serviço REST de consulta de endereços oficiais com retorno de coordenada geográfica em SIRGAS 2000.",
+    "Ãrea de aplicaÃ§Ã£o": "EndereÃ§amento oficial / integraÃ§Ã£o de sistemas",
+    "Finalidade/Como utiliza o georreferenciamento": "ServiÃ§o REST de consulta de endereÃ§os oficiais com retorno de coordenada geogrÃ¡fica em SIRGAS 2000.",
     "Tecnologia/Plataforma": "API REST / SIRGAS 2000",
     "Potencial COMLURB": "Alta",
-    "Como pode inspirar a COMLURB": "Útil para converter chamados, OS e endereços em coordenadas para dashboards operacionais.",
+    "Como pode inspirar a COMLURB": "Ãštil para converter chamados, OS e endereÃ§os em coordenadas para dashboards operacionais.",
     "Fonte oficial / URL": "https://geocoder.pbh.gov.br/geocoder/"
   },
   {
-    "Órgão": "Prefeitura de Salvador",
+    "Ã“rgÃ£o": "Prefeitura de Salvador",
     "UF": "BA",
-    "Localização": "Salvador",
+    "LocalizaÃ§Ã£o": "Salvador",
     "Projeto/Sistema": "GeoSalvador",
-    "Área de aplicação": "Planejamento urbano / cadastro multifinalitário",
-    "Finalidade/Como utiliza o georreferenciamento": "Portal oficial de geotecnologia com cadastro multifinalitário, ortofotos, dados vetoriais, geosserviços, mapa digital, zoneamento e urbanismo.",
+    "Ãrea de aplicaÃ§Ã£o": "Planejamento urbano / cadastro multifinalitÃ¡rio",
+    "Finalidade/Como utiliza o georreferenciamento": "Portal oficial de geotecnologia com cadastro multifinalitÃ¡rio, ortofotos, dados vetoriais, geosserviÃ§os, mapa digital, zoneamento e urbanismo.",
     "Tecnologia/Plataforma": "ArcGIS / GeoSalvador",
     "Potencial COMLURB": "Alta",
-    "Como pode inspirar a COMLURB": "Referência para cadastro multifinalitário integrado a secretarias e defesa civil municipal.",
+    "Como pode inspirar a COMLURB": "ReferÃªncia para cadastro multifinalitÃ¡rio integrado a secretarias e defesa civil municipal.",
     "Fonte oficial / URL": "https://geo.salvador.ba.gov.br/"
   },
   {
-    "Órgão": "Prefeitura de Recife",
+    "Ã“rgÃ£o": "Prefeitura de Recife",
     "UF": "PE",
-    "Localização": "Recife",
+    "LocalizaÃ§Ã£o": "Recife",
     "Projeto/Sistema": "Portal de Dados Abertos - GeoJSON",
-    "Área de aplicação": "Mobilidade, meio ambiente, saúde, educação, praças e planejamento",
-    "Finalidade/Como utiliza o georreferenciamento": "Dados georreferenciados em GeoJSON de malha cicloviária, urbanismo tático, unidades protegidas, zoneamento, saúde, educação, parques e praças.",
+    "Ãrea de aplicaÃ§Ã£o": "Mobilidade, meio ambiente, saÃºde, educaÃ§Ã£o, praÃ§as e planejamento",
+    "Finalidade/Como utiliza o georreferenciamento": "Dados georreferenciados em GeoJSON de malha cicloviÃ¡ria, urbanismo tÃ¡tico, unidades protegidas, zoneamento, saÃºde, educaÃ§Ã£o, parques e praÃ§as.",
     "Tecnologia/Plataforma": "CKAN / GeoJSON / dados abertos",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Exemplo de abertura de dados operacionais e territoriais para análise pública e integração com SIG.",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "Exemplo de abertura de dados operacionais e territoriais para anÃ¡lise pÃºblica e integraÃ§Ã£o com SIG.",
     "Fonte oficial / URL": "https://dados.recife.pe.gov.br/dataset/?res_format=GeoJSON"
   },
   {
-    "Órgão": "Prefeitura de Recife",
+    "Ã“rgÃ£o": "Prefeitura de Recife",
     "UF": "PE",
-    "Localização": "Recife",
-    "Projeto/Sistema": "Dados abertos - Malha cicloviária",
-    "Área de aplicação": "Mobilidade urbana",
-    "Finalidade/Como utiliza o georreferenciamento": "Publicação de dados georreferenciados da malha cicloviária, incluindo ciclovias, ciclofaixas e ciclorrotas.",
+    "LocalizaÃ§Ã£o": "Recife",
+    "Projeto/Sistema": "Dados abertos - Malha cicloviÃ¡ria",
+    "Ãrea de aplicaÃ§Ã£o": "Mobilidade urbana",
+    "Finalidade/Como utiliza o georreferenciamento": "PublicaÃ§Ã£o de dados georreferenciados da malha cicloviÃ¡ria, incluindo ciclovias, ciclofaixas e ciclorrotas.",
     "Tecnologia/Plataforma": "GeoJSON / CSV / JSON",
     "Potencial COMLURB": "Baixa",
-    "Como pode inspirar a COMLURB": "Mostra como publicar bases georreferenciadas temáticas em formatos abertos.",
+    "Como pode inspirar a COMLURB": "Mostra como publicar bases georreferenciadas temÃ¡ticas em formatos abertos.",
     "Fonte oficial / URL": "https://dados.recife.pe.gov.br/pt_PT/dataset"
   },
   {
-    "Órgão": "Prefeitura de Fortaleza",
+    "Ã“rgÃ£o": "Prefeitura de Fortaleza",
     "UF": "CE",
-    "Localização": "Fortaleza",
+    "LocalizaÃ§Ã£o": "Fortaleza",
     "Projeto/Sistema": "Fortaleza em Mapas",
-    "Área de aplicação": "Planejamento urbano / infraestrutura / limpeza pública",
-    "Finalidade/Como utiliza o georreferenciamento": "Plataforma com informações georreferenciadas produzidas pelo poder público, com mais de 535 mapas, sobreposição de camadas, downloads em GeoJSON, Shapefile, CSV e KMZ.",
+    "Ãrea de aplicaÃ§Ã£o": "Planejamento urbano / infraestrutura / limpeza pÃºblica",
+    "Finalidade/Como utiliza o georreferenciamento": "Plataforma com informaÃ§Ãµes georreferenciadas produzidas pelo poder pÃºblico, com mais de 535 mapas, sobreposiÃ§Ã£o de camadas, downloads em GeoJSON, Shapefile, CSV e KMZ.",
     "Tecnologia/Plataforma": "Fortaleza em Mapas / GeoJSON / SHP",
     "Potencial COMLURB": "Alta",
-    "Como pode inspirar a COMLURB": "Referência direta para limpeza pública, infraestrutura, praças, meio ambiente, tributário e mobilidade.",
+    "Como pode inspirar a COMLURB": "ReferÃªncia direta para limpeza pÃºblica, infraestrutura, praÃ§as, meio ambiente, tributÃ¡rio e mobilidade.",
     "Fonte oficial / URL": "https://mapas.fortaleza.ce.gov.br/sobre"
   },
   {
-    "Órgão": "Prefeitura de Fortaleza",
+    "Ã“rgÃ£o": "Prefeitura de Fortaleza",
     "UF": "CE",
-    "Localização": "Fortaleza",
-    "Projeto/Sistema": "Fortaleza em Mapas - catálogo",
-    "Área de aplicação": "Limpeza pública / infraestrutura urbana",
-    "Finalidade/Como utiliza o georreferenciamento": "Catálogo inclui mapas de limpeza pública, associações e grupos de catadores, biodigestores, microterritórios e demais camadas urbanas.",
+    "LocalizaÃ§Ã£o": "Fortaleza",
+    "Projeto/Sistema": "Fortaleza em Mapas - catÃ¡logo",
+    "Ãrea de aplicaÃ§Ã£o": "Limpeza pÃºblica / infraestrutura urbana",
+    "Finalidade/Como utiliza o georreferenciamento": "CatÃ¡logo inclui mapas de limpeza pÃºblica, associaÃ§Ãµes e grupos de catadores, biodigestores, microterritÃ³rios e demais camadas urbanas.",
     "Tecnologia/Plataforma": "GeoJSON / SHP / CSV / KMZ",
     "Potencial COMLURB": "Alta",
-    "Como pode inspirar a COMLURB": "Aplicável à coleta seletiva, cooperativas, ecopontos, roteiros e fiscalização territorial.",
+    "Como pode inspirar a COMLURB": "AplicÃ¡vel Ã  coleta seletiva, cooperativas, ecopontos, roteiros e fiscalizaÃ§Ã£o territorial.",
     "Fonte oficial / URL": "https://mapas.fortaleza.ce.gov.br/catalogo"
   },
   {
-    "Órgão": "Prefeitura de Joinville",
+    "Ã“rgÃ£o": "Prefeitura de Joinville",
     "UF": "SC",
-    "Localização": "Joinville",
+    "LocalizaÃ§Ã£o": "Joinville",
     "Projeto/Sistema": "SIMGeo",
-    "Área de aplicação": "Planejamento urbano / consultas espaciais",
-    "Finalidade/Como utiliza o georreferenciamento": "Sistema de Informações Municipais Georreferenciadas com pesquisas por inscrição imobiliária, logradouros, bairros e coordenadas; camadas cartográficas e ortofotos.",
+    "Ãrea de aplicaÃ§Ã£o": "Planejamento urbano / consultas espaciais",
+    "Finalidade/Como utiliza o georreferenciamento": "Sistema de InformaÃ§Ãµes Municipais Georreferenciadas com pesquisas por inscriÃ§Ã£o imobiliÃ¡ria, logradouros, bairros e coordenadas; camadas cartogrÃ¡ficas e ortofotos.",
     "Tecnologia/Plataforma": "SIMGeo / SIG web",
     "Potencial COMLURB": "Alta",
-    "Como pode inspirar a COMLURB": "Referência para consulta de ativos por coordenada, logradouro ou inscrição territorial.",
+    "Como pode inspirar a COMLURB": "ReferÃªncia para consulta de ativos por coordenada, logradouro ou inscriÃ§Ã£o territorial.",
     "Fonte oficial / URL": "https://www.joinville.sc.gov.br/servicos/acessar-sistema-de-informacoes-municipais-georreferenciadas-simgeo/"
   },
   {
-    "Órgão": "Prefeitura de Joinville",
+    "Ã“rgÃ£o": "Prefeitura de Joinville",
     "UF": "SC",
-    "Localização": "Joinville",
+    "LocalizaÃ§Ã£o": "Joinville",
     "Projeto/Sistema": "Unidade de Geoprocessamento - SEPUR.UGP",
-    "Área de aplicação": "Governança geoespacial / urbanismo",
-    "Finalidade/Como utiliza o georreferenciamento": "Unidade responsável por coordenar o SIMGeo, supervisionar metodologias de coleta/processamento e publicizar planos, leis, diretrizes e instrumentos urbanísticos.",
+    "Ãrea de aplicaÃ§Ã£o": "GovernanÃ§a geoespacial / urbanismo",
+    "Finalidade/Como utiliza o georreferenciamento": "Unidade responsÃ¡vel por coordenar o SIMGeo, supervisionar metodologias de coleta/processamento e publicizar planos, leis, diretrizes e instrumentos urbanÃ­sticos.",
     "Tecnologia/Plataforma": "SIMGeo / unidade de geoprocessamento",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Modelo de unidade interna de governança geoespacial com atribuições claras.",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "Modelo de unidade interna de governanÃ§a geoespacial com atribuiÃ§Ãµes claras.",
     "Fonte oficial / URL": "https://www.joinville.sc.gov.br/institucional/sepur/upd/"
   },
   {
-    "Órgão": "Prefeitura de Joinville",
+    "Ã“rgÃ£o": "Prefeitura de Joinville",
     "UF": "SC",
-    "Localização": "Joinville",
+    "LocalizaÃ§Ã£o": "Joinville",
     "Projeto/Sistema": "Downloads SIMGeo",
-    "Área de aplicação": "Base cartográfica / meio ambiente / mapas temáticos",
-    "Finalidade/Como utiliza o georreferenciamento": "Disponibilização de produtos georreferenciados, aerofotogrametria, mapas, shapefiles e cartas temáticas para download.",
+    "Ãrea de aplicaÃ§Ã£o": "Base cartogrÃ¡fica / meio ambiente / mapas temÃ¡ticos",
+    "Finalidade/Como utiliza o georreferenciamento": "DisponibilizaÃ§Ã£o de produtos georreferenciados, aerofotogrametria, mapas, shapefiles e cartas temÃ¡ticas para download.",
     "Tecnologia/Plataforma": "Shapefile / PDF / DWG",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Modelo para disponibilizar bases da COMLURB em camadas padronizadas e reaproveitáveis.",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "Modelo para disponibilizar bases da COMLURB em camadas padronizadas e reaproveitÃ¡veis.",
     "Fonte oficial / URL": "https://www.joinville.sc.gov.br/publicacoes/downloads-sistema-de-informacoes-municipais-georreferenciadas-simgeo/"
   },
   {
-    "Órgão": "Prefeitura de Londrina",
+    "Ã“rgÃ£o": "Prefeitura de Londrina",
     "UF": "PR",
-    "Localização": "Londrina",
+    "LocalizaÃ§Ã£o": "Londrina",
     "Projeto/Sistema": "SIGLON",
-    "Área de aplicação": "Banco de dados geográfico municipal",
-    "Finalidade/Como utiliza o georreferenciamento": "Portal de informações físicas e socioeconômicas em banco de dados geográfico, permitindo georreferenciar dados em qualquer ponto do município.",
+    "Ãrea de aplicaÃ§Ã£o": "Banco de dados geogrÃ¡fico municipal",
+    "Finalidade/Como utiliza o georreferenciamento": "Portal de informaÃ§Ãµes fÃ­sicas e socioeconÃ´micas em banco de dados geogrÃ¡fico, permitindo georreferenciar dados em qualquer ponto do municÃ­pio.",
     "Tecnologia/Plataforma": "SIGLON / SIG web",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Exemplo de banco geográfico municipal para integração multiárea.",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "Exemplo de banco geogrÃ¡fico municipal para integraÃ§Ã£o multiÃ¡rea.",
     "Fonte oficial / URL": "https://portal.londrina.pr.gov.br/o-que-e-siglon"
   },
   {
-    "Órgão": "Prefeitura de Londrina",
+    "Ã“rgÃ£o": "Prefeitura de Londrina",
     "UF": "PR",
-    "Localização": "Londrina",
+    "LocalizaÃ§Ã£o": "Londrina",
     "Projeto/Sistema": "Plano Diretor de Geoprocessamento - PDGeo",
-    "Área de aplicação": "Governança / normatização de dados geoespaciais",
-    "Finalidade/Como utiliza o georreferenciamento": "Plano para implementar e consolidar cultura de inteligência geográfica e normatizar dados produzidos por secretarias e órgãos municipais.",
+    "Ãrea de aplicaÃ§Ã£o": "GovernanÃ§a / normatizaÃ§Ã£o de dados geoespaciais",
+    "Finalidade/Como utiliza o georreferenciamento": "Plano para implementar e consolidar cultura de inteligÃªncia geogrÃ¡fica e normatizar dados produzidos por secretarias e Ã³rgÃ£os municipais.",
     "Tecnologia/Plataforma": "PDGeo / INDE",
     "Potencial COMLURB": "Alta",
-    "Como pode inspirar a COMLURB": "Muito aplicável para criar diretriz interna COMLURB/SIURB sobre padrões, camadas e responsabilidades.",
+    "Como pode inspirar a COMLURB": "Muito aplicÃ¡vel para criar diretriz interna COMLURB/SIURB sobre padrÃµes, camadas e responsabilidades.",
     "Fonte oficial / URL": "https://portal.londrina.pr.gov.br/plano-diretor-de-geoprocessamento-siglon"
   },
   {
-    "Órgão": "Prefeitura de Goiânia",
+    "Ã“rgÃ£o": "Prefeitura de GoiÃ¢nia",
     "UF": "GO",
-    "Localização": "Goiânia",
-    "Projeto/Sistema": "Mapa Geo 360° Goiânia",
-    "Área de aplicação": "Cadastro urbano / loteamentos / áreas públicas",
-    "Finalidade/Como utiliza o georreferenciamento": "Serviço de geoprocessamento para atualização de mapa, inserção de loteamentos, cadastro de bairros, logradouros e áreas públicas; exige plantas georreferenciadas.",
-    "Tecnologia/Plataforma": "Mapa Geo 360° / SIGGO",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Referência para atualização cadastral de áreas públicas, praças e logradouros.",
+    "LocalizaÃ§Ã£o": "GoiÃ¢nia",
+    "Projeto/Sistema": "Mapa Geo 360Â° GoiÃ¢nia",
+    "Ãrea de aplicaÃ§Ã£o": "Cadastro urbano / loteamentos / Ã¡reas pÃºblicas",
+    "Finalidade/Como utiliza o georreferenciamento": "ServiÃ§o de geoprocessamento para atualizaÃ§Ã£o de mapa, inserÃ§Ã£o de loteamentos, cadastro de bairros, logradouros e Ã¡reas pÃºblicas; exige plantas georreferenciadas.",
+    "Tecnologia/Plataforma": "Mapa Geo 360Â° / SIGGO",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "ReferÃªncia para atualizaÃ§Ã£o cadastral de Ã¡reas pÃºblicas, praÃ§as e logradouros.",
     "Fonte oficial / URL": "https://www.goiania.go.gov.br/sing_servicos/geoprocessamento/"
   },
   {
-    "Órgão": "Prefeitura de Goiânia",
+    "Ã“rgÃ£o": "Prefeitura de GoiÃ¢nia",
     "UF": "GO",
-    "Localização": "Goiânia",
-    "Projeto/Sistema": "Gerência de Geoprocessamento - SEFAZ",
-    "Área de aplicação": "Cadastro imobiliário / vistoria fiscal",
-    "Finalidade/Como utiliza o georreferenciamento": "Competência para base cartográfica digital, mapas temáticos, interfaces de consulta/análise, imagens geográficas e apoio ao cadastro imobiliário e vistoria fiscal.",
-    "Tecnologia/Plataforma": "SIGGO / imagens geográficas",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Aplicável à fiscalização de campo, validação de ativos urbanos e apoio a vistorias.",
+    "LocalizaÃ§Ã£o": "GoiÃ¢nia",
+    "Projeto/Sistema": "GerÃªncia de Geoprocessamento - SEFAZ",
+    "Ãrea de aplicaÃ§Ã£o": "Cadastro imobiliÃ¡rio / vistoria fiscal",
+    "Finalidade/Como utiliza o georreferenciamento": "CompetÃªncia para base cartogrÃ¡fica digital, mapas temÃ¡ticos, interfaces de consulta/anÃ¡lise, imagens geogrÃ¡ficas e apoio ao cadastro imobiliÃ¡rio e vistoria fiscal.",
+    "Tecnologia/Plataforma": "SIGGO / imagens geogrÃ¡ficas",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "AplicÃ¡vel Ã  fiscalizaÃ§Ã£o de campo, validaÃ§Ã£o de ativos urbanos e apoio a vistorias.",
     "Fonte oficial / URL": "https://www.goiania.go.gov.br/sefaz/departamentos/gerencia-de-geoprocessamento/"
   },
   {
-    "Órgão": "Prefeitura de São José dos Campos",
+    "Ã“rgÃ£o": "Prefeitura de SÃ£o JosÃ© dos Campos",
     "UF": "SP",
-    "Localização": "São José dos Campos",
+    "LocalizaÃ§Ã£o": "SÃ£o JosÃ© dos Campos",
     "Projeto/Sistema": "GeoSanja",
-    "Área de aplicação": "Banco de dados geográficos / dados abertos",
-    "Finalidade/Como utiliza o georreferenciamento": "Portal de dados geográficos do município, com desenvolvimento interno, software livre, acesso aberto, múltiplos formatos e acervo histórico de imagens.",
+    "Ãrea de aplicaÃ§Ã£o": "Banco de dados geogrÃ¡ficos / dados abertos",
+    "Finalidade/Como utiliza o georreferenciamento": "Portal de dados geogrÃ¡ficos do municÃ­pio, com desenvolvimento interno, software livre, acesso aberto, mÃºltiplos formatos e acervo histÃ³rico de imagens.",
     "Tecnologia/Plataforma": "GeoSanja / software livre",
     "Potencial COMLURB": "Alta",
-    "Como pode inspirar a COMLURB": "Exemplo forte para plataforma municipal de dados geográficos com baixo custo e alto acesso público.",
+    "Como pode inspirar a COMLURB": "Exemplo forte para plataforma municipal de dados geogrÃ¡ficos com baixo custo e alto acesso pÃºblico.",
     "Fonte oficial / URL": "https://www.sjc.sp.gov.br/noticias/2025/agosto/14/geosanja-alcanca-1-milhao-de-acessos-e-se-destaca-no-brasil/"
   },
   {
-    "Órgão": "Prefeitura de São José dos Campos",
+    "Ã“rgÃ£o": "Prefeitura de SÃ£o JosÃ© dos Campos",
     "UF": "SP",
-    "Localização": "São José dos Campos",
-    "Projeto/Sistema": "GeoSanja - fiscalização",
-    "Área de aplicação": "Fiscalização urbana / terrenos / resíduos",
-    "Finalidade/Como utiliza o georreferenciamento": "Uso de imagens georreferenciadas e informações de imóveis para fiscalizar mato alto, sujeira e despejo irregular de entulhos/lixo em terrenos particulares, reduzindo vistorias in loco.",
+    "LocalizaÃ§Ã£o": "SÃ£o JosÃ© dos Campos",
+    "Projeto/Sistema": "GeoSanja - fiscalizaÃ§Ã£o",
+    "Ãrea de aplicaÃ§Ã£o": "FiscalizaÃ§Ã£o urbana / terrenos / resÃ­duos",
+    "Finalidade/Como utiliza o georreferenciamento": "Uso de imagens georreferenciadas e informaÃ§Ãµes de imÃ³veis para fiscalizar mato alto, sujeira e despejo irregular de entulhos/lixo em terrenos particulares, reduzindo vistorias in loco.",
     "Tecnologia/Plataforma": "GeoSanja / imagens georreferenciadas",
     "Potencial COMLURB": "Alta",
-    "Como pode inspirar a COMLURB": "Muito aderente à fiscalização de descarte irregular, lixo em terrenos e apoio ao 1746.",
+    "Como pode inspirar a COMLURB": "Muito aderente Ã  fiscalizaÃ§Ã£o de descarte irregular, lixo em terrenos e apoio ao 1746.",
     "Fonte oficial / URL": "https://www.sjc.sp.gov.br/noticias/2021/abril/22/fiscalizacao-inova-com-uso-da-ferramenta-geosanja/"
   },
   {
-    "Órgão": "Prefeitura de São José dos Campos",
+    "Ã“rgÃ£o": "Prefeitura de SÃ£o JosÃ© dos Campos",
     "UF": "SP",
-    "Localização": "São José dos Campos",
+    "LocalizaÃ§Ã£o": "SÃ£o JosÃ© dos Campos",
     "Projeto/Sistema": "Georreferenciamento de bocas de lobo",
-    "Área de aplicação": "Drenagem urbana / manutenção preventiva",
+    "Ãrea de aplicaÃ§Ã£o": "Drenagem urbana / manutenÃ§Ã£o preventiva",
     "Finalidade/Como utiliza o georreferenciamento": "Registro georreferenciado de bocas de lobo e limpeza de galerias para mapear equipamentos, medir necessidade de retorno e criar cronograma preventivo contra alagamentos.",
     "Tecnologia/Plataforma": "Georreferenciamento de campo / SIG municipal",
     "Potencial COMLURB": "Alta",
-    "Como pode inspirar a COMLURB": "Caso quase idêntico à lógica de OS digitais, manutenção preventiva e produtividade por território.",
+    "Como pode inspirar a COMLURB": "Caso quase idÃªntico Ã  lÃ³gica de OS digitais, manutenÃ§Ã£o preventiva e produtividade por territÃ³rio.",
     "Fonte oficial / URL": "https://www.sjc.sp.gov.br/noticias/2025/setembro/18/geoprocessamento-ja-cadastrou-mais-de-1500-bocas-de-lobo/"
   },
   {
-    "Órgão": "Prefeitura de São José dos Campos",
+    "Ã“rgÃ£o": "Prefeitura de SÃ£o JosÃ© dos Campos",
     "UF": "SP",
-    "Localização": "São José dos Campos",
+    "LocalizaÃ§Ã£o": "SÃ£o JosÃ© dos Campos",
     "Projeto/Sistema": "Geoprocessamento urbano",
-    "Área de aplicação": "Mapas, plantas, cartas topográficas e aerofotogrametria",
-    "Finalidade/Como utiliza o georreferenciamento": "Processamento de dados georreferenciados, manipulação e geração de informações associadas a coordenadas em base cartográfica e SIG.",
+    "Ãrea de aplicaÃ§Ã£o": "Mapas, plantas, cartas topogrÃ¡ficas e aerofotogrametria",
+    "Finalidade/Como utiliza o georreferenciamento": "Processamento de dados georreferenciados, manipulaÃ§Ã£o e geraÃ§Ã£o de informaÃ§Ãµes associadas a coordenadas em base cartogrÃ¡fica e SIG.",
     "Tecnologia/Plataforma": "SIG / aerofotogrametria",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Referência técnica para estruturação de base cartográfica e camadas operacionais.",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "ReferÃªncia tÃ©cnica para estruturaÃ§Ã£o de base cartogrÃ¡fica e camadas operacionais.",
     "Fonte oficial / URL": "https://siteprefeitura.sjc.sp.gov.br/servicos/urbanismo-e-sustentabilidade/planejamento-urbano/mapas-cartas-plantas-e-aerofotogrametria/geoprocessamento/"
   },
   {
-    "Órgão": "Prefeitura de Niterói",
+    "Ã“rgÃ£o": "Prefeitura de NiterÃ³i",
     "UF": "RJ",
-    "Localização": "Niterói",
-    "Projeto/Sistema": "SIGeo / Data Lake / Gêmeo Digital",
-    "Área de aplicação": "Transformação digital / planejamento urbano",
-    "Finalidade/Como utiliza o georreferenciamento": "Integra bases georreferenciadas para apoiar políticas públicas; desenvolvimento de Data Lake municipal e projeto de Gêmeo Digital.",
-    "Tecnologia/Plataforma": "SIGeo / Data Lake / Gêmeo Digital",
+    "LocalizaÃ§Ã£o": "NiterÃ³i",
+    "Projeto/Sistema": "SIGeo / Data Lake / GÃªmeo Digital",
+    "Ãrea de aplicaÃ§Ã£o": "TransformaÃ§Ã£o digital / planejamento urbano",
+    "Finalidade/Como utiliza o georreferenciamento": "Integra bases georreferenciadas para apoiar polÃ­ticas pÃºblicas; desenvolvimento de Data Lake municipal e projeto de GÃªmeo Digital.",
+    "Tecnologia/Plataforma": "SIGeo / Data Lake / GÃªmeo Digital",
     "Potencial COMLURB": "Muito alta",
-    "Como pode inspirar a COMLURB": "Fortemente alinhado ao SIURB, CICO e visão de gêmeo digital da operação COMLURB.",
+    "Como pode inspirar a COMLURB": "Fortemente alinhado ao SIURB, CICO e visÃ£o de gÃªmeo digital da operaÃ§Ã£o COMLURB.",
     "Fonte oficial / URL": "https://www.fazenda.niteroi.rj.gov.br/site/dtec-e-serec-da-smf-marcam-presenca-no-geo-dados-evento-sobre-gestao-digital-e-geoinformacao/"
   },
   {
-    "Órgão": "Prefeitura de Niterói",
+    "Ã“rgÃ£o": "Prefeitura de NiterÃ³i",
     "UF": "RJ",
-    "Localização": "Niterói",
-    "Projeto/Sistema": "EGP Nit - gestão do SIGEO",
-    "Área de aplicação": "Gestão de projetos / geoprocessamento",
-    "Finalidade/Como utiliza o georreferenciamento": "Estrutura municipal com equipe de geoprocessamento que efetua a gestão do SIGEO - Sistema de Geoinformações de Niterói.",
+    "LocalizaÃ§Ã£o": "NiterÃ³i",
+    "Projeto/Sistema": "EGP Nit - gestÃ£o do SIGEO",
+    "Ãrea de aplicaÃ§Ã£o": "GestÃ£o de projetos / geoprocessamento",
+    "Finalidade/Como utiliza o georreferenciamento": "Estrutura municipal com equipe de geoprocessamento que efetua a gestÃ£o do SIGEO - Sistema de GeoinformaÃ§Ãµes de NiterÃ³i.",
     "Tecnologia/Plataforma": "SIGEO",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Modelo de governança institucional vinculada a projetos estratégicos e gabinete.",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "Modelo de governanÃ§a institucional vinculada a projetos estratÃ©gicos e gabinete.",
     "Fonte oficial / URL": "https://www.egp.niteroi.rj.gov.br/o-egp/"
   },
   {
-    "Órgão": "Governo do Estado de São Paulo - SEMIL",
+    "Ã“rgÃ£o": "Governo do Estado de SÃ£o Paulo - SEMIL",
     "UF": "SP",
-    "Localização": "Estado de São Paulo",
-    "Projeto/Sistema": "MAIS - Monitoramento Ambiental por Imagens de Satélite",
-    "Área de aplicação": "Fiscalização ambiental / vegetação nativa",
-    "Finalidade/Como utiliza o georreferenciamento": "Uso de imagens de satélite e análise de dados geoespaciais para identificar alterações na vegetação nativa e orientar fiscalização ambiental em todo o estado.",
+    "LocalizaÃ§Ã£o": "Estado de SÃ£o Paulo",
+    "Projeto/Sistema": "MAIS - Monitoramento Ambiental por Imagens de SatÃ©lite",
+    "Ãrea de aplicaÃ§Ã£o": "FiscalizaÃ§Ã£o ambiental / vegetaÃ§Ã£o nativa",
+    "Finalidade/Como utiliza o georreferenciamento": "Uso de imagens de satÃ©lite e anÃ¡lise de dados geoespaciais para identificar alteraÃ§Ãµes na vegetaÃ§Ã£o nativa e orientar fiscalizaÃ§Ã£o ambiental em todo o estado.",
     "Tecnologia/Plataforma": "Sensoriamento remoto / dados geoespaciais",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Inspira monitoramento de áreas verdes, supressão vegetal e apoio à poda/arborização.",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "Inspira monitoramento de Ã¡reas verdes, supressÃ£o vegetal e apoio Ã  poda/arborizaÃ§Ã£o.",
     "Fonte oficial / URL": "https://semil.sp.gov.br/2026/03/estado-amplia-monitoramento-ambiental-por-satelite-e-reforca-fiscalizacao-em-todo-o-territorio-paulista/"
   },
   {
-    "Órgão": "Governo do Estado de São Paulo - CETESB/SEMIL",
+    "Ã“rgÃ£o": "Governo do Estado de SÃ£o Paulo - CETESB/SEMIL",
     "UF": "SP",
-    "Localização": "Estado de São Paulo",
-    "Projeto/Sistema": "Monitoramento por satélite e IA dos rios Tietê e Pinheiros",
-    "Área de aplicação": "Qualidade da água / fiscalização ambiental",
-    "Finalidade/Como utiliza o georreferenciamento": "Imagens de satélite de alta resolução e IA para monitorar cerca de 1.000 km de rios, identificar alterações e gerar alertas automáticos.",
-    "Tecnologia/Plataforma": "Satélite / IA / alertas automáticos",
+    "LocalizaÃ§Ã£o": "Estado de SÃ£o Paulo",
+    "Projeto/Sistema": "Monitoramento por satÃ©lite e IA dos rios TietÃª e Pinheiros",
+    "Ãrea de aplicaÃ§Ã£o": "Qualidade da Ã¡gua / fiscalizaÃ§Ã£o ambiental",
+    "Finalidade/Como utiliza o georreferenciamento": "Imagens de satÃ©lite de alta resoluÃ§Ã£o e IA para monitorar cerca de 1.000 km de rios, identificar alteraÃ§Ãµes e gerar alertas automÃ¡ticos.",
+    "Tecnologia/Plataforma": "SatÃ©lite / IA / alertas automÃ¡ticos",
     "Potencial COMLURB": "Baixa",
-    "Como pode inspirar a COMLURB": "Exemplo de monitoramento automatizado para geração de alertas territoriais.",
+    "Como pode inspirar a COMLURB": "Exemplo de monitoramento automatizado para geraÃ§Ã£o de alertas territoriais.",
     "Fonte oficial / URL": "https://semil.sp.gov.br/2026/06/tiete-e-pinheiros-passam-a-ser-monitorados-por-satelite-e-ia/"
   },
   {
-    "Órgão": "Governo de Mato Grosso do Sul - IMASUL",
+    "Ã“rgÃ£o": "Governo de Mato Grosso do Sul - IMASUL",
     "UF": "MS",
-    "Localização": "Estado de Mato Grosso do Sul",
-    "Projeto/Sistema": "UNIGEO / Sala de Situação",
-    "Área de aplicação": "Monitoramento ambiental / desmatamento / queimadas",
-    "Finalidade/Como utiliza o georreferenciamento": "Unidade de Geoprocessamento com inteligência geoespacial para detecção automatizada de desmatamentos e queimadas em todo o território estadual.",
-    "Tecnologia/Plataforma": "UNIGEO / satélite / automação",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Modelo de sala de situação para monitoramento territorial e tomada de decisão operacional.",
+    "LocalizaÃ§Ã£o": "Estado de Mato Grosso do Sul",
+    "Projeto/Sistema": "UNIGEO / Sala de SituaÃ§Ã£o",
+    "Ãrea de aplicaÃ§Ã£o": "Monitoramento ambiental / desmatamento / queimadas",
+    "Finalidade/Como utiliza o georreferenciamento": "Unidade de Geoprocessamento com inteligÃªncia geoespacial para detecÃ§Ã£o automatizada de desmatamentos e queimadas em todo o territÃ³rio estadual.",
+    "Tecnologia/Plataforma": "UNIGEO / satÃ©lite / automaÃ§Ã£o",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "Modelo de sala de situaÃ§Ã£o para monitoramento territorial e tomada de decisÃ£o operacional.",
     "Fonte oficial / URL": "https://agenciadenoticias.ms.gov.br/com-tecnologia-inedita-ms-tem-monitoramento-ambiental-para-identificar-desmatamento-e-queimadas/"
   },
   {
-    "Órgão": "Governo de Mato Grosso do Sul - IMASUL",
+    "Ã“rgÃ£o": "Governo de Mato Grosso do Sul - IMASUL",
     "UF": "MS",
-    "Localização": "Estado de Mato Grosso do Sul",
+    "LocalizaÃ§Ã£o": "Estado de Mato Grosso do Sul",
     "Projeto/Sistema": "MADES e MAQUES",
-    "Área de aplicação": "Alertas de desmatamento e queimadas",
-    "Finalidade/Como utiliza o georreferenciamento": "Plataformas com inteligência geoespacial, sensoriamento remoto, imagens de satélite de alta resolução e integração de bases para fiscalização ambiental.",
+    "Ãrea de aplicaÃ§Ã£o": "Alertas de desmatamento e queimadas",
+    "Finalidade/Como utiliza o georreferenciamento": "Plataformas com inteligÃªncia geoespacial, sensoriamento remoto, imagens de satÃ©lite de alta resoluÃ§Ã£o e integraÃ§Ã£o de bases para fiscalizaÃ§Ã£o ambiental.",
     "Tecnologia/Plataforma": "MADES / MAQUES / sensoriamento remoto",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Inspira alertas automáticos para descarte irregular, podas emergenciais e áreas críticas.",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "Inspira alertas automÃ¡ticos para descarte irregular, podas emergenciais e Ã¡reas crÃ­ticas.",
     "Fonte oficial / URL": "https://agenciadenoticias.ms.gov.br/para-reforcar-monitoramento-ambiental-em-ms-governo-do-estado-lanca-novas-plataformas-tecnologicas/"
   },
   {
-    "Órgão": "FEPAM - Governo do Rio Grande do Sul",
+    "Ã“rgÃ£o": "FEPAM - Governo do Rio Grande do Sul",
     "UF": "RS",
-    "Localização": "Estado do Rio Grande do Sul",
-    "Projeto/Sistema": "Serviço de Inteligência Geoespacial / SIG",
-    "Área de aplicação": "Licenciamento e monitoramento ambiental",
-    "Finalidade/Como utiliza o georreferenciamento": "Coordena padrões, processamento e análise de dados geoespaciais; apoia licenciamento, monitoramento ambiental, bases web e dados para download em shapefile.",
+    "LocalizaÃ§Ã£o": "Estado do Rio Grande do Sul",
+    "Projeto/Sistema": "ServiÃ§o de InteligÃªncia Geoespacial / SIG",
+    "Ãrea de aplicaÃ§Ã£o": "Licenciamento e monitoramento ambiental",
+    "Finalidade/Como utiliza o georreferenciamento": "Coordena padrÃµes, processamento e anÃ¡lise de dados geoespaciais; apoia licenciamento, monitoramento ambiental, bases web e dados para download em shapefile.",
     "Tecnologia/Plataforma": "SIG / Shapefile / dados geoespaciais",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Referência para normatização, capacitação e suporte geoespacial institucional.",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "ReferÃªncia para normatizaÃ§Ã£o, capacitaÃ§Ã£o e suporte geoespacial institucional.",
     "Fonte oficial / URL": "https://www.fepam.rs.gov.br/geoprocessamento"
   },
   {
-    "Órgão": "IBGE",
+    "Ã“rgÃ£o": "IBGE",
     "UF": "Brasil",
-    "Localização": "Nacional",
-    "Projeto/Sistema": "Entorno dos domicílios / características urbanísticas",
-    "Área de aplicação": "Infraestrutura urbana / estatísticas territoriais",
-    "Finalidade/Como utiliza o georreferenciamento": "Mapeamento de arborização, iluminação pública, calçadas, drenagem, acessibilidade e demais características urbanísticas do entorno dos domicílios.",
-    "Tecnologia/Plataforma": "Geociências / estatísticas georreferenciadas",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Base comparativa para indicadores territoriais de limpeza urbana, calçadas, arborização e infraestrutura.",
+    "LocalizaÃ§Ã£o": "Nacional",
+    "Projeto/Sistema": "Entorno dos domicÃ­lios / caracterÃ­sticas urbanÃ­sticas",
+    "Ãrea de aplicaÃ§Ã£o": "Infraestrutura urbana / estatÃ­sticas territoriais",
+    "Finalidade/Como utiliza o georreferenciamento": "Mapeamento de arborizaÃ§Ã£o, iluminaÃ§Ã£o pÃºblica, calÃ§adas, drenagem, acessibilidade e demais caracterÃ­sticas urbanÃ­sticas do entorno dos domicÃ­lios.",
+    "Tecnologia/Plataforma": "GeociÃªncias / estatÃ­sticas georreferenciadas",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "Base comparativa para indicadores territoriais de limpeza urbana, calÃ§adas, arborizaÃ§Ã£o e infraestrutura.",
     "Fonte oficial / URL": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/tipologias-do-territorio/24702-caracteristicas-urbanisticas-do-entorno-dos-domicilios.html"
   },
   {
-    "Órgão": "Governo Federal",
+    "Ã“rgÃ£o": "Governo Federal",
     "UF": "Brasil",
-    "Localização": "Nacional",
-    "Projeto/Sistema": "INDE / Geoinformação",
-    "Área de aplicação": "Infraestrutura Nacional de Dados Espaciais",
-    "Finalidade/Como utiliza o georreferenciamento": "Diretrizes para facilitar e ordenar geração, armazenamento, acesso, compartilhamento, disseminação e uso de dados geoespaciais oficiais.",
-    "Tecnologia/Plataforma": "INDE / geoinformação",
+    "LocalizaÃ§Ã£o": "Nacional",
+    "Projeto/Sistema": "INDE / GeoinformaÃ§Ã£o",
+    "Ãrea de aplicaÃ§Ã£o": "Infraestrutura Nacional de Dados Espaciais",
+    "Finalidade/Como utiliza o georreferenciamento": "Diretrizes para facilitar e ordenar geraÃ§Ã£o, armazenamento, acesso, compartilhamento, disseminaÃ§Ã£o e uso de dados geoespaciais oficiais.",
+    "Tecnologia/Plataforma": "INDE / geoinformaÃ§Ã£o",
     "Potencial COMLURB": "Alta",
-    "Como pode inspirar a COMLURB": "Base normativa para justificar padronização de dados geoespaciais na COMLURB e integração ao SIURB.",
+    "Como pode inspirar a COMLURB": "Base normativa para justificar padronizaÃ§Ã£o de dados geoespaciais na COMLURB e integraÃ§Ã£o ao SIURB.",
     "Fonte oficial / URL": "https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados/geoinformacao"
   },
   {
-    "Órgão": "Prefeitura do Rio de Janeiro",
+    "Ã“rgÃ£o": "Prefeitura do Rio de Janeiro",
     "UF": "RJ",
-    "Localização": "Rio de Janeiro",
+    "LocalizaÃ§Ã£o": "Rio de Janeiro",
     "Projeto/Sistema": "DATA.Rio / SIURB.RIO",
-    "Área de aplicação": "Planejamento, integração e disseminação de informações municipais",
-    "Finalidade/Como utiliza o georreferenciamento": "Portal DATA.Rio integra modelo de planejamento, gestão e disseminação de informações da Prefeitura; SIURB.RIO é a infraestrutura urbana municipal de dados espaciais.",
+    "Ãrea de aplicaÃ§Ã£o": "Planejamento, integraÃ§Ã£o e disseminaÃ§Ã£o de informaÃ§Ãµes municipais",
+    "Finalidade/Como utiliza o georreferenciamento": "Portal DATA.Rio integra modelo de planejamento, gestÃ£o e disseminaÃ§Ã£o de informaÃ§Ãµes da Prefeitura; SIURB.RIO Ã© a infraestrutura urbana municipal de dados espaciais.",
     "Tecnologia/Plataforma": "DATA.Rio / SIURB.RIO",
     "Potencial COMLURB": "Muito alta",
-    "Como pode inspirar a COMLURB": "É o ecossistema natural para integrar COMLURB, ArcGIS, CICO, 1746 e dashboards territoriais.",
+    "Como pode inspirar a COMLURB": "Ã‰ o ecossistema natural para integrar COMLURB, ArcGIS, CICO, 1746 e dashboards territoriais.",
     "Fonte oficial / URL": "https://www.rio.rj.gov.br/"
   },
   {
-    "Órgão": "Prefeitura de Campinas",
+    "Ã“rgÃ£o": "Prefeitura de Campinas",
     "UF": "SP",
-    "Localização": "Campinas",
+    "LocalizaÃ§Ã£o": "Campinas",
     "Projeto/Sistema": "Geoportal / geoprocessamento municipal",
-    "Área de aplicação": "Planejamento urbano / cadastro territorial",
-    "Finalidade/Como utiliza o georreferenciamento": "Uso municipal de geotecnologias para mapas, bases cartográficas e planejamento territorial. Necessita validação complementar em fonte oficial específica para detalhamento de sistema.",
+    "Ãrea de aplicaÃ§Ã£o": "Planejamento urbano / cadastro territorial",
+    "Finalidade/Como utiliza o georreferenciamento": "Uso municipal de geotecnologias para mapas, bases cartogrÃ¡ficas e planejamento territorial. Necessita validaÃ§Ã£o complementar em fonte oficial especÃ­fica para detalhamento de sistema.",
     "Tecnologia/Plataforma": "SIG municipal",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Potencial de comparação com gestão urbana de cidade grande; item marcado para validação adicional.",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "Potencial de comparaÃ§Ã£o com gestÃ£o urbana de cidade grande; item marcado para validaÃ§Ã£o adicional.",
     "Fonte oficial / URL": "https://campinas.sp.gov.br/"
   },
   {
-    "Órgão": "Prefeitura de Curitiba",
+    "Ã“rgÃ£o": "Prefeitura de Curitiba",
     "UF": "PR",
-    "Localização": "Curitiba",
+    "LocalizaÃ§Ã£o": "Curitiba",
     "Projeto/Sistema": "Geoprocessamento municipal / IPPUC",
-    "Área de aplicação": "Planejamento urbano / mobilidade / infraestrutura",
-    "Finalidade/Como utiliza o georreferenciamento": "Uso de bases geográficas e planejamento urbano pelo município; item incluído por relevância histórica em planejamento urbano, com validação complementar recomendada em portal específico.",
+    "Ãrea de aplicaÃ§Ã£o": "Planejamento urbano / mobilidade / infraestrutura",
+    "Finalidade/Como utiliza o georreferenciamento": "Uso de bases geogrÃ¡ficas e planejamento urbano pelo municÃ­pio; item incluÃ­do por relevÃ¢ncia histÃ³rica em planejamento urbano, com validaÃ§Ã£o complementar recomendada em portal especÃ­fico.",
     "Tecnologia/Plataforma": "SIG / planejamento urbano",
-    "Potencial COMLURB": "Média",
-    "Como pode inspirar a COMLURB": "Referência para urbanismo, roteirização e indicadores territoriais, com necessidade de aprofundar fonte oficial.",
+    "Potencial COMLURB": "MÃ©dia",
+    "Como pode inspirar a COMLURB": "ReferÃªncia para urbanismo, roteirizaÃ§Ã£o e indicadores territoriais, com necessidade de aprofundar fonte oficial.",
     "Fonte oficial / URL": "https://www.curitiba.pr.gov.br/"
   },
   {
-    "Órgão": "Prefeitura de Porto Alegre",
+    "Ã“rgÃ£o": "Prefeitura de Porto Alegre",
     "UF": "RS",
-    "Localização": "Porto Alegre",
+    "LocalizaÃ§Ã£o": "Porto Alegre",
     "Projeto/Sistema": "Geoprocessamento municipal",
-    "Área de aplicação": "Planejamento urbano / dados espaciais municipais",
-    "Finalidade/Como utiliza o georreferenciamento": "Uso de informações geográficas para planejamento e gestão municipal; item incluído para continuidade da varredura em capitais brasileiras.",
+    "Ãrea de aplicaÃ§Ã£o": "Planejamento urbano / dados espaciais municipais",
+    "Finalidade/Como utiliza o georreferenciamento": "Uso de informaÃ§Ãµes geogrÃ¡ficas para planejamento e gestÃ£o municipal; item incluÃ­do para continuidade da varredura em capitais brasileiras.",
     "Tecnologia/Plataforma": "SIG municipal",
     "Potencial COMLURB": "Baixa",
     "Como pode inspirar a COMLURB": "Pode servir como benchmark de capital.",
@@ -423,7 +423,7 @@ const getPotentialColor = (potential: string) => {
       return "bg-emerald-100 text-emerald-800 border-emerald-300";
     case "Alta":
       return "bg-blue-100 text-blue-800 border-blue-300";
-    case "Média":
+    case "MÃ©dia":
       return "bg-amber-100 text-amber-800 border-amber-300";
     case "Baixa":
       return "bg-gray-100 text-gray-800 border-gray-300";
@@ -442,15 +442,15 @@ export default function Geointeligencia() {
     let filtered = levantamentoData.filter((row) => {
       const searchLower = searchTerm.toLowerCase();
       return (
-        row["Órgão"].toLowerCase().includes(searchLower) ||
+        row["Ã“rgÃ£o"].toLowerCase().includes(searchLower) ||
         row["Projeto/Sistema"].toLowerCase().includes(searchLower) ||
-        row["Localização"].toLowerCase().includes(searchLower) ||
-        row["Área de aplicação"].toLowerCase().includes(searchLower)
+        row["LocalizaÃ§Ã£o"].toLowerCase().includes(searchLower) ||
+        row["Ãrea de aplicaÃ§Ã£o"].toLowerCase().includes(searchLower)
       );
     });
 
-    // Ordenar por potencial (Muito alta > Alta > Média > Baixa)
-    const potentialOrder = { "Muito alta": 0, "Alta": 1, "Média": 2, "Baixa": 3 };
+    // Ordenar por potencial (Muito alta > Alta > MÃ©dia > Baixa)
+    const potentialOrder = { "Muito alta": 0, "Alta": 1, "MÃ©dia": 2, "Baixa": 3 };
     filtered.sort((a, b) => {
       if (sortBy === "potential") {
         return (potentialOrder[a["Potencial COMLURB"] as keyof typeof potentialOrder] ?? 4) -
@@ -458,7 +458,7 @@ export default function Geointeligencia() {
       } else if (sortBy === "state") {
         return a["UF"].localeCompare(b["UF"]);
       } else {
-        return a["Órgão"].localeCompare(b["Órgão"]);
+        return a["Ã“rgÃ£o"].localeCompare(b["Ã“rgÃ£o"]);
       }
     });
 
@@ -477,7 +477,7 @@ export default function Geointeligencia() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Botão Voltar - Topo Esquerdo */}
+      {/* BotÃ£o Voltar - Topo Esquerdo */}
       <button
         onClick={() => setLocation('/')}
         className="fixed top-4 left-4 z-40 flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-lg hover:bg-white transition-all shadow-md hover:shadow-lg text-gray-700 font-medium"
@@ -486,7 +486,7 @@ export default function Geointeligencia() {
         <span>Voltar</span>
       </button>
 
-      {/* Header com vídeo */}
+      {/* Header com vÃ­deo */}
       <div className="relative h-96 overflow-hidden">
         <video
           autoPlay
@@ -499,17 +499,17 @@ export default function Geointeligencia() {
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-end">
           <div className="p-8 text-white max-w-2xl">
-            <h1 className="text-5xl font-bold mb-4">Geointeligência em outras Prefeituras</h1>
+            <h1 className="text-5xl font-bold mb-4">GeointeligÃªncia em outras Prefeituras</h1>
             <p className="text-xl opacity-90">
-              Veja como outras cidades aplicam geointeligência e os resultados alcançados.
+              Veja como outras cidades aplicam geointeligÃªncia e os resultados alcanÃ§ados.
             </p>
           </div>
         </div>
       </div>
 
-      {/* Conteúdo principal */}
+      {/* ConteÃºdo principal */}
       <div className="max-w-7xl mx-auto px-4 py-12">
-        {/* Seção de busca e filtros */}
+        {/* SeÃ§Ã£o de busca e filtros */}
         <div className="mb-8">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="flex-1">
@@ -517,7 +517,7 @@ export default function Geointeligencia() {
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                 <Input
                   type="text"
-                  placeholder="Buscar por prefeitura, projeto, localização ou área de aplicação..."
+                  placeholder="Buscar por prefeitura, projeto, localizaÃ§Ã£o ou Ã¡rea de aplicaÃ§Ã£o..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="pl-10 py-2 w-full border-gray-300"
@@ -557,7 +557,7 @@ export default function Geointeligencia() {
           {(() => {
             // Agrupar dados por prefeitura
             const groupedByOrgao = filteredData.reduce((acc, row, index) => {
-              const key = row["Órgão"];
+              const key = row["Ã“rgÃ£o"];
               if (!acc[key]) {
                 acc[key] = { prefeitura: row, projetos: [], indices: [] };
               }
@@ -576,15 +576,15 @@ export default function Geointeligencia() {
                   key={orgaoKey}
                   className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow"
                 >
-                  {/* Linha principal - clicável */}
+                  {/* Linha principal - clicÃ¡vel */}
                   <button
                     onClick={() => toggleRow(mainIndex)}
                     className="w-full px-6 py-4 bg-white hover:bg-gray-50 flex items-center justify-between text-left transition-colors"
                   >
                     <div className="flex-1 grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
                       <div>
-                        <h3 className="font-semibold text-gray-900">{data.prefeitura["Órgão"]}</h3>
-                        <p className="text-sm text-gray-600">{data.prefeitura["Localização"]}</p>
+                        <h3 className="font-semibold text-gray-900">{data.prefeitura["Ã“rgÃ£o"]}</h3>
+                        <p className="text-sm text-gray-600">{data.prefeitura["LocalizaÃ§Ã£o"]}</p>
                       </div>
                       <div>
                         <p className="font-medium text-gray-900">{data.projetos.length} projeto{data.projetos.length > 1 ? "s" : ""}</p>
@@ -608,14 +608,14 @@ export default function Geointeligencia() {
                     </div>
                   </button>
 
-                  {/* Conteúdo expandido - lista de projetos */}
+                  {/* ConteÃºdo expandido - lista de projetos */}
                   {isExpanded && (
                     <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 space-y-4">
                       {data.projetos.map((projeto: LevantamentoRow, projIndex: number) => (
                         <div key={projIndex} className={projIndex > 0 ? "pt-4 border-t border-gray-300" : ""}>
                           <div className="mb-3">
                             <h4 className="font-semibold text-gray-900">{projeto["Projeto/Sistema"]}</h4>
-                            <p className="text-sm text-gray-600 mt-1">{projeto["Área de aplicação"]}</p>
+                            <p className="text-sm text-gray-600 mt-1">{projeto["Ãrea de aplicaÃ§Ã£o"]}</p>
                           </div>
 
                           <div>

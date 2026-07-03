@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useRef } from 'react';
 import { ChevronLeft, Maximize2 } from 'lucide-react';
@@ -40,20 +40,20 @@ export default function ApresentacaoPresidencia() {
             <span>Voltar</span>
           </button>
           <div>
-            <h1 className="text-4xl font-bold mb-2">Apresentação para Presidência</h1>
-            <p className="text-blue-200">Geointeligência Urbana - Pitch Deck Executivo</p>
+            <h1 className="text-4xl font-bold mb-2">ApresentaÃ§Ã£o para PresidÃªncia</h1>
+            <p className="text-blue-200">GeointeligÃªncia Urbana - Pitch Deck Executivo</p>
           </div>
         </div>
       </div>
 
       {/* Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
-        {/* Apresentação em Slides */}
+        {/* ApresentaÃ§Ã£o em Slides */}
         <section className="mb-12">
           <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-8 rounded-lg">
             <div className="px-4">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-white mb-2">Apresentação Executiva - Geointeligência Urbana</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">ApresentaÃ§Ã£o Executiva - GeointeligÃªncia Urbana</h3>
                 <p className="text-slate-300 text-sm">Navegue pelos slides usando os controles ou clique para ampliar</p>
               </div>
               <div className="relative rounded-lg overflow-hidden shadow-2xl bg-black">
@@ -70,23 +70,23 @@ export default function ApresentacaoPresidencia() {
                   src="https://geointel-presentation-9f86qdbs.manus.space/"
                   className="w-full h-[600px] border-0"
                   allowFullScreen
-                  title="Apresentação Geointeligência Urbana"
+                  title="ApresentaÃ§Ã£o GeointeligÃªncia Urbana"
                 />
               </div>
-              <p className="text-slate-300 text-sm mt-4 italic">Clique no botão "Tela Cheia" para ampliar a apresentação. Use os controles de navegação para passar os slides.</p>
+              <p className="text-slate-300 text-sm mt-4 italic">Clique no botÃ£o "Tela Cheia" para ampliar a apresentaÃ§Ã£o. Use os controles de navegaÃ§Ã£o para passar os slides.</p>
             </div>
           </div>
         </section>
 
-        {/* Infográficos - Grid de 2 colunas */}
+        {/* InfogrÃ¡ficos - Grid de 2 colunas */}
         <section className="py-8">
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Infográfico Pitch Deck */}
+            {/* InfogrÃ¡fico Pitch Deck */}
             <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-8 rounded-lg">
               <div className="px-4">
                 <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-white mb-2">Geointeligência Urbana - Pitch Deck</h3>
-                  <p className="text-slate-300 text-sm">Infográfico - Clique na imagem para ampliar</p>
+                  <h3 className="text-2xl font-bold text-white mb-2">GeointeligÃªncia Urbana - Pitch Deck</h3>
+                  <p className="text-slate-300 text-sm">InfogrÃ¡fico - Clique na imagem para ampliar</p>
                 </div>
                 <div className="cursor-pointer hover:opacity-90 transition-opacity" onClick={() => {
                   const modal = document.createElement('div');
@@ -99,17 +99,17 @@ export default function ApresentacaoPresidencia() {
                   modal.addEventListener('click', () => modal.remove());
                   document.body.appendChild(modal);
                 }}>
-                  <img
-                    src="assets/media/pitch_deck_infografico_v3_92a85670.webp"
-                    alt="Pitch Deck Infográfico"
+                  <img 
+                    src="assets/media/pitch_deck_infografico_v3_92a85670.webp" 
+                    alt="Pitch Deck InfogrÃ¡fico" 
                     className="w-full h-auto rounded-lg shadow-2xl"
                   />
                 </div>
-                <p className="text-slate-300 text-sm mt-4 italic">Estratégia executiva de geointeligência urbana para limpeza inteligente e sustentável.</p>
+                <p className="text-slate-300 text-sm mt-4 italic">EstratÃ©gia executiva de geointeligÃªncia urbana para limpeza inteligente e sustentÃ¡vel.</p>
               </div>
             </div>
 
-            {/* Infográfico MundoGEO Sistemas Inteligentes */}
+            {/* InfogrÃ¡fico MundoGEO Sistemas Inteligentes */}
             <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-8 rounded-lg">
               <div className="px-4">
                 <div className="mb-6">
@@ -127,13 +127,13 @@ export default function ApresentacaoPresidencia() {
                   modal.addEventListener('click', () => modal.remove());
                   document.body.appendChild(modal);
                 }}>
-                  <img
-                    src="assets/media/mundogeo-sistemas-inteligentes_9100901a.jpeg"
-                    alt="MundoGEO Sistemas Inteligentes Infográfico"
+                  <img 
+                    src="assets/media/mundogeo-sistemas-inteligentes_9100901a.jpeg" 
+                    alt="MundoGEO Sistemas Inteligentes InfogrÃ¡fico" 
                     className="w-full h-auto rounded-lg shadow-2xl"
                   />
                 </div>
-                <p className="text-slate-300 text-sm mt-4 italic">Integração de geointeligência, mobilidade e inteligência artificial para transformar dados em decisões.</p>
+                <p className="text-slate-300 text-sm mt-4 italic">IntegraÃ§Ã£o de geointeligÃªncia, mobilidade e inteligÃªncia artificial para transformar dados em decisÃµes.</p>
               </div>
             </div>
           </div>
@@ -142,3 +142,4 @@ export default function ApresentacaoPresidencia() {
     </main>
   );
 }
+

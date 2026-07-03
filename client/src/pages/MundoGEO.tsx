@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+﻿import { Button } from "@/components/ui/button";
 import { ArrowLeft, ExternalLink, Map, Satellite, Zap, Database, Compass, Layers, Building2, Wifi } from "lucide-react";
 import { useLocation } from "wouter";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -22,7 +22,7 @@ export default function MundoGEO() {
             <img src="assets/media/broom-icon_0293fe4d.png" alt="Broom Icon" className="w-10 h-10" />
             <div className="border-l-2 border-gray-400 h-8"></div>
             <div className="flex flex-col">
-              <span className="font-bold text-sm text-foreground">RELATÓRIO DE VIAGEM - Congresso MundoGeo SP</span>
+              <span className="font-bold text-sm text-foreground">RELATÃ“RIO DE VIAGEM - Congresso MundoGeo SP</span>
               <span className="text-xs text-muted-foreground">15 a 18 de Junho de 2026</span>
             </div>
           </div>
@@ -53,13 +53,13 @@ export default function MundoGEO() {
           <div className="max-w-3xl animate-fade-in">
             <div className="flex items-center gap-3 mb-6 animate-slide-left">
               <Map className="w-8 h-8 text-green-400" />
-              <span className="text-green-400 font-semibold">Geotecnologias & Inteligência Geográfica</span>
+              <span className="text-green-400 font-semibold">Geotecnologias & InteligÃªncia GeogrÃ¡fica</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight animate-slide-up">
-              O que é <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">MundoGEO</span>
+              O que Ã© <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">MundoGEO</span>
             </h1>
             <p className="text-xl text-slate-200 mb-8 leading-relaxed animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              Conheça o principal evento de geotecnologias do Brasil e como ele transforma a gestão urbana através da inteligência geográfica.
+              ConheÃ§a o principal evento de geotecnologias do Brasil e como ele transforma a gestÃ£o urbana atravÃ©s da inteligÃªncia geogrÃ¡fica.
             </p>
             <a
               href="https://mundogeoconnect.com/2026/evento/"
@@ -78,14 +78,14 @@ export default function MundoGEO() {
       <section className="py-20 bg-white">
         <div className="container max-w-4xl">
           <div className="space-y-12 text-foreground">
-            {/* A Essência do MundoGEO */}
+            {/* A EssÃªncia do MundoGEO */}
             <div ref={essenciaRef as any} className="border-l-4 border-l-green-600 pl-8 animate-slide-up">
               <div className="flex items-start gap-4 mb-4">
                 <Compass className="w-8 h-8 text-green-600 flex-shrink-0 mt-1 animate-scale" />
                 <div>
-                  <h2 className="text-3xl font-bold mb-4 text-foreground">A Essência do MundoGEO</h2>
+                  <h2 className="text-3xl font-bold mb-4 text-foreground">A EssÃªncia do MundoGEO</h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    A feira reúne profissionais, empresas, órgãos públicos, universidades, especialistas, gestores e desenvolvedores que trabalham com tecnologias capazes de transformar informações sobre o território em conhecimento útil para a tomada de decisão.
+                    A feira reÃºne profissionais, empresas, Ã³rgÃ£os pÃºblicos, universidades, especialistas, gestores e desenvolvedores que trabalham com tecnologias capazes de transformar informaÃ§Ãµes sobre o territÃ³rio em conhecimento Ãºtil para a tomada de decisÃ£o.
                   </p>
                 </div>
               </div>
@@ -98,75 +98,75 @@ export default function MundoGEO() {
                 <div>
                   <h2 className="text-3xl font-bold mb-4 text-foreground">Em Termos Simples</h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    O MundoGEO é um espaço onde se discute como mapas, imagens, dados, sensores, sistemas digitais e inteligência artificial podem ajudar governos e empresas a compreender melhor a cidade, planejar serviços, acompanhar operações, fiscalizar atividades, reduzir custos e melhorar a entrega de resultados à população.
+                    O MundoGEO Ã© um espaÃ§o onde se discute como mapas, imagens, dados, sensores, sistemas digitais e inteligÃªncia artificial podem ajudar governos e empresas a compreender melhor a cidade, planejar serviÃ§os, acompanhar operaÃ§Ãµes, fiscalizar atividades, reduzir custos e melhorar a entrega de resultados Ã  populaÃ§Ã£o.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Importância para a Gestão Pública */}
+            {/* ImportÃ¢ncia para a GestÃ£o PÃºblica */}
             <div ref={importanciaRef as any} className="border-l-4 border-l-purple-600 pl-8 animate-slide-up">
               <div className="flex items-start gap-4 mb-6">
                 <Building2 className="w-8 h-8 text-purple-600 flex-shrink-0 mt-1 animate-scale" />
                 <div>
-                  <h2 className="text-3xl font-bold mb-4 text-foreground">Importância para a Gestão Pública</h2>
+                  <h2 className="text-3xl font-bold mb-4 text-foreground">ImportÃ¢ncia para a GestÃ£o PÃºblica</h2>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    Para a gestão pública, o evento tem grande importância porque apresenta soluções aplicáveis a problemas reais dos municípios, como:
+                    Para a gestÃ£o pÃºblica, o evento tem grande importÃ¢ncia porque apresenta soluÃ§Ãµes aplicÃ¡veis a problemas reais dos municÃ­pios, como:
                   </p>
                 </div>
               </div>
               <ul className="grid md:grid-cols-2 gap-4 text-muted-foreground ml-12">
                 <li className="flex items-start gap-3 animate-fade-in">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span className="text-green-600 font-bold mt-1">âœ“</span>
                   <span>Planejamento urbano</span>
                 </li>
                 <li className="flex items-start gap-3 animate-fade-in">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span className="text-green-600 font-bold mt-1">âœ“</span>
                   <span>Cadastro territorial</span>
                 </li>
                 <li className="flex items-start gap-3 animate-fade-in">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span className="text-green-600 font-bold mt-1">âœ“</span>
                   <span>Limpeza urbana</span>
                 </li>
                 <li className="flex items-start gap-3 animate-fade-in">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
-                  <span>Coleta de resíduos</span>
+                  <span className="text-green-600 font-bold mt-1">âœ“</span>
+                  <span>Coleta de resÃ­duos</span>
                 </li>
                 <li className="flex items-start gap-3 animate-fade-in">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span className="text-green-600 font-bold mt-1">âœ“</span>
                   <span>Mobilidade</span>
                 </li>
                 <li className="flex items-start gap-3 animate-fade-in">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span className="text-green-600 font-bold mt-1">âœ“</span>
                   <span>Meio ambiente</span>
                 </li>
                 <li className="flex items-start gap-3 animate-fade-in">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span className="text-green-600 font-bold mt-1">âœ“</span>
                   <span>Defesa civil</span>
                 </li>
                 <li className="flex items-start gap-3 animate-fade-in">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span className="text-green-600 font-bold mt-1">âœ“</span>
                   <span>Infraestrutura</span>
                 </li>
                 <li className="flex items-start gap-3 animate-fade-in">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
-                  <span>Fiscalização</span>
+                  <span className="text-green-600 font-bold mt-1">âœ“</span>
+                  <span>FiscalizaÃ§Ã£o</span>
                 </li>
                 <li className="flex items-start gap-3 animate-fade-in">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
+                  <span className="text-green-600 font-bold mt-1">âœ“</span>
                   <span>Obras</span>
                 </li>
                 <li className="flex items-start gap-3 animate-fade-in">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
-                  <span>Regularização fundiária</span>
+                  <span className="text-green-600 font-bold mt-1">âœ“</span>
+                  <span>RegularizaÃ§Ã£o fundiÃ¡ria</span>
                 </li>
                 <li className="flex items-start gap-3 animate-fade-in">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
-                  <span>Monitoramento de áreas críticas</span>
+                  <span className="text-green-600 font-bold mt-1">âœ“</span>
+                  <span>Monitoramento de Ã¡reas crÃ­ticas</span>
                 </li>
                 <li className="flex items-start gap-3 animate-fade-in">
-                  <span className="text-green-600 font-bold mt-1">✓</span>
-                  <span>Atendimento ao cidadão</span>
+                  <span className="text-green-600 font-bold mt-1">âœ“</span>
+                  <span>Atendimento ao cidadÃ£o</span>
                 </li>
               </ul>
             </div>
@@ -178,7 +178,7 @@ export default function MundoGEO() {
                 <h2 className="text-2xl font-bold text-foreground">Um Dos Principais Eventos do Brasil</h2>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                O MundoGEO Connect é um dos principais eventos do Brasil voltados às geotecnologias, à inteligência geográfica, ao georreferenciamento, ao uso de drones, ao sensoriamento remoto, aos Sistemas de Informação Geográfica — GIS, à cartografia digital, à inteligência artificial aplicada ao território e às soluções para cidades inteligentes.
+                O MundoGEO Connect Ã© um dos principais eventos do Brasil voltados Ã s geotecnologias, Ã  inteligÃªncia geogrÃ¡fica, ao georreferenciamento, ao uso de drones, ao sensoriamento remoto, aos Sistemas de InformaÃ§Ã£o GeogrÃ¡fica â€” GIS, Ã  cartografia digital, Ã  inteligÃªncia artificial aplicada ao territÃ³rio e Ã s soluÃ§Ãµes para cidades inteligentes.
               </p>
             </div>
 
@@ -192,54 +192,54 @@ export default function MundoGEO() {
                 <div className="p-6 bg-blue-50 rounded-lg border border-blue-200 animate-slide-up hover:shadow-lg transition">
                   <Database className="w-8 h-8 text-blue-600 mb-3 animate-scale" />
                   <h3 className="font-bold text-foreground mb-2">Dados Geoespaciais</h3>
-                  <p className="text-sm text-muted-foreground">Informações territoriais estruturadas para análise e tomada de decisão</p>
+                  <p className="text-sm text-muted-foreground">InformaÃ§Ãµes territoriais estruturadas para anÃ¡lise e tomada de decisÃ£o</p>
                 </div>
                 <div className="p-6 bg-green-50 rounded-lg border border-green-200 animate-slide-up hover:shadow-lg transition" style={{ animationDelay: '0.1s' }}>
                   <Satellite className="w-8 h-8 text-green-600 mb-3 animate-scale" />
                   <h3 className="font-bold text-foreground mb-2">Sensoriamento Remoto</h3>
-                  <p className="text-sm text-muted-foreground">Imagens de satélite e drones para monitoramento urbano</p>
+                  <p className="text-sm text-muted-foreground">Imagens de satÃ©lite e drones para monitoramento urbano</p>
                 </div>
                 <div className="p-6 bg-purple-50 rounded-lg border border-purple-200 animate-slide-up hover:shadow-lg transition" style={{ animationDelay: '0.2s' }}>
                   <Zap className="w-8 h-8 text-purple-600 mb-3 animate-scale" />
-                  <h3 className="font-bold text-foreground mb-2">Inteligência Artificial</h3>
-                  <p className="text-sm text-muted-foreground">Análise automática de dados para insights estratégicos</p>
+                  <h3 className="font-bold text-foreground mb-2">InteligÃªncia Artificial</h3>
+                  <p className="text-sm text-muted-foreground">AnÃ¡lise automÃ¡tica de dados para insights estratÃ©gicos</p>
                 </div>
                 <div className="p-6 bg-orange-50 rounded-lg border border-orange-200 animate-slide-up hover:shadow-lg transition" style={{ animationDelay: '0.3s' }}>
                   <Map className="w-8 h-8 text-orange-600 mb-3 animate-scale" />
                   <h3 className="font-bold text-foreground mb-2">Sistemas GIS</h3>
-                  <p className="text-sm text-muted-foreground">Plataformas integradas para gestão de informações territoriais</p>
+                  <p className="text-sm text-muted-foreground">Plataformas integradas para gestÃ£o de informaÃ§Ãµes territoriais</p>
                 </div>
               </div>
             </div>
 
-            {/* Uma Vitrine Técnica e Estratégica */}
+            {/* Uma Vitrine TÃ©cnica e EstratÃ©gica */}
             <div ref={vitrinaRef as any} className="border-l-4 border-l-orange-600 pl-8 animate-slide-up">
               <div className="flex items-start gap-4 mb-4">
                 <Compass className="w-8 h-8 text-orange-600 flex-shrink-0 mt-1 animate-scale" />
                 <div>
-                  <h2 className="text-3xl font-bold mb-4 text-foreground">Uma Vitrine Técnica e Estratégica</h2>
+                  <h2 className="text-3xl font-bold mb-4 text-foreground">Uma Vitrine TÃ©cnica e EstratÃ©gica</h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    O MundoGEO serve, portanto, como uma vitrine técnica e estratégica. Ele mostra o que já está sendo feito no Brasil e no mundo, aproxima instituições de especialistas, apresenta soluções de mercado, estimula parcerias e ajuda os órgãos públicos a enxergarem novas possibilidades para seus próprios desafios.
+                    O MundoGEO serve, portanto, como uma vitrine tÃ©cnica e estratÃ©gica. Ele mostra o que jÃ¡ estÃ¡ sendo feito no Brasil e no mundo, aproxima instituiÃ§Ãµes de especialistas, apresenta soluÃ§Ãµes de mercado, estimula parcerias e ajuda os Ã³rgÃ£os pÃºblicos a enxergarem novas possibilidades para seus prÃ³prios desafios.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Transformar o Território em Inteligência */}
+            {/* Transformar o TerritÃ³rio em InteligÃªncia */}
             <div ref={transformarRef as any} className="bg-gradient-to-r from-slate-900 to-slate-800 text-white p-8 rounded-lg animate-scale">
               <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
                 <Layers className="w-8 h-8 text-green-400 animate-scale" />
-                Transformar o Território em Inteligência
+                Transformar o TerritÃ³rio em InteligÃªncia
               </h2>
               <div className="space-y-4">
                 <p className="text-lg leading-relaxed animate-fade-in">
-                  Mais do que uma feira de tecnologia, o MundoGEO é um ambiente de aprendizado sobre como transformar o território em inteligência. Para a COMLURB, essa visão é essencial: a cidade precisa ser compreendida para ser bem cuidada, e os dados geográficos são uma das principais ferramentas para alcançar esse objetivo.
+                  Mais do que uma feira de tecnologia, o MundoGEO Ã© um ambiente de aprendizado sobre como transformar o territÃ³rio em inteligÃªncia. Para a COMLURB, essa visÃ£o Ã© essencial: a cidade precisa ser compreendida para ser bem cuidada, e os dados geogrÃ¡ficos sÃ£o uma das principais ferramentas para alcanÃ§ar esse objetivo.
                 </p>
                 <p className="text-lg leading-relaxed animate-fade-in" style={{ animationDelay: '0.1s' }}>
-                  A feira permitiu observar experiências, tecnologias e métodos que podem apoiar a COMLURB na construção de uma gestão mais integrada, moderna e orientada por dados.
+                  A feira permitiu observar experiÃªncias, tecnologias e mÃ©todos que podem apoiar a COMLURB na construÃ§Ã£o de uma gestÃ£o mais integrada, moderna e orientada por dados.
                 </p>
                 <p className="text-lg leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                  Os conteúdos apresentados mostraram que a transformação digital não começa apenas com a compra de sistemas, mas com a organização das informações, a integração das áreas, a padronização dos dados e a capacitação das pessoas.
+                  Os conteÃºdos apresentados mostraram que a transformaÃ§Ã£o digital nÃ£o comeÃ§a apenas com a compra de sistemas, mas com a organizaÃ§Ã£o das informaÃ§Ãµes, a integraÃ§Ã£o das Ã¡reas, a padronizaÃ§Ã£o dos dados e a capacitaÃ§Ã£o das pessoas.
                 </p>
               </div>
             </div>
@@ -252,7 +252,7 @@ export default function MundoGEO() {
         <div className="container text-center">
           <h2 className="text-3xl font-bold mb-6 text-foreground animate-slide-up">Quer Saber Mais?</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.1s' }}>
-            Visite o site oficial do MundoGEO Connect 2026 para conhecer mais sobre o evento, programação, palestrantes e oportunidades de participação.
+            Visite o site oficial do MundoGEO Connect 2026 para conhecer mais sobre o evento, programaÃ§Ã£o, palestrantes e oportunidades de participaÃ§Ã£o.
           </p>
           <a
             href="https://mundogeoconnect.com/2026/evento/"
@@ -272,10 +272,10 @@ export default function MundoGEO() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <h4 className="font-bold text-white mb-4">COMLURB</h4>
-              <p className="text-sm">Liderança em Geointeligência Urbana</p>
+              <p className="text-sm">LideranÃ§a em GeointeligÃªncia Urbana</p>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-4">Navegação</h4>
+              <h4 className="font-bold text-white mb-4">NavegaÃ§Ã£o</h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <a href="/" className="hover:text-white transition">
@@ -290,7 +290,7 @@ export default function MundoGEO() {
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-4">Referência</h4>
+              <h4 className="font-bold text-white mb-4">ReferÃªncia</h4>
               <a
                 href="https://mundogeoconnect.com/2026/evento/"
                 target="_blank"
@@ -302,7 +302,7 @@ export default function MundoGEO() {
             </div>
           </div>
           <div className="border-t border-slate-800 pt-8 text-center text-sm">
-            <p>© 2026 COMLURB. Todos os direitos reservados.</p>
+            <p>Â© 2026 COMLURB. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>

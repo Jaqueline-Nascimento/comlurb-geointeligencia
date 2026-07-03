@@ -1,4 +1,4 @@
-import { ArrowLeft, ChevronDown } from "lucide-react";
+﻿import { ArrowLeft, ChevronDown } from "lucide-react";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import React from "react";
@@ -15,7 +15,7 @@ export default function Palestras() {
             <img src="assets/media/broom-icon_0293fe4d.png" alt="Broom Icon" className="w-10 h-10" />
             <div className="border-l-2 border-gray-400 h-8"></div>
             <div className="flex flex-col">
-              <span className="font-bold text-sm text-foreground">RELATÓRIO DE VIAGEM - Congresso MundoGeo SP</span>
+              <span className="font-bold text-sm text-foreground">RELATÃ“RIO DE VIAGEM - Congresso MundoGeo SP</span>
               <span className="text-xs text-muted-foreground">15 a 18 de Junho de 2026</span>
             </div>
           </div>
@@ -47,20 +47,20 @@ export default function Palestras() {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-bold mb-8 text-foreground leading-tight">
-              Palestras Livres e Painéis Técnicos do Congresso MundoGEO Connect 2026
+              Palestras Livres e PainÃ©is TÃ©cnicos do Congresso MundoGEO Connect 2026
             </h1>
 
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Além dos cursos técnicos realizados pela equipe da COMLURB, a participação no Congresso MundoGEO Connect 2026 possibilitou o acompanhamento de palestras e painéis voltados à aplicação prática das geotecnologias na gestão pública.
+                AlÃ©m dos cursos tÃ©cnicos realizados pela equipe da COMLURB, a participaÃ§Ã£o no Congresso MundoGEO Connect 2026 possibilitou o acompanhamento de palestras e painÃ©is voltados Ã  aplicaÃ§Ã£o prÃ¡tica das geotecnologias na gestÃ£o pÃºblica.
               </p>
 
               <p>
-                Essas apresentações trouxeram experiências de diferentes cidades, instituições e especialistas, demonstrando que a modernização da gestão urbana não depende apenas da aquisição de ferramentas tecnológicas. O ponto central apresentado foi a necessidade de estruturar dados, integrar sistemas, capacitar pessoas, criar governança e transformar a informação territorial em inteligência para a tomada de decisão.
+                Essas apresentaÃ§Ãµes trouxeram experiÃªncias de diferentes cidades, instituiÃ§Ãµes e especialistas, demonstrando que a modernizaÃ§Ã£o da gestÃ£o urbana nÃ£o depende apenas da aquisiÃ§Ã£o de ferramentas tecnolÃ³gicas. O ponto central apresentado foi a necessidade de estruturar dados, integrar sistemas, capacitar pessoas, criar governanÃ§a e transformar a informaÃ§Ã£o territorial em inteligÃªncia para a tomada de decisÃ£o.
               </p>
 
               <p>
-                A seguir, são listadas as principais palestras livres e painéis acompanhados, com resumo dos assuntos abordados.
+                A seguir, sÃ£o listadas as principais palestras livres e painÃ©is acompanhados, com resumo dos assuntos abordados.
               </p>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function Palestras() {
       {/* Palestras Section */}
       <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="container">
-          <h2 className="text-4xl font-bold mb-12 text-foreground text-center">Palestras e Painéis Acompanhados</h2>
+          <h2 className="text-4xl font-bold mb-12 text-foreground text-center">Palestras e PainÃ©is Acompanhados</h2>
           
           <div className="space-y-6 max-w-4xl mx-auto">
             {palestras.map((palestra, index) => (
@@ -84,23 +84,23 @@ export default function Palestras() {
       <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
         <div className="container">
           <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-12">
-            <h2 className="text-3xl font-bold mb-8 text-foreground">Síntese das Palestras e Painéis</h2>
+            <h2 className="text-3xl font-bold mb-8 text-foreground">SÃ­ntese das Palestras e PainÃ©is</h2>
             
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Os temas apresentados convergiram para uma mesma conclusão: a cidade precisa ser compreendida por meio de dados territoriais confiáveis, integrados e atualizados. A inovação não está apenas no uso de drones, inteligência artificial, WebGIS, gêmeos digitais ou painéis de controle. A inovação está em transformar essas ferramentas em capacidade real de gestão.
+                Os temas apresentados convergiram para uma mesma conclusÃ£o: a cidade precisa ser compreendida por meio de dados territoriais confiÃ¡veis, integrados e atualizados. A inovaÃ§Ã£o nÃ£o estÃ¡ apenas no uso de drones, inteligÃªncia artificial, WebGIS, gÃªmeos digitais ou painÃ©is de controle. A inovaÃ§Ã£o estÃ¡ em transformar essas ferramentas em capacidade real de gestÃ£o.
               </p>
 
               <p>
-                No caso específico da COMLURB, a palestra sobre resíduos sólidos merece destaque especial, pois dialoga diretamente com a missão institucional da Companhia. Ela demonstra que a limpeza urbana do futuro deve ser planejada com base em dados, integração territorial, indicadores operacionais, economia circular, rastreabilidade e inteligência geográfica.
+                No caso especÃ­fico da COMLURB, a palestra sobre resÃ­duos sÃ³lidos merece destaque especial, pois dialoga diretamente com a missÃ£o institucional da Companhia. Ela demonstra que a limpeza urbana do futuro deve ser planejada com base em dados, integraÃ§Ã£o territorial, indicadores operacionais, economia circular, rastreabilidade e inteligÃªncia geogrÃ¡fica.
               </p>
 
               <p>
-                A COMLURB possui uma vantagem estratégica: seus serviços acontecem diariamente em todo o território da cidade. Isso significa que a Companhia não apenas executa políticas públicas; ela também observa, registra e conhece a cidade em movimento. Quando essas informações são organizadas, integradas e analisadas, deixam de ser apenas dados operacionais e passam a formar uma base de inteligência urbana.
+                A COMLURB possui uma vantagem estratÃ©gica: seus serviÃ§os acontecem diariamente em todo o territÃ³rio da cidade. Isso significa que a Companhia nÃ£o apenas executa polÃ­ticas pÃºblicas; ela tambÃ©m observa, registra e conhece a cidade em movimento. Quando essas informaÃ§Ãµes sÃ£o organizadas, integradas e analisadas, deixam de ser apenas dados operacionais e passam a formar uma base de inteligÃªncia urbana.
               </p>
 
               <p className="border-l-4 border-green-600 pl-6 py-4 bg-green-50 rounded">
-                <span className="font-semibold text-foreground">Assim, o aprendizado central deste módulo é que a tecnologia deve servir à gestão, e a gestão deve servir melhor ao cidadão.</span>
+                <span className="font-semibold text-foreground">Assim, o aprendizado central deste mÃ³dulo Ã© que a tecnologia deve servir Ã  gestÃ£o, e a gestÃ£o deve servir melhor ao cidadÃ£o.</span>
               </p>
             </div>
           </div>
@@ -170,156 +170,156 @@ function PalestraCard({ palestra, index }: { palestra: Palestra; index: number }
 const palestras: Palestra[] = [
   {
     numero: "01",
-    titulo: "O Paradoxo Brasileiro e a Hierarquia de Adoção Tecnológica Urbana",
-    resumo: "Análise comparativa sobre o estágio de maturidade das cidades brasileiras em relação à adoção de tecnologias urbanas, demonstrando uma inversão na ordem tradicional de adoção tecnológica.",
-    conteudo: `A palestra apresentou uma análise comparativa sobre o estágio de maturidade das cidades brasileiras em relação à adoção de tecnologias urbanas, como Dados Abertos, WebGIS, Cadastro Territorial Multifinalitário, Infraestrutura de Dados Espaciais, BIM, CIM, Gêmeos Digitais Urbanos e Citiverse.
+    titulo: "O Paradoxo Brasileiro e a Hierarquia de AdoÃ§Ã£o TecnolÃ³gica Urbana",
+    resumo: "AnÃ¡lise comparativa sobre o estÃ¡gio de maturidade das cidades brasileiras em relaÃ§Ã£o Ã  adoÃ§Ã£o de tecnologias urbanas, demonstrando uma inversÃ£o na ordem tradicional de adoÃ§Ã£o tecnolÃ³gica.",
+    conteudo: `A palestra apresentou uma anÃ¡lise comparativa sobre o estÃ¡gio de maturidade das cidades brasileiras em relaÃ§Ã£o Ã  adoÃ§Ã£o de tecnologias urbanas, como Dados Abertos, WebGIS, Cadastro Territorial MultifinalitÃ¡rio, Infraestrutura de Dados Espaciais, BIM, CIM, GÃªmeos Digitais Urbanos e Citiverse.
 
-O palestrante demonstrou que existe, no Brasil, uma inversão na ordem tradicional de adoção tecnológica. Enquanto cidades consideradas referência internacional tendem a consolidar primeiro dados abertos e infraestrutura de dados para depois avançar em WebGIS, BIM, CIM e gêmeos digitais, muitas cidades brasileiras desenvolveram plataformas de visualização antes de estruturarem plenamente suas bases de dados.
+O palestrante demonstrou que existe, no Brasil, uma inversÃ£o na ordem tradicional de adoÃ§Ã£o tecnolÃ³gica. Enquanto cidades consideradas referÃªncia internacional tendem a consolidar primeiro dados abertos e infraestrutura de dados para depois avanÃ§ar em WebGIS, BIM, CIM e gÃªmeos digitais, muitas cidades brasileiras desenvolveram plataformas de visualizaÃ§Ã£o antes de estruturarem plenamente suas bases de dados.
 
-Essa inversão foi chamada de "paradoxo brasileiro". A análise indicou que o Brasil não está apenas atrasado em relação às cidades mais avançadas do mundo; em muitos casos, está seguindo uma trajetória diferente, com forte desenvolvimento de visualização, mas ainda com fragilidades na consolidação da infraestrutura de dados.
+Essa inversÃ£o foi chamada de "paradoxo brasileiro". A anÃ¡lise indicou que o Brasil nÃ£o estÃ¡ apenas atrasado em relaÃ§Ã£o Ã s cidades mais avanÃ§adas do mundo; em muitos casos, estÃ¡ seguindo uma trajetÃ³ria diferente, com forte desenvolvimento de visualizaÃ§Ã£o, mas ainda com fragilidades na consolidaÃ§Ã£o da infraestrutura de dados.
 
-A palestra apresentou exemplos de cidades de referência, como Singapura, Nova York e São Paulo. Singapura foi destacada pelo alto nível de maturidade em dados abertos, APIs, integração institucional e uso de informações para políticas urbanas. Nova York foi apresentada como referência em dados abertos e transparência, com milhares de bases públicas e forte cultura de disponibilização de informações. São Paulo foi mencionada como referência brasileira em WebGIS, especialmente por meio do GeoSampa, que reúne centenas de camadas e se tornou uma plataforma importante para outras capitais.
+A palestra apresentou exemplos de cidades de referÃªncia, como Singapura, Nova York e SÃ£o Paulo. Singapura foi destacada pelo alto nÃ­vel de maturidade em dados abertos, APIs, integraÃ§Ã£o institucional e uso de informaÃ§Ãµes para polÃ­ticas urbanas. Nova York foi apresentada como referÃªncia em dados abertos e transparÃªncia, com milhares de bases pÃºblicas e forte cultura de disponibilizaÃ§Ã£o de informaÃ§Ãµes. SÃ£o Paulo foi mencionada como referÃªncia brasileira em WebGIS, especialmente por meio do GeoSampa, que reÃºne centenas de camadas e se tornou uma plataforma importante para outras capitais.
 
-A principal conclusão foi que as cidades brasileiras precisam consolidar suas bases de dados antes de avançar para tecnologias mais sofisticadas. O investimento em BIM, CIM, gêmeos digitais ou Citiverse deve estar apoiado em dados confiáveis, integrados e atualizados.`
+A principal conclusÃ£o foi que as cidades brasileiras precisam consolidar suas bases de dados antes de avanÃ§ar para tecnologias mais sofisticadas. O investimento em BIM, CIM, gÃªmeos digitais ou Citiverse deve estar apoiado em dados confiÃ¡veis, integrados e atualizados.`
   },
   {
     numero: "02",
-    titulo: "Painel: Consulta a Especialistas Brasileiros sobre GeoBIM, Gêmeos Digitais e CIM",
-    resumo: "Consulta a especialistas brasileiros utilizando metodologia Delphi para avaliar os impactos futuros da incorporação de novas tecnologias de análise espacial no planejamento urbano.",
-    conteudo: `Outro bloco apresentado tratou de uma consulta realizada a especialistas brasileiros, utilizando metodologia inspirada no método Delphi. A dinâmica envolveu especialistas de diferentes áreas — universo acadêmico, tecnológico e de gestão pública — para avaliar os impactos futuros da incorporação de novas tecnologias de análise espacial no planejamento urbano.
+    titulo: "Painel: Consulta a Especialistas Brasileiros sobre GeoBIM, GÃªmeos Digitais e CIM",
+    resumo: "Consulta a especialistas brasileiros utilizando metodologia Delphi para avaliar os impactos futuros da incorporaÃ§Ã£o de novas tecnologias de anÃ¡lise espacial no planejamento urbano.",
+    conteudo: `Outro bloco apresentado tratou de uma consulta realizada a especialistas brasileiros, utilizando metodologia inspirada no mÃ©todo Delphi. A dinÃ¢mica envolveu especialistas de diferentes Ã¡reas â€” universo acadÃªmico, tecnolÃ³gico e de gestÃ£o pÃºblica â€” para avaliar os impactos futuros da incorporaÃ§Ã£o de novas tecnologias de anÃ¡lise espacial no planejamento urbano.
 
-O painel buscou compreender quais seriam os principais impactos, nos próximos cinco a dez anos, da adoção de tecnologias como GeoBIM, Gêmeos Digitais e CIM. Entre os impactos mais apontados apareceram a melhoria da eficiência processual, a governança e integração de dados, a inclusão e o acesso tecnológico, os desafios de capacitação e recursos humanos, além da sustentabilidade e dos impactos ambientais.
+O painel buscou compreender quais seriam os principais impactos, nos prÃ³ximos cinco a dez anos, da adoÃ§Ã£o de tecnologias como GeoBIM, GÃªmeos Digitais e CIM. Entre os impactos mais apontados apareceram a melhoria da eficiÃªncia processual, a governanÃ§a e integraÃ§Ã£o de dados, a inclusÃ£o e o acesso tecnolÃ³gico, os desafios de capacitaÃ§Ã£o e recursos humanos, alÃ©m da sustentabilidade e dos impactos ambientais.
 
-Também foi discutida a possibilidade de desenvolver sinergia entre novas tecnologias e os instrumentos legais que orientam as políticas públicas urbanas. Nesse ponto, ganharam destaque a integração e interoperabilidade, a otimização de processos, a gestão pública, a participação social, a inovação institucional e a qualidade ambiental e urbana.
+TambÃ©m foi discutida a possibilidade de desenvolver sinergia entre novas tecnologias e os instrumentos legais que orientam as polÃ­ticas pÃºblicas urbanas. Nesse ponto, ganharam destaque a integraÃ§Ã£o e interoperabilidade, a otimizaÃ§Ã£o de processos, a gestÃ£o pÃºblica, a participaÃ§Ã£o social, a inovaÃ§Ã£o institucional e a qualidade ambiental e urbana.
 
-O painel reforçou que o avanço tecnológico não se limita à compra de softwares. Ele exige mudança institucional, reorganização de processos, integração entre órgãos, padronização de dados e capacitação permanente das equipes.
+O painel reforÃ§ou que o avanÃ§o tecnolÃ³gico nÃ£o se limita Ã  compra de softwares. Ele exige mudanÃ§a institucional, reorganizaÃ§Ã£o de processos, integraÃ§Ã£o entre Ã³rgÃ£os, padronizaÃ§Ã£o de dados e capacitaÃ§Ã£o permanente das equipes.
 
-A mensagem mais relevante foi que as tecnologias emergentes podem apoiar a gestão urbana, mas somente produzirão resultados se estiverem conectadas à realidade administrativa, legal e operacional dos municípios.`
+A mensagem mais relevante foi que as tecnologias emergentes podem apoiar a gestÃ£o urbana, mas somente produzirÃ£o resultados se estiverem conectadas Ã  realidade administrativa, legal e operacional dos municÃ­pios.`
   },
   {
     numero: "03",
-    titulo: "Cadastro Territorial Multifinalitário de Belo Horizonte — Concepção e Utilização",
-    resumo: "Experiência de Belo Horizonte na construção e utilização do Cadastro Territorial Multifinalitário, demonstrando uma trajetória de três décadas de uso de geotecnologias na gestão municipal.",
-    conteudo: `A palestra sobre Belo Horizonte apresentou a experiência da Prefeitura de Belo Horizonte na construção e utilização do Cadastro Territorial Multifinalitário. O conteúdo mostrou que a cidade desenvolveu, ao longo de mais de três décadas, uma trajetória de uso de geotecnologias aplicada à gestão municipal.
+    titulo: "Cadastro Territorial MultifinalitÃ¡rio de Belo Horizonte â€” ConcepÃ§Ã£o e UtilizaÃ§Ã£o",
+    resumo: "ExperiÃªncia de Belo Horizonte na construÃ§Ã£o e utilizaÃ§Ã£o do Cadastro Territorial MultifinalitÃ¡rio, demonstrando uma trajetÃ³ria de trÃªs dÃ©cadas de uso de geotecnologias na gestÃ£o municipal.",
+    conteudo: `A palestra sobre Belo Horizonte apresentou a experiÃªncia da Prefeitura de Belo Horizonte na construÃ§Ã£o e utilizaÃ§Ã£o do Cadastro Territorial MultifinalitÃ¡rio. O conteÃºdo mostrou que a cidade desenvolveu, ao longo de mais de trÃªs dÃ©cadas, uma trajetÃ³ria de uso de geotecnologias aplicada Ã  gestÃ£o municipal.
 
-A apresentação explicou que Belo Horizonte avançou em fases: primeiro com a consolidação do uso de SIG, depois com a disseminação do SIG desktop, em seguida com a estruturação de uma base corporativa de dados geográficos e, posteriormente, com a criação de uma Infraestrutura de Dados Espaciais municipal.
+A apresentaÃ§Ã£o explicou que Belo Horizonte avanÃ§ou em fases: primeiro com a consolidaÃ§Ã£o do uso de SIG, depois com a disseminaÃ§Ã£o do SIG desktop, em seguida com a estruturaÃ§Ã£o de uma base corporativa de dados geogrÃ¡ficos e, posteriormente, com a criaÃ§Ã£o de uma Infraestrutura de Dados Espaciais municipal.
 
-Foi apresentada a importância de uma base geográfica única como ativo estratégico para a gestão pública. Essa base permite que diferentes órgãos municipais trabalhem sobre uma mesma referência territorial, reduzindo duplicidade de informações, melhorando a segurança dos dados, diminuindo divergências e aumentando a confiabilidade das análises.
+Foi apresentada a importÃ¢ncia de uma base geogrÃ¡fica Ãºnica como ativo estratÃ©gico para a gestÃ£o pÃºblica. Essa base permite que diferentes Ã³rgÃ£os municipais trabalhem sobre uma mesma referÃªncia territorial, reduzindo duplicidade de informaÃ§Ãµes, melhorando a seguranÃ§a dos dados, diminuindo divergÃªncias e aumentando a confiabilidade das anÃ¡lises.
 
-A palestra também abordou a diferença entre várias dimensões da cidade: a cidade aprovada, baseada em plantas de parcelamento do solo; a cidade real, baseada na ocupação de fato; a cidade cartorial, baseada em matrículas e registros de imóveis; e a cidade tributária, baseada na existência de inscrição municipal. Essa distinção é fundamental para compreender que o território administrativo nem sempre coincide perfeitamente com o território real ocupado pela população.
+A palestra tambÃ©m abordou a diferenÃ§a entre vÃ¡rias dimensÃµes da cidade: a cidade aprovada, baseada em plantas de parcelamento do solo; a cidade real, baseada na ocupaÃ§Ã£o de fato; a cidade cartorial, baseada em matrÃ­culas e registros de imÃ³veis; e a cidade tributÃ¡ria, baseada na existÃªncia de inscriÃ§Ã£o municipal. Essa distinÃ§Ã£o Ã© fundamental para compreender que o territÃ³rio administrativo nem sempre coincide perfeitamente com o territÃ³rio real ocupado pela populaÃ§Ã£o.
 
-Também foram apresentadas aplicações práticas do sistema, como integração com cartórios, regulação urbana, cadastro de plantas de parcelamento e lotes aprovados, sistemas tributários, planejamento urbano, habitação, obras, patrimônio imobiliário e apoio a eventos, como o Carnaval.
+TambÃ©m foram apresentadas aplicaÃ§Ãµes prÃ¡ticas do sistema, como integraÃ§Ã£o com cartÃ³rios, regulaÃ§Ã£o urbana, cadastro de plantas de parcelamento e lotes aprovados, sistemas tributÃ¡rios, planejamento urbano, habitaÃ§Ã£o, obras, patrimÃ´nio imobiliÃ¡rio e apoio a eventos, como o Carnaval.
 
-A conclusão da palestra foi clara: o maior desafio não é tecnológico, mas institucional. O que garante o sucesso de uma base geográfica única é a integração de pessoas, processos e dados em torno de uma visão única do território municipal.`
+A conclusÃ£o da palestra foi clara: o maior desafio nÃ£o Ã© tecnolÃ³gico, mas institucional. O que garante o sucesso de uma base geogrÃ¡fica Ãºnica Ã© a integraÃ§Ã£o de pessoas, processos e dados em torno de uma visÃ£o Ãºnica do territÃ³rio municipal.`
   },
   {
     numero: "04",
-    titulo: "Inteligência Geográfica e a Gestão Municipal",
-    resumo: "Palestra que demonstra como a inteligência geográfica emerge quando dados começam a se conectar, transformando o cadastro em infraestrutura estratégica de governo.",
-    conteudo: `A palestra sobre inteligência geográfica na gestão municipal partiu de uma ideia simples e poderosa: toda decisão pública acontece em algum lugar.
+    titulo: "InteligÃªncia GeogrÃ¡fica e a GestÃ£o Municipal",
+    resumo: "Palestra que demonstra como a inteligÃªncia geogrÃ¡fica emerge quando dados comeÃ§am a se conectar, transformando o cadastro em infraestrutura estratÃ©gica de governo.",
+    conteudo: `A palestra sobre inteligÃªncia geogrÃ¡fica na gestÃ£o municipal partiu de uma ideia simples e poderosa: toda decisÃ£o pÃºblica acontece em algum lugar.
 
-A apresentação mostrou que, quando os dados começam a se conectar, surge a inteligência geográfica.
+A apresentaÃ§Ã£o mostrou que, quando os dados comeÃ§am a se conectar, surge a inteligÃªncia geogrÃ¡fica.
 
-Foi destacada a mudança de entendimento sobre o cadastro. Historicamente, o cadastro era visto principalmente como instrumento de arrecadação. A palestra mostrou que esse conceito é limitado. O cadastro deve ser entendido como infraestrutura estratégica de governo, capaz de apoiar habitação, mobilidade urbana, regularização fundiária, defesa civil, meio ambiente, planejamento territorial, tributação e integração de dados.
+Foi destacada a mudanÃ§a de entendimento sobre o cadastro. Historicamente, o cadastro era visto principalmente como instrumento de arrecadaÃ§Ã£o. A palestra mostrou que esse conceito Ã© limitado. O cadastro deve ser entendido como infraestrutura estratÃ©gica de governo, capaz de apoiar habitaÃ§Ã£o, mobilidade urbana, regularizaÃ§Ã£o fundiÃ¡ria, defesa civil, meio ambiente, planejamento territorial, tributaÃ§Ã£o e integraÃ§Ã£o de dados.
 
-A apresentação também trouxe a experiência de Fortaleza, mostrando a evolução da informação territorial até a inteligência geográfica. A trajetória foi organizada em etapas: conhecer, mapear, integrar, conectar e decidir. Essa sequência demonstrou que a inteligência geográfica não surge de forma imediata. Ela é resultado de um processo contínuo de construção institucional.
+A apresentaÃ§Ã£o tambÃ©m trouxe a experiÃªncia de Fortaleza, mostrando a evoluÃ§Ã£o da informaÃ§Ã£o territorial atÃ© a inteligÃªncia geogrÃ¡fica. A trajetÃ³ria foi organizada em etapas: conhecer, mapear, integrar, conectar e decidir. Essa sequÃªncia demonstrou que a inteligÃªncia geogrÃ¡fica nÃ£o surge de forma imediata. Ela Ã© resultado de um processo contÃ­nuo de construÃ§Ã£o institucional.
 
-O bloco reforçou que compreender o território não garante todas as respostas, mas torna possível construir decisões melhores. A inteligência geográfica não oferece respostas prontas; ela amplia a capacidade do município de compreender problemas, formular melhores perguntas e tomar decisões mais consistentes.`
+O bloco reforÃ§ou que compreender o territÃ³rio nÃ£o garante todas as respostas, mas torna possÃ­vel construir decisÃµes melhores. A inteligÃªncia geogrÃ¡fica nÃ£o oferece respostas prontas; ela amplia a capacidade do municÃ­pio de compreender problemas, formular melhores perguntas e tomar decisÃµes mais consistentes.`
   },
   {
     numero: "05",
-    titulo: "Ganhos e Desafios na Implementação de Projetos de Inteligência Geográfica e Gêmeos Digitais",
-    resumo: "Apresentação sobre implementação de projetos de inteligência geográfica e gêmeos digitais em municípios, destacando ganhos operacionais e desafios de implementação.",
-    conteudo: `A palestra conduzida por representante da Topocart abordou a implementação de projetos de inteligência geográfica e gêmeos digitais em municípios. O conteúdo apresentou experiências em mapeamentos cartográficos multifinalitários, cadastro tributário, plantas genéricas de valores, sistemas de informação geográfica e aplicações em diferentes municípios.
+    titulo: "Ganhos e Desafios na ImplementaÃ§Ã£o de Projetos de InteligÃªncia GeogrÃ¡fica e GÃªmeos Digitais",
+    resumo: "ApresentaÃ§Ã£o sobre implementaÃ§Ã£o de projetos de inteligÃªncia geogrÃ¡fica e gÃªmeos digitais em municÃ­pios, destacando ganhos operacionais e desafios de implementaÃ§Ã£o.",
+    conteudo: `A palestra conduzida por representante da Topocart abordou a implementaÃ§Ã£o de projetos de inteligÃªncia geogrÃ¡fica e gÃªmeos digitais em municÃ­pios. O conteÃºdo apresentou experiÃªncias em mapeamentos cartogrÃ¡ficos multifinalitÃ¡rios, cadastro tributÃ¡rio, plantas genÃ©ricas de valores, sistemas de informaÃ§Ã£o geogrÃ¡fica e aplicaÃ§Ãµes em diferentes municÃ­pios.
 
-Foi explicado o conceito de georreferenciamento cadastral territorial, entendido como a definição da forma, dimensão e localização de uma parcela territorial, com precisão posicional e referência ao Sistema Geodésico Brasileiro. Esse ponto foi apresentado como base fundamental para qualquer projeto confiável de cadastro e inteligência territorial.
+Foi explicado o conceito de georreferenciamento cadastral territorial, entendido como a definiÃ§Ã£o da forma, dimensÃ£o e localizaÃ§Ã£o de uma parcela territorial, com precisÃ£o posicional e referÃªncia ao Sistema GeodÃ©sico Brasileiro. Esse ponto foi apresentado como base fundamental para qualquer projeto confiÃ¡vel de cadastro e inteligÃªncia territorial.
 
-A palestra mostrou que a construção de inteligência geográfica depende de uma cartografia confiável e de um cadastro estruturado. Sem essa base, os projetos mais avançados perdem consistência. Também foram apresentados recursos tecnológicos como drones, aeronaves, sensores, câmeras, imageamento, modelagem tridimensional, levantamento de logradouros, inventário urbano e leitura de elementos do território.
+A palestra mostrou que a construÃ§Ã£o de inteligÃªncia geogrÃ¡fica depende de uma cartografia confiÃ¡vel e de um cadastro estruturado. Sem essa base, os projetos mais avanÃ§ados perdem consistÃªncia. TambÃ©m foram apresentados recursos tecnolÃ³gicos como drones, aeronaves, sensores, cÃ¢meras, imageamento, modelagem tridimensional, levantamento de logradouros, inventÃ¡rio urbano e leitura de elementos do territÃ³rio.
 
-Entre os desafios destacados estavam a necessidade de vender a ideia dentro da organização, a existência de cartografia confiável, a escolha adequada das plataformas tecnológicas, a capacitação de pessoal e a evolução gradual dos gêmeos digitais.
+Entre os desafios destacados estavam a necessidade de vender a ideia dentro da organizaÃ§Ã£o, a existÃªncia de cartografia confiÃ¡vel, a escolha adequada das plataformas tecnolÃ³gicas, a capacitaÃ§Ã£o de pessoal e a evoluÃ§Ã£o gradual dos gÃªmeos digitais.
 
-Entre os ganhos apresentados, destacaram-se respostas mais rápidas às necessidades da gestão, maior transparência nos processos das secretarias, processos melhor mapeados, rapidez no atendimento ao cidadão e maior conhecimento da cidade em áreas como tributação, planejamento, obras e legislação.
+Entre os ganhos apresentados, destacaram-se respostas mais rÃ¡pidas Ã s necessidades da gestÃ£o, maior transparÃªncia nos processos das secretarias, processos melhor mapeados, rapidez no atendimento ao cidadÃ£o e maior conhecimento da cidade em Ã¡reas como tributaÃ§Ã£o, planejamento, obras e legislaÃ§Ã£o.
 
-A palestra também apresentou o gêmeo digital como uma réplica virtual de objeto, processo ou sistema físico, com possibilidade de sincronização com o mundo real e integração com sensores, IoT e inteligência artificial para coleta e análise de dados.
+A palestra tambÃ©m apresentou o gÃªmeo digital como uma rÃ©plica virtual de objeto, processo ou sistema fÃ­sico, com possibilidade de sincronizaÃ§Ã£o com o mundo real e integraÃ§Ã£o com sensores, IoT e inteligÃªncia artificial para coleta e anÃ¡lise de dados.
 
-A principal mensagem foi que gêmeos digitais não devem ser tratados como produto isolado, mas como resultado de uma evolução institucional baseada em cartografia, cadastro, integração, dados confiáveis e equipes capacitadas.`
+A principal mensagem foi que gÃªmeos digitais nÃ£o devem ser tratados como produto isolado, mas como resultado de uma evoluÃ§Ã£o institucional baseada em cartografia, cadastro, integraÃ§Ã£o, dados confiÃ¡veis e equipes capacitadas.`
   },
   {
     numero: "06",
-    titulo: "Informação Territorial, Fragmentação Cadastral e Inteligência Geográfica",
-    resumo: "Discussão sobre os desafios de fragmentação cadastral territorial e como a inteligência geográfica permite transformar dados dispersos em conhecimento aplicado.",
-    conteudo: `Outro bloco abordou os desafios enfrentados pelos municípios na organização de cadastros, mapas, processos, bases de dados e sistemas corporativos. A apresentação mostrou a existência de áreas cadastradas e áreas não cadastradas, evidenciando como a fragmentação cadastral territorial dificulta o planejamento, a gestão e a oferta de políticas públicas.
+    titulo: "InformaÃ§Ã£o Territorial, FragmentaÃ§Ã£o Cadastral e InteligÃªncia GeogrÃ¡fica",
+    resumo: "DiscussÃ£o sobre os desafios de fragmentaÃ§Ã£o cadastral territorial e como a inteligÃªncia geogrÃ¡fica permite transformar dados dispersos em conhecimento aplicado.",
+    conteudo: `Outro bloco abordou os desafios enfrentados pelos municÃ­pios na organizaÃ§Ã£o de cadastros, mapas, processos, bases de dados e sistemas corporativos. A apresentaÃ§Ã£o mostrou a existÃªncia de Ã¡reas cadastradas e Ã¡reas nÃ£o cadastradas, evidenciando como a fragmentaÃ§Ã£o cadastral territorial dificulta o planejamento, a gestÃ£o e a oferta de polÃ­ticas pÃºblicas.
 
-O conteúdo destacou que a cidade real nem sempre está completamente representada nas bases oficiais. Essa lacuna compromete a capacidade do poder público de compreender o território, planejar serviços, organizar recursos e responder às necessidades da população.
+O conteÃºdo destacou que a cidade real nem sempre estÃ¡ completamente representada nas bases oficiais. Essa lacuna compromete a capacidade do poder pÃºblico de compreender o territÃ³rio, planejar serviÃ§os, organizar recursos e responder Ã s necessidades da populaÃ§Ã£o.
 
-A apresentação reforçou que a inteligência geográfica permite transformar dados dispersos em conhecimento aplicado. Para isso, é necessário conectar informações ambientais, tributárias, cartográficas, cadastrais, urbanísticas, imobiliárias e de infraestrutura.
+A apresentaÃ§Ã£o reforÃ§ou que a inteligÃªncia geogrÃ¡fica permite transformar dados dispersos em conhecimento aplicado. Para isso, Ã© necessÃ¡rio conectar informaÃ§Ãµes ambientais, tributÃ¡rias, cartogrÃ¡ficas, cadastrais, urbanÃ­sticas, imobiliÃ¡rias e de infraestrutura.
 
-Também foi destacada a ideia de que a tecnologia é meio, e a gestão é finalidade. Drones, inteligência artificial, GeoBIM, gêmeos digitais e interoperabilidade são recursos importantes, mas só geram valor quando estão a serviço de uma gestão pública mais eficiente, integrada e transparente.
+TambÃ©m foi destacada a ideia de que a tecnologia Ã© meio, e a gestÃ£o Ã© finalidade. Drones, inteligÃªncia artificial, GeoBIM, gÃªmeos digitais e interoperabilidade sÃ£o recursos importantes, mas sÃ³ geram valor quando estÃ£o a serviÃ§o de uma gestÃ£o pÃºblica mais eficiente, integrada e transparente.
 
-A palestra concluiu que os desafios continuam. Manter a cidade atualizada, garantir qualidade da informação, enfrentar barreiras institucionais e transformar projetos em políticas permanentes são condições essenciais para consolidar a inteligência geográfica como instrumento de governo.`
+A palestra concluiu que os desafios continuam. Manter a cidade atualizada, garantir qualidade da informaÃ§Ã£o, enfrentar barreiras institucionais e transformar projetos em polÃ­ticas permanentes sÃ£o condiÃ§Ãµes essenciais para consolidar a inteligÃªncia geogrÃ¡fica como instrumento de governo.`
   },
   {
     numero: "07",
-    titulo: "Experiências de Uso de Geotecnologias em Aplicações Municipais",
-    resumo: "Apresentação de aplicações práticas de geotecnologias voltadas ao cotidiano da gestão municipal, desde planejamento operacional até limpeza urbana.",
-    conteudo: `Também foi apresentado um conjunto de aplicações práticas de geotecnologias voltadas ao cotidiano da gestão municipal. Os slides demonstraram usos relacionados a planejamento operacional, segurança, tráfego, mobilidade, limpeza urbana, rotas de blocos de Carnaval, infraestrutura urbana, zoneamento, cadastro imobiliário e apoio à arrecadação.
+    titulo: "ExperiÃªncias de Uso de Geotecnologias em AplicaÃ§Ãµes Municipais",
+    resumo: "ApresentaÃ§Ã£o de aplicaÃ§Ãµes prÃ¡ticas de geotecnologias voltadas ao cotidiano da gestÃ£o municipal, desde planejamento operacional atÃ© limpeza urbana.",
+    conteudo: `TambÃ©m foi apresentado um conjunto de aplicaÃ§Ãµes prÃ¡ticas de geotecnologias voltadas ao cotidiano da gestÃ£o municipal. Os slides demonstraram usos relacionados a planejamento operacional, seguranÃ§a, trÃ¡fego, mobilidade, limpeza urbana, rotas de blocos de Carnaval, infraestrutura urbana, zoneamento, cadastro imobiliÃ¡rio e apoio Ã  arrecadaÃ§Ã£o.
 
-Um dos exemplos apresentados envolveu o planejamento de eventos, com destaque para o Carnaval, contemplando planejamento de segurança, rotas de blocos, planejamento de tráfego e mobilidade e planejamento de limpeza das ruas. Esse exemplo demonstrou como o uso de mapas e dados territoriais permite organizar melhor operações complexas que envolvem grande público, deslocamentos, interdições, resíduos e necessidade de resposta rápida.
+Um dos exemplos apresentados envolveu o planejamento de eventos, com destaque para o Carnaval, contemplando planejamento de seguranÃ§a, rotas de blocos, planejamento de trÃ¡fego e mobilidade e planejamento de limpeza das ruas. Esse exemplo demonstrou como o uso de mapas e dados territoriais permite organizar melhor operaÃ§Ãµes complexas que envolvem grande pÃºblico, deslocamentos, interdiÃ§Ãµes, resÃ­duos e necessidade de resposta rÃ¡pida.
 
-Também foram demonstradas aplicações de integração com sistemas tributários, associando lote cadastral, zona homogênea, infraestrutura urbana, zoneamento e frequência da coleta de lixo. Esse tipo de integração mostra como a informação territorial pode apoiar tanto a gestão fiscal quanto o planejamento de serviços urbanos.
+TambÃ©m foram demonstradas aplicaÃ§Ãµes de integraÃ§Ã£o com sistemas tributÃ¡rios, associando lote cadastral, zona homogÃªnea, infraestrutura urbana, zoneamento e frequÃªncia da coleta de lixo. Esse tipo de integraÃ§Ã£o mostra como a informaÃ§Ã£o territorial pode apoiar tanto a gestÃ£o fiscal quanto o planejamento de serviÃ§os urbanos.
 
-A relevância dessa palestra está em mostrar que a geotecnologia não é um tema abstrato. Ela tem aplicação direta em problemas concretos da administração municipal, desde a arrecadação até a limpeza urbana, desde a mobilidade até a organização de grandes eventos.`
+A relevÃ¢ncia dessa palestra estÃ¡ em mostrar que a geotecnologia nÃ£o Ã© um tema abstrato. Ela tem aplicaÃ§Ã£o direta em problemas concretos da administraÃ§Ã£o municipal, desde a arrecadaÃ§Ã£o atÃ© a limpeza urbana, desde a mobilidade atÃ© a organizaÃ§Ã£o de grandes eventos.`
   },
   {
     numero: "08",
-    titulo: "Inteligência Artificial Aplicada à Informação Geográfica e às Geotecnologias",
-    resumo: "Apresentação de exemplos de inteligência artificial aplicada ao mapeamento de áreas de risco, classificação de áreas úmidas e análise de imagens territoriais.",
-    conteudo: `Embora a inteligência artificial também tenha sido tratada nos cursos técnicos, houve palestras e apresentações complementares sobre o contexto das geotecnologias e o uso de modelos de IA em análises territoriais.
+    titulo: "InteligÃªncia Artificial Aplicada Ã  InformaÃ§Ã£o GeogrÃ¡fica e Ã s Geotecnologias",
+    resumo: "ApresentaÃ§Ã£o de exemplos de inteligÃªncia artificial aplicada ao mapeamento de Ã¡reas de risco, classificaÃ§Ã£o de Ã¡reas Ãºmidas e anÃ¡lise de imagens territoriais.",
+    conteudo: `Embora a inteligÃªncia artificial tambÃ©m tenha sido tratada nos cursos tÃ©cnicos, houve palestras e apresentaÃ§Ãµes complementares sobre o contexto das geotecnologias e o uso de modelos de IA em anÃ¡lises territoriais.
 
-Os slides mostraram exemplos de pesquisas com inteligência artificial aplicadas ao mapeamento de áreas de risco, classificação de áreas úmidas, análise de imagens e identificação de padrões ambientais e territoriais. Foram citados estudos envolvendo universidades e centros de pesquisa, com uso de machine learning para mapear áreas suscetíveis a deslizamentos e apoiar a gestão de riscos.
+Os slides mostraram exemplos de pesquisas com inteligÃªncia artificial aplicadas ao mapeamento de Ã¡reas de risco, classificaÃ§Ã£o de Ã¡reas Ãºmidas, anÃ¡lise de imagens e identificaÃ§Ã£o de padrÃµes ambientais e territoriais. Foram citados estudos envolvendo universidades e centros de pesquisa, com uso de machine learning para mapear Ã¡reas suscetÃ­veis a deslizamentos e apoiar a gestÃ£o de riscos.
 
-A palestra também apresentou uma introdução sobre inteligência artificial, machine learning, deep learning, redes neurais e inteligência artificial generativa. A estrutura demonstrada indicou que os modelos dependem de dados de entrada, camadas de processamento e resultados de saída.
+A palestra tambÃ©m apresentou uma introduÃ§Ã£o sobre inteligÃªncia artificial, machine learning, deep learning, redes neurais e inteligÃªncia artificial generativa. A estrutura demonstrada indicou que os modelos dependem de dados de entrada, camadas de processamento e resultados de saÃ­da.
 
-A principal ideia apresentada foi que a inteligência artificial é fortalecida pela quantidade e qualidade dos dados. Quanto mais estruturados e confiáveis forem os dados territoriais, maior será a capacidade dos modelos de identificar padrões e apoiar decisões.
+A principal ideia apresentada foi que a inteligÃªncia artificial Ã© fortalecida pela quantidade e qualidade dos dados. Quanto mais estruturados e confiÃ¡veis forem os dados territoriais, maior serÃ¡ a capacidade dos modelos de identificar padrÃµes e apoiar decisÃµes.
 
-Esse conteúdo reforça que a IA deve ser compreendida como instrumento de apoio à análise, e não como substituta do conhecimento técnico. A inteligência artificial pode acelerar diagnósticos, reconhecer padrões e ampliar a capacidade de análise, mas depende de dados consistentes, objetivos claros e interpretação humana qualificada.`
+Esse conteÃºdo reforÃ§a que a IA deve ser compreendida como instrumento de apoio Ã  anÃ¡lise, e nÃ£o como substituta do conhecimento tÃ©cnico. A inteligÃªncia artificial pode acelerar diagnÃ³sticos, reconhecer padrÃµes e ampliar a capacidade de anÃ¡lise, mas depende de dados consistentes, objetivos claros e interpretaÃ§Ã£o humana qualificada.`
   },
   {
     numero: "09",
-    titulo: "Inovação na Gestão de Resíduos Sólidos — Modelos, Tecnologias e Caminhos para Implementação",
-    resumo: "Palestra sobre modernização da gestão de resíduos sólidos urbanos, abordando modelos operacionais, tecnologias e regulação pública para a limpeza urbana.",
-    conteudo: `A palestra abordou um tema diretamente relacionado à atividade-fim da COMLURB: a gestão de resíduos sólidos urbanos. O debate tratou da necessidade de modernizar a forma como os municípios planejam, executam, monitoram e avaliam os serviços de limpeza urbana, coleta, tratamento, destinação final e integração com cadeias associadas à economia circular.
+    titulo: "InovaÃ§Ã£o na GestÃ£o de ResÃ­duos SÃ³lidos â€” Modelos, Tecnologias e Caminhos para ImplementaÃ§Ã£o",
+    resumo: "Palestra sobre modernizaÃ§Ã£o da gestÃ£o de resÃ­duos sÃ³lidos urbanos, abordando modelos operacionais, tecnologias e regulaÃ§Ã£o pÃºblica para a limpeza urbana.",
+    conteudo: `A palestra abordou um tema diretamente relacionado Ã  atividade-fim da COMLURB: a gestÃ£o de resÃ­duos sÃ³lidos urbanos. O debate tratou da necessidade de modernizar a forma como os municÃ­pios planejam, executam, monitoram e avaliam os serviÃ§os de limpeza urbana, coleta, tratamento, destinaÃ§Ã£o final e integraÃ§Ã£o com cadeias associadas Ã  economia circular.
 
-O conteúdo discutiu a inovação na gestão de resíduos sob três dimensões principais: modelos operacionais, uso de tecnologias e regulação pública. A palestra destacou que os municípios precisam superar uma visão limitada da coleta como simples retirada de resíduos das ruas. A gestão moderna exige planejamento territorial, rastreabilidade, indicadores, integração de dados, controle operacional e alinhamento com as diretrizes da Política Nacional de Resíduos Sólidos e do Plano Nacional de Resíduos Sólidos.
+O conteÃºdo discutiu a inovaÃ§Ã£o na gestÃ£o de resÃ­duos sob trÃªs dimensÃµes principais: modelos operacionais, uso de tecnologias e regulaÃ§Ã£o pÃºblica. A palestra destacou que os municÃ­pios precisam superar uma visÃ£o limitada da coleta como simples retirada de resÃ­duos das ruas. A gestÃ£o moderna exige planejamento territorial, rastreabilidade, indicadores, integraÃ§Ã£o de dados, controle operacional e alinhamento com as diretrizes da PolÃ­tica Nacional de ResÃ­duos SÃ³lidos e do Plano Nacional de ResÃ­duos SÃ³lidos.
 
-Também foi enfatizada a importância de tecnologias para otimizar rotas, acompanhar a execução dos serviços, integrar informações de campo, melhorar a destinação final e apoiar decisões sobre reciclagem, logística reversa e economia circular.
+TambÃ©m foi enfatizada a importÃ¢ncia de tecnologias para otimizar rotas, acompanhar a execuÃ§Ã£o dos serviÃ§os, integrar informaÃ§Ãµes de campo, melhorar a destinaÃ§Ã£o final e apoiar decisÃµes sobre reciclagem, logÃ­stica reversa e economia circular.
 
-Essa palestra foi particularmente relevante para a COMLURB, pois demonstrou que a modernização da limpeza urbana passa necessariamente pela integração de dados territoriais, planejamento inteligente de rotas, acompanhamento em tempo real e alinhamento com políticas públicas de sustentabilidade.`
+Essa palestra foi particularmente relevante para a COMLURB, pois demonstrou que a modernizaÃ§Ã£o da limpeza urbana passa necessariamente pela integraÃ§Ã£o de dados territoriais, planejamento inteligente de rotas, acompanhamento em tempo real e alinhamento com polÃ­ticas pÃºblicas de sustentabilidade.`
   },
   {
     numero: "10",
-    titulo: "Transformação da Máquina Pública — Como redesenhar processos, estruturas e cultura para viabilizar cidades inteligentes",
-    resumo: "Palestra sobre transformação institucional necessária para que a tecnologia produza resultados concretos na gestão pública, abordando mudanças em processos, estrutura organizacional e cultura.",
-    conteudo: `Essa palestra tratou da transformação institucional necessária para que a tecnologia produza resultados concretos na gestão pública. O eixo central foi a ideia de que cidades inteligentes não nascem apenas da implantação de sistemas, painéis, aplicativos ou sensores. Elas dependem de mudanças nos processos administrativos, na estrutura organizacional e na cultura de trabalho dos órgãos públicos.
+    titulo: "TransformaÃ§Ã£o da MÃ¡quina PÃºblica â€” Como redesenhar processos, estruturas e cultura para viabilizar cidades inteligentes",
+    resumo: "Palestra sobre transformaÃ§Ã£o institucional necessÃ¡ria para que a tecnologia produza resultados concretos na gestÃ£o pÃºblica, abordando mudanÃ§as em processos, estrutura organizacional e cultura.",
+    conteudo: `Essa palestra tratou da transformaÃ§Ã£o institucional necessÃ¡ria para que a tecnologia produza resultados concretos na gestÃ£o pÃºblica. O eixo central foi a ideia de que cidades inteligentes nÃ£o nascem apenas da implantaÃ§Ã£o de sistemas, painÃ©is, aplicativos ou sensores. Elas dependem de mudanÃ§as nos processos administrativos, na estrutura organizacional e na cultura de trabalho dos Ã³rgÃ£os pÃºblicos.
 
-O conteúdo reforçou que a tecnologia, isoladamente, não resolve problemas estruturais. Para que uma cidade avance, é necessário redesenhar fluxos internos, eliminar duplicidades, integrar áreas, definir responsabilidades, estabelecer governança de dados e criar rotinas de acompanhamento. A inovação precisa estar conectada à gestão real, aos servidores, aos processos de trabalho e às necessidades da população.
+O conteÃºdo reforÃ§ou que a tecnologia, isoladamente, nÃ£o resolve problemas estruturais. Para que uma cidade avance, Ã© necessÃ¡rio redesenhar fluxos internos, eliminar duplicidades, integrar Ã¡reas, definir responsabilidades, estabelecer governanÃ§a de dados e criar rotinas de acompanhamento. A inovaÃ§Ã£o precisa estar conectada Ã  gestÃ£o real, aos servidores, aos processos de trabalho e Ã s necessidades da populaÃ§Ã£o.
 
-Para a COMLURB, essa reflexão é essencial. A Companhia possui grande volume de informações operacionais, equipes em campo, serviços distribuídos por todo o território e diversas interfaces com outros órgãos municipais. A transformação digital só terá impacto se estiver acompanhada de revisão de processos, integração entre áreas, qualificação das bases de dados, capacitação de equipes e construção de uma cultura de decisão baseada em evidências.
+Para a COMLURB, essa reflexÃ£o Ã© essencial. A Companhia possui grande volume de informaÃ§Ãµes operacionais, equipes em campo, serviÃ§os distribuÃ­dos por todo o territÃ³rio e diversas interfaces com outros Ã³rgÃ£os municipais. A transformaÃ§Ã£o digital sÃ³ terÃ¡ impacto se estiver acompanhada de revisÃ£o de processos, integraÃ§Ã£o entre Ã¡reas, qualificaÃ§Ã£o das bases de dados, capacitaÃ§Ã£o de equipes e construÃ§Ã£o de uma cultura de decisÃ£o baseada em evidÃªncias.
 
-Essa palestra reforça que a modernização da COMLURB não deve ser entendida apenas como adoção de novas ferramentas, mas como uma mudança progressiva na forma de planejar, executar, medir e melhorar os serviços urbanos.`
+Essa palestra reforÃ§a que a modernizaÃ§Ã£o da COMLURB nÃ£o deve ser entendida apenas como adoÃ§Ã£o de novas ferramentas, mas como uma mudanÃ§a progressiva na forma de planejar, executar, medir e melhorar os serviÃ§os urbanos.`
   },
   {
     numero: "11",
-    titulo: "Iniciativas para otimizar a produção de Geoinformação com uso de IA no Serviço Geográfico",
-    resumo: "Palestra sobre uso de inteligência artificial para ampliar a produção, análise e qualificação da geoinformação e dados espaciais.",
-    conteudo: `A palestra apresentou iniciativas voltadas ao uso de inteligência artificial para ampliar a produção, análise e qualificação da geoinformação. O tema dialoga diretamente com os desafios atuais dos órgãos públicos, que precisam lidar com grande volume de dados espaciais, imagens, mapas, bases cadastrais e informações territoriais em constante atualização.
+    titulo: "Iniciativas para otimizar a produÃ§Ã£o de GeoinformaÃ§Ã£o com uso de IA no ServiÃ§o GeogrÃ¡fico",
+    resumo: "Palestra sobre uso de inteligÃªncia artificial para ampliar a produÃ§Ã£o, anÃ¡lise e qualificaÃ§Ã£o da geoinformaÃ§Ã£o e dados espaciais.",
+    conteudo: `A palestra apresentou iniciativas voltadas ao uso de inteligÃªncia artificial para ampliar a produÃ§Ã£o, anÃ¡lise e qualificaÃ§Ã£o da geoinformaÃ§Ã£o. O tema dialoga diretamente com os desafios atuais dos Ã³rgÃ£os pÃºblicos, que precisam lidar com grande volume de dados espaciais, imagens, mapas, bases cadastrais e informaÃ§Ãµes territoriais em constante atualizaÃ§Ã£o.
 
-O conteúdo demonstrou que a inteligência artificial pode apoiar a identificação de padrões, a classificação de imagens, a interpretação de dados espaciais, a detecção de mudanças no território e a produção mais rápida de informações geográficas qualificadas.
+O conteÃºdo demonstrou que a inteligÃªncia artificial pode apoiar a identificaÃ§Ã£o de padrÃµes, a classificaÃ§Ã£o de imagens, a interpretaÃ§Ã£o de dados espaciais, a detecÃ§Ã£o de mudanÃ§as no territÃ³rio e a produÃ§Ã£o mais rÃ¡pida de informaÃ§Ãµes geogrÃ¡ficas qualificadas.
 
-A palestra também reforçou que a IA depende de bases organizadas, dados confiáveis e objetivos bem definidos. Sem uma boa estrutura de dados, os modelos de inteligência artificial perdem precisão e podem gerar resultados pouco úteis para a gestão pública.
+A palestra tambÃ©m reforÃ§ou que a IA depende de bases organizadas, dados confiÃ¡veis e objetivos bem definidos. Sem uma boa estrutura de dados, os modelos de inteligÃªncia artificial perdem precisÃ£o e podem gerar resultados pouco Ãºteis para a gestÃ£o pÃºblica.
 
-Para a COMLURB, esse conhecimento pode ser aplicado em temas como identificação de pontos de descarte irregular, monitoramento de áreas críticas, análise de imagens de drones, apoio à fiscalização, leitura territorial de grandes eventos, acompanhamento de áreas verdes, suporte à poda urbana e melhoria da inteligência operacional da limpeza urbana.
+Para a COMLURB, esse conhecimento pode ser aplicado em temas como identificaÃ§Ã£o de pontos de descarte irregular, monitoramento de Ã¡reas crÃ­ticas, anÃ¡lise de imagens de drones, apoio Ã  fiscalizaÃ§Ã£o, leitura territorial de grandes eventos, acompanhamento de Ã¡reas verdes, suporte Ã  poda urbana e melhoria da inteligÃªncia operacional da limpeza urbana.
 
-A principal contribuição da palestra foi mostrar que a inteligência artificial pode acelerar a produção de geoinformação, mas seu valor depende da qualidade da base territorial e da capacidade institucional de transformar análise em decisão.`
+A principal contribuiÃ§Ã£o da palestra foi mostrar que a inteligÃªncia artificial pode acelerar a produÃ§Ã£o de geoinformaÃ§Ã£o, mas seu valor depende da qualidade da base territorial e da capacidade institucional de transformar anÃ¡lise em decisÃ£o.`
   }
 ];
