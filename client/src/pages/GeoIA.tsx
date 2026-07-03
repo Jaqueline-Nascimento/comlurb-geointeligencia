@@ -40,7 +40,7 @@ export default function GeoIA() {
       videoSrc: 'https://github.com/Jaqueline-Nascimento/comlurb-geointeligencia/releases/download/media-2026-07-03/arborio_operacional_3c5a1a53.mp4'
     },
     {
-      title: 'Ordem de Serviço de Poda',
+      title: 'Ordem de serviço de Poda',
       description: 'Em fase de desenvolvimento, este sistema operará de forma 100% integrada ao ArboRio, ao Painel de Performance da Poda Mecanizada e ao SICO3. A aplicação trará uma entrada de dados otimizada com cruzamento automatizado de informações para sinalizar possíveis dados contraditórios. Além disso, contará com painéis em tempo real para o monitoramento completo e detalhado de todas as operações da Coordenadoria de Manejo Arbóreo - UCV.',
       url: 'https://drive.google.com/file/d/1Xcijf75bu705Gw7TNGD0cDHd5X5guMTH/view?usp=drivesdk',
       color: 'from-orange-500 to-orange-600',
