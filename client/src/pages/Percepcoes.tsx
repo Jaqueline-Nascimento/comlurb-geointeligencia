@@ -19,7 +19,7 @@ export default function Percepcoes() {
             <ArrowLeft size={20} />
             Voltar
           </button>
-          <h1 className="text-lg font-bold text-foreground">PercepÃ§Ãµes - TransformaÃ§Ã£o Digital</h1>
+          <h1 className="text-lg font-bold text-foreground">Percepções - Transformação Digital</h1>
           <div className="w-12" />
         </div>
       </nav>
@@ -38,7 +38,7 @@ export default function Percepcoes() {
                 muted
               >
                 <source src="assets/media/Cena_inicial_-_2026-06-24_202606240833_24981117.mp4" type="video/mp4" />
-                Seu navegador nÃ£o suporta o elemento de vÃ­deo.
+                Seu navegador não suporta o elemento de vídeo.
               </video>
             </div>
             
@@ -47,7 +47,7 @@ export default function Percepcoes() {
               <div className="relative group cursor-pointer" onClick={() => setIsImageOpen(true)}>
                 <img
                   src="assets/media/infografico_por_que_transformacao_v2_b88bbafc.png"
-                  alt="Por quÃª estamos fazendo isso - InfogrÃ¡fico"
+                  alt="Por quê estamos fazendo isso - Infográfico"
                   className="w-full h-auto rounded-lg shadow-lg transition-transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-lg transition-colors flex items-center justify-center">
@@ -63,15 +63,15 @@ export default function Percepcoes() {
           {/* Article Section */}
           <article className="prose prose-lg max-w-none">
             <h1 className="text-4xl font-bold mb-8 text-foreground">
-              O Pilar da TransformaÃ§Ã£o Digital: DecisÃ£o e Potencial
+              O Pilar da Transformação Digital: Decisão e Potencial
             </h1>
 
             <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-lg border-l-4 border-green-500 mb-8">
               <p className="text-lg text-foreground font-semibold">
-                "Temos o Tamanho. Temos o Potencial. Agora precisamos da decisÃ£o."
+                "Temos o Tamanho. Temos o Potencial. Agora precisamos da decisão."
               </p>
               <p className="text-sm text-muted-foreground mt-2">
-                Este Ã© o momento crÃ­tico para a COMLURB se posicionar como referÃªncia mundial em inteligÃªncia urbana para limpeza pÃºblica.
+                Este é o momento crítico para a COMLURB se posicionar como referência mundial em inteligência urbana para limpeza pública.
               </p>
             </div>
 
@@ -79,14 +79,14 @@ export default function Percepcoes() {
               A Realidade Atual
             </h2>
             <p className="text-foreground leading-relaxed mb-6">
-              A COMLURB possui todos os elementos necessÃ¡rios para liderar a transformaÃ§Ã£o digital no setor de limpeza urbana: uma estrutura organizacional robusta, 14 mil funcionÃ¡rios dedicados, operaÃ§Ãµes em escala metropolitana e acesso a dados geoespaciais complexos. O que falta nÃ£o Ã© capacidade operacional, mas a decisÃ£o estratÃ©gica de implementar geointeligÃªncia em escala plena.
+              A COMLURB possui todos os elementos necessários para liderar a transformação digital no setor de limpeza urbana: uma estrutura organizacional robusta, 14 mil funcionários dedicados, operações em escala metropolitana e acesso a dados geoespaciais complexos. O que falta não é capacidade operacional, mas a decisão estratégica de implementar geointeligência em escala plena.
             </p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">
-              O Pilar Fundamental: DecisÃ£o EstratÃ©gica
+              O Pilar Fundamental: Decisão Estratégica
             </h2>
             <p className="text-foreground leading-relaxed mb-6">
-              A transformaÃ§Ã£o digital nÃ£o Ã© um processo tÃ©cnico isolado. Ã‰ uma decisÃ£o estratÃ©gica que permeia toda a organizaÃ§Ã£o. Para que a COMLURB se torne referÃªncia mundial, Ã© necessÃ¡rio:
+              A transformação digital não é um processo técnico isolado. É uma decisão estratégica que permeia toda a organização. Para que a COMLURB se torne referência mundial, é necessário:
             </p>
 
             <ul className="space-y-4 mb-6">
@@ -94,57 +94,57 @@ export default function Percepcoes() {
                 <span className="text-green-600 font-bold text-xl flex-shrink-0">1.</span>
                 <div>
                   <strong className="text-foreground">Comprometimento Institucional</strong>
-                  <p className="text-muted-foreground mt-1">A lideranÃ§a deve reconhecer que geointeligÃªncia Ã© fundamental para a eficiÃªncia operacional, nÃ£o um projeto complementar.</p>
+                  <p className="text-muted-foreground mt-1">A liderança deve reconhecer que geointeligência é fundamental para a eficiência operacional, não um projeto complementar.</p>
                 </div>
               </li>
               <li className="flex gap-4">
                 <span className="text-green-600 font-bold text-xl flex-shrink-0">2.</span>
                 <div>
-                  <strong className="text-foreground">IntegraÃ§Ã£o de Dados</strong>
-                  <p className="text-muted-foreground mt-1">Conectar cadastro, cartografia, planejamento urbano, infraestrutura e dados operacionais em uma plataforma Ãºnica e acessÃ­vel.</p>
+                  <strong className="text-foreground">Integração de Dados</strong>
+                  <p className="text-muted-foreground mt-1">Conectar cadastro, cartografia, planejamento urbano, infraestrutura e dados operacionais em uma plataforma única e acessível.</p>
                 </div>
               </li>
               <li className="flex gap-4">
                 <span className="text-green-600 font-bold text-xl flex-shrink-0">3.</span>
                 <div>
-                  <strong className="text-foreground">CapacitaÃ§Ã£o de Pessoas</strong>
-                  <p className="text-muted-foreground mt-1">Transformar 14 mil funcionÃ¡rios em agentes de mudanÃ§a digital, capacitando-os para usar inteligÃªncia geogrÃ¡fica em decisÃµes diÃ¡rias.</p>
+                  <strong className="text-foreground">Capacitação de Pessoas</strong>
+                  <p className="text-muted-foreground mt-1">Transformar 14 mil funcionários em agentes de mudança digital, capacitando-os para usar inteligência geográfica em decisões diárias.</p>
                 </div>
               </li>
               <li className="flex gap-4">
                 <span className="text-green-600 font-bold text-xl flex-shrink-0">4.</span>
                 <div>
-                  <strong className="text-foreground">GovernanÃ§a de Dados</strong>
-                  <p className="text-muted-foreground mt-1">Estabelecer processos claros de coleta, validaÃ§Ã£o, armazenamento e anÃ¡lise de dados em tempo real.</p>
+                  <strong className="text-foreground">Governança de Dados</strong>
+                  <p className="text-muted-foreground mt-1">Estabelecer processos claros de coleta, validação, armazenamento e análise de dados em tempo real.</p>
                 </div>
               </li>
             </ul>
 
             <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">
-              O Impacto da InteligÃªncia GeogrÃ¡fica
+              O Impacto da Inteligência Geográfica
             </h2>
             <p className="text-foreground leading-relaxed mb-6">
-              Quando os dados comeÃ§am a conversar, surge a inteligÃªncia geogrÃ¡fica. Isso significa que a COMLURB deixarÃ¡ de enxergar problemas isolados e passarÃ¡ a compreender padrÃµes. Rotas de varriÃ§Ã£o otimizadas, alocaÃ§Ã£o eficiente de recursos, prevenÃ§Ã£o de problemas antes que se tornem crÃ­ticos e decisÃµes baseadas em evidÃªncias passam a ser a norma.
+              Quando os dados começam a conversar, surge a inteligência geográfica. Isso significa que a COMLURB deixará de enxergar problemas isolados e passará a compreender padrões. Rotas de varrição otimizadas, alocação eficiente de recursos, prevenção de problemas antes que se tornem críticos e decisões baseadas em evidências passam a ser a norma.
             </p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">
-              VisÃ£o 2031
+              Visão 2031
             </h2>
             <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-blue-500 mb-8">
               <p className="text-foreground leading-relaxed">
-                A COMLURB serÃ¡ a primeira empresa pÃºblica de limpeza urbana do mundo a implementar geointeligÃªncia plena em escala, transformando 14 mil funcionÃ¡rios em agentes de mudanÃ§a digital, gerando dados que informam decisÃµes em tempo real e estabelecendo o padrÃ£o global para saneamento inteligente e sustentÃ¡vel.
+                A COMLURB será a primeira empresa pública de limpeza urbana do mundo a implementar geointeligência plena em escala, transformando 14 mil funcionários em agentes de mudança digital, gerando dados que informam decisões em tempo real e estabelecendo o padrão global para saneamento inteligente e sustentável.
               </p>
             </div>
 
             <h2 className="text-2xl font-bold mt-8 mb-4 text-foreground">
-              O Futuro ComeÃ§a Agora
+              O Futuro Começa Agora
             </h2>
             <p className="text-foreground leading-relaxed mb-6">
-              A decisÃ£o Ã© simples, mas transformadora. A COMLURB tem o tamanho, tem o potencial e tem a oportunidade. O que falta Ã© apenas a decisÃ£o de comeÃ§ar. Cada dia de atraso Ã© uma oportunidade perdida de se tornar referÃªncia mundial em inteligÃªncia urbana para limpeza pÃºblica.
+              A decisão é simples, mas transformadora. A COMLURB tem o tamanho, tem o potencial e tem a oportunidade. O que falta é apenas a decisão de começar. Cada dia de atraso é uma oportunidade perdida de se tornar referência mundial em inteligência urbana para limpeza pública.
             </p>
 
             <p className="text-lg text-green-600 font-semibold mt-8">
-              O futuro comeÃ§a agora. Vamos comeÃ§ar?
+              O futuro começa agora. Vamos começar?
             </p>
           </article>
 
@@ -155,7 +155,7 @@ export default function Percepcoes() {
               className="bg-green-600 hover:bg-green-700 text-white font-semibold"
               onClick={() => navigate("/")}
             >
-              Voltar Ã  PÃ¡gina Inicial
+              Voltar à Página Inicial
             </Button>
           </div>
         </div>
@@ -170,7 +170,7 @@ export default function Percepcoes() {
           <div className="relative max-w-4xl max-h-[90vh] w-full h-full flex items-center justify-center">
             <img
               src="assets/media/infografico_por_que_transformacao_v2_b88bbafc.png"
-              alt="Por quÃª estamos fazendo isso - InfogrÃ¡fico Ampliado"
+              alt="Por quê estamos fazendo isso - Infográfico Ampliado"
               className="max-w-full max-h-full object-contain rounded-lg"
             />
             <button
