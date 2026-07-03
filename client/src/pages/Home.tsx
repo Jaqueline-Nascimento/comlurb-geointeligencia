@@ -25,11 +25,11 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-8">
             <a href="https://jaqueline-nascimento.github.io/relatorioMundoGeo/?v=ae98227" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition">Relatório completo</a>
             <a href="https://comlurb-insight.lovable.app/cursos" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition">HUB</a>
-            <a href="/projetos" className="text-sm text-muted-foreground hover:text-foreground transition">Projetos</a>
-            <a href="/apresentacao-presidencia" className="text-sm text-muted-foreground hover:text-foreground transition">Apresentação para presidência</a>
-            <a href="/benchmarking" className="text-sm text-muted-foreground hover:text-foreground transition">Benchmarking</a>
-            <a href="/geoia" className="text-sm text-muted-foreground hover:text-foreground transition">SIURB</a>
-            <a href="/insights" className="text-sm text-muted-foreground hover:text-foreground transition">Percepções</a>
+            <a href="projetos" className="text-sm text-muted-foreground hover:text-foreground transition">Projetos</a>
+            <a href="apresentacao-presidencia" className="text-sm text-muted-foreground hover:text-foreground transition">Apresentação para presidência</a>
+            <a href="benchmarking" className="text-sm text-muted-foreground hover:text-foreground transition">Benchmarking</a>
+            <a href="geoia" className="text-sm text-muted-foreground hover:text-foreground transition">SIURB</a>
+            <a href="insights" className="text-sm text-muted-foreground hover:text-foreground transition">Percepções</a>
             <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition">Participantes</a>
           </div>
           <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -41,11 +41,11 @@ export default function Home() {
             <div className="flex flex-col gap-4 p-4">
               <a href="https://jaqueline-nascimento.github.io/relatorioMundoGeo/?v=ae98227" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Relatório completo</a>
               <a href="https://comlurb-insight.lovable.app/cursos" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>HUB</a>
-              <a href="/projetos" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Projetos</a>
-              <a href="/apresentacao-presidencia" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Apresentação para presidência</a>
-              <a href="/benchmarking" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Benchmarking</a>
-              <a href="/geoia" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>SIURB</a>
-              <a href="/insights" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Percepções</a>
+              <a href="projetos" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Projetos</a>
+              <a href="apresentacao-presidencia" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Apresentação para presidência</a>
+              <a href="benchmarking" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Benchmarking</a>
+              <a href="geoia" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>SIURB</a>
+              <a href="insights" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Percepções</a>
               <a href="#participantes" className="text-sm text-muted-foreground hover:text-foreground transition py-2" onClick={() => setMobileMenuOpen(false)}>Participantes</a>
             </div>
           </div>
