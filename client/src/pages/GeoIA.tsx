@@ -26,7 +26,7 @@ export default function GeoIA() {
     {
       title: 'Performance de Poda',
       description: 'Painel de Performance da Poda Mecanizada. Esta ferramenta realiza cálculos automatizados combinando dados de telemetria e a produção do SICO, fornecendo um verdadeiro "RX" de toda a operação ao longo do turno de trabalho. Com o suporte da inteligência artificial, o painel gera relatórios inteligentes e define o índice final de performance de cada equipe. O sistema atua como um facilitador estratégico, auxiliando o gestor a otimizar o uso de todos os recursos disponíveis.',
-      url: 'https://drive.google.com/file/d/19f1KYdJQFu5c75T7f2nW25CeAoT98k4M/view?usp=drivesdk',
+      url: 'https://drive.google.com/file/d/1cvzGTDnFLuSZca5HVivQ9gnenzxqpOwU/view?usp=drive_link',
       color: 'from-green-500 to-green-600',
       type: 'video',
       videoSrc: 'https://github.com/Jaqueline-Nascimento/comlurb-geointeligencia/releases/download/media-2026-07-03/performance_poda_7a070d53.mp4'
