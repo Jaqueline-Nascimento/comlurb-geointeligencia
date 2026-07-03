@@ -18,7 +18,7 @@ export default function GeoIA() {
     {
       title: 'Radar de Solicitação de Poda',
       description: 'Radar da Poda - Metas. Totalmente integrado ao CAS, o Radar da Poda foi projetado para cumprir as metas estipuladas no acordo de resultados. O aplicativo calcula mensalmente o volume de pedidos necessários para atingir os objetivos e classifica as demandas por prioridade de atendimento. Operando de forma responsiva em diferentes dispositivos, a solução otimiza o fluxo de atendimento e melhora a eficiência operacional.',
-      url: 'https://drive.google.com/file/d/1cvzGTDnFLuSZca5HVivQ9gnenzxqpOwU/view?usp=drivesdk',
+      url: 'https://drive.google.com/file/d/1KM03R8mmCR0zSo2X8mj3v8CjbQnva1hQ/view?usp=drive_link',
       color: 'from-purple-500 to-purple-600',
       type: 'video',
       videoSrc: 'https://github.com/Jaqueline-Nascimento/comlurb-geointeligencia/releases/download/media-2026-07-03/radar_da_poda_42a39195.mp4'
